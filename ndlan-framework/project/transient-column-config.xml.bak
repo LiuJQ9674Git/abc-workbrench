@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TransientOrExcludeColumnConfig>
+    <transientBeanList>
+        <columnBeanList>
+            <columnKey>TST</columnKey>
+            <columnNameCapitalized>columnBean</columnNameCapitalized>
+            <columnType>com.ndl.framework.workbrench.define.ColumnBean</columnType>
+            <extra>List</extra>
+            <length>0</length>
+        </columnBeanList>
+    </transientBeanList>
+</TransientOrExcludeColumnConfig>

@@ -1,0 +1,10 @@
+var {{datatypeWithEnum}} = {
+{{#allowableValues}}{{#enumVars}}
+	  /**
+	   * @const
+	   */
+	  {{name}}: "{{value}}"{{^-last}},
+	  {{/-last}}{{/enumVars}}{{/allowableValues}}
+  };
+
+  {{classname}}.{{datatypeWithEnum}} = {{datatypeWithEnum}};

@@ -1,0 +1,11 @@
+*.class
+*.iml
+# Package Files #
+*.jar
+*.war
+*.ear
+.project
+.settings
+.classpath
+.metadata
+.springBeans

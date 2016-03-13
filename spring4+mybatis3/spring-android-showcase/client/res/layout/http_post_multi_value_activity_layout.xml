@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/label_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dip"
+        android:text="@string/id_int" />
+
+    <EditText
+        android:id="@+id/edit_text_message_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="8dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/label_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dip"
+        android:text="@string/subject_string" />
+
+    <EditText
+        android:id="@+id/edit_text_message_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textShortMessage"
+        android:padding="8dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dip"
+        android:text="@string/text_string" />
+
+    <EditText
+        android:id="@+id/edit_text_message_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textShortMessage"
+        android:padding="8dip"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+</LinearLayout>

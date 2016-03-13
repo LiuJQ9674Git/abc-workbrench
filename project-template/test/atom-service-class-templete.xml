@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleAtomTemplate>
+    <moduleName>test atom service package</moduleName>
+    <atomOrRepositorTemplates>
+        <atomOrRepositorTemplate>
+            <comment>订单业务的增删改查</comment>
+            <className>OrderBeanAtomService</className>
+            <componentCategory>ATM</componentCategory>
+            <includeClasses>
+                <includeClass>Order</includeClass>
+                <includeClass>OrderHeader</includeClass>
+                <includeClass>OrderItemBeanAtomService</includeClass>
+                <includeClass>OrderItem</includeClass>
+            </includeClasses>
+            <headerAnnotations>
+                <headerAnnotation>@Transactional</headerAnnotation>
+                <headerAnnotation>@Component("orderBusinessService")</headerAnnotation>
+                <headerAnnotation>@Resource("orderBeanAtomService")</headerAnnotation>
+            </headerAnnotations>
+            <instanceAnnotations>
+                <instanceAnnotation>@Autowired("orderItemJPABeanDao")</instanceAnnotation>
+                <instanceAnnotation>@Qualifier("orderHeaderJPABeanDao")</instanceAnnotation>
+                <instanceAnnotation>@Qualifier("orderItemBeanAtomService")</instanceAnnotation>
+            </instanceAnnotations>
+            <methodDescripterMap>
+                <entry>
+                    <key>public  Order queryBusinessOrderByOrderNameAndPageSize(String orderName ,   String  productId  String  pageSize)</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>Query</annnoteKey>
+                            <annoteValue>queryBusinessOrderByOrderNameAndPageSize</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:OrderBeanAtomService* serviceCategory:ATM查询订单头方法
+**/</comment>
+                        <signatureEntirety>public  Order queryBusinessOrderByOrderNameAndPageSize(String orderName ,   String  productId  String  pageSize)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>orderName</fieldName>
+<fieldNameSetter>OrderName</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>productId</fieldName>
+<fieldNameSetter>ProductId</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>pageSize</fieldName>
+<fieldNameSetter>PageSize</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice>
+                            <entry>
+<key>0</key>
+<value>
+    <calleeMethodName>orderHeader = orderHeaderJPABeanDao.queryAtomByOrderNameAndPageSize (  orderName ,  productId pageSize );</calleeMethodName>
+    <catetory>CALL_INTER</catetory>
+    <calleeArgumentList>
+        <calleeArgument uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+            <columnName></columnName>
+            <columnNameNoDash>orderName</columnNameNoDash>
+            <columnNameCapitalized>OrderName</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash>orderName</referNameNoDash>
+            <referNameCapitalized>OrderName</referNameCapitalized>
+            <referType>String</referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+                <columnName></columnName>
+                <columnNameNoDash>productId</columnNameNoDash>
+                <columnNameCapitalized>ProductId</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash>productId</referNameNoDash>
+                <referNameCapitalized>ProductId</referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>And</nextFieldRative>
+                <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                    <columnName></columnName>
+                    <columnNameNoDash>pageSize</columnNameNoDash>
+                    <columnNameCapitalized>PageSize</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS></columnTypeIOS>
+                    <columnTypePropertyIOS></columnTypePropertyIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment></columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </nextColumnBean>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>ENTITY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+        <calleeArgument uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+            <columnName></columnName>
+            <columnNameNoDash>productId</columnNameNoDash>
+            <columnNameCapitalized>ProductId</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash>productId</referNameNoDash>
+            <referNameCapitalized>ProductId</referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                <columnName></columnName>
+                <columnNameNoDash>pageSize</columnNameNoDash>
+                <columnNameCapitalized>PageSize</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>Finished</nextFieldRative>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+        <calleeArgument uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+            <columnName></columnName>
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+    </calleeArgumentList>
+    <localFieldName> Map&lt;String,OrderHeader&gt; orderHeader</localFieldName>
+    <returnType> Map&lt;String,OrderHeader&gt;</returnType>
+</value>
+                            </entry>
+                        </bodyFragmentSlice>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Order queryBusinessByOrderNameAndPageSize(  String   ,   String  )</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>Query</annnoteKey>
+                            <annoteValue>queryBusinessByOrderNameAndPageSize</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:OrderBeanAtomService* serviceCategory:ATM查询订单头方法
+**/</comment>
+                        <signatureEntirety>public  Order queryBusinessByOrderNameAndPageSize(  String   ,   String  )</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>OrderName</columnName>
+<fieldName></fieldName>
+<fieldNameSetter></fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>PageSize</columnName>
+<fieldName></fieldName>
+<fieldNameSetter></fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice>
+                            <entry>
+<key>1</key>
+<value>
+    <calleeMethodName>orderHeader = orderHeaderJPABeanDao.queryAtomByOrderNameAndPageSize (  orderName ,  productId pageSize );</calleeMethodName>
+    <catetory>CALL_INTER</catetory>
+    <calleeArgumentList>
+        <calleeArgument uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+            <columnName></columnName>
+            <columnNameNoDash>orderName</columnNameNoDash>
+            <columnNameCapitalized>OrderName</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash>orderName</referNameNoDash>
+            <referNameCapitalized>OrderName</referNameCapitalized>
+            <referType>String</referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+                <columnName></columnName>
+                <columnNameNoDash>productId</columnNameNoDash>
+                <columnNameCapitalized>ProductId</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash>productId</referNameNoDash>
+                <referNameCapitalized>ProductId</referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>And</nextFieldRative>
+                <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                    <columnName></columnName>
+                    <columnNameNoDash>pageSize</columnNameNoDash>
+                    <columnNameCapitalized>PageSize</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS></columnTypeIOS>
+                    <columnTypePropertyIOS></columnTypePropertyIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment></columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </nextColumnBean>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>ENTITY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+        <calleeArgument uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+            <columnName></columnName>
+            <columnNameNoDash>productId</columnNameNoDash>
+            <columnNameCapitalized>ProductId</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash>productId</referNameNoDash>
+            <referNameCapitalized>ProductId</referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                <columnName></columnName>
+                <columnNameNoDash>pageSize</columnNameNoDash>
+                <columnNameCapitalized>PageSize</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>Finished</nextFieldRative>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+        <calleeArgument uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+            <columnName></columnName>
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+    </calleeArgumentList>
+    <localFieldName> Map&lt;String,OrderHeader&gt; orderHeader</localFieldName>
+    <returnType> Map&lt;String,OrderHeader&gt;</returnType>
+</value>
+                            </entry>
+                        </bodyFragmentSlice>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Order queryBusinessOrderItemByOrderNameAndPageSize(  String  orderName ,   String  pageSize)</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>Transactional</annnoteKey>
+                            <annoteValue>queryBusinessOrderItemByOrderNameAndPageSize</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:OrderBeanAtomService* serviceCategory:ATM查询订单头方法
+**/</comment>
+                        <signatureEntirety>public  Order queryBusinessOrderItemByOrderNameAndPageSize(  String  orderName ,   String  pageSize)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>orderName</fieldName>
+<fieldNameSetter>OrderName</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>pageSize</fieldName>
+<fieldNameSetter>PageSize</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice>
+                            <entry>
+<key>2</key>
+<value>
+    <calleeMethodName>orderItem = orderItemBeanAtomService.queryAtomByOrderNameAndPageSize (  orderName ,  pageSize );</calleeMethodName>
+    <catetory>CALL_INTER</catetory>
+    <calleeArgumentList>
+        <calleeArgument uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+            <columnName></columnName>
+            <columnNameNoDash>orderName</columnNameNoDash>
+            <columnNameCapitalized>OrderName</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+                <columnName></columnName>
+                <columnNameNoDash>pageSize</columnNameNoDash>
+                <columnNameCapitalized>PageSize</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>Finished</nextFieldRative>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+        <calleeArgument uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+            <columnName></columnName>
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </calleeArgument>
+    </calleeArgumentList>
+    <localFieldName> List&lt;OrderItem&gt;  orderItem</localFieldName>
+    <returnType> List&lt;OrderItem&gt; </returnType>
+</value>
+                            </entry>
+                        </bodyFragmentSlice>
+                    </value>
+                </entry>
+            </methodDescripterMap>
+        </atomOrRepositorTemplate>
+    </atomOrRepositorTemplates>
+</moduleAtomTemplate>

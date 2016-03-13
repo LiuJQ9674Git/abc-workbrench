@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityConfig uuid="7b81515c-d29a-4390-bea1-b75858fa9d5c-com.ndl.framework.workbrench.freemarker.template.EntityConfigTemplate-0">
+    <tableBeanList>
+        <tableBean uuid="4327ecfb-a040-44b5-ad15-fe99b1f7be22-com.ndl.framework.workbrench.define.TableBean-1">
+            <tableName>ad_info_t</tableName>
+            <tableComment></tableComment>
+            <tableNameNoDash>adInfoT</tableNameNoDash>
+            <tableNameCapitalized>AdInfoT</tableNameCapitalized>
+            <columnBeanList>
+                <columnBean uuid="5e72d800-9286-4112-97f6-57002d646850-com.ndl.framework.workbrench.define.ColumnBean-6">
+                    <columnName>create_time</columnName>
+                    <columnNameNoDash>createTime</columnNameNoDash>
+                    <columnNameCapitalized>CreateTime</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>7</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="0c73b410-6442-431d-b1c7-5e1d9623c564-com.ndl.framework.workbrench.define.ColumnBean-7">
+                    <columnName>modify_time</columnName>
+                    <columnNameNoDash>modifyTime</columnNameNoDash>
+                    <columnNameCapitalized>ModifyTime</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>8</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="844ac54f-4551-46a9-92f6-302d1095255a-com.ndl.framework.workbrench.define.ColumnBean-1">
+                    <columnName>title</columnName>
+                    <columnNameNoDash>title</columnNameNoDash>
+                    <columnNameCapitalized>Title</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>2</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>500</length>
+                </columnBean>
+                <columnBean uuid="f162934b-e310-4b53-bb8e-1455d70d43ac-com.ndl.framework.workbrench.define.ColumnBean-3">
+                    <columnName>photo_res_id</columnName>
+                    <columnNameNoDash>photoResId</columnNameNoDash>
+                    <columnNameCapitalized>PhotoResId</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>4</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>50</length>
+                </columnBean>
+                <columnBean uuid="ed3075ab-6157-49b5-a7c8-287543f956a8-com.ndl.framework.workbrench.define.ColumnBean-4">
+                    <columnName>url</columnName>
+                    <columnNameNoDash>url</columnNameNoDash>
+                    <columnNameCapitalized>Url</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>5</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>200</length>
+                </columnBean>
+                <columnBean uuid="c3c994b2-7266-404d-833e-685be0852c5a-com.ndl.framework.workbrench.define.ColumnBean-0">
+                    <columnName>id</columnName>
+                    <columnNameNoDash>id</columnNameNoDash>
+                    <columnNameCapitalized>Id</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>1</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>PRI</columnKey>
+                    <extra>auto_increment</extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="50bd79c4-fef9-4509-a19e-30a479e47a2f-com.ndl.framework.workbrench.define.ColumnBean-2">
+                    <columnName>content</columnName>
+                    <columnNameNoDash>content</columnNameNoDash>
+                    <columnNameCapitalized>Content</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>3</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>2000</length>
+                </columnBean>
+                <columnBean uuid="d0eabde5-3478-4b6a-95a7-e0907359c8c0-com.ndl.framework.workbrench.define.ColumnBean-5">
+                    <columnName>status</columnName>
+                    <columnNameNoDash>status</columnNameNoDash>
+                    <columnNameCapitalized>Status</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>6</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <columnDefault>0</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+            </columnBeanList>
+            <hasDateColumn>true</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </tableBean>
+        <tableBean uuid="d68520d5-897c-4602-8de4-93dc0c2e09ef-com.ndl.framework.workbrench.define.TableBean-2">
+            <tableName>apply_order_t</tableName>
+            <tableComment>申请单</tableComment>
+            <tableNameNoDash>applyOrderT</tableNameNoDash>
+            <tableNameCapitalized>ApplyOrderT</tableNameCapitalized>
+            <columnBeanList>
+                <columnBean uuid="80106323-55fa-4ef2-8b91-0869b80cc019-com.ndl.framework.workbrench.define.ColumnBean-20">
+                    <columnName>apply_time</columnName>
+                    <columnNameNoDash>applyTime</columnNameNoDash>
+                    <columnNameCapitalized>ApplyTime</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment>申请时间</columnComment>
+                    <ordinalPosition>13</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="dea1d9da-a74b-4ce0-a7d4-431b0cb79f88-com.ndl.framework.workbrench.define.ColumnBean-9">
+                    <columnName>order_no</columnName>
+                    <columnNameNoDash>orderNo</columnNameNoDash>
+                    <columnNameCapitalized>OrderNo</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>单号（UUID）</columnComment>
+                    <ordinalPosition>2</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>32</length>
+                </columnBean>
+                <columnBean uuid="9d5179e0-2f26-4106-845d-6d5e1cdc7287-com.ndl.framework.workbrench.define.ColumnBean-10">
+                    <columnName>apply_type</columnName>
+                    <columnNameNoDash>applyType</columnNameNoDash>
+                    <columnNameCapitalized>ApplyType</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment>0：试用申请，1：购买申请</columnComment>
+                    <ordinalPosition>3</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <columnDefault>0</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="2125f4f6-63d6-4dac-86af-74ed88ca94db-com.ndl.framework.workbrench.define.ColumnBean-16">
+                    <columnName>contact_email</columnName>
+                    <columnNameNoDash>contactEmail</columnNameNoDash>
+                    <columnNameCapitalized>ContactEmail</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>联系邮件地址</columnComment>
+                    <ordinalPosition>9</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>50</length>
+                </columnBean>
+                <columnBean uuid="4f87d358-aa4e-4330-8cf7-d2e46dcdaee9-com.ndl.framework.workbrench.define.ColumnBean-21">
+                    <columnName>auditor_name</columnName>
+                    <columnNameNoDash>auditorName</columnNameNoDash>
+                    <columnNameCapitalized>AuditorName</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>审核人</columnComment>
+                    <ordinalPosition>14</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>20</length>
+                </columnBean>
+                <columnBean uuid="2b4134c1-91b0-4178-8bd8-47c6dd7dc11f-com.ndl.framework.workbrench.define.ColumnBean-12">
+                    <columnName>company_employ_count</columnName>
+                    <columnNameNoDash>companyEmployCount</columnNameNoDash>
+                    <columnNameCapitalized>CompanyEmployCount</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment>企业人数</columnComment>
+                    <ordinalPosition>5</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="1ea321ac-890a-409a-9851-d3df1cfe57f9-com.ndl.framework.workbrench.define.ColumnBean-19">
+                    <columnName>trc_resid</columnName>
+                    <columnNameNoDash>trcResid</columnNameNoDash>
+                    <columnNameCapitalized>TrcResid</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>税务登记证资源ID</columnComment>
+                    <ordinalPosition>12</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>50</length>
+                </columnBean>
+                <columnBean uuid="ae34380c-a6ec-4185-81f1-c19bf182a207-com.ndl.framework.workbrench.define.ColumnBean-24">
+                    <columnName>status</columnName>
+                    <columnNameNoDash>status</columnNameNoDash>
+                    <columnNameCapitalized>Status</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment>申请单状态   0：未审核，1：通过，2：未通过</columnComment>
+                    <ordinalPosition>17</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <columnDefault>0</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="41f1979c-4769-49c5-90e2-4307cde18d1b-com.ndl.framework.workbrench.define.ColumnBean-8">
+                    <columnName>id</columnName>
+                    <columnNameNoDash>id</columnNameNoDash>
+                    <columnNameCapitalized>Id</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>1</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>PRI</columnKey>
+                    <extra>auto_increment</extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="caa970fb-c197-4590-a86c-439a196e1bf7-com.ndl.framework.workbrench.define.ColumnBean-22">
+                    <columnName>audit_time</columnName>
+                    <columnNameNoDash>auditTime</columnNameNoDash>
+                    <columnNameCapitalized>AuditTime</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment>审核时间</columnComment>
+                    <ordinalPosition>15</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="29e81617-1a25-43db-8644-6985995f5b2f-com.ndl.framework.workbrench.define.ColumnBean-17">
+                    <columnName>purpose</columnName>
+                    <columnNameNoDash>purpose</columnNameNoDash>
+                    <columnNameCapitalized>Purpose</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>使用用途</columnComment>
+                    <ordinalPosition>10</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>200</length>
+                </columnBean>
+                <columnBean uuid="aa631919-7a15-49c3-a43c-e3b3a3298a44-com.ndl.framework.workbrench.define.ColumnBean-15">
+                    <columnName>contact_mobile</columnName>
+                    <columnNameNoDash>contactMobile</columnNameNoDash>
+                    <columnNameCapitalized>ContactMobile</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>联系电话</columnComment>
+                    <ordinalPosition>8</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>20</length>
+                </columnBean>
+                <columnBean uuid="bc121232-4539-44fe-98bf-65516ac0a400-com.ndl.framework.workbrench.define.ColumnBean-23">
+                    <columnName>audit_content</columnName>
+                    <columnNameNoDash>auditContent</columnNameNoDash>
+                    <columnNameCapitalized>AuditContent</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>审核意见</columnComment>
+                    <ordinalPosition>16</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>500</length>
+                </columnBean>
+                <columnBean uuid="141a7b6c-52be-4b5b-8bbf-21588831b1e2-com.ndl.framework.workbrench.define.ColumnBean-14">
+                    <columnName>contact_name</columnName>
+                    <columnNameNoDash>contactName</columnNameNoDash>
+                    <columnNameCapitalized>ContactName</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>联系人姓名</columnComment>
+                    <ordinalPosition>7</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>20</length>
+                </columnBean>
+                <columnBean uuid="c92f429b-6cd4-4205-84c0-84d51eccb6b3-com.ndl.framework.workbrench.define.ColumnBean-13">
+                    <columnName>company_type</columnName>
+                    <columnNameNoDash>companyType</columnNameNoDash>
+                    <columnNameCapitalized>CompanyType</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment>1、国企事业单位；2、民营企业；3、股份制企业；4、外资企业</columnComment>
+                    <ordinalPosition>6</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <columnDefault>1</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="8e42de71-4a10-4e91-9518-e673e2939654-com.ndl.framework.workbrench.define.ColumnBean-18">
+                    <columnName>business_license_resid</columnName>
+                    <columnNameNoDash>businessLicenseResid</columnNameNoDash>
+                    <columnNameCapitalized>BusinessLicenseResid</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>营业执照副本资源ID</columnComment>
+                    <ordinalPosition>11</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>50</length>
+                </columnBean>
+                <columnBean uuid="e76f937a-4775-40e9-8c06-915c26eeb703-com.ndl.framework.workbrench.define.ColumnBean-11">
+                    <columnName>company_name</columnName>
+                    <columnNameNoDash>companyName</columnNameNoDash>
+                    <columnNameCapitalized>CompanyName</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment>公司名称</columnComment>
+                    <ordinalPosition>4</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>100</length>
+                </columnBean>
+            </columnBeanList>
+            <hasDateColumn>true</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </tableBean>
+        <tableBean uuid="38ccd56f-6e33-49f9-90d5-7e446883e401-com.ndl.framework.workbrench.define.TableBean-0">
+            <tableName>account_t</tableName>
+            <tableComment></tableComment>
+            <tableNameNoDash>accountT</tableNameNoDash>
+            <tableNameCapitalized>AccountT</tableNameCapitalized>
+            <columnBeanList>
+                <columnBean uuid="f6db07ab-89c3-405a-9f7e-00d704a0c128-com.ndl.framework.workbrench.define.ColumnBean-30">
+                    <columnName>create_time</columnName>
+                    <columnNameNoDash>createTime</columnNameNoDash>
+                    <columnNameCapitalized>CreateTime</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>6</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <columnDefault>CURRENT_TIMESTAMP</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra>on update CURRENT_TIMESTAMP</extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="d40a0a3b-361f-4fb7-879d-8a0abd87f125-com.ndl.framework.workbrench.define.ColumnBean-27">
+                    <columnName>password</columnName>
+                    <columnNameNoDash>password</columnNameNoDash>
+                    <columnNameCapitalized>Password</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>3</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>255</length>
+                </columnBean>
+                <columnBean uuid="33096586-bcb0-46fe-a0a9-56a279f212e8-com.ndl.framework.workbrench.define.ColumnBean-28">
+                    <columnName>status</columnName>
+                    <columnNameNoDash>status</columnNameNoDash>
+                    <columnNameCapitalized>Status</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>4</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="23682544-b2ab-42a8-9c8e-444bd5aa9ee1-com.ndl.framework.workbrench.define.ColumnBean-25">
+                    <columnName>id</columnName>
+                    <columnNameNoDash>id</columnNameNoDash>
+                    <columnNameCapitalized>Id</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>1</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>PRI</columnKey>
+                    <extra>auto_increment</extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="9fe7350e-f770-4425-ab92-3bfc2ae60165-com.ndl.framework.workbrench.define.ColumnBean-32">
+                    <columnName>current_cycle_end</columnName>
+                    <columnNameNoDash>currentCycleEnd</columnNameNoDash>
+                    <columnNameCapitalized>CurrentCycleEnd</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>8</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <columnDefault>0000-00-00 00:00:00</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="6c39d622-5723-4dda-8b2b-6b2ba6892c42-com.ndl.framework.workbrench.define.ColumnBean-33">
+                    <columnName>free_sms_flag</columnName>
+                    <columnNameNoDash>freeSmsFlag</columnNameNoDash>
+                    <columnNameCapitalized>FreeSmsFlag</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>9</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <columnDefault>0</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="0fa36c8e-3b24-4ee2-aeff-e9d5711ca127-com.ndl.framework.workbrench.define.ColumnBean-29">
+                    <columnName>type</columnName>
+                    <columnNameNoDash>type</columnNameNoDash>
+                    <columnNameCapitalized>Type</columnNameCapitalized>
+                    <columnType>Long</columnType>
+                    <columnTypeIOS>NSLong</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)Long </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getLong</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>5</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+                <columnBean uuid="16869933-5bbd-47e0-afa2-d41d10512c3a-com.ndl.framework.workbrench.define.ColumnBean-26">
+                    <columnName>login</columnName>
+                    <columnNameNoDash>login</columnNameNoDash>
+                    <columnNameCapitalized>Login</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>2</ordinalPosition>
+                    <isNullable>YES</isNullable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>255</length>
+                </columnBean>
+                <columnBean uuid="2899710c-017b-452b-8055-f20eca817edb-com.ndl.framework.workbrench.define.ColumnBean-31">
+                    <columnName>current_cycle_start</columnName>
+                    <columnNameNoDash>currentCycleStart</columnNameNoDash>
+                    <columnNameCapitalized>CurrentCycleStart</columnNameCapitalized>
+                    <columnType>Date</columnType>
+                    <columnTypeIOS>NSDate</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)Date *</columnTypePropertyIOS>
+                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
+                    <columnComment></columnComment>
+                    <ordinalPosition>7</ordinalPosition>
+                    <isNullable>NO</isNullable>
+                    <columnDefault>0000-00-00 00:00:00</columnDefault>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey></columnKey>
+                    <extra></extra>
+                    <length>-9223372036854775808</length>
+                </columnBean>
+            </columnBeanList>
+            <hasDateColumn>true</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </tableBean>
+    </tableBeanList>
+</EntityConfig>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FrontModule uuid="67eb5cda-2529-41b6-93c2-b2a227df995f">
+    <FrontName>testFront</FrontName>
+    <controlleres>
+        <controller uuid="54330155-1361-4796-a6d4-2ac731400935">
+            <controllerId>loginController</controllerId>
+            <controllerType>LoginController</controllerType>
+            <controllerDescipter>Controller Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</controllerDescipter>
+            <extendedClass>BaseManageController</extendedClass>
+            <annotationBeanList>
+                <annotation uuid="4b0b6fd2-3771-4c99-bed0-7b9977f4ad59">
+                    <annnoteKey>RequestMapping</annnoteKey>
+                    <annoteValue>login</annoteValue>
+                </annotation>
+                <annotation uuid="54de327b-938e-4db5-b442-cabb70c6a343">
+                    <annnoteKey>Controller</annnoteKey>
+                </annotation>
+            </annotationBeanList>
+            <controllerMethodList>
+                <controllerMethod uuid="967df5a9-7e71-4dae-a390-ffc1d8dbbfd7">
+                    <signature>login</signature>
+                    <signatureDescripter>toLogin登录认证</signatureDescripter>
+                    <responseType uuid="d15dad22-becf-4910-b894-4d50df8cbaca">
+                        <columnType>IosReturnJson</columnType>
+                        <fieldType>ENTITY</fieldType>
+                        <length>-9223372036854775808</length>
+                    </responseType>
+                    <catetory>POST</catetory>
+                    <bodyBean uuid="65d7bdc8-7285-4d8d-a864-b822f584f61f">
+                        <fromMethod>967df5a9-7e71-4dae-a390-ffc1d8dbbfd7</fromMethod>
+                        <fromResultType uuid="d15dad22-becf-4910-b894-4d50df8cbaca">
+                            <columnType>IosReturnJson</columnType>
+                            <fieldType>ENTITY</fieldType>
+                            <length>-9223372036854775808</length>
+                        </fromResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean uuid="083b1064-9baa-43b8-9ddd-bac624754482">
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>queryLogin</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="b74e460a-f53c-45a9-a141-3e51794901d5">
+                        <serviceId>loginBusinessService</serviceId>
+                        <serivceType>Login</serivceType>
+                        <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <runningMethod uuid="d70fec24-d73c-461b-93d1-5907522e26a4">
+                            <signature>queryLoginByUserNameAndPassword</signature>
+                            <responseType uuid="b072bcc3-28ce-405f-a799-392e6a68e932">
+								<columnType>Login</columnType>
+								<fieldType>ENTITY</fieldType>
+								<length>-9223372036854775808</length>
+							</responseType>
+							<assignList>
+								<assign uuid="1977b10a-2b38-4548-a1c1-fc1f97f7184a">
+									<tableNameNoDash>login</tableNameNoDash>
+									<tableNameCapitalized>Login</tableNameCapitalized>
+									<columnBeanList>
+										<columnBean uuid="df4d484f-886d-48d2-9ee4-221cbd1a255f">
+											<columnName>Name</columnName>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="4cb97055-2d0d-4e27-a441-4eb0dd45b113">
+												<columnName>Password</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<length>-9223372036854775808</length>
+											</nextColumnBean>
+											<length>-9223372036854775808</length>
+										</columnBean>
+									</columnBeanList>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</assign>
+                            </assignList>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="39a1ae9e-c636-48a2-86b8-2c41b8546a1d">
+								<serviceId>loginATOMService</serviceId>
+								<serivceType>Login</serivceType>
+								<serviceDescipter>Service Type:Login
+								 index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+								<serviceCategory>ATM</serviceCategory>
+								<annotationBeanList>
+									<annotationBean uuid="5d77e128-cff1-4c01-868e-03dbf01beeb2">
+										<annnoteKey>Transactional</annnoteKey>
+									</annotationBean>
+									<annotationBean uuid="ab936699-a998-461c-90ae-a064ad9458b4">
+										<annnoteKey>Component</annnoteKey>
+									</annotationBean>
+								</annotationBeanList>
+								<includeBeanList>
+									<includeBean uuid="8ad88341-64ea-47d3-9eda-b8ce101f2e23">
+										<tableNameNoDash>login</tableNameNoDash>
+										<tableNameCapitalized>Login</tableNameCapitalized>
+										<columnBeanList/>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</includeBean>
+								</includeBeanList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="6a2057f9-d128-4291-9d8d-9e1de4e6adb7">
+								<tableNameNoDash>login</tableNameNoDash>
+								<tableNameCapitalized>Login</tableNameCapitalized>
+								<columnBeanList/>
+								<hasDateColumn>false</hasDateColumn>
+								<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assignList>
+                        <assign uuid="1977b10a-2b38-4548-a1c1-fc1f97f7184a">
+                            <tableNameNoDash>login</tableNameNoDash>
+                            <tableNameCapitalized>Login</tableNameCapitalized>
+                            <columnBeanList>
+								<columnBean uuid="df4d484f-886d-48d2-9ee4-221cbd1a255f">
+									<columnName>Name</columnName>
+									<columnType>String</columnType>
+									<nextFieldRative>And</nextFieldRative>
+									<nextColumnBean uuid="4cb97055-2d0d-4e27-a441-4eb0dd45b113">
+										<columnName>Password</columnName>
+										<columnType>String</columnType>
+										<nextFieldRative>Finished</nextFieldRative>
+										<length>-9223372036854775808</length>
+									</nextColumnBean>
+									<length>-9223372036854775808</length>
+								</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </assignList>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="b74e460a-f53c-45a9-a141-3e51794901d5">
+                            <serviceId>loginBusinessService</serviceId>
+                            <serivceType>Login</serivceType>
+                            <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <runningMethod uuid="d70fec24-d73c-461b-93d1-5907522e26a4">
+								<signature>queryLoginByUserNameAndPassword</signature>
+								<responseType uuid="b072bcc3-28ce-405f-a799-392e6a68e932">
+									<columnType>Login</columnType>
+									<fieldType>ENTITY</fieldType>
+									<length>-9223372036854775808</length>
+								</responseType>
+								<assignList>
+									<assign uuid="1977b10a-2b38-4548-a1c1-fc1f97f7184a">
+										<tableNameNoDash>login</tableNameNoDash>
+										<tableNameCapitalized>Login</tableNameCapitalized>
+										<columnBeanList>
+											<columnBean uuid="df4d484f-886d-48d2-9ee4-221cbd1a255f">
+												<columnName>Name</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>And</nextFieldRative>
+												<nextColumnBean uuid="4cb97055-2d0d-4e27-a441-4eb0dd45b113">
+													<columnName>Password</columnName>
+													<columnType>String</columnType>
+													<nextFieldRative>Finished</nextFieldRative>
+													<length>-9223372036854775808</length>
+												</nextColumnBean>
+												<length>-9223372036854775808</length>
+											</columnBean>
+										</columnBeanList>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</assign>
+								</assignList>
+                            </runningMethod>
+                            <includeServiceList>
+								<includeService uuid="39a1ae9e-c636-48a2-86b8-2c41b8546a1d">
+									<serviceId>loginATOMService</serviceId>
+									<serivceType>Login</serivceType>
+									<serviceDescipter>Service Type:Login
+								 index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+									<serviceCategory>ATM</serviceCategory>
+									<annotationBeanList>
+										<annotationBean uuid="5d77e128-cff1-4c01-868e-03dbf01beeb2">
+											<annnoteKey>Transactional</annnoteKey>
+										</annotationBean>
+										<annotationBean uuid="ab936699-a998-461c-90ae-a064ad9458b4">
+											<annnoteKey>Component</annnoteKey>
+										</annotationBean>
+									</annotationBeanList>
+									<includeBeanList>
+										<includeBean uuid="8ad88341-64ea-47d3-9eda-b8ce101f2e23">
+											<tableNameNoDash>login</tableNameNoDash>
+											<tableNameCapitalized>Login</tableNameCapitalized>
+											<columnBeanList/>
+											<hasDateColumn>false</hasDateColumn>
+											<hasBigDecimal>false</hasBigDecimal>
+										</includeBean>
+									</includeBeanList>
+								</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+								<includeBean uuid="6a2057f9-d128-4291-9d8d-9e1de4e6adb7">
+									<tableNameNoDash>login</tableNameNoDash>
+									<tableNameCapitalized>Login</tableNameCapitalized>
+									<columnBeanList/>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </controllerMethod>
+                <controllerMethod uuid="e5472441-c893-46d1-b279-dd1bc914b0c0">
+                    <signature>checkLogin</signature>
+                    <signatureDescripter>根据姓名与性别</signatureDescripter>
+                    <responseType uuid="388bcdf5-f0ee-4851-9368-708f7cf81794">
+                        <columnType>IosReturnJson</columnType>
+                        <fieldType>ENTITY</fieldType>
+                        <length>-9223372036854775808</length>
+                    </responseType>
+                    <catetory>GET</catetory>
+                    <bodyBean uuid="0e340b95-90fb-44ad-bd73-aa66419f7739">
+                        <fromMethod>e5472441-c893-46d1-b279-dd1bc914b0c0</fromMethod>
+                        <fromResultType uuid="388bcdf5-f0ee-4851-9368-708f7cf81794">
+                            <columnType>IosReturnJson</columnType>
+                            <fieldType>ENTITY</fieldType>
+                            <length>-9223372036854775808</length>
+                        </fromResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean uuid="56c0fb72-0d0e-4163-91e9-d700a8cdf90a">
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>loginBySex</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="b74e460a-f53c-45a9-a141-3e51794901d5">
+                        <serviceId>loginBusinessService</serviceId>
+                        <serivceType>Login</serivceType>
+                        <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <runningMethod uuid="2c3419d0-5599-4af8-a83f-c19147f1ac08">
+                            <signature>queryLoginByUserNameOrSex</signature>
+                            <responseType uuid="f73a9c89-cc2b-4600-9b1e-d98e7cd71ed5">
+								<columnType>Login</columnType>
+								<fieldType>ENTITY</fieldType>
+								<length>-9223372036854775808</length>
+                            </responseType>
+                            <assignList>
+								<assign uuid="4c3b10bb-13c9-4aa3-952b-5163956425eb">
+									<tableNameNoDash>login</tableNameNoDash>
+									<tableNameCapitalized>Login</tableNameCapitalized>
+									<columnBeanList>
+										<columnBean uuid="50176145-3850-4e11-962c-1fff60eeef9e">
+											<columnName>Name</columnName>
+											<columnType>String</columnType>
+											<nextFieldRative>Or</nextFieldRative>
+											<nextColumnBean uuid="0ef6f275-09da-4684-a759-68d34a790342">
+												<columnName>Sex</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<length>-9223372036854775808</length>
+											</nextColumnBean>
+											<length>-9223372036854775808</length>
+										</columnBean>
+									</columnBeanList>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</assign>
+                            </assignList>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="39a1ae9e-c636-48a2-86b8-2c41b8546a1d">
+								<serviceId>loginATOMService</serviceId>
+								<serivceType>Login</serivceType>
+								<serviceDescipter>Service Type:Login
+								 index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+								<serviceCategory>ATM</serviceCategory>
+								<annotationBeanList>
+									<annotationBean uuid="5d77e128-cff1-4c01-868e-03dbf01beeb2">
+										<annnoteKey>Transactional</annnoteKey>
+									</annotationBean>
+									<annotationBean uuid="ab936699-a998-461c-90ae-a064ad9458b4">
+										<annnoteKey>Component</annnoteKey>
+									</annotationBean>
+								</annotationBeanList>
+								<includeBeanList>
+									<includeBean uuid="8ad88341-64ea-47d3-9eda-b8ce101f2e23">
+										<tableNameNoDash>login</tableNameNoDash>
+										<tableNameCapitalized>Login</tableNameCapitalized>
+										<columnBeanList/>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</includeBean>
+								</includeBeanList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="6a2057f9-d128-4291-9d8d-9e1de4e6adb7">
+								<tableNameNoDash>login</tableNameNoDash>
+								<tableNameCapitalized>Login</tableNameCapitalized>
+								<columnBeanList/>
+								<hasDateColumn>false</hasDateColumn>
+								<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assignList>
+                        <assign uuid="4c3b10bb-13c9-4aa3-952b-5163956425eb">
+                            <tableNameNoDash>login</tableNameNoDash>
+                            <tableNameCapitalized>Login</tableNameCapitalized>
+                            <columnBeanList>
+								<columnBean uuid="50176145-3850-4e11-962c-1fff60eeef9e">
+									<columnName>Name</columnName>
+									<columnType>String</columnType>
+									<nextFieldRative>Or</nextFieldRative>
+									<nextColumnBean uuid="0ef6f275-09da-4684-a759-68d34a790342">
+										<columnName>Sex</columnName>
+										<columnType>String</columnType>
+										<nextFieldRative>Finished</nextFieldRative>
+										<length>-9223372036854775808</length>
+									</nextColumnBean>
+									<length>-9223372036854775808</length>
+								</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </assignList>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="b74e460a-f53c-45a9-a141-3e51794901d5">
+                            <serviceId>loginBusinessService</serviceId>
+                            <serivceType>Login</serivceType>
+                            <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <runningMethod uuid="2c3419d0-5599-4af8-a83f-c19147f1ac08">
+								<signature>queryLoginByUserNameOrSex</signature>
+								<responseType uuid="f73a9c89-cc2b-4600-9b1e-d98e7cd71ed5">
+									<columnType>Login</columnType>
+									<fieldType>ENTITY</fieldType>
+									<length>-9223372036854775808</length>
+								</responseType>
+								<assignList>
+									<assign uuid="4c3b10bb-13c9-4aa3-952b-5163956425eb">
+										<tableNameNoDash>login</tableNameNoDash>
+										<tableNameCapitalized>Login</tableNameCapitalized>
+										<columnBeanList>
+											<columnBean uuid="50176145-3850-4e11-962c-1fff60eeef9e">
+												<columnName>Name</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>Or</nextFieldRative>
+												<nextColumnBean uuid="0ef6f275-09da-4684-a759-68d34a790342">
+													<columnName>Sex</columnName>
+													<columnType>String</columnType>
+													<nextFieldRative>Finished</nextFieldRative>
+													<length>-9223372036854775808</length>
+												</nextColumnBean>
+												<length>-9223372036854775808</length>
+											</columnBean>
+										</columnBeanList>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</assign>
+								</assignList>
+                            </runningMethod>
+                            <includeServiceList>
+								<includeService uuid="39a1ae9e-c636-48a2-86b8-2c41b8546a1d">
+									<serviceId>loginATOMService</serviceId>
+									<serivceType>Login</serivceType>
+									<serviceDescipter>Service Type:Login
+								 index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+									<serviceCategory>ATM</serviceCategory>
+									<annotationBeanList>
+										<annotationBean uuid="5d77e128-cff1-4c01-868e-03dbf01beeb2">
+											<annnoteKey>Transactional</annnoteKey>
+										</annotationBean>
+										<annotationBean uuid="ab936699-a998-461c-90ae-a064ad9458b4">
+											<annnoteKey>Component</annnoteKey>
+										</annotationBean>
+									</annotationBeanList>
+									<includeBeanList>
+										<includeBean uuid="8ad88341-64ea-47d3-9eda-b8ce101f2e23">
+											<tableNameNoDash>login</tableNameNoDash>
+											<tableNameCapitalized>Login</tableNameCapitalized>
+											<columnBeanList/>
+											<hasDateColumn>false</hasDateColumn>
+											<hasBigDecimal>false</hasBigDecimal>
+										</includeBean>
+									</includeBeanList>
+								</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+								<includeBean uuid="6a2057f9-d128-4291-9d8d-9e1de4e6adb7">
+									<tableNameNoDash>login</tableNameNoDash>
+									<tableNameCapitalized>Login</tableNameCapitalized>
+									<columnBeanList/>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </controllerMethod>
+            </controllerMethodList>
+            <includeService uuid="b74e460a-f53c-45a9-a141-3e51794901d5">
+                <serviceId>loginBusinessService</serviceId>
+                <serivceType>Login</serivceType>
+                <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                <serviceCategory>BNS</serviceCategory>
+                <includeServiceList>
+                    <includeService uuid="39a1ae9e-c636-48a2-86b8-2c41b8546a1d">
+                        <serviceId>loginATOMService</serviceId>
+                        <serivceType>Login</serivceType>
+                        <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                        <serviceCategory>ATM</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean uuid="5d77e128-cff1-4c01-868e-03dbf01beeb2">
+<annnoteKey>Transactional</annnoteKey>
+                            </annotationBean>
+                            <annotationBean uuid="ab936699-a998-461c-90ae-a064ad9458b4">
+<annnoteKey>Component</annnoteKey>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <includeBeanList>
+                            <includeBean uuid="8ad88341-64ea-47d3-9eda-b8ce101f2e23">
+								<tableNameNoDash>login</tableNameNoDash>
+								<tableNameCapitalized>Login</tableNameCapitalized>
+								<columnBeanList/>
+								<hasDateColumn>false</hasDateColumn>
+								<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </includeService>
+                </includeServiceList>
+                <includeBeanList>
+                    <includeBean uuid="6a2057f9-d128-4291-9d8d-9e1de4e6adb7">
+                        <tableNameNoDash>login</tableNameNoDash>
+                        <tableNameCapitalized>Login</tableNameCapitalized>
+                        <columnBeanList/>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </includeBean>
+                </includeBeanList>
+            </includeService>
+            <includeBeanList>
+                <includeBean uuid="cecce964-ddd1-492a-9c48-5f2325ed2d49">
+                    <tableNameNoDash>login</tableNameNoDash>
+                    <tableNameCapitalized>Login</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </controller>
+    </controlleres>
+</FrontModule>

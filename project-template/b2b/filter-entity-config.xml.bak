@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TableColumnConfig uuid="d57fe56f-1976-4942-9275-1f34650a7020-com.ndl.framework.workbrench.define.TableColumnConfig-3">
+    <excludeBeanList/>
+        <transientBeanList>
+			<transientBean uuid="5bc8df70-4a19-465f-8989-7d5a979b0442-com.ndl.framework.workbrench.define.TransientBean-1">
+				<tableNameCapitalized>B2bShoppingCart</tableNameCapitalized>
+				<tableName>b2b_shopping_cart</tableName>
+				<columnBeanList>
+					<columnBean uuid="6a1bbf63-4d7d-461b-a6aa-c5a62937aaa5-com.ndl.framework.workbrench.define.ColumnBean-1">
+						<columnNameNoDash>cartPackage</columnNameNoDash>
+						<columnNameCapitalized>CartPackage</columnNameCapitalized>
+						<columnType>B2bShoppingCartPkg</columnType>
+						<nextFieldRative>Finished</nextFieldRative>
+						<columnKey>TST</columnKey>
+						<fieldType>LIST</fieldType>
+						<length>0</length>
+					</columnBean>
+				</columnBeanList>
+				<excludeColumnList/>
+			</transientBean>
+			<transientBean uuid="5bc8df70-4a19-465f-8989-7d5a979b0442-com.ndl.framework.workbrench.define.TransientBean-1">
+				<tableNameCapitalized>B2bShoppingCartPkg</tableNameCapitalized>
+				<tableName>b2b_shopping_cart</tableName>
+				<columnBeanList>
+					<columnBean uuid="6a1bbf63-4d7d-461b-a6aa-c5a62937aaa5-com.ndl.framework.workbrench.define.ColumnBean-1">
+						<columnNameNoDash>cartItem</columnNameNoDash>
+						<columnNameCapitalized>cartItem</columnNameCapitalized>
+						<columnType>B2bShoppingCartDetail</columnType>
+						<nextFieldRative>Finished</nextFieldRative>
+						<columnKey>TST</columnKey>
+						<fieldType>LIST</fieldType>
+						<length>0</length>
+					</columnBean>
+				</columnBeanList>
+				<excludeColumnList/>
+			</transientBean>
+    </transientBeanList>
+	 <excludeColomnFramework>
+        <excludeColomn>version</excludeColomn>
+        <excludeColomn>syn_version</excludeColomn>
+        
+		<excludeColomn>create_by</excludeColomn>
+		
+        <excludeColomn>create_time</excludeColomn>
+		<excludeColomn>update_by</excludeColomn>
+        <excludeColomn>update_time</excludeColomn>
+		
+		<excludeColomn>is_syn</excludeColomn>
+		<excludeColomn>initSeq</excludeColomn>
+
+		<excludeColomn>version</excludeColomn>
+        <excludeColomn>synVersion</excludeColomn>
+        
+		<excludeColomn>createBy</excludeColomn>
+		
+        <excludeColomn>createTime</excludeColomn>
+		<excludeColomn>updateBy</excludeColomn>
+        <excludeColomn>updateTime</excludeColomn>
+		
+		<excludeColomn>isSyn</excludeColomn>
+		<excludeColomn>initSeq</excludeColomn>
+    </excludeColomnFramework>
+    <filterBeanList>
+		<filterBean uuid="13395bd6-4a6b-4d72-a2db-6cc55b37f1e3-com.ndl.framework.workbrench.define.TransientBean-0">
+            <tableName>b2b_product_client</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="13395bd6-4a6b-4d72-a2db-6cc55b37f1e3-com.ndl.framework.workbrench.define.TransientBean-1">
+            <tableName>b2b_delivery_address</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="c1790cbe-7ad5-41df-96a0-2d514d237546-com.ndl.framework.workbrench.define.TransientBean-2">
+            <tableName>b2b_inventory_delivery</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-3">
+            <tableName>b2b_inventory_head</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-4">
+            <tableName>b2b_inventory_storage</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-5">
+            <tableName>b2b_logistics_line</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-6">
+            <tableName>b2b_logistics_order_delivery</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-7">
+            <tableName>b2b_logistics_realtime</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-8">
+            <tableName>b2b_order</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-9">
+            <tableName>b2b_order_delivery</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-10">
+            <tableName>b2b_order_item</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-11">
+            <tableName>b2b_order_pkg</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-12">
+            <tableName>b2b_order_rmt_detail</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-13">
+            <tableName>b2b_order_rmt_pkg</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-14">
+            <tableName>b2b_order_status_his</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-15">
+            <tableName>b2b_price_category_detail</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-16">
+            <tableName>b2b_price_category_detail_his</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-17">
+            <tableName>b2b_price_category_head</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-18">
+            <tableName>b2b_pro_category</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-19">
+            <tableName>b2b_product</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-20">
+            <tableName>b2b_shopping_cart</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-21">
+            <tableName>b2b_shopping_cart_detail</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-22">
+            <tableName>b2b_shopping_cart_pkg</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-23">
+            <tableName>b2b_supplier_agency</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+
+	<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-24">
+            <tableName>b2b_supplier_card_account</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+    </filterBeanList>
+    
+</TableColumnConfig>

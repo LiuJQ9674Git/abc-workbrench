@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TableColumnConfig uuid="d57fe56f-1976-4942-9275-1f34650a7020-com.ndl.framework.workbrench.define.TableColumnConfig-3">
+
+   	 <excludeColomnFramework>
+        <excludeColomn>version</excludeColomn>
+        <excludeColomn>syn_version</excludeColomn>
+		<excludeColomn>is_syn</excludeColomn>
+		<excludeColomn>initSeq</excludeColomn>
+		<excludeColomn>synVersion</excludeColomn>
+		<excludeColomn>isSyn</excludeColomn>
+
+        <!--
+		<excludeColomn>create_by</excludeColomn>
+		
+        <excludeColomn>create_time</excludeColomn>
+		<excludeColomn>update_by</excludeColomn>
+        <excludeColomn>update_time</excludeColomn>
+		-->
+		<excludeColomn>is_syn</excludeColomn>
+		<excludeColomn>initSeq</excludeColomn>
+    </excludeColomnFramework>
+    <filterBeanList>
+		<filterBean uuid="13395bd6-4a6b-4d72-a2db-6cc55b37f1e3-com.ndl.framework.workbrench.define.TransientBean-0">
+            <tableName>cw_alert</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="13395bd6-4a6b-4d72-a2db-6cc55b37f1e3-com.ndl.framework.workbrench.define.TransientBean-1">
+            <tableName>cw_collection</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="c1790cbe-7ad5-41df-96a0-2d514d237546-com.ndl.framework.workbrench.define.TransientBean-2">
+            <tableName>cw_comment</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-3">
+            <tableName>cw_donation</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-4">
+            <tableName>cw_for_help_msg</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-5">
+            <tableName>cw_hold_activity_msg</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-6">
+            <tableName>cw_hold_activity_msg</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-7">
+            <tableName>cw_user_extend</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-8">
+            <tableName>cw_work_job</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-9">
+            <tableName>cm_employee</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-10">
+            <tableName>cm_restaurant</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		 <filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-10">
+            <tableName>cm_role</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-10">
+            <tableName>cm_role_user</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+    </filterBeanList>
+    
+</TableColumnConfig>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleAtomTemplate>
+    <moduleName>testFrontPackage</moduleName>
+    <frontTemplates>
+        <frontTemplate>
+            <comment>Controller Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</comment>
+            <className>LoginBeanController</className>
+            <componentCategory>POST</componentCategory>
+            <includeClasses>
+                <includeClass>LoginBeanBusinessService</includeClass>
+                <includeClass>Login</includeClass>
+            </includeClasses>
+            <headerAnnotations>
+                <headerAnnotation>@Controller</headerAnnotation>
+                <headerAnnotation>@Controller("loginBeanController")</headerAnnotation>
+                <headerAnnotation>@RequestMapping("login")</headerAnnotation>
+            </headerAnnotations>
+            <instanceAnnotations/>
+            <methodDescripterMap>
+                <entry>
+                    <key>public  Login login(  String  name ,   String  password)</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>queryLogin</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:LoginBeanController* serviceCategory:POSTtoLogin
+**/</comment>
+                        <signatureEntirety>public  Login login(  String  name ,   String  password)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>name</fieldName>
+<fieldNameSetter>Name</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>Password</columnName>
+<fieldName>password</fieldName>
+<fieldNameSetter>Password</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Login checkLogin(  String  name ,   String  sex)</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>loginBySex</annoteValue>
+                        </methodHeaderAnnotation>
+                        <signatureEntirety>public  Login checkLogin(  String  name ,   String  sex)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>Name</columnName>
+<fieldName>name</fieldName>
+<fieldNameSetter>Name</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Or</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>Sex</columnName>
+<fieldName>sex</fieldName>
+<fieldNameSetter>Sex</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+            </methodDescripterMap>
+        </frontTemplate>
+    </frontTemplates>
+</moduleAtomTemplate>

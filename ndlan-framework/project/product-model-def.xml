@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+	<module><!-- 多个模块 -->
+		<front><!-- 一级功能，需求描述 -->
+		    <controller><!-- 功能点，多个front，即默认为表名，或者Domain -->
+		        <controllerType></controllerType>
+		        <controllerId></controllerId>
+		        <callBusinessService>
+			          <serviceId></serviceId>
+			          <serviceName></serviceName>
+			    </callBusinessService>
+		        <controlletMethods>
+		            <method><!-- 多个方法 -->
+			            <signature></signature>
+			            <signatureDescripter></signatureDescripter>
+			            <assign><!-- 一个赋值 -->
+			                <signSEQ><!-- 签名名称与类型，以|分隔 -->
+				                <assignName></assignName>
+				                <assignType></assignType>
+				                <isRequestBody></isRequestBody>
+				                <assignDomain></assignDomain>
+			                </signSEQ>
+			                <isGet></isGet>
+			                <isPost></isPost>
+			            </assign>
+			            <responseType></responseType>
+			            
+			        </method>
+		        </controlletMethods>
+		    </controller>
+		</front>
+
+		<businssService><!-- 一级功能， 需求描述-->
+		    <serivce><!--功能点， 多个业务服务，默认为表名，或者Domain -->
+		        <serivceType></serivceType>
+		        <serviceId></serviceId>
+		        <serivceMethods>
+		             <method>
+			            <signature></signature>
+			            <signatureDescripter></signatureDescripter>
+			            <assign>
+			                 <signSEQ>
+				                <assignName></assignName>
+				                <assignType></assignType>
+				                <assignDomain></assignDomain>
+			                </signSEQ>
+			            </assign>
+			            <responseType></responseType>
+			            <callAtomServices>
+			                <atomService>
+			                    <serviceId></serviceId>
+			                	<serviceName></serviceName>
+			                </atomService>
+			            </callAtomServices>
+			             <callBusinessServices>
+			                <businessService>
+			                    <serviceId></serviceId>
+			                	<serviceName></serviceName>
+			                </businessService>
+			            </callBusinessServices>
+			        </method>
+		        </serivceMethods>
+		    </serivce>
+		    
+		</businssService>
+
+		<atomService>
+		    <serivce><!--功能点， 多个业务服务，默认为表名，或者Domain -->
+		        <serivceType></serivceType>
+		        <serviceId></serviceId>
+		        <serivceMethods>
+		             <method>
+			            <signature></signature>
+			            <signatureDescripter></signatureDescripter>
+			            <assign>
+			                 <signSEQ>
+				                <assignName></assignName>
+				                <assignType></assignType>
+				                <assignDomain></assignDomain>
+			                </signSEQ>
+			            </assign>
+			            <responseType></responseType>
+			            <callDaos>
+			                <dao>
+			                    <daoId></daoId>
+			                	<daoName></daoName>
+			                	<daoType></daoType><!-- jpa/mybatis/jdbc -->
+			                </dao>
+			            </callDaos>
+			        </method>
+		        </serivceMethods>
+		    </serivce>
+		</atomService>
+		
+		<repository>
+		    <jpa><!-- 多个 -->
+		        <daoId></daoId>
+		        <daoName></daoName>
+		        <daoMethods><!-- 多个方法 -->
+		            <method>
+			            <signature></signature>
+			            <signatureDescripter></signatureDescripter>
+			            <assign>
+			                 <signSEQ>
+				                <assignName></assignName>
+				                <assignType></assignType>
+				                <query></query>
+			                </signSEQ>
+			            </assign>
+			            <responseType></responseType>
+			           </method>
+			        </daoMethods>
+		    </jpa>
+		    <mybatis>
+		        <daoId></daoId>
+		        <daoName></daoName>
+		        <daoMethods><!-- 多个方法 -->
+		            <method>
+			            <signature></signature>
+			            <signatureDescripter></signatureDescripter>
+			            <assign>
+			                 <signSEQ>
+				                <assignName></assignName>
+				                <assignType></assignType>
+				                <query></query>
+			                </signSEQ>
+			            </assign>
+			            <responseType></responseType>
+			           </method>
+			        </daoMethods>
+		    </mybatis>
+		     <jdbc>
+		        <daoId></daoId>
+		        <daoName></daoName>
+		        <daoMethods><!-- 多个方法 -->
+		            <method>
+			            <signature></signature>
+			            <signatureDescripter></signatureDescripter>
+			            <assign>
+			                 <signSEQ>
+				                <assignName></assignName>
+				                <assignType></assignType>
+				                <query></query>
+			                </signSEQ>
+			            </assign>
+			            <responseType></responseType>
+			           </method>
+			        </daoMethods>
+		    </jdbc>
+		</repository>
+		
+		<entity><!-- 多个 -->
+		    <entityName></entityName>
+		    <entityType></entityType>
+		    <exculdeColumn>
+				<column>
+				    <columnId></columnId>
+		            <columnName></columnName>
+	        		<columnDescript></columnDescript>
+	            </column>
+		    </exculdeColumn>
+		     <filterColumn>
+				<column>
+				    <columnId></columnId>
+		            <columnName></columnName>
+	        		<columnDescript></columnDescript>
+		        </column>
+		    </filterColumn>
+		    <includeBeans>
+		         <transient><!-- 多个 -->
+		            <beanId></beanId>
+		        	<beanName></beanName>
+		        	<beanType></beanType><!-- 一个，多个 -->
+		    	 </transient>
+		    </includeBeans>
+		</entity>
+		<domain><!-- 多个 -->
+		    <domainName></domainName>
+		    <domaminType></domaminType><!--  -->
+		    <filed>
+		         <filedType></filedType>
+		         <filedName></filedName>
+		         <filedDescript></filedDescript>
+		    </filed>
+		   
+		    <entity><!-- 多个 -->
+		        <entityId></entityId>
+		        <entityName></entityName>
+		        <entityType></entityType><!-- 一个，多个 -->
+		        <entityDescripter></entityDescripter>
+		    </entity>
+		</domain>
+	</module>
+	
+</product>
+	
+	

@@ -1,0 +1,2357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AtomOrRepositoryPackage uuid="66556316-479a-4f24-ae73-b453e0d23438-com.ndl.framework.workbrench.define.AtomOrRepositoryPackage-2">
+    <atomServices>
+        <atomService uuid="dfe1cf62-4bb0-4633-b547-319c21b09c20-com.ndl.framework.workbrench.define.ServiceBean-0">
+            <serviceId>orderBeanAtomService</serviceId>
+            <serivceType>OrderBeanAtomService</serivceType>
+            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+            <serviceCategory>ATM</serviceCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Component</annnoteKey>
+                    <annoteValue>orderBusinessService</annoteValue>
+                </annotationBean>
+                <annotationBean>
+                    <annnoteKey>Transactional</annnoteKey>
+                </annotationBean>
+            </annotationBeanList>
+            <instanceAnnotationBeanList>
+                <instanceAnnotationBean>
+                    <annnoteKey>Qualifier</annnoteKey>
+                    <annoteValue>orderHeaderJPABeanDao</annoteValue>
+                    <annoteType>OrderHeaderJPABeanDao</annoteType>
+                </instanceAnnotationBean>
+                <instanceAnnotationBean>
+                    <annnoteKey>Autowired</annnoteKey>
+                    <annoteValue>orderItemJPABeanDao</annoteValue>
+                    <annoteType>OrderItemJPABeanDao</annoteType>
+                </instanceAnnotationBean>
+                <instanceAnnotationBean>
+                    <annnoteKey>Qualifier</annnoteKey>
+                    <annoteValue>orderHeaderJPABeanDao</annoteValue>
+                    <annoteType>OrderHeaderJPABeanDao</annoteType>
+                </instanceAnnotationBean>
+                <instanceAnnotationBean>
+                    <annnoteKey>Qualifier</annnoteKey>
+                    <annoteValue>orderItemBeanAtomService</annoteValue>
+                    <annoteType>OrderItemBeanAtomService</annoteType>
+                </instanceAnnotationBean>
+            </instanceAnnotationBeanList>
+            <serviceMethodList>
+                <serviceMethod uuid="7ef10004-9a04-43ce-ba86-7c61545a4ade-com.ndl.framework.workbrench.define.MethodBean-15">
+                    <signature>queryBusinessOrderByOrderNameAndPageSize</signature>
+                    <signatureDescripter>查询订单头方法</signatureDescripter>
+                    <responseType uuid="f8ce5450-7f74-4446-b7c9-64de24d6b65a-com.ndl.framework.workbrench.define.ColumnBean-3523">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>Order</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>JPA</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="6b991594-2050-4da5-b2ce-abe9ea7e9157-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-6">
+                        <next>1097e95c-353b-47bb-a27f-810b8f32cbae-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-8</next>
+                        <fromDaoBean>a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1</fromDaoBean>
+                        <toDaoBean>a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1</toDaoBean>
+                        <fromMethod>7ef10004-9a04-43ce-ba86-7c61545a4ade-com.ndl.framework.workbrench.define.MethodBean-15</fromMethod>
+                        <toMethod>c5f0a919-a37b-4c58-aed8-594d6a52b49c-com.ndl.framework.workbrench.define.MethodBean-16</toMethod>
+                        <fromTableBean>f1190095-efd1-4eae-b6d8-a4c4dfe69847-com.ndl.framework.workbrench.define.TableBean-199</fromTableBean>
+                        <fromColumnBean uuid="c34196db-aebd-4901-900f-fe8c24e9cd66-com.ndl.framework.workbrench.define.ColumnBean-3515">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="d35b4846-8706-4f1b-9d15-3a468fed2671-com.ndl.framework.workbrench.define.ColumnBean-3516">
+<columnName></columnName>
+<columnNameNoDash>productId</columnNameNoDash>
+<columnNameCapitalized>ProductId</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="1c188830-66c7-40ee-b9df-8e0107a87c7e-com.ndl.framework.workbrench.define.ColumnBean-3517">
+    <columnName></columnName>
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </fromColumnBean>
+                        <fromResultType uuid="5ec74a20-0b35-4388-94c8-e38a2f4c6d00-com.ndl.framework.workbrench.define.ColumnBean-3518">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Order</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_OUTER</returnTypeCall>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="5ec74a20-0b35-4388-94c8-e38a2f4c6d00-com.ndl.framework.workbrench.define.ColumnBean-3518">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Order</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_OUTER</returnTypeCall>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <toTableBean uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+<columnName></columnName>
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash>orderName</referNameNoDash>
+<referNameCapitalized>OrderName</referNameCapitalized>
+<referType>String</referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+    <columnName></columnName>
+    <columnNameNoDash>productId</columnNameNoDash>
+    <columnNameCapitalized>ProductId</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash>productId</referNameNoDash>
+    <referNameCapitalized>ProductId</referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+        <columnName></columnName>
+        <columnNameNoDash>pageSize</columnNameNoDash>
+        <columnNameCapitalized>PageSize</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </toTableBean>
+                        <toColumnBean uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash>orderName</referNameNoDash>
+                            <referNameCapitalized>OrderName</referNameCapitalized>
+                            <referType>String</referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+<columnName></columnName>
+<columnNameNoDash>productId</columnNameNoDash>
+<columnNameCapitalized>ProductId</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash>productId</referNameNoDash>
+<referNameCapitalized>ProductId</referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+    <columnName></columnName>
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </toColumnBean>
+                        <toResultType uuid="561dc251-9cdf-481f-b4ad-3dda0969bfbf-com.ndl.framework.workbrench.define.ColumnBean-3522">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderHeader</columnNameNoDash>
+                            <columnNameCapitalized>OrderHeader</columnNameCapitalized>
+                            <columnType>OrderHeader</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_INTER</returnTypeCall>
+                            <extra>String</extra>
+                            <fieldType>MAPKEY</fieldType>
+                            <length>0</length>
+                        </toResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>Query</annnoteKey>
+                        <annoteValue>queryBusinessOrderByOrderNameAndPageSize</annoteValue>
+                    </annotationBean>
+                    <callMajorDAOService uuid="a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1">
+                        <daoId>orderHeaderJPABeanDao</daoId>
+                        <daoType>OrderHeaderJPABeanDao</daoType>
+                        <daoDescipter>订单业务的增删改查</daoDescipter>
+                        <daoCategory>JPA</daoCategory>
+                        <runningMethod uuid="fb8d76d4-e1f7-4f52-a6e7-0bae71167def-com.ndl.framework.workbrench.define.MethodBean-17">
+                            <signature>queryAtomByOrderNameAndPageSize</signature>
+                            <responseType uuid="561dc251-9cdf-481f-b4ad-3dda0969bfbf-com.ndl.framework.workbrench.define.ColumnBean-3522">
+<columnName></columnName>
+<columnNameNoDash>orderHeader</columnNameNoDash>
+<columnNameCapitalized>OrderHeader</columnNameCapitalized>
+<columnType>OrderHeader</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<returnTypeCall>CALL_INTER</returnTypeCall>
+<extra>String</extra>
+<fieldType>MAPKEY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>JPA</catetory>
+                            <assign uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+    <columnName></columnName>
+    <columnNameNoDash>orderName</columnNameNoDash>
+    <columnNameCapitalized>OrderName</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash>orderName</referNameNoDash>
+    <referNameCapitalized>OrderName</referNameCapitalized>
+    <referType>String</referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+        <columnName></columnName>
+        <columnNameNoDash>productId</columnNameNoDash>
+        <columnNameCapitalized>ProductId</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash>productId</referNameNoDash>
+        <referNameCapitalized>ProductId</referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+            <columnName></columnName>
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Qualifier</annnoteKey>
+<annoteValue>orderHeaderJPABeanDao</annoteValue>
+<annoteType>OrderHeaderJPABeanDao</annoteType>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <includeBeanList>
+                            <includeBean uuid="87f18106-39d6-4b64-a410-da641cd92d29-com.ndl.framework.workbrench.define.TableBean-165">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </callMajorDAOService>
+                    <assign uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+                        <tableNameNoDash>orderHeader</tableNameNoDash>
+                        <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash>orderName</referNameNoDash>
+                            <referNameCapitalized>OrderName</referNameCapitalized>
+                            <referType>String</referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+<columnName></columnName>
+<columnNameNoDash>productId</columnNameNoDash>
+<columnNameCapitalized>ProductId</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash>productId</referNameNoDash>
+<referNameCapitalized>ProductId</referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+    <columnName></columnName>
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callDAOServiceList>
+                        <callDAOService uuid="a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1">
+                            <daoId>orderHeaderJPABeanDao</daoId>
+                            <daoType>OrderHeaderJPABeanDao</daoType>
+                            <daoDescipter>订单业务的增删改查</daoDescipter>
+                            <daoCategory>JPA</daoCategory>
+                            <runningMethod uuid="fb8d76d4-e1f7-4f52-a6e7-0bae71167def-com.ndl.framework.workbrench.define.MethodBean-17">
+<signature>queryAtomByOrderNameAndPageSize</signature>
+<responseType uuid="561dc251-9cdf-481f-b4ad-3dda0969bfbf-com.ndl.framework.workbrench.define.ColumnBean-3522">
+    <columnName></columnName>
+    <columnNameNoDash>orderHeader</columnNameNoDash>
+    <columnNameCapitalized>OrderHeader</columnNameCapitalized>
+    <columnType>OrderHeader</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <returnTypeCall>CALL_INTER</returnTypeCall>
+    <extra>String</extra>
+    <fieldType>MAPKEY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>JPA</catetory>
+<assign uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+        <columnName></columnName>
+        <columnNameNoDash>orderName</columnNameNoDash>
+        <columnNameCapitalized>OrderName</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash>orderName</referNameNoDash>
+        <referNameCapitalized>OrderName</referNameCapitalized>
+        <referType>String</referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+            <columnName></columnName>
+            <columnNameNoDash>productId</columnNameNoDash>
+            <columnNameCapitalized>ProductId</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash>productId</referNameNoDash>
+            <referNameCapitalized>ProductId</referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                <columnName></columnName>
+                <columnNameNoDash>pageSize</columnNameNoDash>
+                <columnNameCapitalized>PageSize</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>Finished</nextFieldRative>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>ENTITY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Qualifier</annnoteKey>
+    <annoteValue>orderHeaderJPABeanDao</annoteValue>
+    <annoteType>OrderHeaderJPABeanDao</annoteType>
+</annotationBean>
+                            </annotationBeanList>
+                            <includeBeanList>
+<includeBean uuid="87f18106-39d6-4b64-a410-da641cd92d29-com.ndl.framework.workbrench.define.TableBean-165">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callDAOService>
+                    </callDAOServiceList>
+                </serviceMethod>
+                <serviceMethod uuid="332fb073-dd0c-4c22-91a0-6c7d73377e0a-com.ndl.framework.workbrench.define.MethodBean-18">
+                    <signature>queryBusinessOrderItemByOrderNameAndPageSize</signature>
+                    <signatureDescripter>查询订单头方法</signatureDescripter>
+                    <responseType uuid="8f11e46e-a097-496c-b9ea-2ac33dc648c4-com.ndl.framework.workbrench.define.ColumnBean-3528">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>Order</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>ATM</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="2c3ac13a-5298-42aa-b2c9-5b9d948aa5b7-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-9">
+                        <next>90d3f88e-8814-4c2e-bd6d-0cda15695543-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-11</next>
+                        <fromServiceBean>d1855771-dcf9-4413-8eba-31b71d40b600-com.ndl.framework.workbrench.define.ServiceBean-6</fromServiceBean>
+                        <fromMethod>332fb073-dd0c-4c22-91a0-6c7d73377e0a-com.ndl.framework.workbrench.define.MethodBean-18</fromMethod>
+                        <toMethod>281d049e-54d0-4655-98f7-abe8ad978402-com.ndl.framework.workbrench.define.MethodBean-19</toMethod>
+                        <fromTableBean>3a0e2a27-ad35-4964-86f2-9cde3a944424-com.ndl.framework.workbrench.define.TableBean-201</fromTableBean>
+                        <fromColumnBean uuid="c34196db-aebd-4901-900f-fe8c24e9cd66-com.ndl.framework.workbrench.define.ColumnBean-3515">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="d35b4846-8706-4f1b-9d15-3a468fed2671-com.ndl.framework.workbrench.define.ColumnBean-3516">
+<columnName></columnName>
+<columnNameNoDash>productId</columnNameNoDash>
+<columnNameCapitalized>ProductId</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="1c188830-66c7-40ee-b9df-8e0107a87c7e-com.ndl.framework.workbrench.define.ColumnBean-3517">
+    <columnName></columnName>
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </fromColumnBean>
+                        <fromResultType uuid="5ec74a20-0b35-4388-94c8-e38a2f4c6d00-com.ndl.framework.workbrench.define.ColumnBean-3518">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Order</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_OUTER</returnTypeCall>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="5ec74a20-0b35-4388-94c8-e38a2f4c6d00-com.ndl.framework.workbrench.define.ColumnBean-3518">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Order</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_OUTER</returnTypeCall>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <toServiceBean>d1855771-dcf9-4413-8eba-31b71d40b600-com.ndl.framework.workbrench.define.ServiceBean-6</toServiceBean>
+                        <toTableBean uuid="a10737dc-09ba-470e-855c-de8eba9785b9-com.ndl.framework.workbrench.define.TableBean-204">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <methodArugment uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+<columnName></columnName>
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+    <columnName></columnName>
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </toTableBean>
+                        <toColumnBean uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+<columnName></columnName>
+<columnNameNoDash>pageSize</columnNameNoDash>
+<columnNameCapitalized>PageSize</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </toColumnBean>
+                        <toResultType uuid="3ea9a09e-749a-48c5-9470-adf947cc81b5-com.ndl.framework.workbrench.define.ColumnBean-3527">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderItem</columnNameNoDash>
+                            <columnNameCapitalized>OrderItem</columnNameCapitalized>
+                            <columnType>OrderItem</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_INTER</returnTypeCall>
+                            <fieldType>LIST</fieldType>
+                            <length>0</length>
+                        </toResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>Transactional</annnoteKey>
+                        <annoteValue>queryBusinessOrderItemByOrderNameAndPageSize</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="d1855771-dcf9-4413-8eba-31b71d40b600-com.ndl.framework.workbrench.define.ServiceBean-6">
+                        <serviceId>orderItemBeanAtomService</serviceId>
+                        <serivceType>OrderItemBeanAtomService</serivceType>
+                        <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                        <serviceCategory>ATM</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Transactional</annnoteKey>
+                            </annotationBean>
+                            <annotationBean>
+<annnoteKey>Component</annnoteKey>
+<annoteValue>order</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean>
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>orderItemJPABeanDao</annoteValue>
+<annoteType>OrderItemJPABeanDao</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <runningMethod uuid="f726b433-e798-40bf-8166-5c83c6b1f224-com.ndl.framework.workbrench.define.MethodBean-20">
+                            <signature>queryAtomByOrderNameAndPageSize</signature>
+                            <responseType uuid="3ea9a09e-749a-48c5-9470-adf947cc81b5-com.ndl.framework.workbrench.define.ColumnBean-3527">
+<columnName></columnName>
+<columnNameNoDash>orderItem</columnNameNoDash>
+<columnNameCapitalized>OrderItem</columnNameCapitalized>
+<columnType>OrderItem</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<returnTypeCall>CALL_INTER</returnTypeCall>
+<fieldType>LIST</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>ATM</catetory>
+                            <assign uuid="a10737dc-09ba-470e-855c-de8eba9785b9-com.ndl.framework.workbrench.define.TableBean-204">
+<tableNameNoDash>orderItem</tableNameNoDash>
+<tableNameCapitalized>OrderItem</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+    <columnName></columnName>
+    <columnNameNoDash>orderName</columnNameNoDash>
+    <columnNameCapitalized>OrderName</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+        <columnName></columnName>
+        <columnNameNoDash>pageSize</columnNameNoDash>
+        <columnNameCapitalized>PageSize</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <includeBeanList>
+                            <includeBean uuid="18113d07-1362-4915-b094-f1e3509f0879-com.ndl.framework.workbrench.define.TableBean-202">
+<tableNameNoDash>orderItem</tableNameNoDash>
+<tableNameCapitalized>OrderItem</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                        <includeDaoList>
+                            <includeDao uuid="8c02e029-0efd-4b53-920a-66d65fd52dcf-com.ndl.framework.workbrench.define.DaoBean-12">
+<daoId>orderItemJPABeanDao</daoId>
+<daoType>OrderItemJPABeanDao</daoType>
+<daoDescipter>订单业务的增删改查</daoDescipter>
+<daoCategory>JPA</daoCategory>
+<annotationBeanList>
+    <annotationBean>
+        <annnoteKey>Repository</annnoteKey>
+        <annoteValue>orderItemJPABeanDao</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<includeBeanList>
+    <includeBean uuid="2bf59ef1-bc03-4bdb-af9d-9a6a9cc59a17-com.ndl.framework.workbrench.define.TableBean-203">
+        <tableNameNoDash>orderItem</tableNameNoDash>
+        <tableNameCapitalized>OrderItem</tableNameCapitalized>
+        <columnBeanList/>
+        <transientColumnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+                            </includeDao>
+                        </includeDaoList>
+                    </calleeMajorService>
+                    <assign uuid="a10737dc-09ba-470e-855c-de8eba9785b9-com.ndl.framework.workbrench.define.TableBean-204">
+                        <tableNameNoDash>orderItem</tableNameNoDash>
+                        <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+<columnName></columnName>
+<columnNameNoDash>pageSize</columnNameNoDash>
+<columnNameCapitalized>PageSize</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callAtomServicesList>
+                        <callAtomService uuid="d1855771-dcf9-4413-8eba-31b71d40b600-com.ndl.framework.workbrench.define.ServiceBean-6">
+                            <serviceId>orderItemBeanAtomService</serviceId>
+                            <serivceType>OrderItemBeanAtomService</serivceType>
+                            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                            <serviceCategory>ATM</serviceCategory>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Transactional</annnoteKey>
+</annotationBean>
+<annotationBean>
+    <annnoteKey>Component</annnoteKey>
+    <annoteValue>order</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <instanceAnnotationBeanList>
+<instanceAnnotationBean>
+    <annnoteKey>Autowired</annnoteKey>
+    <annoteValue>orderItemJPABeanDao</annoteValue>
+    <annoteType>OrderItemJPABeanDao</annoteType>
+</instanceAnnotationBean>
+                            </instanceAnnotationBeanList>
+                            <runningMethod uuid="f726b433-e798-40bf-8166-5c83c6b1f224-com.ndl.framework.workbrench.define.MethodBean-20">
+<signature>queryAtomByOrderNameAndPageSize</signature>
+<responseType uuid="3ea9a09e-749a-48c5-9470-adf947cc81b5-com.ndl.framework.workbrench.define.ColumnBean-3527">
+    <columnName></columnName>
+    <columnNameNoDash>orderItem</columnNameNoDash>
+    <columnNameCapitalized>OrderItem</columnNameCapitalized>
+    <columnType>OrderItem</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <returnTypeCall>CALL_INTER</returnTypeCall>
+    <fieldType>LIST</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>ATM</catetory>
+<assign uuid="a10737dc-09ba-470e-855c-de8eba9785b9-com.ndl.framework.workbrench.define.TableBean-204">
+    <tableNameNoDash>orderItem</tableNameNoDash>
+    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+        <columnName></columnName>
+        <columnNameNoDash>orderName</columnNameNoDash>
+        <columnNameCapitalized>OrderName</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+            <columnName></columnName>
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <includeBeanList>
+<includeBean uuid="18113d07-1362-4915-b094-f1e3509f0879-com.ndl.framework.workbrench.define.TableBean-202">
+    <tableNameNoDash>orderItem</tableNameNoDash>
+    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                            <includeDaoList>
+<includeDao uuid="8c02e029-0efd-4b53-920a-66d65fd52dcf-com.ndl.framework.workbrench.define.DaoBean-12">
+    <daoId>orderItemJPABeanDao</daoId>
+    <daoType>OrderItemJPABeanDao</daoType>
+    <daoDescipter>订单业务的增删改查</daoDescipter>
+    <daoCategory>JPA</daoCategory>
+    <annotationBeanList>
+        <annotationBean>
+            <annnoteKey>Repository</annnoteKey>
+            <annoteValue>orderItemJPABeanDao</annoteValue>
+        </annotationBean>
+    </annotationBeanList>
+    <includeBeanList>
+        <includeBean uuid="2bf59ef1-bc03-4bdb-af9d-9a6a9cc59a17-com.ndl.framework.workbrench.define.TableBean-203">
+            <tableNameNoDash>orderItem</tableNameNoDash>
+            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+            <columnBeanList/>
+            <transientColumnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </includeBean>
+    </includeBeanList>
+</includeDao>
+                            </includeDaoList>
+                        </callAtomService>
+                    </callAtomServicesList>
+                </serviceMethod>
+                <serviceMethod uuid="2f27123d-c53f-4af7-8664-62da49c71b5d-com.ndl.framework.workbrench.define.MethodBean-0">
+                    <signature>queryBusinessByOrderNameAndPageSize</signature>
+                    <signatureDescripter>查询订单头方法</signatureDescripter>
+                    <responseType uuid="0a6c308f-d075-4b51-be90-96e2f7010711-com.ndl.framework.workbrench.define.ColumnBean-3440">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>Order</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>JPA</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="312e27a4-a045-4d85-9fc8-447c782488a9-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-0">
+                        <next>90cdff3a-ca79-4c26-9a5b-0a2cc4a54c75-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-2</next>
+                        <fromDaoBean>a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1</fromDaoBean>
+                        <toDaoBean>a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1</toDaoBean>
+                        <fromMethod>2f27123d-c53f-4af7-8664-62da49c71b5d-com.ndl.framework.workbrench.define.MethodBean-0</fromMethod>
+                        <toMethod>c2868e6b-cab5-4d40-b7b5-339bfd0f0ada-com.ndl.framework.workbrench.define.MethodBean-1</toMethod>
+                        <fromTableBean>931b44d1-467d-4d55-a534-b693bf66cb3d-com.ndl.framework.workbrench.define.TableBean-164</fromTableBean>
+                        <fromColumnBean uuid="a521cb22-73d8-45eb-8082-321f6c4a9771-com.ndl.framework.workbrench.define.ColumnBean-3434">
+                            <columnName>OrderName</columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="099b189f-afad-492b-b36c-a0119016009a-com.ndl.framework.workbrench.define.ColumnBean-3435">
+<columnName>PageSize</columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </fromColumnBean>
+                        <fromResultType uuid="422d1080-aa76-4caa-b5a3-d16a3877854f-com.ndl.framework.workbrench.define.ColumnBean-3436">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Order</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="422d1080-aa76-4caa-b5a3-d16a3877854f-com.ndl.framework.workbrench.define.ColumnBean-3436">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Order</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <toTableBean uuid="7fbb1927-e319-4cf3-8326-3f53f731d110-com.ndl.framework.workbrench.define.TableBean-166">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <methodArugment uuid="be5853d1-0039-4ba2-857f-ce92599c24b4-com.ndl.framework.workbrench.define.ColumnBean-3437">
+<columnName>OrderName</columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="0ae182f8-79f0-4e96-a359-861f0b5d7dca-com.ndl.framework.workbrench.define.ColumnBean-3438">
+    <columnName>PageSize</columnName>
+    <columnNameNoDash></columnNameNoDash>
+    <columnNameCapitalized></columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </toTableBean>
+                        <toColumnBean uuid="be5853d1-0039-4ba2-857f-ce92599c24b4-com.ndl.framework.workbrench.define.ColumnBean-3437">
+                            <columnName>OrderName</columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="0ae182f8-79f0-4e96-a359-861f0b5d7dca-com.ndl.framework.workbrench.define.ColumnBean-3438">
+<columnName>PageSize</columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </toColumnBean>
+                        <toResultType uuid="5f495f94-caf3-4cd2-9d02-cd81fc201a58-com.ndl.framework.workbrench.define.ColumnBean-3439">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>OrderHeader</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </toResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>Query</annnoteKey>
+                        <annoteValue>queryBusinessByOrderNameAndPageSize</annoteValue>
+                    </annotationBean>
+                    <callMajorDAOService uuid="a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1">
+                        <daoId>orderHeaderJPABeanDao</daoId>
+                        <daoType>OrderHeaderJPABeanDao</daoType>
+                        <daoDescipter>订单业务的增删改查</daoDescipter>
+                        <daoCategory>JPA</daoCategory>
+                        <runningMethod uuid="fb8d76d4-e1f7-4f52-a6e7-0bae71167def-com.ndl.framework.workbrench.define.MethodBean-17">
+                            <signature>queryAtomByOrderNameAndPageSize</signature>
+                            <responseType uuid="561dc251-9cdf-481f-b4ad-3dda0969bfbf-com.ndl.framework.workbrench.define.ColumnBean-3522">
+<columnName></columnName>
+<columnNameNoDash>orderHeader</columnNameNoDash>
+<columnNameCapitalized>OrderHeader</columnNameCapitalized>
+<columnType>OrderHeader</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<returnTypeCall>CALL_INTER</returnTypeCall>
+<extra>String</extra>
+<fieldType>MAPKEY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>JPA</catetory>
+                            <assign uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+    <columnName></columnName>
+    <columnNameNoDash>orderName</columnNameNoDash>
+    <columnNameCapitalized>OrderName</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash>orderName</referNameNoDash>
+    <referNameCapitalized>OrderName</referNameCapitalized>
+    <referType>String</referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+        <columnName></columnName>
+        <columnNameNoDash>productId</columnNameNoDash>
+        <columnNameCapitalized>ProductId</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash>productId</referNameNoDash>
+        <referNameCapitalized>ProductId</referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+            <columnName></columnName>
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Qualifier</annnoteKey>
+<annoteValue>orderHeaderJPABeanDao</annoteValue>
+<annoteType>OrderHeaderJPABeanDao</annoteType>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <includeBeanList>
+                            <includeBean uuid="87f18106-39d6-4b64-a410-da641cd92d29-com.ndl.framework.workbrench.define.TableBean-165">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </callMajorDAOService>
+                    <assign uuid="7fbb1927-e319-4cf3-8326-3f53f731d110-com.ndl.framework.workbrench.define.TableBean-166">
+                        <tableNameNoDash>orderHeader</tableNameNoDash>
+                        <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="be5853d1-0039-4ba2-857f-ce92599c24b4-com.ndl.framework.workbrench.define.ColumnBean-3437">
+                            <columnName>OrderName</columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="0ae182f8-79f0-4e96-a359-861f0b5d7dca-com.ndl.framework.workbrench.define.ColumnBean-3438">
+<columnName>PageSize</columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callDAOServiceList>
+                        <callDAOService uuid="a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1">
+                            <daoId>orderHeaderJPABeanDao</daoId>
+                            <daoType>OrderHeaderJPABeanDao</daoType>
+                            <daoDescipter>订单业务的增删改查</daoDescipter>
+                            <daoCategory>JPA</daoCategory>
+                            <runningMethod uuid="fb8d76d4-e1f7-4f52-a6e7-0bae71167def-com.ndl.framework.workbrench.define.MethodBean-17">
+<signature>queryAtomByOrderNameAndPageSize</signature>
+<responseType uuid="561dc251-9cdf-481f-b4ad-3dda0969bfbf-com.ndl.framework.workbrench.define.ColumnBean-3522">
+    <columnName></columnName>
+    <columnNameNoDash>orderHeader</columnNameNoDash>
+    <columnNameCapitalized>OrderHeader</columnNameCapitalized>
+    <columnType>OrderHeader</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <returnTypeCall>CALL_INTER</returnTypeCall>
+    <extra>String</extra>
+    <fieldType>MAPKEY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>JPA</catetory>
+<assign uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+        <columnName></columnName>
+        <columnNameNoDash>orderName</columnNameNoDash>
+        <columnNameCapitalized>OrderName</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash>orderName</referNameNoDash>
+        <referNameCapitalized>OrderName</referNameCapitalized>
+        <referType>String</referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+            <columnName></columnName>
+            <columnNameNoDash>productId</columnNameNoDash>
+            <columnNameCapitalized>ProductId</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash>productId</referNameNoDash>
+            <referNameCapitalized>ProductId</referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                <columnName></columnName>
+                <columnNameNoDash>pageSize</columnNameNoDash>
+                <columnNameCapitalized>PageSize</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault></columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>Finished</nextFieldRative>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>ENTITY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Qualifier</annnoteKey>
+    <annoteValue>orderHeaderJPABeanDao</annoteValue>
+    <annoteType>OrderHeaderJPABeanDao</annoteType>
+</annotationBean>
+                            </annotationBeanList>
+                            <includeBeanList>
+<includeBean uuid="87f18106-39d6-4b64-a410-da641cd92d29-com.ndl.framework.workbrench.define.TableBean-165">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callDAOService>
+                    </callDAOServiceList>
+                </serviceMethod>
+            </serviceMethodList>
+            <includeServiceList>
+                <includeService uuid="d1855771-dcf9-4413-8eba-31b71d40b600-com.ndl.framework.workbrench.define.ServiceBean-6">
+                    <serviceId>orderItemBeanAtomService</serviceId>
+                    <serivceType>OrderItemBeanAtomService</serivceType>
+                    <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                    <serviceCategory>ATM</serviceCategory>
+                    <annotationBeanList>
+                        <annotationBean>
+                            <annnoteKey>Transactional</annnoteKey>
+                        </annotationBean>
+                        <annotationBean>
+                            <annnoteKey>Component</annnoteKey>
+                            <annoteValue>order</annoteValue>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <instanceAnnotationBeanList>
+                        <instanceAnnotationBean>
+                            <annnoteKey>Autowired</annnoteKey>
+                            <annoteValue>orderItemJPABeanDao</annoteValue>
+                            <annoteType>OrderItemJPABeanDao</annoteType>
+                        </instanceAnnotationBean>
+                    </instanceAnnotationBeanList>
+                    <runningMethod uuid="f726b433-e798-40bf-8166-5c83c6b1f224-com.ndl.framework.workbrench.define.MethodBean-20">
+                        <signature>queryAtomByOrderNameAndPageSize</signature>
+                        <responseType uuid="3ea9a09e-749a-48c5-9470-adf947cc81b5-com.ndl.framework.workbrench.define.ColumnBean-3527">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderItem</columnNameNoDash>
+                            <columnNameCapitalized>OrderItem</columnNameCapitalized>
+                            <columnType>OrderItem</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_INTER</returnTypeCall>
+                            <fieldType>LIST</fieldType>
+                            <length>0</length>
+                        </responseType>
+                        <catetory>ATM</catetory>
+                        <assign uuid="a10737dc-09ba-470e-855c-de8eba9785b9-com.ndl.framework.workbrench.define.TableBean-204">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <methodArugment uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+<columnName></columnName>
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+    <columnName></columnName>
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </runningMethod>
+                    <includeBeanList>
+                        <includeBean uuid="18113d07-1362-4915-b094-f1e3509f0879-com.ndl.framework.workbrench.define.TableBean-202">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                    <includeDaoList>
+                        <includeDao uuid="8c02e029-0efd-4b53-920a-66d65fd52dcf-com.ndl.framework.workbrench.define.DaoBean-12">
+                            <daoId>orderItemJPABeanDao</daoId>
+                            <daoType>OrderItemJPABeanDao</daoType>
+                            <daoDescipter>订单业务的增删改查</daoDescipter>
+                            <daoCategory>JPA</daoCategory>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Repository</annnoteKey>
+    <annoteValue>orderItemJPABeanDao</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <includeBeanList>
+<includeBean uuid="2bf59ef1-bc03-4bdb-af9d-9a6a9cc59a17-com.ndl.framework.workbrench.define.TableBean-203">
+    <tableNameNoDash>orderItem</tableNameNoDash>
+    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </includeDao>
+                    </includeDaoList>
+                </includeService>
+            </includeServiceList>
+            <includeBeanList>
+                <includeBean uuid="edd5af72-b7ff-4a99-a4f2-dd44c2c24d06-com.ndl.framework.workbrench.define.TableBean-162">
+                    <tableNameNoDash>order</tableNameNoDash>
+                    <tableNameCapitalized>Order</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+                <includeBean uuid="87f18106-39d6-4b64-a410-da641cd92d29-com.ndl.framework.workbrench.define.TableBean-165">
+                    <tableNameNoDash>orderHeader</tableNameNoDash>
+                    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+                <includeBean uuid="18113d07-1362-4915-b094-f1e3509f0879-com.ndl.framework.workbrench.define.TableBean-202">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+            <includeDaoList>
+                <includeDao uuid="a88cb206-e46f-46e6-b6eb-13e542b5b692-com.ndl.framework.workbrench.define.DaoBean-1">
+                    <daoId>orderHeaderJPABeanDao</daoId>
+                    <daoType>OrderHeaderJPABeanDao</daoType>
+                    <daoDescipter>订单业务的增删改查</daoDescipter>
+                    <daoCategory>JPA</daoCategory>
+                    <runningMethod uuid="fb8d76d4-e1f7-4f52-a6e7-0bae71167def-com.ndl.framework.workbrench.define.MethodBean-17">
+                        <signature>queryAtomByOrderNameAndPageSize</signature>
+                        <responseType uuid="561dc251-9cdf-481f-b4ad-3dda0969bfbf-com.ndl.framework.workbrench.define.ColumnBean-3522">
+                            <columnName></columnName>
+                            <columnNameNoDash>orderHeader</columnNameNoDash>
+                            <columnNameCapitalized>OrderHeader</columnNameCapitalized>
+                            <columnType>OrderHeader</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <returnTypeCall>CALL_INTER</returnTypeCall>
+                            <extra>String</extra>
+                            <fieldType>MAPKEY</fieldType>
+                            <length>0</length>
+                        </responseType>
+                        <catetory>JPA</catetory>
+                        <assign uuid="f6d580da-d93c-40a9-8a06-dc1fe0016681-com.ndl.framework.workbrench.define.TableBean-200">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <methodArugment uuid="ef29fd15-c3c5-4095-b740-0a6be93ec026-com.ndl.framework.workbrench.define.ColumnBean-3519">
+<columnName></columnName>
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash>orderName</referNameNoDash>
+<referNameCapitalized>OrderName</referNameCapitalized>
+<referType>String</referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="38294d86-e17d-4d4e-b80f-f96ab5bf5d93-com.ndl.framework.workbrench.define.ColumnBean-3520">
+    <columnName></columnName>
+    <columnNameNoDash>productId</columnNameNoDash>
+    <columnNameCapitalized>ProductId</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash>productId</referNameNoDash>
+    <referNameCapitalized>ProductId</referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="36914e17-ebd8-482a-9068-4fe20bb0607a-com.ndl.framework.workbrench.define.ColumnBean-3521">
+        <columnName></columnName>
+        <columnNameNoDash>pageSize</columnNameNoDash>
+        <columnNameCapitalized>PageSize</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </runningMethod>
+                    <annotationBeanList>
+                        <annotationBean>
+                            <annnoteKey>Qualifier</annnoteKey>
+                            <annoteValue>orderHeaderJPABeanDao</annoteValue>
+                            <annoteType>OrderHeaderJPABeanDao</annoteType>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="87f18106-39d6-4b64-a410-da641cd92d29-com.ndl.framework.workbrench.define.TableBean-165">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeDao>
+                <includeDao uuid="4b017155-5fd4-4a15-b2a6-bf085a362b9d-com.ndl.framework.workbrench.define.DaoBean-0">
+                    <daoId>orderJPABeanDao</daoId>
+                    <daoType>OrderJPABeanDao</daoType>
+                    <daoDescipter>订单业务的增删改查</daoDescipter>
+                    <daoCategory>JPA</daoCategory>
+                    <annotationBeanList>
+                        <annotationBean>
+                            <annnoteKey>Repository</annnoteKey>
+                            <annoteValue>orderJPABeanDao</annoteValue>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="4eaeef91-ac57-480d-b6aa-828d0be91dd6-com.ndl.framework.workbrench.define.TableBean-163">
+                            <tableNameNoDash>order</tableNameNoDash>
+                            <tableNameCapitalized>Order</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeDao>
+            </includeDaoList>
+        </atomService>
+        <atomService uuid="d1855771-dcf9-4413-8eba-31b71d40b600-com.ndl.framework.workbrench.define.ServiceBean-6">
+            <serviceId>orderItemBeanAtomService</serviceId>
+            <serivceType>OrderItemBeanAtomService</serivceType>
+            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+            <serviceCategory>ATM</serviceCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Transactional</annnoteKey>
+                </annotationBean>
+                <annotationBean>
+                    <annnoteKey>Component</annnoteKey>
+                    <annoteValue>order</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <instanceAnnotationBeanList>
+                <instanceAnnotationBean>
+                    <annnoteKey>Autowired</annnoteKey>
+                    <annoteValue>orderItemJPABeanDao</annoteValue>
+                    <annoteType>OrderItemJPABeanDao</annoteType>
+                </instanceAnnotationBean>
+            </instanceAnnotationBeanList>
+            <runningMethod uuid="f726b433-e798-40bf-8166-5c83c6b1f224-com.ndl.framework.workbrench.define.MethodBean-20">
+                <signature>queryAtomByOrderNameAndPageSize</signature>
+                <responseType uuid="3ea9a09e-749a-48c5-9470-adf947cc81b5-com.ndl.framework.workbrench.define.ColumnBean-3527">
+                    <columnName></columnName>
+                    <columnNameNoDash>orderItem</columnNameNoDash>
+                    <columnNameCapitalized>OrderItem</columnNameCapitalized>
+                    <columnType>OrderItem</columnType>
+                    <columnTypeIOS></columnTypeIOS>
+                    <columnTypePropertyIOS></columnTypePropertyIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment></columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <returnTypeCall>CALL_INTER</returnTypeCall>
+                    <fieldType>LIST</fieldType>
+                    <length>0</length>
+                </responseType>
+                <catetory>ATM</catetory>
+                <assign uuid="a10737dc-09ba-470e-855c-de8eba9785b9-com.ndl.framework.workbrench.define.TableBean-204">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <methodArugment uuid="ecc0db77-5ea5-4389-baf5-27c49437880e-com.ndl.framework.workbrench.define.ColumnBean-3525">
+                        <columnName></columnName>
+                        <columnNameNoDash>orderName</columnNameNoDash>
+                        <columnNameCapitalized>OrderName</columnNameCapitalized>
+                        <columnType>String</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>And</nextFieldRative>
+                        <nextColumnBean uuid="ee777a42-24b7-40f3-a9f9-4455125c3720-com.ndl.framework.workbrench.define.ColumnBean-3526">
+                            <columnName></columnName>
+                            <columnNameNoDash>pageSize</columnNameNoDash>
+                            <columnNameCapitalized>PageSize</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </nextColumnBean>
+                        <fieldType>PRIMARY</fieldType>
+                        <length>0</length>
+                    </methodArugment>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </assign>
+            </runningMethod>
+            <includeBeanList>
+                <includeBean uuid="18113d07-1362-4915-b094-f1e3509f0879-com.ndl.framework.workbrench.define.TableBean-202">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+            <includeDaoList>
+                <includeDao uuid="8c02e029-0efd-4b53-920a-66d65fd52dcf-com.ndl.framework.workbrench.define.DaoBean-12">
+                    <daoId>orderItemJPABeanDao</daoId>
+                    <daoType>OrderItemJPABeanDao</daoType>
+                    <daoDescipter>订单业务的增删改查</daoDescipter>
+                    <daoCategory>JPA</daoCategory>
+                    <annotationBeanList>
+                        <annotationBean>
+                            <annnoteKey>Repository</annnoteKey>
+                            <annoteValue>orderItemJPABeanDao</annoteValue>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="2bf59ef1-bc03-4bdb-af9d-9a6a9cc59a17-com.ndl.framework.workbrench.define.TableBean-203">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <transientColumnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeDao>
+            </includeDaoList>
+        </atomService>
+    </atomServices>
+    <atomOrRepository>testAtomService</atomOrRepository>
+    <atomServiceTemplates/>
+    <repositoryTemplates/>
+</AtomOrRepositoryPackage>

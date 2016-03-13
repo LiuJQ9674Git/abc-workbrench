@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<serviceTemplate>
+    <serviceTemplates>
+        <serviceTemplate>
+            <comment>订单业务的增删改查</comment>
+            <className>OrderBusinessService</className>
+            <includeClasses>
+                <includeClass>Order</includeClass>
+                <includeClass>OrderHeader</includeClass>
+                <includeClass>ProuctCatory</includeClass>
+                <includeClass>OrderHeaderBusinessService</includeClass>
+                <includeClass>OrderATOMService</includeClass>
+            </includeClasses>
+            <headerAnnotations>
+                <headerAnnotation>@Service("orderBusinessService")</headerAnnotation>
+            </headerAnnotations>
+            <instanceAnnotations>
+                <instanceAnnotation>@Autowired("orderHeaderATOMService")</instanceAnnotation>
+                <instanceAnnotation>@Qualifier("prouctCatoryATOMService")</instanceAnnotation>
+                <instanceAnnotation>@Qualifier("orderHeaderBusinessService")</instanceAnnotation>
+                <instanceAnnotation>@Service("orderATOMService")</instanceAnnotation>
+            </instanceAnnotations>
+            <methods>
+                <entry>
+                    <key>public  Order queryBusinessByProductNameAndPageSize(  String  productDetail ,   String  pageSize)</key>
+                    <value>
+                        <comment>/**
+* className:OrderBusinessService* serviceCategory:BNS商品查询
+**/</comment>
+                        <signatureEntirety>public  Order queryBusinessByProductNameAndPageSize(  String  productDetail ,   String  pageSize)</signatureEntirety>
+                        <calleeArgumentList>
+                            <calleeArgument uuid="6e5a9014-8519-4ead-806e-6f0ce5c6ed56-com.ndl.framework.workbrench.define.ColumnBean-16">
+								<columnNameNoDash>productDetail</columnNameNoDash>
+								<columnNameCapitalized>ProductDetail</columnNameCapitalized>
+								<columnType>String</columnType>
+								<nextFieldRative>And</nextFieldRative>
+								<nextColumnBean uuid="0f2e48a4-111d-4497-948c-7b636200d1ab-com.ndl.framework.workbrench.define.ColumnBean-17">
+									<columnNameNoDash>pageSize</columnNameNoDash>
+									<columnNameCapitalized>PageSize</columnNameCapitalized>
+									<columnType>String</columnType>
+									<nextFieldRative>Finished</nextFieldRative>
+									<fieldType>PRIMARY</fieldType>
+									<length>0</length>
+								</nextColumnBean>
+								<fieldType>PRIMARY</fieldType>
+								<length>0</length>
+                            </calleeArgument>
+                            <calleeArgument uuid="0f2e48a4-111d-4497-948c-7b636200d1ab-com.ndl.framework.workbrench.define.ColumnBean-17">
+								<columnNameNoDash>pageSize</columnNameNoDash>
+								<columnNameCapitalized>PageSize</columnNameCapitalized>
+								<columnType>String</columnType>
+								<nextFieldRative>Finished</nextFieldRative>
+								<fieldType>PRIMARY</fieldType>
+								<length>0</length>
+                            </calleeArgument>
+                        </calleeArgumentList>
+                        <bodyMethodMap/>
+                        <bodyragmentSlice>
+                            <entry>
+								<key>0</key>
+								<value>
+									<calleeMethodName>null = orderATOMService.queryBusinessByProductNameAndPageSize (  productDetail ,  pageSize );</calleeMethodName>
+									<calleeArgumentList>
+										<calleeArgument uuid="6e5a9014-8519-4ead-806e-6f0ce5c6ed56-com.ndl.framework.workbrench.define.ColumnBean-16">
+											<columnNameNoDash>productDetail</columnNameNoDash>
+											<columnNameCapitalized>ProductDetail</columnNameCapitalized>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="0f2e48a4-111d-4497-948c-7b636200d1ab-com.ndl.framework.workbrench.define.ColumnBean-17">
+												<columnNameNoDash>pageSize</columnNameNoDash>
+												<columnNameCapitalized>PageSize</columnNameCapitalized>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<fieldType>PRIMARY</fieldType>
+												<length>0</length>
+											</nextColumnBean>
+											<fieldType>PRIMARY</fieldType>
+											<length>0</length>
+										</calleeArgument>
+										<calleeArgument uuid="0f2e48a4-111d-4497-948c-7b636200d1ab-com.ndl.framework.workbrench.define.ColumnBean-17">
+											<columnNameNoDash>pageSize</columnNameNoDash>
+											<columnNameCapitalized>PageSize</columnNameCapitalized>
+											<columnType>String</columnType>
+											<nextFieldRative>Finished</nextFieldRative>
+											<fieldType>PRIMARY</fieldType>
+											<length>0</length>
+										</calleeArgument>
+									</calleeArgumentList>
+									<localFieldName> List&lt;Order&gt;  null</localFieldName>
+									<returnType> List&lt;Order&gt; </returnType>
+								</value>
+                            </entry>
+                        </bodyragmentSlice>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Order queryBusinessByOrderNameAndPageSize(  String  orderName ,   String  pageSize)</key>
+                    <value>
+                        <comment>/**
+* className:OrderBusinessService* serviceCategory:BNS查询订单头方法
+**/</comment>
+                        <signatureEntirety>public  Order queryBusinessByOrderNameAndPageSize(  String  orderName ,   String  pageSize)</signatureEntirety>
+                        <calleeArgumentList>
+                            <calleeArgument uuid="3fea4c1f-4a18-458d-b4f0-a7a22e170f12-com.ndl.framework.workbrench.define.ColumnBean-3">
+								<columnNameNoDash>orderName</columnNameNoDash>
+								<columnNameCapitalized>OrderName</columnNameCapitalized>
+								<columnType>String</columnType>
+								<nextFieldRative>And</nextFieldRative>
+								<nextColumnBean uuid="ff2b0b49-b8dd-497f-ad29-2a85ab88530b-com.ndl.framework.workbrench.define.ColumnBean-4">
+									<columnNameNoDash>pageSize</columnNameNoDash>
+									<columnNameCapitalized>PageSize</columnNameCapitalized>
+									<columnType>String</columnType>
+									<nextFieldRative>Finished</nextFieldRative>
+									<fieldType>PRIMARY</fieldType>
+									<length>0</length>
+								</nextColumnBean>
+								<fieldType>PRIMARY</fieldType>
+								<length>0</length>
+                            </calleeArgument>
+                            <calleeArgument uuid="ff2b0b49-b8dd-497f-ad29-2a85ab88530b-com.ndl.framework.workbrench.define.ColumnBean-4">
+								<columnNameNoDash>pageSize</columnNameNoDash>
+								<columnNameCapitalized>PageSize</columnNameCapitalized>
+								<columnType>String</columnType>
+								<nextFieldRative>Finished</nextFieldRative>
+								<fieldType>PRIMARY</fieldType>
+								<length>0</length>
+                            </calleeArgument>
+                        </calleeArgumentList>
+                        <bodyMethodMap/>
+                        <bodyragmentSlice>
+                            <entry>
+								<key>1</key>
+								<value>
+									<calleeMethodName>orderHeader = orderHeaderBusinessService.queryAtomByOrderNameAndPageSize (  orderName ,  pageSize );</calleeMethodName>
+									<catetory>CALL_INTER</catetory>
+									<calleeArgumentList>
+										<calleeArgument uuid="3fea4c1f-4a18-458d-b4f0-a7a22e170f12-com.ndl.framework.workbrench.define.ColumnBean-3">
+											<columnNameNoDash>orderName</columnNameNoDash>
+											<columnNameCapitalized>OrderName</columnNameCapitalized>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="ff2b0b49-b8dd-497f-ad29-2a85ab88530b-com.ndl.framework.workbrench.define.ColumnBean-4">
+												<columnNameNoDash>pageSize</columnNameNoDash>
+												<columnNameCapitalized>PageSize</columnNameCapitalized>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<fieldType>PRIMARY</fieldType>
+												<length>0</length>
+											</nextColumnBean>
+											<fieldType>PRIMARY</fieldType>
+											<length>0</length>
+										</calleeArgument>
+										<calleeArgument uuid="ff2b0b49-b8dd-497f-ad29-2a85ab88530b-com.ndl.framework.workbrench.define.ColumnBean-4">
+											<columnNameNoDash>pageSize</columnNameNoDash>
+											<columnNameCapitalized>PageSize</columnNameCapitalized>
+											<columnType>String</columnType>
+											<nextFieldRative>Finished</nextFieldRative>
+											<fieldType>PRIMARY</fieldType>
+											<length>0</length>
+										</calleeArgument>
+									</calleeArgumentList>
+									<localFieldName> OrderHeader  orderHeader</localFieldName>
+									<returnType> OrderHeader </returnType>
+								</value>
+                            </entry>
+                        </bodyragmentSlice>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Order queryBusinessByProductCatatoryAndPageSize(  String  prouctCatoryName ,   String  pageSize)</key>
+                    <value>
+                        <comment>/**
+* className:OrderBusinessService* serviceCategory:BNS商品查询
+**/</comment>
+                        <signatureEntirety>public  Order queryBusinessByProductCatatoryAndPageSize(  String  prouctCatoryName ,   String  pageSize)</signatureEntirety>
+                        <calleeArgumentList>
+                            <calleeArgument uuid="32dff141-7c59-479e-ab69-c54ee664ad5c-com.ndl.framework.workbrench.define.ColumnBean-11">
+								<columnNameNoDash>prouctCatoryName</columnNameNoDash>
+								<columnNameCapitalized>ProuctCatoryName</columnNameCapitalized>
+								<columnType>String</columnType>
+								<nextFieldRative>And</nextFieldRative>
+								<nextColumnBean uuid="25e88b22-92ba-4705-9c1c-6ca84a29ae83-com.ndl.framework.workbrench.define.ColumnBean-12">
+									<columnNameNoDash>pageSize</columnNameNoDash>
+									<columnNameCapitalized>PageSize</columnNameCapitalized>
+									<columnType>String</columnType>
+									<nextFieldRative>Finished</nextFieldRative>
+									<fieldType>PRIMARY</fieldType>
+									<length>0</length>
+								</nextColumnBean>
+								<fieldType>PRIMARY</fieldType>
+								<length>0</length>
+                            </calleeArgument>
+                            <calleeArgument uuid="25e88b22-92ba-4705-9c1c-6ca84a29ae83-com.ndl.framework.workbrench.define.ColumnBean-12">
+								<columnNameNoDash>pageSize</columnNameNoDash>
+								<columnNameCapitalized>PageSize</columnNameCapitalized>
+								<columnType>String</columnType>
+								<nextFieldRative>Finished</nextFieldRative>
+								<fieldType>PRIMARY</fieldType>
+								<length>0</length>
+                            </calleeArgument>
+                        </calleeArgumentList>
+                        <bodyMethodMap/>
+                        <bodyragmentSlice>
+                            <entry>
+								<key>2</key>
+								<value>
+									<calleeMethodName>orderHeader = prouctCatoryATOMService.queryAtomByProuctCatoryAndPageSize (  prouctCatoryName ,  pageSize );</calleeMethodName>
+									<catetory>CALL_INTER</catetory>
+									<calleeArgumentList>
+										<calleeArgument uuid="32dff141-7c59-479e-ab69-c54ee664ad5c-com.ndl.framework.workbrench.define.ColumnBean-11">
+											<columnNameNoDash>prouctCatoryName</columnNameNoDash>
+											<columnNameCapitalized>ProuctCatoryName</columnNameCapitalized>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="25e88b22-92ba-4705-9c1c-6ca84a29ae83-com.ndl.framework.workbrench.define.ColumnBean-12">
+												<columnNameNoDash>pageSize</columnNameNoDash>
+												<columnNameCapitalized>PageSize</columnNameCapitalized>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<fieldType>PRIMARY</fieldType>
+												<length>0</length>
+											</nextColumnBean>
+											<fieldType>PRIMARY</fieldType>
+											<length>0</length>
+										</calleeArgument>
+										<calleeArgument uuid="25e88b22-92ba-4705-9c1c-6ca84a29ae83-com.ndl.framework.workbrench.define.ColumnBean-12">
+											<columnNameNoDash>pageSize</columnNameNoDash>
+											<columnNameCapitalized>PageSize</columnNameCapitalized>
+											<columnType>String</columnType>
+											<nextFieldRative>Finished</nextFieldRative>
+											<fieldType>PRIMARY</fieldType>
+											<length>0</length>
+										</calleeArgument>
+									</calleeArgumentList>
+									<localFieldName> ProuctCatory  orderHeader</localFieldName>
+									<returnType> ProuctCatory </returnType>
+								</value>
+                            </entry>
+                        </bodyragmentSlice>
+                    </value>
+                </entry>
+            </methods>
+        </serviceTemplate>
+    </serviceTemplates>
+</serviceTemplate>

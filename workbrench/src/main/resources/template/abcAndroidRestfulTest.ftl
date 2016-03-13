@@ -1,0 +1,79 @@
+package ${packageBase}.${packageAndroid};
+
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
+import com.ndlan.framework.core.status.EnumStatus;
+import com.ndlan.framework.core.web.domain.Result;
+
+import ${packageBase}.${packageModelQuery}.${tableBean.tableNameCapitalized}${classQuerySuffix};
+import ${packageBase}.${packageModel}.${tableBean.tableNameCapitalized}${classSuffix};
+
+public class ${tableBean.tableNameCapitalized}${classSuffix}${androidRestfulSuffix}Test {
+	
+	${tableBean.tableNameCapitalized}${classSuffix}${androidRestfulSuffix} productCatatoryBustinessRestful=
+			new ${tableBean.tableNameCapitalized}${classSuffix}${androidRestfulSuffix}();
+	@Test
+	public void selectAll() {
+		Result result= productCatatoryBustinessRestful.selectAll();
+		assertNotNull(result);
+		
+	}
+
+	@Test
+	public void deleteList() {
+		String[] ids={"002","002"};
+		Result result=productCatatoryBustinessRestful.deleteList(ids);
+		assertNotNull(result);
+	}
+
+	@Test
+	public void deleteOne() {
+		String defualtId="11";
+		Result result=productCatatoryBustinessRestful.deleteOne(defualtId);
+		assertNotNull(result);
+	}
+
+	@Test
+	public void addOneTest() {
+		${tableBean.tableNameCapitalized}${classSuffix} entity=new ${tableBean.tableNameCapitalized}${classSuffix}();
+		//todo
+	
+		Result result=productCatatoryBustinessRestful.addOne(entity);
+		assertNotNull(result);
+	}
+
+	@Test
+	public void selectList() {
+		${tableBean.tableNameCapitalized}${classQuerySuffix} entity=new ${tableBean.tableNameCapitalized}${classQuerySuffix}();
+		//todo
+		Result result=productCatatoryBustinessRestful.selectList(entity);
+		assertNotNull(result);
+		
+	}
+
+	@Test
+	public void viewOne() {
+		String defualtId="11";
+		Result result=productCatatoryBustinessRestful.viewOne(defualtId);
+		assertNotNull(result);
+
+	}
+
+	@Test
+	public void editOne() {
+		${tableBean.tableNameCapitalized}${classSuffix} entity=new ${tableBean.tableNameCapitalized}${classSuffix}();
+		//todo
+		Result result=productCatatoryBustinessRestful.editOne(entity);
+		assertNotNull(result);
+	}
+
+	@Test
+	public void editSelective() {
+		${tableBean.tableNameCapitalized}${classSuffix} entity=new ${tableBean.tableNameCapitalized}${classSuffix}();
+		//todo
+		Result result=productCatatoryBustinessRestful.editSelective(entity);
+		assertNotNull(result);
+	}
+}

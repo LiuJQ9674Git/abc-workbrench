@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TableColumnConfig uuid="25dd0992-3500-44cd-92c4-d1c4ef8c05a3-com.ndl.framework.workbrench.define.TableColumnConfig-91">
+    <excludeBeanList/>
+    <transientBeanList/>
+    <filterBeanList>
+        <filterBean uuid="170efece-8be6-4409-971a-2328d4a88351-com.ndl.framework.workbrench.define.TransientBean-12">
+            <tableName>account_t</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="e1636425-e2b4-47fd-9dfc-534994ef415d-com.ndl.framework.workbrench.define.TransientBean-13">
+            <tableName>ad_info_t</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+        <filterBean uuid="64c963c8-2389-48c1-8e1b-ae11ccd384ad-com.ndl.framework.workbrench.define.TransientBean-14">
+            <tableName>apply_order_t</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
+    </filterBeanList>
+    <excludeColomnFramework>
+        <excludeColomn>status</excludeColomn>
+        <excludeColomn>id</excludeColomn>
+    </excludeColomnFramework>
+</TableColumnConfig>

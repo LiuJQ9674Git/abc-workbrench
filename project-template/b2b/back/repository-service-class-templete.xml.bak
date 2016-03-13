@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleAtomTemplate>
+    <moduleName>testDaoPackage</moduleName>
+    <repositoryTemplates>
+        <repositoryTemplate>
+            <comment>index login addLogin createLogin deleteLogin updateLogin</comment>
+            <className>LoginJDBCDao</className>
+            <includeClasses>
+                <includeClass>Login</includeClass>
+            </includeClasses>
+            <headerAnnotations>
+                <headerAnnotation>@Repository("loginJDBCDao")</headerAnnotation>
+            </headerAnnotations>
+            <instanceAnnotations/>
+            <methodDescripterMap>
+                <entry>
+                    <key>public  Login queryLoginByUserNameAndPassword(  String  null ,   String  null)</key>
+                    <value>
+                        <comment>/**
+* className:LoginJDBCDao* serviceCategory:JPAtoLogin登录认证
+**/</comment>
+                        <signatureEntirety>public  Login queryLoginByUserNameAndPassword(  String  null ,   String  null)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>Name</columnName>
+<javaType>String</javaType>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>Password</columnName>
+<javaType>String</javaType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+            </methodDescripterMap>
+        </repositoryTemplate>
+    </repositoryTemplates>
+</moduleAtomTemplate>

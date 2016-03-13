@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AtomOrRepositoryPackage uuid="c93eed5d-f428-4ec9-8b75-196f829cc786-com.ndl.framework.workbrench.define.AtomOrRepositoryPackage-0">
+    <atomOrRepository>testDaoPackage</atomOrRepository>
+    <repositories>
+        <repository uuid="6a4e80d6-1b08-438c-80b2-06cd1962ed32-com.ndl.framework.workbrench.define.DaoBean-0">
+            <daoId>loginJPADao</daoId>
+            <daoType>LoginJPADao</daoType>
+            <daoDescipter>index login addLogin createLogin deleteLogin updateLogin</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>loginJPADao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <daoMethodList>
+                <daoMethod uuid="cbe3d104-a286-4be4-b33a-d71fc11787f9-com.ndl.framework.workbrench.define.MethodBean-0">
+                    <signature>queryLoginByUserNameAndPassword</signature>
+                    <signatureDescripter>toLogin登录认证</signatureDescripter>
+                    <responseType uuid="c699cdaf-0733-4198-ae1f-e203ba6e97b9-com.ndl.framework.workbrench.define.ColumnBean-2">
+                        <columnType>Login</columnType>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>JPA</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="34c2123b-e539-4904-9c8d-6fd73151aea4-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-0">
+                        <fromMethod>cbe3d104-a286-4be4-b33a-d71fc11787f9-com.ndl.framework.workbrench.define.MethodBean-0</fromMethod>
+                        <fromResultType uuid="c699cdaf-0733-4198-ae1f-e203ba6e97b9-com.ndl.framework.workbrench.define.ColumnBean-2">
+                            <columnType>Login</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>Query</annnoteKey>
+                        <annoteValue>queryLogin</annoteValue>
+                    </annotationBean>
+                    <assign uuid="099f32be-0dcf-410c-812c-cd786a11fb9c-com.ndl.framework.workbrench.define.TableBean-1">
+                        <tableNameNoDash>login</tableNameNoDash>
+                        <tableNameCapitalized>Login</tableNameCapitalized>
+                        <columnBeanList/>
+                        <methodArugment uuid="dcebd2cf-5e44-4ebe-9536-91dfc86e9f20-com.ndl.framework.workbrench.define.ColumnBean-0">
+                            <columnName>Name</columnName>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="5d3450a0-3522-4db3-a9f8-c2115c73c38d-com.ndl.framework.workbrench.define.ColumnBean-1">
+<columnName>Password</columnName>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                </daoMethod>
+            </daoMethodList>
+            <includeBeanList>
+                <includeBean uuid="5af14163-a717-4f9c-9be0-37065371e30d-com.ndl.framework.workbrench.define.TableBean-0">
+                    <tableNameNoDash>login</tableNameNoDash>
+                    <tableNameCapitalized>Login</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </repository>
+    </repositories>
+    <atomServiceTemplates/>
+    <repositoryTemplates/>
+</AtomOrRepositoryPackage>

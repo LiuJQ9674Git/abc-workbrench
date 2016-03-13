@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServicePackage uuid="b943823d-002c-4715-a8d6-c41c3126704b">
+    <businessServiceName>testBusinessService</businessServiceName>
+    <businessServices>
+        <businessService uuid="88f7d6a2-4f68-4ba8-a561-31656239e67b">
+            <serviceId>orderBusinessService</serviceId>
+            <serivceType>Order</serivceType>
+            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+            <serviceCategory>BNS</serviceCategory>
+            <annotationBeanList>
+                <annotationBean uuid="a3fe4af6-20aa-49fb-8687-034521ebfe27">
+                    <annnoteKey>Service</annnoteKey>
+                    <annoteValue>orderBusinessService</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <serviceMethodList>
+                <serviceMethod uuid="88098035-13cf-4f89-ada7-a8c3e9c5f23f">
+                    <signature>queryBusinessByProductNameAndPageSize</signature>
+                    <signatureDescripter>商品查询</signatureDescripter>
+                    <responseType uuid="86ff7008-ec9c-4c6e-bf16-5d1b93938356">
+                        <columnType>Order</columnType>
+                        <fieldType>Page</fieldType>
+                        <length>-9223372036854775808</length>
+                    </responseType>
+                    <catetory>BNS</catetory>
+                    <bodyBean>b3a0c024-3d0e-4808-aeaf-882c61395558</bodyBean>
+                    <calleeMajorService uuid="2dc296b8-adb5-45ca-be58-acf778c550d0">
+                        <serviceId>orderATOMService</serviceId>
+                        <serivceType>Order</serivceType>
+                        <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                        <serviceCategory>ATM</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean uuid="46c31fe6-8952-415e-88d5-7ba5e2434507">
+								<annnoteKey>Component</annnoteKey>
+                            </annotationBean>
+                            <annotationBean uuid="e3705749-94d3-4e66-915d-19615b4917f7">
+								<annnoteKey>Transactional</annnoteKey>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <runningMethod uuid="694f7f4c-8883-4f6e-baa9-7e77b8599ea1">
+                            <signature>queryBusinessByProductNameAndPageSize</signature>
+                            <responseType uuid="86ff7008-ec9c-4c6e-bf16-5d1b93938356">
+								<columnType>Order</columnType>
+								<fieldType>Page</fieldType>
+								<length>-9223372036854775808</length>
+                            </responseType>
+                            <assignList>
+								<assign uuid="529d74c9-0b44-4ab0-999e-d3d8b0d2751e">
+									<tableNameNoDash>order</tableNameNoDash>
+									<tableNameCapitalized>Order</tableNameCapitalized>
+									<columnBeanList>
+										<columnBean uuid="e0cdad3c-b670-4e7d-9859-035902fd8a3f">
+											<columnName>ProductDetail</columnName>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="48366402-6a03-4c06-bb5f-87c0569578f2">
+												<columnName>PageSize</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<length>-9223372036854775808</length>
+											</nextColumnBean>
+											<length>-9223372036854775808</length>
+										</columnBean>
+									</columnBeanList>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</assign>
+                            </assignList>
+                        </runningMethod>
+                        <includeBeanList>
+                            <includeBean uuid="0588623e-dcdf-4530-90bd-587807443168">
+								<tableNameNoDash>order</tableNameNoDash>
+								<tableNameCapitalized>Order</tableNameCapitalized>
+								<columnBeanList/>
+								<hasDateColumn>false</hasDateColumn>
+								<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assignList>
+                        <assign uuid="71cf44a0-2d31-419f-80fd-add4037aff7d">
+                            <tableNameNoDash>order</tableNameNoDash>
+                            <tableNameCapitalized>Order</tableNameCapitalized>
+                            <columnBeanList>
+								<columnBean uuid="e0cdad3c-b670-4e7d-9859-035902fd8a3f">
+									<columnName>ProductDetail</columnName>
+									<columnType>String</columnType>
+									<nextFieldRative>And</nextFieldRative>
+									<nextColumnBean uuid="48366402-6a03-4c06-bb5f-87c0569578f2">
+										<columnName>PageSize</columnName>
+										<columnType>String</columnType>
+										<nextFieldRative>Finished</nextFieldRative>
+										<length>-9223372036854775808</length>
+									</nextColumnBean>
+									<length>-9223372036854775808</length>
+								</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </assignList>
+                    <callAtomServicesList>
+                        <callAtomService uuid="2dc296b8-adb5-45ca-be58-acf778c550d0">
+                            <serviceId>orderATOMService</serviceId>
+                            <serivceType>Order</serivceType>
+                            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                            <serviceCategory>ATM</serviceCategory>
+                            <annotationBeanList>
+								<annotationBean uuid="46c31fe6-8952-415e-88d5-7ba5e2434507">
+									<annnoteKey>Component</annnoteKey>
+								</annotationBean>
+								<annotationBean uuid="e3705749-94d3-4e66-915d-19615b4917f7">
+									<annnoteKey>Transactional</annnoteKey>
+								</annotationBean>
+                            </annotationBeanList>
+                            <runningMethod uuid="694f7f4c-8883-4f6e-baa9-7e77b8599ea1">
+								<signature>queryBusinessByProductNameAndPageSize</signature>
+								<responseType uuid="86ff7008-ec9c-4c6e-bf16-5d1b93938356">
+									<columnType>Order</columnType>
+									<fieldType>Page</fieldType>
+									<length>-9223372036854775808</length>
+								</responseType>
+								<assignList>
+									<assign uuid="529d74c9-0b44-4ab0-999e-d3d8b0d2751e">
+										<tableNameNoDash>order</tableNameNoDash>
+										<tableNameCapitalized>Order</tableNameCapitalized>
+										<columnBeanList>
+											<columnBean uuid="e0cdad3c-b670-4e7d-9859-035902fd8a3f">
+												<columnName>ProductDetail</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>And</nextFieldRative>
+												<nextColumnBean uuid="48366402-6a03-4c06-bb5f-87c0569578f2">
+													<columnName>PageSize</columnName>
+													<columnType>String</columnType>
+													<nextFieldRative>Finished</nextFieldRative>
+													<length>-9223372036854775808</length>
+												</nextColumnBean>
+												<length>-9223372036854775808</length>
+											</columnBean>
+										</columnBeanList>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</assign>
+								</assignList>
+                            </runningMethod>
+                            <includeBeanList>
+								<includeBean uuid="0588623e-dcdf-4530-90bd-587807443168">
+									<tableNameNoDash>order</tableNameNoDash>
+									<tableNameCapitalized>Order</tableNameCapitalized>
+									<columnBeanList/>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</includeBean>
+                            </includeBeanList>
+                        </callAtomService>
+                    </callAtomServicesList>
+                </serviceMethod>
+                <serviceMethod uuid="e3c4b7b6-80a8-407d-b4fe-1f8795ff7ef1">
+                    <signature>queryBusinessByOrderNameAndPageSize</signature>
+                    <signatureDescripter>查询订单头方法</signatureDescripter>
+                    <responseType uuid="8aef284d-f6d2-4cf7-9e8b-97fff52ecfb4">
+                        <columnType>Order</columnType>
+                        <fieldType>Page</fieldType>
+                        <length>-9223372036854775808</length>
+                    </responseType>
+                    <catetory>BNS</catetory>
+                    <bodyBean>b2104e04-e7f2-43ca-8f49-87d9b18e4488</bodyBean>
+                    <calleeMajorService uuid="3390da9f-39a6-4249-a485-a3f85500d954">
+                        <serviceId>orderHeaderBusinessService</serviceId>
+                        <serivceType>OrderHeader</serivceType>
+                        <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean uuid="a3fe4af6-20aa-49fb-8687-034521ebfe27">
+								<annnoteKey>Service</annnoteKey>
+								<annoteValue>orderBusinessService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <runningMethod uuid="9a0f207b-64c6-44a5-8036-27d1de0774e8">
+                            <signature>queryAtomByOrderNameAndPageSize</signature>
+                            <responseType uuid="1d672c36-c2c4-4b8b-b818-3b67b644454a">
+								<columnType>OrderHeader</columnType>
+								<fieldType>ENTITY</fieldType>
+								<length>-9223372036854775808</length>
+                            </responseType>
+                            <assignList>
+								<assign uuid="ca777225-93de-47f4-8d91-612560d06333">
+									<tableNameNoDash>orderHeader</tableNameNoDash>
+									<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+									<columnBeanList>
+										<columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+											<columnName>OrderName</columnName>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+												<columnName>PageSize</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<length>-9223372036854775808</length>
+											</nextColumnBean>
+											<length>-9223372036854775808</length>
+										</columnBean>
+									</columnBeanList>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</assign>
+                            </assignList>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="f8f8a622-ccec-47a6-8058-fd09b775f3c3">
+								<serviceId>orderHeaderATOMService</serviceId>
+								<serivceType>OrderHeader</serivceType>
+								<serviceDescipter>订单业务的增删改查</serviceDescipter>
+								<serviceCategory>ATM</serviceCategory>
+								<annotationBeanList>
+									<annotationBean uuid="b14fc343-df3c-44e5-9795-0ef715028505">
+										<annnoteKey>Component</annnoteKey>
+									</annotationBean>
+									<annotationBean uuid="86e80989-d799-425d-85ca-252d782b137c">
+										<annnoteKey>Transactional</annnoteKey>
+									</annotationBean>
+								</annotationBeanList>
+								<includeBeanList>
+									<includeBean uuid="d6aa9334-fe73-4352-8ddf-e2636c9e2d3b">
+										<tableNameNoDash>orderHeader</tableNameNoDash>
+										<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+										<columnBeanList/>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</includeBean>
+								</includeBeanList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="7cd2d18e-2a50-4b63-b647-c3e97781b4ed">
+								<tableNameNoDash>orderHeader</tableNameNoDash>
+								<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+								<columnBeanList/>
+								<hasDateColumn>false</hasDateColumn>
+								<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assignList>
+                        <assign uuid="30b31af4-770c-44a5-b39f-d30354b34443">
+                            <tableNameNoDash>order</tableNameNoDash>
+                            <tableNameCapitalized>Order</tableNameCapitalized>
+                            <columnBeanList>
+								<columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+									<columnName>OrderName</columnName>
+									<columnType>String</columnType>
+									<nextFieldRative>And</nextFieldRative>
+									<nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+										<columnName>PageSize</columnName>
+										<columnType>String</columnType>
+										<nextFieldRative>Finished</nextFieldRative>
+										<length>-9223372036854775808</length>
+									</nextColumnBean>
+									<length>-9223372036854775808</length>
+								</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                        <assign uuid="ca777225-93de-47f4-8d91-612560d06333">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList>
+								<columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+									<columnName>OrderName</columnName>
+									<columnType>String</columnType>
+									<nextFieldRative>And</nextFieldRative>
+									<nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+										<columnName>PageSize</columnName>
+										<columnType>String</columnType>
+										<nextFieldRative>Finished</nextFieldRative>
+										<length>-9223372036854775808</length>
+									</nextColumnBean>
+									<length>-9223372036854775808</length>
+								</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </assignList>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="3390da9f-39a6-4249-a485-a3f85500d954">
+                            <serviceId>orderHeaderBusinessService</serviceId>
+                            <serivceType>OrderHeader</serivceType>
+                            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <annotationBeanList>
+								<annotationBean uuid="a3fe4af6-20aa-49fb-8687-034521ebfe27">
+									<annnoteKey>Service</annnoteKey>
+									<annoteValue>orderBusinessService</annoteValue>
+								</annotationBean>
+                            </annotationBeanList>
+                            <runningMethod uuid="9a0f207b-64c6-44a5-8036-27d1de0774e8">
+								<signature>queryAtomByOrderNameAndPageSize</signature>
+								<responseType uuid="1d672c36-c2c4-4b8b-b818-3b67b644454a">
+									<columnType>OrderHeader</columnType>
+									<fieldType>ENTITY</fieldType>
+									<length>-9223372036854775808</length>
+								</responseType>
+								<assignList>
+									<assign uuid="ca777225-93de-47f4-8d91-612560d06333">
+										<tableNameNoDash>orderHeader</tableNameNoDash>
+										<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+										<columnBeanList>
+											<columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+												<columnName>OrderName</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>And</nextFieldRative>
+												<nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+													<columnName>PageSize</columnName>
+													<columnType>String</columnType>
+													<nextFieldRative>Finished</nextFieldRative>
+													<length>-9223372036854775808</length>
+												</nextColumnBean>
+												<length>-9223372036854775808</length>
+											</columnBean>
+										</columnBeanList>
+										<hasDateColumn>false</hasDateColumn>
+										<hasBigDecimal>false</hasBigDecimal>
+									</assign>
+								</assignList>
+                            </runningMethod>
+                            <includeServiceList>
+								<includeService uuid="f8f8a622-ccec-47a6-8058-fd09b775f3c3">
+									<serviceId>orderHeaderATOMService</serviceId>
+									<serivceType>OrderHeader</serivceType>
+									<serviceDescipter>订单业务的增删改查</serviceDescipter>
+									<serviceCategory>ATM</serviceCategory>
+									<annotationBeanList>
+										<annotationBean uuid="b14fc343-df3c-44e5-9795-0ef715028505">
+											<annnoteKey>Component</annnoteKey>
+										</annotationBean>
+										<annotationBean uuid="86e80989-d799-425d-85ca-252d782b137c">
+											<annnoteKey>Transactional</annnoteKey>
+										</annotationBean>
+									</annotationBeanList>
+									<includeBeanList>
+										<includeBean uuid="d6aa9334-fe73-4352-8ddf-e2636c9e2d3b">
+											<tableNameNoDash>orderHeader</tableNameNoDash>
+											<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+											<columnBeanList/>
+											<hasDateColumn>false</hasDateColumn>
+											<hasBigDecimal>false</hasBigDecimal>
+										</includeBean>
+									</includeBeanList>
+								</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+								<includeBean uuid="7cd2d18e-2a50-4b63-b647-c3e97781b4ed">
+									<tableNameNoDash>orderHeader</tableNameNoDash>
+									<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+									<columnBeanList/>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </serviceMethod>
+                <serviceMethod uuid="72eaa4ca-1c13-4e58-8025-0d6d55becaf8">
+                    <signature>queryBusinessByProductCatatoryAndPageSize</signature>
+                    <signatureDescripter>商品查询</signatureDescripter>
+                    <responseType uuid="788307d7-b6b7-4adb-a295-53c420ed2cc9">
+                        <columnType>Order</columnType>
+                        <fieldType>Page</fieldType>
+                        <length>-9223372036854775808</length>
+                    </responseType>
+                    <catetory>BNS</catetory>
+                    <bodyBean>2e064873-fcf3-4f11-a625-d2fd6330c71c</bodyBean>
+                    <calleeMajorService uuid="7d4e503f-0082-4c18-b3ae-b21e730b680e">
+                        <serviceId>prouctCatoryATOMService</serviceId>
+                        <serivceType>ProuctCatory</serivceType>
+                        <serviceDescipter>商品增删改查</serviceDescipter>
+                        <serviceCategory>ATM</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean uuid="f05f9ade-b7f8-4b62-a165-055caf8280a4">
+								<annnoteKey>Transactional</annnoteKey>
+                            </annotationBean>
+                            <annotationBean uuid="7ff9ffd7-5254-404a-bb40-950ac6392be0">
+								<annnoteKey>Component</annnoteKey>
+                            </annotationBean>
+                            <annotationBean uuid="3ca1513b-fd27-4c33-a44f-c038fc6a37b4">
+								<annnoteKey>Service</annnoteKey>
+								<annoteValue>orderBusinessService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <runningMethod uuid="0c9a0b43-47ad-42fe-b7b2-b6754175853c">
+                            <signature>queryAtomByProuctCatoryAndPageSize</signature>
+                            <responseType uuid="ea09c066-1950-4aa9-8e1e-2c07f7febea8">
+								<columnType>ProuctCatory</columnType>
+								<fieldType>ENTITY</fieldType>
+								<length>-9223372036854775808</length>
+                            </responseType>
+                            <assignList>
+								<assign uuid="bcf62a81-073c-4ee0-b054-1e5abf43d0eb">
+									<tableNameNoDash>prouctCatory</tableNameNoDash>
+									<tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+									<columnBeanList>
+										<columnBean uuid="7b5044a3-bc25-4f23-9dfe-f98d5e189feb">
+											<columnName>ProductCatatory</columnName>
+											<columnType>String</columnType>
+											<nextFieldRative>And</nextFieldRative>
+											<nextColumnBean uuid="1cc5bcc8-5741-4eb4-9ab3-0b8cbe1ffbb6">
+												<columnName>PageSize</columnName>
+												<columnType>String</columnType>
+												<nextFieldRative>Finished</nextFieldRative>
+												<length>-9223372036854775808</length>
+											</nextColumnBean>
+											<length>-9223372036854775808</length>
+										</columnBean>
+									</columnBeanList>
+									<hasDateColumn>false</hasDateColumn>
+									<hasBigDecimal>false</hasBigDecimal>
+								</assign>
+                            </assignList>
+                        </runningMethod>
+                        <includeBeanList>
+                            <includeBean uuid="51dabd05-c817-4baa-8287-71213a4c4ed7">
+								<tableNameNoDash>prouctCatory</tableNameNoDash>
+								<tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+								<columnBeanList/>
+								<hasDateColumn>false</hasDateColumn>
+								<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assignList>
+                        <assign uuid="4852fe2a-d665-4e7f-bc76-7d854436d43f">
+                            <tableNameNoDash>order</tableNameNoDash>
+                            <tableNameCapitalized>Order</tableNameCapitalized>
+                            <columnBeanList>
+<columnBean uuid="7b5044a3-bc25-4f23-9dfe-f98d5e189feb">
+    <columnName>ProductCatatory</columnName>
+    <columnType>String</columnType>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="1cc5bcc8-5741-4eb4-9ab3-0b8cbe1ffbb6">
+        <columnName>PageSize</columnName>
+        <columnType>String</columnType>
+        <nextFieldRative>Finished</nextFieldRative>
+        <length>-9223372036854775808</length>
+    </nextColumnBean>
+    <length>-9223372036854775808</length>
+</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                        <assign uuid="bcf62a81-073c-4ee0-b054-1e5abf43d0eb">
+                            <tableNameNoDash>prouctCatory</tableNameNoDash>
+                            <tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+                            <columnBeanList>
+<columnBean uuid="7b5044a3-bc25-4f23-9dfe-f98d5e189feb">
+    <columnName>ProductCatatory</columnName>
+    <columnType>String</columnType>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="1cc5bcc8-5741-4eb4-9ab3-0b8cbe1ffbb6">
+        <columnName>PageSize</columnName>
+        <columnType>String</columnType>
+        <nextFieldRative>Finished</nextFieldRative>
+        <length>-9223372036854775808</length>
+    </nextColumnBean>
+    <length>-9223372036854775808</length>
+</columnBean>
+                            </columnBeanList>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </assignList>
+                    <callAtomServicesList>
+                        <callAtomService uuid="7d4e503f-0082-4c18-b3ae-b21e730b680e">
+                            <serviceId>prouctCatoryATOMService</serviceId>
+                            <serivceType>ProuctCatory</serivceType>
+                            <serviceDescipter>商品增删改查</serviceDescipter>
+                            <serviceCategory>ATM</serviceCategory>
+                            <annotationBeanList>
+<annotationBean uuid="f05f9ade-b7f8-4b62-a165-055caf8280a4">
+    <annnoteKey>Transactional</annnoteKey>
+</annotationBean>
+<annotationBean uuid="7ff9ffd7-5254-404a-bb40-950ac6392be0">
+    <annnoteKey>Component</annnoteKey>
+</annotationBean>
+<annotationBean uuid="3ca1513b-fd27-4c33-a44f-c038fc6a37b4">
+    <annnoteKey>Service</annnoteKey>
+    <annoteValue>orderBusinessService</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <runningMethod uuid="0c9a0b43-47ad-42fe-b7b2-b6754175853c">
+<signature>queryAtomByProuctCatoryAndPageSize</signature>
+<responseType uuid="ea09c066-1950-4aa9-8e1e-2c07f7febea8">
+    <columnType>ProuctCatory</columnType>
+    <fieldType>ENTITY</fieldType>
+    <length>-9223372036854775808</length>
+</responseType>
+<assignList>
+    <assign uuid="bcf62a81-073c-4ee0-b054-1e5abf43d0eb">
+        <tableNameNoDash>prouctCatory</tableNameNoDash>
+        <tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+        <columnBeanList>
+            <columnBean uuid="7b5044a3-bc25-4f23-9dfe-f98d5e189feb">
+                <columnName>ProductCatatory</columnName>
+                <columnType>String</columnType>
+                <nextFieldRative>And</nextFieldRative>
+                <nextColumnBean uuid="1cc5bcc8-5741-4eb4-9ab3-0b8cbe1ffbb6">
+                    <columnName>PageSize</columnName>
+                    <columnType>String</columnType>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <length>-9223372036854775808</length>
+                </nextColumnBean>
+                <length>-9223372036854775808</length>
+            </columnBean>
+        </columnBeanList>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </assign>
+</assignList>
+                            </runningMethod>
+                            <includeBeanList>
+<includeBean uuid="51dabd05-c817-4baa-8287-71213a4c4ed7">
+    <tableNameNoDash>prouctCatory</tableNameNoDash>
+    <tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+    <columnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callAtomService>
+                    </callAtomServicesList>
+                </serviceMethod>
+            </serviceMethodList>
+            <includeServiceList>
+                <includeService uuid="2dc296b8-adb5-45ca-be58-acf778c550d0">
+                    <serviceId>orderATOMService</serviceId>
+                    <serivceType>Order</serivceType>
+                    <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                    <serviceCategory>ATM</serviceCategory>
+                    <annotationBeanList>
+                        <annotationBean uuid="46c31fe6-8952-415e-88d5-7ba5e2434507">
+                            <annnoteKey>Component</annnoteKey>
+                        </annotationBean>
+                        <annotationBean uuid="e3705749-94d3-4e66-915d-19615b4917f7">
+                            <annnoteKey>Transactional</annnoteKey>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <runningMethod uuid="694f7f4c-8883-4f6e-baa9-7e77b8599ea1">
+                        <signature>queryBusinessByProductNameAndPageSize</signature>
+                        <responseType uuid="86ff7008-ec9c-4c6e-bf16-5d1b93938356">
+                            <columnType>Order</columnType>
+                            <fieldType>Page</fieldType>
+                            <length>-9223372036854775808</length>
+                        </responseType>
+                        <assignList>
+                            <assign uuid="529d74c9-0b44-4ab0-999e-d3d8b0d2751e">
+<tableNameNoDash>order</tableNameNoDash>
+<tableNameCapitalized>Order</tableNameCapitalized>
+<columnBeanList>
+    <columnBean uuid="e0cdad3c-b670-4e7d-9859-035902fd8a3f">
+        <columnName>ProductDetail</columnName>
+        <columnType>String</columnType>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="48366402-6a03-4c06-bb5f-87c0569578f2">
+            <columnName>PageSize</columnName>
+            <columnType>String</columnType>
+            <nextFieldRative>Finished</nextFieldRative>
+            <length>-9223372036854775808</length>
+        </nextColumnBean>
+        <length>-9223372036854775808</length>
+    </columnBean>
+</columnBeanList>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </assignList>
+                    </runningMethod>
+                    <includeBeanList>
+                        <includeBean uuid="0588623e-dcdf-4530-90bd-587807443168">
+                            <tableNameNoDash>order</tableNameNoDash>
+                            <tableNameCapitalized>Order</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeService>
+                <includeService uuid="3390da9f-39a6-4249-a485-a3f85500d954">
+                    <serviceId>orderHeaderBusinessService</serviceId>
+                    <serivceType>OrderHeader</serivceType>
+                    <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                    <serviceCategory>BNS</serviceCategory>
+                    <annotationBeanList>
+                        <annotationBean uuid="a3fe4af6-20aa-49fb-8687-034521ebfe27">
+                            <annnoteKey>Service</annnoteKey>
+                            <annoteValue>orderBusinessService</annoteValue>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <runningMethod uuid="9a0f207b-64c6-44a5-8036-27d1de0774e8">
+                        <signature>queryAtomByOrderNameAndPageSize</signature>
+                        <responseType uuid="1d672c36-c2c4-4b8b-b818-3b67b644454a">
+                            <columnType>OrderHeader</columnType>
+                            <fieldType>ENTITY</fieldType>
+                            <length>-9223372036854775808</length>
+                        </responseType>
+                        <assignList>
+                            <assign uuid="ca777225-93de-47f4-8d91-612560d06333">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList>
+    <columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+        <columnName>OrderName</columnName>
+        <columnType>String</columnType>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+            <columnName>PageSize</columnName>
+            <columnType>String</columnType>
+            <nextFieldRative>Finished</nextFieldRative>
+            <length>-9223372036854775808</length>
+        </nextColumnBean>
+        <length>-9223372036854775808</length>
+    </columnBean>
+</columnBeanList>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </assignList>
+                    </runningMethod>
+                    <includeServiceList>
+                        <includeService uuid="f8f8a622-ccec-47a6-8058-fd09b775f3c3">
+                            <serviceId>orderHeaderATOMService</serviceId>
+                            <serivceType>OrderHeader</serivceType>
+                            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                            <serviceCategory>ATM</serviceCategory>
+                            <annotationBeanList>
+<annotationBean uuid="b14fc343-df3c-44e5-9795-0ef715028505">
+    <annnoteKey>Component</annnoteKey>
+</annotationBean>
+<annotationBean uuid="86e80989-d799-425d-85ca-252d782b137c">
+    <annnoteKey>Transactional</annnoteKey>
+</annotationBean>
+                            </annotationBeanList>
+                            <includeBeanList>
+<includeBean uuid="d6aa9334-fe73-4352-8ddf-e2636c9e2d3b">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </includeService>
+                    </includeServiceList>
+                    <includeBeanList>
+                        <includeBean uuid="7cd2d18e-2a50-4b63-b647-c3e97781b4ed">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeService>
+            </includeServiceList>
+            <includeBeanList>
+                <includeBean uuid="49058825-9e24-4a4b-80fa-ed0059a67b6e">
+                    <tableNameNoDash>order</tableNameNoDash>
+                    <tableNameCapitalized>Order</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+                <includeBean uuid="ca777225-93de-47f4-8d91-612560d06333">
+                    <tableNameNoDash>orderHeader</tableNameNoDash>
+                    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                    <columnBeanList>
+                        <columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+                            <columnName>OrderName</columnName>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+<columnName>PageSize</columnName>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<length>-9223372036854775808</length>
+                            </nextColumnBean>
+                            <length>-9223372036854775808</length>
+                        </columnBean>
+                    </columnBeanList>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+                <includeBean uuid="bcf62a81-073c-4ee0-b054-1e5abf43d0eb">
+                    <tableNameNoDash>prouctCatory</tableNameNoDash>
+                    <tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+                    <columnBeanList>
+                        <columnBean uuid="7b5044a3-bc25-4f23-9dfe-f98d5e189feb">
+                            <columnName>ProductCatatory</columnName>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="1cc5bcc8-5741-4eb4-9ab3-0b8cbe1ffbb6">
+<columnName>PageSize</columnName>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<length>-9223372036854775808</length>
+                            </nextColumnBean>
+                            <length>-9223372036854775808</length>
+                        </columnBean>
+                    </columnBeanList>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </businessService>
+        <businessService uuid="3390da9f-39a6-4249-a485-a3f85500d954">
+            <serviceId>orderHeaderBusinessService</serviceId>
+            <serivceType>OrderHeader</serivceType>
+            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+            <serviceCategory>BNS</serviceCategory>
+            <annotationBeanList>
+                <annotationBean uuid="a3fe4af6-20aa-49fb-8687-034521ebfe27">
+                    <annnoteKey>Service</annnoteKey>
+                    <annoteValue>orderBusinessService</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <runningMethod uuid="9a0f207b-64c6-44a5-8036-27d1de0774e8">
+                <signature>queryAtomByOrderNameAndPageSize</signature>
+                <responseType uuid="1d672c36-c2c4-4b8b-b818-3b67b644454a">
+                    <columnType>OrderHeader</columnType>
+                    <fieldType>ENTITY</fieldType>
+                    <length>-9223372036854775808</length>
+                </responseType>
+                <assignList>
+                    <assign uuid="ca777225-93de-47f4-8d91-612560d06333">
+                        <tableNameNoDash>orderHeader</tableNameNoDash>
+                        <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                        <columnBeanList>
+                            <columnBean uuid="b7cb06ed-519c-457d-9f9b-2e6b671cfca7">
+<columnName>OrderName</columnName>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="75482ffa-7939-41f6-b695-5af0a8d4a106">
+    <columnName>PageSize</columnName>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <length>-9223372036854775808</length>
+</nextColumnBean>
+<length>-9223372036854775808</length>
+                            </columnBean>
+                        </columnBeanList>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                </assignList>
+            </runningMethod>
+            <includeServiceList>
+                <includeService uuid="f8f8a622-ccec-47a6-8058-fd09b775f3c3">
+                    <serviceId>orderHeaderATOMService</serviceId>
+                    <serivceType>OrderHeader</serivceType>
+                    <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                    <serviceCategory>ATM</serviceCategory>
+                    <annotationBeanList>
+                        <annotationBean uuid="b14fc343-df3c-44e5-9795-0ef715028505">
+                            <annnoteKey>Component</annnoteKey>
+                        </annotationBean>
+                        <annotationBean uuid="86e80989-d799-425d-85ca-252d782b137c">
+                            <annnoteKey>Transactional</annnoteKey>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="d6aa9334-fe73-4352-8ddf-e2636c9e2d3b">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeService>
+            </includeServiceList>
+            <includeBeanList>
+                <includeBean uuid="7cd2d18e-2a50-4b63-b647-c3e97781b4ed">
+                    <tableNameNoDash>orderHeader</tableNameNoDash>
+                    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </businessService>
+    </businessServices>
+</ServicePackage>
