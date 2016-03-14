@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FrontPackage uuid="73d0ce2c-1bac-4284-88ad-e3123be4cc4b-com.ndl.framework.workbrench.define.FrontPackage-2">
+    <FrontName>testFront</FrontName>
+    <controlleres>
+        <controller uuid="c4be531e-e72e-4da9-a972-2babc47d35d4-com.ndl.framework.workbrench.define.ControllerBean-0">
+            <controllerId>loginBeanController</controllerId>
+            <uri>login</uri>
+            <controllerType>LoginBeanController</controllerType>
+            <controllerDescipter>Controller Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</controllerDescipter>
+            <extendedClass>BaseManageController</extendedClass>
+            <controllerCategory>POST</controllerCategory>
+            <annotationBeanList>
+                <annotation>
+                    <annnoteKey>Controller</annnoteKey>
+                </annotation>
+                <annotation>
+                    <annnoteKey>RequestMapping</annnoteKey>
+                    <annoteValue>login</annoteValue>
+                </annotation>
+            </annotationBeanList>
+            <instanceAnnotationBeanList>
+                <instanceAnnotationBean>
+                    <annnoteKey>Autowired</annnoteKey>
+                    <annoteValue>loginBeanBusinessService</annoteValue>
+                    <annoteType>LoginBeanBusinessService</annoteType>
+                </instanceAnnotationBean>
+            </instanceAnnotationBeanList>
+            <controllerMethodList>
+                <controllerMethod uuid="5ab778b6-c309-4aa2-adf1-0dceba497276-com.ndl.framework.workbrench.define.MethodBean-212">
+                    <signature>checkLogin</signature>
+                    <signatureDescripter></signatureDescripter>
+                    <responseType uuid="25030dd7-5e58-404c-a32e-02df106f627e-com.ndl.framework.workbrench.define.ColumnBean-4696">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>Login</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>GET</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="cc0b040d-5d11-4323-9bf6-9b628427549b-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-75">
+                        <fromMethod>5ab778b6-c309-4aa2-adf1-0dceba497276-com.ndl.framework.workbrench.define.MethodBean-212</fromMethod>
+                        <fromResultType uuid="25030dd7-5e58-404c-a32e-02df106f627e-com.ndl.framework.workbrench.define.ColumnBean-4696">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Login</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>loginBySex</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="d08899a1-a0cf-4080-87fa-fa41f80db322-com.ndl.framework.workbrench.define.ServiceBean-87">
+                        <serviceId>loginBeanBusinessService</serviceId>
+                        <serivceType>LoginBeanBusinessService</serivceType>
+                        <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Service</annnoteKey>
+<annoteValue>loginBeanBusinessService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean>
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>loginBeanAtomService</annoteValue>
+<annoteType>LoginBeanAtomService</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <runningMethod uuid="1d8f5cd5-836c-4fec-b028-3607864e79b3-com.ndl.framework.workbrench.define.MethodBean-213">
+                            <signature>queryLoginByUserNameOrSex</signature>
+                            <responseType uuid="b618300c-68d9-4279-810b-1b0b16c6d5d7-com.ndl.framework.workbrench.define.ColumnBean-4697">
+<columnName></columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>Login</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>BNS</catetory>
+                            <assign uuid="b6d4c7b3-2c02-4998-b837-4413df71edee-com.ndl.framework.workbrench.define.TableBean-669">
+<tableNameNoDash>login</tableNameNoDash>
+<tableNameCapitalized>Login</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="85cfb1cd-3a19-466d-b7eb-4a22330cfa90-com.ndl.framework.workbrench.define.ColumnBean-4694">
+    <columnName>Name</columnName>
+    <columnNameNoDash>name</columnNameNoDash>
+    <columnNameCapitalized>Name</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Or</nextFieldRative>
+    <nextColumnBean uuid="25b996b2-04f9-4288-9b53-6ef86f9aaf9b-com.ndl.framework.workbrench.define.ColumnBean-4695">
+        <columnName>Sex</columnName>
+        <columnNameNoDash>sex</columnNameNoDash>
+        <columnNameCapitalized>Sex</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="0fe69001-8615-4754-801a-6459f4e41cb0-com.ndl.framework.workbrench.define.ServiceBean-88">
+<serviceId>loginBeanAtomService</serviceId>
+<serivceType>LoginBeanAtomService</serivceType>
+<serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+<serviceCategory>ATM</serviceCategory>
+<annotationBeanList>
+    <annotationBean>
+        <annnoteKey>Transactional</annnoteKey>
+    </annotationBean>
+    <annotationBean>
+        <annnoteKey>Component</annnoteKey>
+        <annoteValue>loginBeanAtomService</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<instanceAnnotationBeanList>
+    <instanceAnnotationBean>
+        <annnoteKey>Autowired</annnoteKey>
+        <annoteValue>loginJPABeanDao</annoteValue>
+        <annoteType>LoginJPABeanDao</annoteType>
+    </instanceAnnotationBean>
+</instanceAnnotationBeanList>
+<includeBeanList>
+    <includeBean uuid="4c6e936a-df2d-4752-9fb6-bc12ffb9e1e4-com.ndl.framework.workbrench.define.TableBean-644">
+        <tableNameNoDash>login</tableNameNoDash>
+        <tableNameCapitalized>Login</tableNameCapitalized>
+        <columnBeanList/>
+        <transientColumnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+<includeDaoList>
+    <includeDao uuid="f46b61de-4631-4e24-9c00-d78179da94d2-com.ndl.framework.workbrench.define.DaoBean-125">
+        <daoId>loginJPABeanDao</daoId>
+        <daoType>LoginJPABeanDao</daoType>
+        <daoDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</daoDescipter>
+        <daoCategory>JPA</daoCategory>
+        <annotationBeanList>
+            <annotationBean>
+                <annnoteKey>Repository</annnoteKey>
+                <annoteValue>loginJPABeanDao</annoteValue>
+            </annotationBean>
+        </annotationBeanList>
+        <includeBeanList>
+            <includeBean uuid="f86ceb5b-91e2-46ea-a43e-e3f975dadc62-com.ndl.framework.workbrench.define.TableBean-645">
+                <tableNameNoDash>login</tableNameNoDash>
+                <tableNameCapitalized>Login</tableNameCapitalized>
+                <columnBeanList/>
+                <transientColumnBeanList/>
+                <hasDateColumn>false</hasDateColumn>
+                <hasBigDecimal>false</hasBigDecimal>
+            </includeBean>
+        </includeBeanList>
+    </includeDao>
+</includeDaoList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="8127eedb-4618-4b3b-adde-bcea875d84e5-com.ndl.framework.workbrench.define.TableBean-643">
+<tableNameNoDash>login</tableNameNoDash>
+<tableNameCapitalized>Login</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assign uuid="b6d4c7b3-2c02-4998-b837-4413df71edee-com.ndl.framework.workbrench.define.TableBean-669">
+                        <tableNameNoDash>login</tableNameNoDash>
+                        <tableNameCapitalized>Login</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="85cfb1cd-3a19-466d-b7eb-4a22330cfa90-com.ndl.framework.workbrench.define.ColumnBean-4694">
+                            <columnName>Name</columnName>
+                            <columnNameNoDash>name</columnNameNoDash>
+                            <columnNameCapitalized>Name</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Or</nextFieldRative>
+                            <nextColumnBean uuid="25b996b2-04f9-4288-9b53-6ef86f9aaf9b-com.ndl.framework.workbrench.define.ColumnBean-4695">
+<columnName>Sex</columnName>
+<columnNameNoDash>sex</columnNameNoDash>
+<columnNameCapitalized>Sex</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="d08899a1-a0cf-4080-87fa-fa41f80db322-com.ndl.framework.workbrench.define.ServiceBean-87">
+                            <serviceId>loginBeanBusinessService</serviceId>
+                            <serivceType>LoginBeanBusinessService</serivceType>
+                            <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Service</annnoteKey>
+    <annoteValue>loginBeanBusinessService</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <instanceAnnotationBeanList>
+<instanceAnnotationBean>
+    <annnoteKey>Autowired</annnoteKey>
+    <annoteValue>loginBeanAtomService</annoteValue>
+    <annoteType>LoginBeanAtomService</annoteType>
+</instanceAnnotationBean>
+                            </instanceAnnotationBeanList>
+                            <runningMethod uuid="1d8f5cd5-836c-4fec-b028-3607864e79b3-com.ndl.framework.workbrench.define.MethodBean-213">
+<signature>queryLoginByUserNameOrSex</signature>
+<responseType uuid="b618300c-68d9-4279-810b-1b0b16c6d5d7-com.ndl.framework.workbrench.define.ColumnBean-4697">
+    <columnName></columnName>
+    <columnNameNoDash></columnNameNoDash>
+    <columnNameCapitalized></columnNameCapitalized>
+    <columnType>Login</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>BNS</catetory>
+<assign uuid="b6d4c7b3-2c02-4998-b837-4413df71edee-com.ndl.framework.workbrench.define.TableBean-669">
+    <tableNameNoDash>login</tableNameNoDash>
+    <tableNameCapitalized>Login</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="85cfb1cd-3a19-466d-b7eb-4a22330cfa90-com.ndl.framework.workbrench.define.ColumnBean-4694">
+        <columnName>Name</columnName>
+        <columnNameNoDash>name</columnNameNoDash>
+        <columnNameCapitalized>Name</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Or</nextFieldRative>
+        <nextColumnBean uuid="25b996b2-04f9-4288-9b53-6ef86f9aaf9b-com.ndl.framework.workbrench.define.ColumnBean-4695">
+            <columnName>Sex</columnName>
+            <columnNameNoDash>sex</columnNameNoDash>
+            <columnNameCapitalized>Sex</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <includeServiceList>
+<includeService uuid="0fe69001-8615-4754-801a-6459f4e41cb0-com.ndl.framework.workbrench.define.ServiceBean-88">
+    <serviceId>loginBeanAtomService</serviceId>
+    <serivceType>LoginBeanAtomService</serivceType>
+    <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+    <serviceCategory>ATM</serviceCategory>
+    <annotationBeanList>
+        <annotationBean>
+            <annnoteKey>Transactional</annnoteKey>
+        </annotationBean>
+        <annotationBean>
+            <annnoteKey>Component</annnoteKey>
+            <annoteValue>loginBeanAtomService</annoteValue>
+        </annotationBean>
+    </annotationBeanList>
+    <instanceAnnotationBeanList>
+        <instanceAnnotationBean>
+            <annnoteKey>Autowired</annnoteKey>
+            <annoteValue>loginJPABeanDao</annoteValue>
+            <annoteType>LoginJPABeanDao</annoteType>
+        </instanceAnnotationBean>
+    </instanceAnnotationBeanList>
+    <includeBeanList>
+        <includeBean uuid="4c6e936a-df2d-4752-9fb6-bc12ffb9e1e4-com.ndl.framework.workbrench.define.TableBean-644">
+            <tableNameNoDash>login</tableNameNoDash>
+            <tableNameCapitalized>Login</tableNameCapitalized>
+            <columnBeanList/>
+            <transientColumnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </includeBean>
+    </includeBeanList>
+    <includeDaoList>
+        <includeDao uuid="f46b61de-4631-4e24-9c00-d78179da94d2-com.ndl.framework.workbrench.define.DaoBean-125">
+            <daoId>loginJPABeanDao</daoId>
+            <daoType>LoginJPABeanDao</daoType>
+            <daoDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>loginJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="f86ceb5b-91e2-46ea-a43e-e3f975dadc62-com.ndl.framework.workbrench.define.TableBean-645">
+                    <tableNameNoDash>login</tableNameNoDash>
+                    <tableNameCapitalized>Login</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </includeDao>
+    </includeDaoList>
+</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+<includeBean uuid="8127eedb-4618-4b3b-adde-bcea875d84e5-com.ndl.framework.workbrench.define.TableBean-643">
+    <tableNameNoDash>login</tableNameNoDash>
+    <tableNameCapitalized>Login</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </controllerMethod>
+                <controllerMethod uuid="80b05a46-9f62-4087-86c2-3b103dff4a1f-com.ndl.framework.workbrench.define.MethodBean-210">
+                    <signature>login</signature>
+                    <signatureDescripter>toLogin</signatureDescripter>
+                    <responseType uuid="b80fa09c-72da-4b6b-9fd4-daf6f73b1bd4-com.ndl.framework.workbrench.define.ColumnBean-4692">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>Login</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>POST</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="7d4aa823-7cc8-4d1d-be1d-d3b7eb5ab7ff-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-74">
+                        <fromMethod>80b05a46-9f62-4087-86c2-3b103dff4a1f-com.ndl.framework.workbrench.define.MethodBean-210</fromMethod>
+                        <fromResultType uuid="b80fa09c-72da-4b6b-9fd4-daf6f73b1bd4-com.ndl.framework.workbrench.define.ColumnBean-4692">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>Login</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>queryLogin</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="d08899a1-a0cf-4080-87fa-fa41f80db322-com.ndl.framework.workbrench.define.ServiceBean-87">
+                        <serviceId>loginBeanBusinessService</serviceId>
+                        <serivceType>LoginBeanBusinessService</serivceType>
+                        <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Service</annnoteKey>
+<annoteValue>loginBeanBusinessService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean>
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>loginBeanAtomService</annoteValue>
+<annoteType>LoginBeanAtomService</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <runningMethod uuid="c8afa577-d2af-4eaf-b042-3b2b44668f9b-com.ndl.framework.workbrench.define.MethodBean-211">
+                            <signature>queryLoginByUserNameAndPassword</signature>
+                            <responseType uuid="8aac40ae-5f45-4530-ba02-41cf7f92c168-com.ndl.framework.workbrench.define.ColumnBean-4693">
+<columnName></columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>Login</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>BNS</catetory>
+                            <assign uuid="15adf9b2-d3b2-4ad7-bf7c-3c4dc2d74cfa-com.ndl.framework.workbrench.define.TableBean-668">
+<tableNameNoDash>login</tableNameNoDash>
+<tableNameCapitalized>Login</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="ab4816f2-e027-4464-94dc-b87920bf9571-com.ndl.framework.workbrench.define.ColumnBean-4690">
+    <columnName></columnName>
+    <columnNameNoDash>name</columnNameNoDash>
+    <columnNameCapitalized>Name</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="5bbb307d-df7a-4610-9d24-0dea2901bb6b-com.ndl.framework.workbrench.define.ColumnBean-4691">
+        <columnName>Password</columnName>
+        <columnNameNoDash>password</columnNameNoDash>
+        <columnNameCapitalized>Password</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="0fe69001-8615-4754-801a-6459f4e41cb0-com.ndl.framework.workbrench.define.ServiceBean-88">
+<serviceId>loginBeanAtomService</serviceId>
+<serivceType>LoginBeanAtomService</serivceType>
+<serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+<serviceCategory>ATM</serviceCategory>
+<annotationBeanList>
+    <annotationBean>
+        <annnoteKey>Transactional</annnoteKey>
+    </annotationBean>
+    <annotationBean>
+        <annnoteKey>Component</annnoteKey>
+        <annoteValue>loginBeanAtomService</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<instanceAnnotationBeanList>
+    <instanceAnnotationBean>
+        <annnoteKey>Autowired</annnoteKey>
+        <annoteValue>loginJPABeanDao</annoteValue>
+        <annoteType>LoginJPABeanDao</annoteType>
+    </instanceAnnotationBean>
+</instanceAnnotationBeanList>
+<includeBeanList>
+    <includeBean uuid="4c6e936a-df2d-4752-9fb6-bc12ffb9e1e4-com.ndl.framework.workbrench.define.TableBean-644">
+        <tableNameNoDash>login</tableNameNoDash>
+        <tableNameCapitalized>Login</tableNameCapitalized>
+        <columnBeanList/>
+        <transientColumnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+<includeDaoList>
+    <includeDao uuid="f46b61de-4631-4e24-9c00-d78179da94d2-com.ndl.framework.workbrench.define.DaoBean-125">
+        <daoId>loginJPABeanDao</daoId>
+        <daoType>LoginJPABeanDao</daoType>
+        <daoDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</daoDescipter>
+        <daoCategory>JPA</daoCategory>
+        <annotationBeanList>
+            <annotationBean>
+                <annnoteKey>Repository</annnoteKey>
+                <annoteValue>loginJPABeanDao</annoteValue>
+            </annotationBean>
+        </annotationBeanList>
+        <includeBeanList>
+            <includeBean uuid="f86ceb5b-91e2-46ea-a43e-e3f975dadc62-com.ndl.framework.workbrench.define.TableBean-645">
+                <tableNameNoDash>login</tableNameNoDash>
+                <tableNameCapitalized>Login</tableNameCapitalized>
+                <columnBeanList/>
+                <transientColumnBeanList/>
+                <hasDateColumn>false</hasDateColumn>
+                <hasBigDecimal>false</hasBigDecimal>
+            </includeBean>
+        </includeBeanList>
+    </includeDao>
+</includeDaoList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="8127eedb-4618-4b3b-adde-bcea875d84e5-com.ndl.framework.workbrench.define.TableBean-643">
+<tableNameNoDash>login</tableNameNoDash>
+<tableNameCapitalized>Login</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assign uuid="15adf9b2-d3b2-4ad7-bf7c-3c4dc2d74cfa-com.ndl.framework.workbrench.define.TableBean-668">
+                        <tableNameNoDash>login</tableNameNoDash>
+                        <tableNameCapitalized>Login</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="ab4816f2-e027-4464-94dc-b87920bf9571-com.ndl.framework.workbrench.define.ColumnBean-4690">
+                            <columnName></columnName>
+                            <columnNameNoDash>name</columnNameNoDash>
+                            <columnNameCapitalized>Name</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="5bbb307d-df7a-4610-9d24-0dea2901bb6b-com.ndl.framework.workbrench.define.ColumnBean-4691">
+<columnName>Password</columnName>
+<columnNameNoDash>password</columnNameNoDash>
+<columnNameCapitalized>Password</columnNameCapitalized>
+<columnType>String</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="d08899a1-a0cf-4080-87fa-fa41f80db322-com.ndl.framework.workbrench.define.ServiceBean-87">
+                            <serviceId>loginBeanBusinessService</serviceId>
+                            <serivceType>LoginBeanBusinessService</serivceType>
+                            <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Service</annnoteKey>
+    <annoteValue>loginBeanBusinessService</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <instanceAnnotationBeanList>
+<instanceAnnotationBean>
+    <annnoteKey>Autowired</annnoteKey>
+    <annoteValue>loginBeanAtomService</annoteValue>
+    <annoteType>LoginBeanAtomService</annoteType>
+</instanceAnnotationBean>
+                            </instanceAnnotationBeanList>
+                            <runningMethod uuid="c8afa577-d2af-4eaf-b042-3b2b44668f9b-com.ndl.framework.workbrench.define.MethodBean-211">
+<signature>queryLoginByUserNameAndPassword</signature>
+<responseType uuid="8aac40ae-5f45-4530-ba02-41cf7f92c168-com.ndl.framework.workbrench.define.ColumnBean-4693">
+    <columnName></columnName>
+    <columnNameNoDash></columnNameNoDash>
+    <columnNameCapitalized></columnNameCapitalized>
+    <columnType>Login</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>BNS</catetory>
+<assign uuid="15adf9b2-d3b2-4ad7-bf7c-3c4dc2d74cfa-com.ndl.framework.workbrench.define.TableBean-668">
+    <tableNameNoDash>login</tableNameNoDash>
+    <tableNameCapitalized>Login</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="ab4816f2-e027-4464-94dc-b87920bf9571-com.ndl.framework.workbrench.define.ColumnBean-4690">
+        <columnName></columnName>
+        <columnNameNoDash>name</columnNameNoDash>
+        <columnNameCapitalized>Name</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="5bbb307d-df7a-4610-9d24-0dea2901bb6b-com.ndl.framework.workbrench.define.ColumnBean-4691">
+            <columnName>Password</columnName>
+            <columnNameNoDash>password</columnNameNoDash>
+            <columnNameCapitalized>Password</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <includeServiceList>
+<includeService uuid="0fe69001-8615-4754-801a-6459f4e41cb0-com.ndl.framework.workbrench.define.ServiceBean-88">
+    <serviceId>loginBeanAtomService</serviceId>
+    <serivceType>LoginBeanAtomService</serivceType>
+    <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+    <serviceCategory>ATM</serviceCategory>
+    <annotationBeanList>
+        <annotationBean>
+            <annnoteKey>Transactional</annnoteKey>
+        </annotationBean>
+        <annotationBean>
+            <annnoteKey>Component</annnoteKey>
+            <annoteValue>loginBeanAtomService</annoteValue>
+        </annotationBean>
+    </annotationBeanList>
+    <instanceAnnotationBeanList>
+        <instanceAnnotationBean>
+            <annnoteKey>Autowired</annnoteKey>
+            <annoteValue>loginJPABeanDao</annoteValue>
+            <annoteType>LoginJPABeanDao</annoteType>
+        </instanceAnnotationBean>
+    </instanceAnnotationBeanList>
+    <includeBeanList>
+        <includeBean uuid="4c6e936a-df2d-4752-9fb6-bc12ffb9e1e4-com.ndl.framework.workbrench.define.TableBean-644">
+            <tableNameNoDash>login</tableNameNoDash>
+            <tableNameCapitalized>Login</tableNameCapitalized>
+            <columnBeanList/>
+            <transientColumnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </includeBean>
+    </includeBeanList>
+    <includeDaoList>
+        <includeDao uuid="f46b61de-4631-4e24-9c00-d78179da94d2-com.ndl.framework.workbrench.define.DaoBean-125">
+            <daoId>loginJPABeanDao</daoId>
+            <daoType>LoginJPABeanDao</daoType>
+            <daoDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>loginJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="f86ceb5b-91e2-46ea-a43e-e3f975dadc62-com.ndl.framework.workbrench.define.TableBean-645">
+                    <tableNameNoDash>login</tableNameNoDash>
+                    <tableNameCapitalized>Login</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </includeDao>
+    </includeDaoList>
+</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+<includeBean uuid="8127eedb-4618-4b3b-adde-bcea875d84e5-com.ndl.framework.workbrench.define.TableBean-643">
+    <tableNameNoDash>login</tableNameNoDash>
+    <tableNameCapitalized>Login</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </controllerMethod>
+            </controllerMethodList>
+            <includeService uuid="d08899a1-a0cf-4080-87fa-fa41f80db322-com.ndl.framework.workbrench.define.ServiceBean-87">
+                <serviceId>loginBeanBusinessService</serviceId>
+                <serivceType>LoginBeanBusinessService</serivceType>
+                <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                <serviceCategory>BNS</serviceCategory>
+                <annotationBeanList>
+                    <annotationBean>
+                        <annnoteKey>Service</annnoteKey>
+                        <annoteValue>loginBeanBusinessService</annoteValue>
+                    </annotationBean>
+                </annotationBeanList>
+                <instanceAnnotationBeanList>
+                    <instanceAnnotationBean>
+                        <annnoteKey>Autowired</annnoteKey>
+                        <annoteValue>loginBeanAtomService</annoteValue>
+                        <annoteType>LoginBeanAtomService</annoteType>
+                    </instanceAnnotationBean>
+                </instanceAnnotationBeanList>
+                <includeServiceList>
+                    <includeService uuid="0fe69001-8615-4754-801a-6459f4e41cb0-com.ndl.framework.workbrench.define.ServiceBean-88">
+                        <serviceId>loginBeanAtomService</serviceId>
+                        <serivceType>LoginBeanAtomService</serivceType>
+                        <serviceDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</serviceDescipter>
+                        <serviceCategory>ATM</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Transactional</annnoteKey>
+                            </annotationBean>
+                            <annotationBean>
+<annnoteKey>Component</annnoteKey>
+<annoteValue>loginBeanAtomService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean>
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>loginJPABeanDao</annoteValue>
+<annoteType>LoginJPABeanDao</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <includeBeanList>
+                            <includeBean uuid="4c6e936a-df2d-4752-9fb6-bc12ffb9e1e4-com.ndl.framework.workbrench.define.TableBean-644">
+<tableNameNoDash>login</tableNameNoDash>
+<tableNameCapitalized>Login</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                        <includeDaoList>
+                            <includeDao uuid="f46b61de-4631-4e24-9c00-d78179da94d2-com.ndl.framework.workbrench.define.DaoBean-125">
+<daoId>loginJPABeanDao</daoId>
+<daoType>LoginJPABeanDao</daoType>
+<daoDescipter>Service Type:Login
+ index login addLogin createLogin deleteLogin updateLogin</daoDescipter>
+<daoCategory>JPA</daoCategory>
+<annotationBeanList>
+    <annotationBean>
+        <annnoteKey>Repository</annnoteKey>
+        <annoteValue>loginJPABeanDao</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<includeBeanList>
+    <includeBean uuid="f86ceb5b-91e2-46ea-a43e-e3f975dadc62-com.ndl.framework.workbrench.define.TableBean-645">
+        <tableNameNoDash>login</tableNameNoDash>
+        <tableNameCapitalized>Login</tableNameCapitalized>
+        <columnBeanList/>
+        <transientColumnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+                            </includeDao>
+                        </includeDaoList>
+                    </includeService>
+                </includeServiceList>
+                <includeBeanList>
+                    <includeBean uuid="8127eedb-4618-4b3b-adde-bcea875d84e5-com.ndl.framework.workbrench.define.TableBean-643">
+                        <tableNameNoDash>login</tableNameNoDash>
+                        <tableNameCapitalized>Login</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </includeBean>
+                </includeBeanList>
+            </includeService>
+            <includeBeanList>
+                <includeBean uuid="cf453502-216a-4dbf-930f-21567eeef615-com.ndl.framework.workbrench.define.TableBean-642">
+                    <tableNameNoDash>login</tableNameNoDash>
+                    <tableNameCapitalized>Login</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </controller>
+    </controlleres>
+    <controllerTemplates/>
+</FrontPackage>

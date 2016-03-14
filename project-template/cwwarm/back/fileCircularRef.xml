@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company>
+    <id>1</id>
+    <name>ABC</name>
+    <departments>
+        <department>
+            <id>1</id>
+            <name>研发</name>
+            <employees>
+                <employee>
+                    <id>2</id>
+                    <name>李四</name>
+                </employee>
+                <employee>
+                    <id>1</id>
+                    <name>张三</name>
+                </employee>
+            </employees>
+        </department>
+    </departments>
+</company>

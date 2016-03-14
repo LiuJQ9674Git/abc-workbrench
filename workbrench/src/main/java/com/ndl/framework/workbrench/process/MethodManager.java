@@ -524,6 +524,9 @@ public class MethodManager {
 
 	}
 
+	public void setResponseType(ColumnBean responseType) {
+		this.methodBean.setResponseType(responseType);
+	}
 	public ServiceBean getCalleeMajorService() {
 		return methodBean.getCalleeMajorService();
 	}

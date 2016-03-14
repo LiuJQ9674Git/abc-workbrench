@@ -43,7 +43,7 @@ public class ControllerManagerTest {
 
 	@Test
 	public void generateFrontTemplateToXML(){
-		ControllerManager.generateFrontTemplateToXML("testFrontPackage");
+		ControllerManager.generateFrontTemplateToXML("ieream");
 	}
 	
 	@Test
@@ -51,68 +51,130 @@ public class ControllerManagerTest {
 		try {
 			// 基本信息
 			// Controller签名
-			String controllerType = "Login";
-			String descipter = "index login addLogin createLogin deleteLogin updateLogin";
+			String controllerType = "Guides";
+			String descipter = "/guides.php";
+			//action=getitem&id=:id
+			String controllerUri = "";
+			String controllerMethodSignature = "getItemById";
+			String toServiceMethodSignatureDescripter = "获取霞客信";
+			
 			String toServiceMethodSignature = "queryLoginByUserNameAndPassword";
-			String controllerUri = "queryLogin";
-			String controllerMethodSignature = "login";
-			String toServiceMethodSignatureDescripter = "toLogin";
-			// 方法签名
-			//List<ColumnBean> columnBeanList = new ArrayList<ColumnBean>();
-
+			
 			ColumnBean startColumnBean = new ColumnBean();
-			startColumnBean.setColumnNameNoDash("name");
-			startColumnBean.setColumnNameCapitalized("Name");
+			startColumnBean.setColumnNameNoDash("action");
+			startColumnBean.setColumnNameCapitalized("Action");
 			startColumnBean.setColumnType("String");
 			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			startColumnBean.setColumnDefault("getitem");
 
 			ColumnBean nextColumnBean = new ColumnBean();
-			nextColumnBean.setColumnName("Password");
-			nextColumnBean.setColumnType("String");
-			nextColumnBean.setColumnNameNoDash("password");
-			nextColumnBean.setColumnNameCapitalized("Password");
+			nextColumnBean.setColumnNameNoDash("id");
+			nextColumnBean.setColumnNameCapitalized("Id");
+			nextColumnBean.setColumnType("Integer");
+			
 			nextColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
 
 			startColumnBean.setNextColumnBean(nextColumnBean);
-			//columnBeanList.add(startColumnBean);
+
 			ControllerManager manager;
-
-			// manager=ControllerManager.addControllerMethodGetModelAttribute(controllerType,controllerUri,descipter,
-			// controllerMethodSignature,toServiceMethodSignature
-			// ,toServiceMethodSignatureDescripter, startColumnBean);
 			FieldTypeEnum returnFieldEnum=FieldTypeEnum.ENTITY;
-			manager = ControllerManager.addControllerMethodPostRequestBody(controllerType, controllerUri, descipter,
-					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum);
-
-			controllerUri = "loginBySex";
-			toServiceMethodSignature = "queryLoginByUserNameOrSex";
-			toServiceMethodSignatureDescripter = "";
-			startColumnBean = new ColumnBean();
-			startColumnBean.setColumnName("Name");
-			startColumnBean.setColumnType("String");
-			startColumnBean.setColumnNameNoDash("name");
-			startColumnBean.setColumnNameCapitalized("Name");
-			startColumnBean.setNextFieldRative(FieldRativeEnum.Or);
-
-			nextColumnBean = new ColumnBean();
-			nextColumnBean.setColumnName("Sex");
-			nextColumnBean.setColumnType("String");
-			nextColumnBean.setColumnNameNoDash("sex");
-			nextColumnBean.setColumnNameCapitalized("Sex");
-			nextColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
-
-			startColumnBean.setNextColumnBean(nextColumnBean);
-			//columnBeanList.add(startColumnBean);
-			controllerMethodSignature = "checkLogin";
 			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
 					startColumnBean,returnFieldEnum);
+			
+			
+			//manager.set
+			controllerMethodSignature = "getList";
+			toServiceMethodSignature = "getList";
+			toServiceMethodSignatureDescripter = "获取霞客列表";
+			startColumnBean = new ColumnBean();
+			startColumnBean.setColumnName("p");
+			startColumnBean.setColumnType("Integer");//默认值为1
+			startColumnBean.setColumnDefault("1");
+			startColumnBean.setColumnNameNoDash("p");
+			startColumnBean.setColumnNameCapitalized("p");
+			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
 
+			ColumnBean psizeColumnBean = new ColumnBean();
+			psizeColumnBean.setColumnName("psize");
+			psizeColumnBean.setColumnType("Integer");
+			psizeColumnBean.setColumnDefault("10");
+			psizeColumnBean.setColumnNameNoDash("psize");
+			psizeColumnBean.setColumnNameCapitalized("Psize");
+			psizeColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			
+			ColumnBean dataTypeColumnBean = new ColumnBean();
+			dataTypeColumnBean.setColumnName("dataType");
+			dataTypeColumnBean.setColumnType("String");
+			dataTypeColumnBean.setColumnNameNoDash("dataType");
+			dataTypeColumnBean.setColumnNameCapitalized("DataType");
+			dataTypeColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			
+			
+			ColumnBean dataOrderColumnBean = new ColumnBean();
+			dataOrderColumnBean.setColumnName("dataOrder");
+			dataOrderColumnBean.setColumnType("String");
+			dataOrderColumnBean.setColumnNameNoDash("dataOrder");
+			dataOrderColumnBean.setColumnNameCapitalized("DataOrder");
+			dataOrderColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
+			
+			dataTypeColumnBean.setNextColumnBean(dataOrderColumnBean);
+			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
+			startColumnBean.setNextColumnBean(psizeColumnBean);
+
+		
+			returnFieldEnum=FieldTypeEnum.LIST;
+			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
+					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
+					startColumnBean,returnFieldEnum);
+			
+			//获取霞客相关列表信息(合伙霞客列表)
+			controllerMethodSignature = "getRelList";
+			//
+			controllerMethodSignature = "getRelList";
+			toServiceMethodSignature = "getRelList";
+			toServiceMethodSignatureDescripter = "获取霞客相关列表信息(合伙霞客列表)";
+			startColumnBean = new ColumnBean();
+			startColumnBean.setColumnName("uid");
+			startColumnBean.setColumnType("Integer");//默认值为1
+			startColumnBean.setColumnComment("相关的霞客ID");
+			startColumnBean.setColumnDefault("1");
+			startColumnBean.setColumnNameNoDash("uid");
+			startColumnBean.setColumnNameCapitalized("Uid");
+			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
+
+			psizeColumnBean = new ColumnBean();
+			psizeColumnBean.setColumnName("p");
+			psizeColumnBean.setColumnType("Integer");
+			psizeColumnBean.setColumnDefault("1");
+			psizeColumnBean.setColumnNameNoDash("p");
+			psizeColumnBean.setColumnNameCapitalized("P");
+			psizeColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			
+			dataTypeColumnBean = new ColumnBean();
+			dataTypeColumnBean.setColumnName("psize");
+			dataTypeColumnBean.setColumnType("Integer");
+			dataTypeColumnBean.setColumnDefault("10");
+			dataTypeColumnBean.setColumnNameNoDash("dataType");
+			dataTypeColumnBean.setColumnNameCapitalized("DataType");
+			dataTypeColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
+			
+		
+			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
+		
+			startColumnBean.setNextColumnBean(psizeColumnBean);
+			returnFieldEnum=FieldTypeEnum.LIST;
+			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
+					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
+					startColumnBean,returnFieldEnum);
+			
 			assertNotNull(manager);
+			
 			//生成XML
-			manager.generateControllerBeanToXML("testFront");
+			manager.generateControllerBeanToXML("ieream");
+			
+			assertNotNull(manager);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -127,7 +189,7 @@ public class ControllerManagerTest {
 		assertNotNull(frontBean);
 		Set<ControllerBean> controllerSet=frontBean.getControlleres();
 		Assert.notNull(controllerSet,"ControllerBean controllerSet must not empty");
-		ControllerBean[] controllerArray=controllerSet.toArray(new ControllerBean[0]);
+		//ControllerBean[] controllerArray=controllerSet.toArray(new ControllerBean[0]);
 		for(ControllerBean controllerBean:controllerSet){
 			Set<AnnotationBean> annotationBeanSet=controllerBean.getAnnotationBeanList();
 			Set<MethodBean> methodBeanSet=controllerBean.getControllerMethodList();

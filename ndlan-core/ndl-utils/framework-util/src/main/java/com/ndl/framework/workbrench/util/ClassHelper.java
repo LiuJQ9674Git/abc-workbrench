@@ -119,8 +119,37 @@ public class ClassHelper {
     public static boolean isPrimitiveOrWrapper(Object type){
     	return ClassUtils.isPrimitiveOrWrapper(type.getClass());
     }
+    
     public static boolean isPrimitiveOrWrapper(Class type){
     	return ClassUtils.isPrimitiveOrWrapper(type);
+    }
+    
+    public static String getType(Object type){
+    	return ClassUtils.getSimpleName(type.getClass());
+    }
+    
+    public static boolean isSynthetic(Class type){
+    	return type.isSynthetic();
+    }
+    
+    public static boolean isSynthetic(Object type){
+    	return type.getClass().isSynthetic();
+    }
+    
+    public static boolean isArray(Class type){
+    	return type.isArray();
+    }
+    
+    public static boolean isArray(Object type){
+    	return type.getClass().isArray();
+    }
+    
+    public static boolean isString(Object type){
+    	return type.getClass()==String.class;
+    }
+    
+    public static boolean isDate(String type,String regex){
+    	return type.matches(regex);
     }
     
     public static String toShortString(Object obj){

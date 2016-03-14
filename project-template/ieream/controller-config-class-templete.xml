@@ -1,39 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <moduleAtomTemplate>
-    <moduleName>testFrontPackage</moduleName>
+    <moduleName>ieream</moduleName>
     <frontTemplates>
         <frontTemplate>
-            <comment>Controller Type:Login
- index login addLogin createLogin deleteLogin updateLogin</comment>
-            <className>LoginBeanController</className>
+            <comment>Controller Type:Guides
+ /guides.php</comment>
+            <className>GuidesBeanController</className>
             <componentCategory>POST</componentCategory>
             <includeClasses>
-                <includeClass>LoginBeanBusinessService</includeClass>
-                <includeClass>Login</includeClass>
+                <includeClass>GuidesBeanBusinessService</includeClass>
+                <includeClass>Guides</includeClass>
             </includeClasses>
             <headerAnnotations>
                 <headerAnnotation>@Controller</headerAnnotation>
-                <headerAnnotation>@Controller("loginBeanController")</headerAnnotation>
-                <headerAnnotation>@RequestMapping("login")</headerAnnotation>
+                <headerAnnotation>@Controller("guidesBeanController")</headerAnnotation>
+                <headerAnnotation>@RequestMapping("guides")</headerAnnotation>
             </headerAnnotations>
             <instanceAnnotations/>
             <methodDescripterMap>
                 <entry>
-                    <key>public  Login login(  String  name ,   String  password)</key>
+                    <key>public  List&lt;Guides&gt; getRelList(  Integer  uid ,   Integer  p  Integer  dataType)</key>
                     <value>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>queryLogin</annoteValue>
+                            <annoteValue>getRelList</annoteValue>
                         </methodHeaderAnnotation>
                         <comment>/**
-* className:LoginBeanController* serviceCategory:POSTtoLogin
+* className:GuidesBeanController* serviceCategory:POST获取霞客相关列表信息(合伙霞客列表)
 **/</comment>
-                        <signatureEntirety>public  Login login(  String  name ,   String  password)</signatureEntirety>
+                        <signatureEntirety>public  List&lt;Guides&gt; getRelList(  Integer  uid ,   Integer  p  Integer  dataType)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>uid</columnName>
+<fieldName>uid</fieldName>
+<fieldNameSetter>Uid</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment>相关的霞客ID</fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>p</columnName>
+<fieldName>p</fieldName>
+<fieldNameSetter>P</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>psize</columnName>
+<fieldName>dataType</fieldName>
+<fieldNameSetter>DataType</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>10</defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Guides getItemById(  String  action ,   Integer  id)</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>getItemById</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:GuidesBeanController* serviceCategory:POST获取霞客信
+**/</comment>
+                        <signatureEntirety>public  Guides getItemById(  String  action ,   Integer  id)</signatureEntirety>
                         <argumentDescripterList>
                             <argumentDescripter>
 <columnName></columnName>
-<fieldName>name</fieldName>
-<fieldNameSetter>Name</fieldNameSetter>
+<fieldName>action</fieldName>
+<fieldNameSetter>Action</fieldNameSetter>
 <javaType>String</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>
@@ -42,16 +110,16 @@
 <fieldComment></fieldComment>
 <ordinalPosition></ordinalPosition>
 <isNullable></isNullable>
-<defaultValue></defaultValue>
+<defaultValue>getitem</defaultValue>
 <nextFieldRative>And</nextFieldRative>
 <fieldType>PRIMARY</fieldType>
 <length>0</length>
                             </argumentDescripter>
                             <argumentDescripter>
-<columnName>Password</columnName>
-<fieldName>password</fieldName>
-<fieldNameSetter>Password</fieldNameSetter>
-<javaType>String</javaType>
+<columnName></columnName>
+<fieldName>id</fieldName>
+<fieldNameSetter>Id</fieldNameSetter>
+<javaType>Integer</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>
 <jsType></jsType>
@@ -70,18 +138,55 @@
                     </value>
                 </entry>
                 <entry>
-                    <key>public  Login checkLogin(  String  name ,   String  sex)</key>
+                    <key>public  List&lt;Guides&gt; getList(  Integer  p ,   Integer  psize  String  dataType  String  dataOrder)</key>
                     <value>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>loginBySex</annoteValue>
+                            <annoteValue>getList</annoteValue>
                         </methodHeaderAnnotation>
-                        <signatureEntirety>public  Login checkLogin(  String  name ,   String  sex)</signatureEntirety>
+                        <comment>/**
+* className:GuidesBeanController* serviceCategory:POST获取霞客列表
+**/</comment>
+                        <signatureEntirety>public  List&lt;Guides&gt; getList(  Integer  p ,   Integer  psize  String  dataType  String  dataOrder)</signatureEntirety>
                         <argumentDescripterList>
                             <argumentDescripter>
-<columnName>Name</columnName>
-<fieldName>name</fieldName>
-<fieldNameSetter>Name</fieldNameSetter>
+<columnName>p</columnName>
+<fieldName>p</fieldName>
+<fieldNameSetter>p</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>psize</columnName>
+<fieldName>psize</fieldName>
+<fieldNameSetter>Psize</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>10</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>dataType</columnName>
+<fieldName>dataType</fieldName>
+<fieldNameSetter>DataType</fieldNameSetter>
 <javaType>String</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>
@@ -91,14 +196,14 @@
 <ordinalPosition></ordinalPosition>
 <isNullable></isNullable>
 <defaultValue></defaultValue>
-<nextFieldRative>Or</nextFieldRative>
+<nextFieldRative>And</nextFieldRative>
 <fieldType>PRIMARY</fieldType>
 <length>0</length>
                             </argumentDescripter>
                             <argumentDescripter>
-<columnName>Sex</columnName>
-<fieldName>sex</fieldName>
-<fieldNameSetter>Sex</fieldNameSetter>
+<columnName>dataOrder</columnName>
+<fieldName>dataOrder</fieldName>
+<fieldNameSetter>DataOrder</fieldNameSetter>
 <javaType>String</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>

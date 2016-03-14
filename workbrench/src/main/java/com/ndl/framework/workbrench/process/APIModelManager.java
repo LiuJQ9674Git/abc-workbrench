@@ -449,7 +449,7 @@ public class APIModelManager {
 	/**
 	 * 生成域模型数据，默认是以数据库方式实现，此方法无需实现
 	 */
-	protected void generateModelDamainFromRawData(String urlPath){
+	protected void generateModelDamainFromRawData(String urlPath,String endChar){
 		throw new ConfigRuntimeException(
 				WorkBrenchConfigProperty.PROCESS_APIMODEL_EXCETPION__NO_METHOD);
 	}

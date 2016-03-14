@@ -186,11 +186,11 @@ public class TableBean implements Cloneable,Serializable{
 		this.pkColumnNameCapitalized = pkColumnNameCapitalized;
 	}
 
-	/*
+	
     public void addColumn(ColumnBean columnBean) {
         columnBeanList.add(columnBean);
     }
-	*/
+
     public String getTableName() {
         return tableName;
     }

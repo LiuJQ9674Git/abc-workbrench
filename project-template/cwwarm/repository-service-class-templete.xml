@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<moduleAtomTemplate>
+    <moduleName>testDaoPackage</moduleName>
+    <repositoryTemplates>
+        <repositoryTemplate>
+            <comment>index login addLogin createLogin deleteLogin updateLogin</comment>
+            <className>LoginJPADao</className>
+            <componentCategory>JPA</componentCategory>
+            <includeClasses>
+                <includeClass>Login</includeClass>
+            </includeClasses>
+            <headerAnnotations>
+                <headerAnnotation>@Repository("loginJPADao")</headerAnnotation>
+            </headerAnnotations>
+            <instanceAnnotations/>
+            <methodDescripterMap>
+                <entry>
+                    <key>public  Login queryLoginByUserNameAndPassword(  String   ,   String  )</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>Query</annnoteKey>
+                            <annoteValue>queryLogin</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:LoginJPADao* serviceCategory:JPAtoLogin登录认证
+**/</comment>
+                        <signatureEntirety>public  Login queryLoginByUserNameAndPassword(  String   ,   String  )</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>Name</columnName>
+<fieldName></fieldName>
+<fieldNameSetter></fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>Password</columnName>
+<fieldName></fieldName>
+<fieldNameSetter></fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+            </methodDescripterMap>
+        </repositoryTemplate>
+    </repositoryTemplates>
+</moduleAtomTemplate>

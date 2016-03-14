@@ -146,14 +146,14 @@ public class ControllerManager {
 		}
 		FrontPackage frontBean=loadFrontPackageFromXML();
 		parseFrontPackage(frontBean);
-		writeDaoPackageTempleteToXML(frontBean, moduleName);
+		writeFrontTemplateToXML(frontBean, moduleName);
 		if (logger.isInfoEnabled()) {
 			logger.info("ControllerManager loadControllerServiceFromXML Over.");
 		}
 		
 	}
 	
-	private static void writeDaoPackageTempleteToXML(FrontPackage frontBean,String moduleName){
+	private static void writeFrontTemplateToXML(FrontPackage frontBean,String moduleName){
 		//AtomOrRepositoryPackage atomOrRepositoryPackage=loadAtomServiceBeanFromXML();
 		FrontTemplete moudleAtom=new FrontTemplete();
 		moudleAtom.setFrontTemplates(frontBean.getControllerTemplates());
@@ -536,6 +536,8 @@ public class ControllerManager {
 		responseType.setColumnType(controllerType);
 		responseType.setFieldType(returnFieldEnum);
 		methodManager.setAssignList(entityBean);
+		methodManager.setResultColumnBean(responseType);
+		methodManager.setResponseType(responseType);
 		methodManager.setCallBusinessServiceMethod(toServiceBean, servicemethodSignature, responseType, entityBean,MethodRuntimeEnum.CALL_OUTER);
 		methodManager.addCallBusinessService(toServiceBean);
 		
