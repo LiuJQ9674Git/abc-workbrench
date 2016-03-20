@@ -24,7 +24,7 @@ public class ApiModuleManagerTest  {
 	}
 	@Test
 	public void generateSimpleAndroidRestfulFileFormDB(){
-		modelManager.generateSimpleAndroidRestfulFileFormDB();
+		//modelManager.generateSimpleAndroidRestfulFileFormDB();
 	}
 	
 	@Test 

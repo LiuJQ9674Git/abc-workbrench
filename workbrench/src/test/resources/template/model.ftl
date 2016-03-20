@@ -4,6 +4,7 @@ import java.util.Map;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ndlan.framework.core.api.Identifiable;
+import com.ndlan.framework.core.api.DefaultBeanIdentifiable;
 <#if (tableBean.hasDateColumn)>
 import java.util.Date;
 </#if>
@@ -11,17 +12,17 @@ import java.util.Date;
 import java.math.BigDecimal;
 </#if>
 
-public class ${tableBean.tableNameCapitalized}${classSuffix} implements Identifiable{
+public class ${tableBean.tableNameCapitalized}${classSuffix} extends DefaultBeanIdentifiable implements Identifiable{
 
 	private static final long serialVersionUID =-1;
 	
 <#list tableBean.columnBeanList as columnBean>
-    <#if ('' != columnBean.columnComment)>
+    <#if ('' != columnBean.columnComment &&columnBean.columnKey=='DEFUALT')>
     /**
      * ${columnBean.columnComment}
      **/
     </#if>
-    <#if ('' != columnBean.columnType)>
+    <#if ('' != columnBean.columnType &&columnBean.columnKey=='DEFUALT')>
     private ${columnBean.columnType} ${columnBean.columnNameNoDash};
  </#if>
 </#list>
@@ -35,7 +36,7 @@ public class ${tableBean.tableNameCapitalized}${classSuffix} implements Identifi
   
 <#list tableBean.columnBeanList as columnBean>
 	
-<#if ('' != columnBean.columnType)>
+<#if ('' != columnBean.columnType &&columnBean.columnKey=='DEFUALT')>
     public void set${columnBean.columnNameCapitalized}(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
         this.${columnBean.columnNameNoDash} = ${columnBean.columnNameNoDash};
     }

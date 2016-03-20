@@ -104,18 +104,6 @@ public class Generate {
 
 	private volatile boolean isEntityFormDB = false;
 
-	public static void main(String[] args) throws Exception {
-		Generate generate = Generate.getInstance();
-		generate.setIsEntityFormDB(true);
-		generate.loadModelData();
-		generate.generateIOSModel();
-		/*
-		 * generate.generateModlePojo(); generate.generateEntity();
-		 * generate.genernateJDBCTemplete(); generate.generateService();
-		 */
-
-	}
-
 	public void setIsEntityFormDB(boolean bEntityForm) {
 		this.isEntityFormDB = bEntityForm;
 	}
@@ -192,7 +180,7 @@ public class Generate {
 
 		Set<ColumnBean> transientColumnBeanList = new HashSet<ColumnBean>();
 		// 增加非Entity或者Bean的对象
-		if (CollectionUtils.isEmpty(transientColumnBeanList)) {
+		if (CollectionUtils.isEmpty(transientBeanSet)) {
 			return;
 		}
 		for (TransientBean transientBean : transientBeanSet) {

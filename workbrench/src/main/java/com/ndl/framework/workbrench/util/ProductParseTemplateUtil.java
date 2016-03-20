@@ -570,28 +570,30 @@ public class ProductParseTemplateUtil {
 			bean.setColumnTypeIOS("NSArray");
 			bean.setColumnTypePropertyIOS("property(nonatomic,copy)NSArray *");
 			bean.setColumnTypeDescriptionIOS("%@");
+			
 		}else if(bean.getFieldType()==FieldTypeEnum.LIST&&!bean.getIsMutable()){
 			bean.setColumnTypeIOS("NSMutableArray");
 			bean.setColumnTypePropertyIOS("property(nonatomic,strong)NSMutableArray *");
-			//bean.setColumnTypeDescriptionIOS("%@");
+			bean.setColumnTypeDescriptionIOS("%@");
 		}else if(bean.getFieldType()==FieldTypeEnum.MAPKEY&&bean.getIsMutable()){
 			bean.setColumnTypeIOS("NSArray");
 			bean.setColumnTypePropertyIOS("property(nonatomic,copy)NSDictonary *");
-			//bean.setColumnTypeDescriptionIOS("%@");
+			bean.setColumnTypeDescriptionIOS("%@");
 		}else if(bean.getFieldType()==FieldTypeEnum.LIST&&!bean.getIsMutable()){
 			bean.setColumnTypeIOS("NSMutableDictonary");
 			bean.setColumnTypePropertyIOS("property(nonatomic,strong)NSMutableDictonary *");
-			//bean.setColumnTypeDescriptionIOS("%@");
+			bean.setColumnTypeDescriptionIOS("%@");
 		}else if(bean.getFieldType()==FieldTypeEnum.ENTITY||bean.getFieldType()==FieldTypeEnum.DOMAIN
 				&&bean.getIsMutable()){
 			bean.setColumnTypeIOS(bean.getColumnType());
 			bean.setColumnTypePropertyIOS("property(nonatomic,copy) "+bean.getColumnType()+" *");
-			//bean.setColumnTypeDescriptionIOS("%@");
+			        
+			bean.setColumnTypeDescriptionIOS("%@");
 		}else if(bean.getFieldType()==FieldTypeEnum.ENTITY||bean.getFieldType()==FieldTypeEnum.DOMAIN
 				&&!bean.getIsMutable()){
 			bean.setColumnTypeIOS(bean.getColumnType());
 			bean.setColumnTypePropertyIOS("property(nonatomic,strong) "+bean.getColumnType()+" *");
-			//bean.setColumnTypeDescriptionIOS("%@");
+			bean.setColumnTypeDescriptionIOS("%@");
 		}else{
 			parseType( bean,  bean.getColumnType());
 		}

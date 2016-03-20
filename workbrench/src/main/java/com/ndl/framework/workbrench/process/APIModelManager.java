@@ -40,6 +40,8 @@ public class APIModelManager {
 	
 	Set<String> excludeColoumnFramework=new CopyOnWriteArraySet<String>();
 	
+	private Set<TableBean> tableBeanList;
+	
 	private static final String DEFAULT_FILE_NAME="/filter-table-config.xml";
 	
 	private String filterTableConfigFileName=DEFAULT_FILE_NAME;
@@ -53,12 +55,12 @@ public class APIModelManager {
 	
 	////////////////////2生成模型代码所需数据///////////////
 	
-	private void loadModelDataFromXML(){
+	protected void loadModelDataFromXML(){
 		setIsEntityFormDB(false);
 		parseDataConfigure();
 	}
 	
-	private void loadModelDataFromDB(){
+	protected void loadModelDataFromDB(){
 		setIsEntityFormDB(true);
 		parseDataConfigure();
 	}
@@ -71,12 +73,9 @@ public class APIModelManager {
 
 	}
 	
-	public void generateSimpleAndroidRestfulFileFormDB(){
-		loadModelDataFromDB();
-
-		generateSimpleAndroidRestful();
-		generateSimpleAndroidRestfulJunit();
-
+	public void generateAllModelForFrontSimpleFileFormXML(){
+		throw new ConfigRuntimeException(
+				WorkBrenchConfigProperty.PROCESS_APIMODEL_EXCETPION__NO_METHOD);
 	}
 	
 	public void generateAllModelAndMyBatisMapperSimpleFileFormDB(){
@@ -220,6 +219,21 @@ public class APIModelManager {
 	public void addTransientBean(TransientBean transientBean){
 		transientBeanList.add(transientBean);
 	}
+	
+	public void setConfigTransientBeanList(Set<TransientBean> transientBeanList){
+		this.transientBeanList=transientBeanList;
+	}
+	
+	
+	public Set<TableBean> getTableBeanList() {
+		return tableBeanList;
+	}
+
+	public void setTableBeanList(Set<TableBean> tableBeanList) {
+		Assert.notNull(tableBeanList, "tableBeanList must not null");
+		this.tableBeanList = tableBeanList;
+	}
+
 	/**
 	 * 添加项目中统一不包括的字段
 	 * @param columnName
@@ -448,11 +462,13 @@ public class APIModelManager {
 	
 	/**
 	 * 生成域模型数据，默认是以数据库方式实现，此方法无需实现
+	 * @param urlPathEndChar,Key url,value:结尾标识符，如.php
 	 */
-	protected void generateModelDamainFromRawData(String urlPath,String endChar){
+	protected void generateModelDamainFromRawData(Map<String,String> urlPathEndChar){
 		throw new ConfigRuntimeException(
 				WorkBrenchConfigProperty.PROCESS_APIMODEL_EXCETPION__NO_METHOD);
 	}
+
 	/**
 	 * 装载实体信息
 	 * @return
@@ -467,7 +483,8 @@ public class APIModelManager {
 		}
 	}
 	
-	protected void writeEntityConfigToFile(final Set<TableBean> tableBeanList){
+		
+	protected void writeEntityConfigToFile(){
 		this.generate.writeEntityConfigToFile(tableBeanList);
 	}
 	

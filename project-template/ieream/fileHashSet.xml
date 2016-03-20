@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+    <age>29</age>
+    <id>100</id>
+    <name>suo</name>
+    <t xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="hashSet"/>
+</customer>

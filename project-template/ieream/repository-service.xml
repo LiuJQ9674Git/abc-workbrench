@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AtomOrRepositoryPackage uuid="3c5341c1-524b-495b-a4a7-5c02e4fecec0-com.ndl.framework.workbrench.define.AtomOrRepositoryPackage-5">
+<AtomOrRepositoryPackage uuid="14c6eb46-eda9-4c37-a03d-a7f054cda9f9-com.ndl.framework.workbrench.define.AtomOrRepositoryPackage-5">
     <atomOrRepository>testDaoPackage</atomOrRepository>
     <repositories>
-        <repository uuid="25d2090c-0c73-4f66-b0d7-f4c6a9b07fb4-com.ndl.framework.workbrench.define.DaoBean-125">
+        <repository uuid="99f2695e-f833-426b-9833-ed2f50598d35-com.ndl.framework.workbrench.define.DaoBean-12">
+            <daoId>orderItemJPABeanDao</daoId>
+            <daoType>OrderItemJPABeanDao</daoType>
+            <daoDescipter>订单业务的增删改查</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>orderItemJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="7579dbf7-0e5e-4f8e-9c31-d7e609542291-com.ndl.framework.workbrench.define.TableBean-204">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </repository>
+        <repository uuid="3b579390-e260-4875-a360-a65faa9d1cf7-com.ndl.framework.workbrench.define.DaoBean-13">
+            <daoId>prouctCatoryJPABeanDao</daoId>
+            <daoType>ProuctCatoryJPABeanDao</daoType>
+            <daoDescipter>商品增删改查</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>prouctCatoryJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="ffecf6fc-299c-41c4-871e-ec28203dc813-com.ndl.framework.workbrench.define.TableBean-213">
+                    <tableNameNoDash>prouctCatory</tableNameNoDash>
+                    <tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </repository>
+        <repository uuid="96c4b501-c2fe-461c-a1e8-d8359c29e8af-com.ndl.framework.workbrench.define.DaoBean-125">
             <daoId>loginJPABeanDao</daoId>
             <daoType>LoginJPABeanDao</daoType>
             <daoDescipter>Service Type:Login
@@ -15,10 +59,10 @@
                 </annotationBean>
             </annotationBeanList>
             <daoMethodList>
-                <daoMethod uuid="7aba517f-0530-4904-bfce-28006103bdea-com.ndl.framework.workbrench.define.MethodBean-227">
+                <daoMethod uuid="7d77ae2b-662c-483b-b8c7-30895159525d-com.ndl.framework.workbrench.define.MethodBean-235">
                     <signature>queryLoginByUserNameAndPassword</signature>
                     <signatureDescripter>toLogin登录认证</signatureDescripter>
-                    <responseType uuid="836c2672-fdb5-4376-9d58-f9ddd8600ad7-com.ndl.framework.workbrench.define.ColumnBean-4734">
+                    <responseType uuid="84dfe997-5e32-4b72-84ee-32bdb32692d2-com.ndl.framework.workbrench.define.ColumnBean-4785">
                         <columnName></columnName>
                         <columnNameNoDash></columnNameNoDash>
                         <columnNameCapitalized></columnNameCapitalized>
@@ -43,9 +87,9 @@
                     </responseType>
                     <catetory>JPA</catetory>
                     <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="2f9da975-a0e4-4b9b-86bb-87502a413ffc-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-80">
-                        <fromMethod>7aba517f-0530-4904-bfce-28006103bdea-com.ndl.framework.workbrench.define.MethodBean-227</fromMethod>
-                        <fromResultType uuid="836c2672-fdb5-4376-9d58-f9ddd8600ad7-com.ndl.framework.workbrench.define.ColumnBean-4734">
+                    <bodyBean uuid="9e1fc4a3-c183-4a3a-87b6-1ac015da1875-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-83">
+                        <fromMethod>7d77ae2b-662c-483b-b8c7-30895159525d-com.ndl.framework.workbrench.define.MethodBean-235</fromMethod>
+                        <fromResultType uuid="84dfe997-5e32-4b72-84ee-32bdb32692d2-com.ndl.framework.workbrench.define.ColumnBean-4785">
                             <columnName></columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
@@ -74,12 +118,12 @@
                         <annnoteKey>Query</annnoteKey>
                         <annoteValue>queryLogin</annoteValue>
                     </annotationBean>
-                    <assign uuid="e035a601-2b5f-4dd0-8933-9b79a64f9b2a-com.ndl.framework.workbrench.define.TableBean-703">
+                    <assign uuid="ad921630-bb6a-41ca-92fb-a115c9bbdf83-com.ndl.framework.workbrench.define.TableBean-731">
                         <tableNameNoDash>login</tableNameNoDash>
                         <tableNameCapitalized>Login</tableNameCapitalized>
                         <columnBeanList/>
                         <transientColumnBeanList/>
-                        <methodArugment uuid="e1c8f984-549d-4500-a2e5-36513eed7adf-com.ndl.framework.workbrench.define.ColumnBean-4732">
+                        <methodArugment uuid="a8f987c2-0b19-412c-b525-4505fbcb8a7e-com.ndl.framework.workbrench.define.ColumnBean-4783">
                             <columnName>Name</columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
@@ -99,7 +143,7 @@
                             <columnDefault></columnDefault>
                             <isMutable>true</isMutable>
                             <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="b5dcd50e-ebd2-4889-8b1d-4a6222a04f7b-com.ndl.framework.workbrench.define.ColumnBean-4733">
+                            <nextColumnBean uuid="4ad28a95-875f-454f-b73f-8b65e260f634-com.ndl.framework.workbrench.define.ColumnBean-4784">
 <columnName>Password</columnName>
 <columnNameNoDash></columnNameNoDash>
 <columnNameCapitalized></columnNameCapitalized>
@@ -129,10 +173,10 @@
                         <hasBigDecimal>false</hasBigDecimal>
                     </assign>
                 </daoMethod>
-                <daoMethod uuid="ca78fe65-079d-4882-990c-47a8b5666698-com.ndl.framework.workbrench.define.MethodBean-228">
+                <daoMethod uuid="4063d549-8822-4da3-afeb-a6fefe410a84-com.ndl.framework.workbrench.define.MethodBean-236">
                     <signature>queryLoginByUserNameAndPassword</signature>
                     <signatureDescripter>toLogin登录认证</signatureDescripter>
-                    <responseType uuid="d55f8d26-55b0-496d-b977-ede91e5d6eda-com.ndl.framework.workbrench.define.ColumnBean-4738">
+                    <responseType uuid="2d2e1d91-1615-4d69-b2e0-ba536634669d-com.ndl.framework.workbrench.define.ColumnBean-4789">
                         <columnName></columnName>
                         <columnNameNoDash></columnNameNoDash>
                         <columnNameCapitalized></columnNameCapitalized>
@@ -157,9 +201,9 @@
                     </responseType>
                     <catetory>JPA</catetory>
                     <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="1b27b2ea-9531-4bca-8ef7-cec306fc50ac-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-81">
-                        <fromMethod>ca78fe65-079d-4882-990c-47a8b5666698-com.ndl.framework.workbrench.define.MethodBean-228</fromMethod>
-                        <fromResultType uuid="d55f8d26-55b0-496d-b977-ede91e5d6eda-com.ndl.framework.workbrench.define.ColumnBean-4738">
+                    <bodyBean uuid="b41f970f-99bd-4a86-9b02-84b69d80c72d-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-84">
+                        <fromMethod>4063d549-8822-4da3-afeb-a6fefe410a84-com.ndl.framework.workbrench.define.MethodBean-236</fromMethod>
+                        <fromResultType uuid="2d2e1d91-1615-4d69-b2e0-ba536634669d-com.ndl.framework.workbrench.define.ColumnBean-4789">
                             <columnName></columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
@@ -188,12 +232,12 @@
                         <annnoteKey>Query</annnoteKey>
                         <annoteValue>queryLogin</annoteValue>
                     </annotationBean>
-                    <assign uuid="0685b394-9d40-4545-a72b-96fdf606fe47-com.ndl.framework.workbrench.define.TableBean-704">
+                    <assign uuid="6ea8bbf4-a0ea-4b73-8f8e-bebe4175c75e-com.ndl.framework.workbrench.define.TableBean-732">
                         <tableNameNoDash>login</tableNameNoDash>
                         <tableNameCapitalized>Login</tableNameCapitalized>
                         <columnBeanList/>
                         <transientColumnBeanList/>
-                        <methodArugment uuid="7ec16cae-e26f-421b-96a7-75914bcb11f2-com.ndl.framework.workbrench.define.ColumnBean-4736">
+                        <methodArugment uuid="282b2494-704b-4a72-8ab4-9bfb148368e2-com.ndl.framework.workbrench.define.ColumnBean-4787">
                             <columnName>Name</columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
@@ -213,7 +257,7 @@
                             <columnDefault></columnDefault>
                             <isMutable>true</isMutable>
                             <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="a20e6ace-9e66-463c-bdd0-e23e00a52118-com.ndl.framework.workbrench.define.ColumnBean-4737">
+                            <nextColumnBean uuid="a4b754a7-b4c4-4ad2-ba1f-1cd9f34d333d-com.ndl.framework.workbrench.define.ColumnBean-4788">
 <columnName>Password</columnName>
 <columnNameNoDash></columnNameNoDash>
 <columnNameCapitalized></columnNameCapitalized>
@@ -245,7 +289,7 @@
                 </daoMethod>
             </daoMethodList>
             <includeBeanList>
-                <includeBean uuid="68ca7553-d8d4-43b1-a4c6-a107b1c78774-com.ndl.framework.workbrench.define.TableBean-645">
+                <includeBean uuid="441c4e54-6105-44dc-bca0-dcc6ab7c8223-com.ndl.framework.workbrench.define.TableBean-646">
                     <tableNameNoDash>login</tableNameNoDash>
                     <tableNameCapitalized>Login</tableNameCapitalized>
                     <columnBeanList/>
@@ -255,21 +299,21 @@
                 </includeBean>
             </includeBeanList>
         </repository>
-        <repository uuid="c3703eb3-d2df-4455-a9bf-246f141a92bd-com.ndl.framework.workbrench.define.DaoBean-13">
-            <daoId>prouctCatoryJPABeanDao</daoId>
-            <daoType>ProuctCatoryJPABeanDao</daoType>
-            <daoDescipter>商品增删改查</daoDescipter>
+        <repository uuid="8a08b033-d910-4e22-82ff-9d5a54b25ef2-com.ndl.framework.workbrench.define.DaoBean-0">
+            <daoId>orderJPABeanDao</daoId>
+            <daoType>OrderJPABeanDao</daoType>
+            <daoDescipter>订单业务的增删改查</daoDescipter>
             <daoCategory>JPA</daoCategory>
             <annotationBeanList>
                 <annotationBean>
                     <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>prouctCatoryJPABeanDao</annoteValue>
+                    <annoteValue>orderJPABeanDao</annoteValue>
                 </annotationBean>
             </annotationBeanList>
             <includeBeanList>
-                <includeBean uuid="8ccb37fc-26fd-46a7-bd4e-4781a91556d8-com.ndl.framework.workbrench.define.TableBean-212">
-                    <tableNameNoDash>prouctCatory</tableNameNoDash>
-                    <tableNameCapitalized>ProuctCatory</tableNameCapitalized>
+                <includeBean uuid="12ebee69-0597-4d79-a61d-626cff6d160f-com.ndl.framework.workbrench.define.TableBean-164">
+                    <tableNameNoDash>order</tableNameNoDash>
+                    <tableNameCapitalized>Order</tableNameCapitalized>
                     <columnBeanList/>
                     <transientColumnBeanList/>
                     <hasDateColumn>false</hasDateColumn>
@@ -277,14 +321,59 @@
                 </includeBean>
             </includeBeanList>
         </repository>
-        <repository uuid="e71e414d-6cf5-47be-b1b5-a29684b2c84d-com.ndl.framework.workbrench.define.DaoBean-1">
+        <repository uuid="53a76d61-8366-4ae2-9579-5c6fb885684e-com.ndl.framework.workbrench.define.DaoBean-124">
+            <daoId>productJPABeanDao</daoId>
+            <daoType>ProductJPABeanDao</daoType>
+            <daoDescipter>商品业务服务</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>productJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="435d0050-b268-443a-b6fc-11438161b6d5-com.ndl.framework.workbrench.define.TableBean-642">
+                    <tableNameNoDash>product</tableNameNoDash>
+                    <tableNameCapitalized>Product</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </repository>
+        <repository uuid="3b99d611-55b5-4743-83c0-e61262d3ae56-com.ndl.framework.workbrench.define.DaoBean-133">
+            <daoId>guidesJPABeanDao</daoId>
+            <daoType>GuidesJPABeanDao</daoType>
+            <daoDescipter>Service Type:Guides
+ /guides.php</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>guidesJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="c57ba6bc-b850-4661-bb30-4f2352ddd4e5-com.ndl.framework.workbrench.define.TableBean-681">
+                    <tableNameNoDash>guides</tableNameNoDash>
+                    <tableNameCapitalized>Guides</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </repository>
+        <repository uuid="b789bf7f-ae88-4b3d-a2e2-9330ba577eb4-com.ndl.framework.workbrench.define.DaoBean-1">
             <daoId>orderHeaderJPABeanDao</daoId>
             <daoType>OrderHeaderJPABeanDao</daoType>
             <daoDescipter>订单业务的增删改查</daoDescipter>
             <daoCategory>JPA</daoCategory>
-            <runningMethod uuid="410abc0a-c5fd-462d-b23f-6cde6b8dc6bf-com.ndl.framework.workbrench.define.MethodBean-17">
+            <runningMethod uuid="fdd9e22d-c360-4de1-9d80-35ae2e3152df-com.ndl.framework.workbrench.define.MethodBean-17">
                 <signature>queryAtomByOrderNameAndPageSize</signature>
-                <responseType uuid="92e041f5-9e5f-45fc-8636-36120cdb8f63-com.ndl.framework.workbrench.define.ColumnBean-3522">
+                <responseType uuid="cd8082dd-9a54-4d00-ab7c-14b017158ff9-com.ndl.framework.workbrench.define.ColumnBean-3522">
                     <columnName></columnName>
                     <columnNameNoDash>orderHeader</columnNameNoDash>
                     <columnNameCapitalized>OrderHeader</columnNameCapitalized>
@@ -310,12 +399,12 @@
                     <length>0</length>
                 </responseType>
                 <catetory>JPA</catetory>
-                <assign uuid="d0bd53be-bfd2-44da-b778-fe972011a287-com.ndl.framework.workbrench.define.TableBean-200">
+                <assign uuid="82d769a3-9f51-4596-80d9-d2162a75e8bb-com.ndl.framework.workbrench.define.TableBean-201">
                     <tableNameNoDash>orderHeader</tableNameNoDash>
                     <tableNameCapitalized>OrderHeader</tableNameCapitalized>
                     <columnBeanList/>
                     <transientColumnBeanList/>
-                    <methodArugment uuid="8c5987cf-f693-4f24-a9af-7122b4ab094e-com.ndl.framework.workbrench.define.ColumnBean-3519">
+                    <methodArugment uuid="3461ff18-19dd-43ff-ae27-942bf24a6432-com.ndl.framework.workbrench.define.ColumnBean-3519">
                         <columnName></columnName>
                         <columnNameNoDash>orderName</columnNameNoDash>
                         <columnNameCapitalized>OrderName</columnNameCapitalized>
@@ -335,7 +424,7 @@
                         <columnDefault></columnDefault>
                         <isMutable>true</isMutable>
                         <nextFieldRative>And</nextFieldRative>
-                        <nextColumnBean uuid="b8b9401e-295f-463e-913e-587955e45adf-com.ndl.framework.workbrench.define.ColumnBean-3520">
+                        <nextColumnBean uuid="5d0c2489-70b3-4294-881f-197723ef3915-com.ndl.framework.workbrench.define.ColumnBean-3520">
                             <columnName></columnName>
                             <columnNameNoDash>productId</columnNameNoDash>
                             <columnNameCapitalized>ProductId</columnNameCapitalized>
@@ -355,7 +444,7 @@
                             <columnDefault></columnDefault>
                             <isMutable>true</isMutable>
                             <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="6673b749-d63e-4502-9c85-1f3d0da8b8e2-com.ndl.framework.workbrench.define.ColumnBean-3521">
+                            <nextColumnBean uuid="546877ce-39d8-4cb5-b8c2-dca006640def-com.ndl.framework.workbrench.define.ColumnBean-3521">
 <columnName></columnName>
 <columnNameNoDash>pageSize</columnNameNoDash>
 <columnNameCapitalized>PageSize</columnNameCapitalized>
@@ -396,75 +485,9 @@
                 </annotationBean>
             </annotationBeanList>
             <includeBeanList>
-                <includeBean uuid="7e0443f9-16dc-4c8b-9456-ee4d644ba80a-com.ndl.framework.workbrench.define.TableBean-165">
+                <includeBean uuid="047b085d-c3b0-4c42-81a2-5529609c9334-com.ndl.framework.workbrench.define.TableBean-166">
                     <tableNameNoDash>orderHeader</tableNameNoDash>
                     <tableNameCapitalized>OrderHeader</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </repository>
-        <repository uuid="5d31b7bf-4006-403f-b676-8980aee06c6d-com.ndl.framework.workbrench.define.DaoBean-12">
-            <daoId>orderItemJPABeanDao</daoId>
-            <daoType>OrderItemJPABeanDao</daoType>
-            <daoDescipter>订单业务的增删改查</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>orderItemJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="a752c0d5-26a9-4425-bf44-4c42debfa7d8-com.ndl.framework.workbrench.define.TableBean-203">
-                    <tableNameNoDash>orderItem</tableNameNoDash>
-                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </repository>
-        <repository uuid="1f37bcc5-9d5e-4586-9651-7f6194a8e21e-com.ndl.framework.workbrench.define.DaoBean-124">
-            <daoId>productJPABeanDao</daoId>
-            <daoType>ProductJPABeanDao</daoType>
-            <daoDescipter>商品业务服务</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>productJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="13499643-c406-4566-b007-c1e1418320ab-com.ndl.framework.workbrench.define.TableBean-641">
-                    <tableNameNoDash>product</tableNameNoDash>
-                    <tableNameCapitalized>Product</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </repository>
-        <repository uuid="afcf57ad-7f7d-4a78-8ce5-d097351f5c67-com.ndl.framework.workbrench.define.DaoBean-0">
-            <daoId>orderJPABeanDao</daoId>
-            <daoType>OrderJPABeanDao</daoType>
-            <daoDescipter>订单业务的增删改查</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>orderJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="370372f3-2540-4a5e-baed-615abb835c9a-com.ndl.framework.workbrench.define.TableBean-163">
-                    <tableNameNoDash>order</tableNameNoDash>
-                    <tableNameCapitalized>Order</tableNameCapitalized>
                     <columnBeanList/>
                     <transientColumnBeanList/>
                     <hasDateColumn>false</hasDateColumn>

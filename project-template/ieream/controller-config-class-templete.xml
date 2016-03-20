@@ -87,57 +87,6 @@
                     </value>
                 </entry>
                 <entry>
-                    <key>public  Guides getItemById(  String  action ,   Integer  id)</key>
-                    <value>
-                        <methodHeaderAnnotation>
-                            <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>getItemById</annoteValue>
-                        </methodHeaderAnnotation>
-                        <comment>/**
-* className:GuidesBeanController* serviceCategory:POST获取霞客信
-**/</comment>
-                        <signatureEntirety>public  Guides getItemById(  String  action ,   Integer  id)</signatureEntirety>
-                        <argumentDescripterList>
-                            <argumentDescripter>
-<columnName></columnName>
-<fieldName>action</fieldName>
-<fieldNameSetter>Action</fieldNameSetter>
-<javaType>String</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>getitem</defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName></columnName>
-<fieldName>id</fieldName>
-<fieldNameSetter>Id</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue></defaultValue>
-<nextFieldRative>Finished</nextFieldRative>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                        </argumentDescripterList>
-                        <bodyMethodMap/>
-                        <bodyFragmentSlice/>
-                    </value>
-                </entry>
-                <entry>
                     <key>public  List&lt;Guides&gt; getList(  Integer  p ,   Integer  psize  String  dataType  String  dataOrder)</key>
                     <value>
                         <methodHeaderAnnotation>
@@ -205,6 +154,57 @@
 <fieldName>dataOrder</fieldName>
 <fieldNameSetter>DataOrder</fieldNameSetter>
 <javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  Guides getItemById(  String  action ,   Integer  id)</key>
+                    <value>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>getItemById</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:GuidesBeanController* serviceCategory:POST获取霞客信
+**/</comment>
+                        <signatureEntirety>public  Guides getItemById(  String  action ,   Integer  id)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>action</fieldName>
+<fieldNameSetter>Action</fieldNameSetter>
+<javaType>String</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>getitem</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>id</fieldName>
+<fieldNameSetter>Id</fieldNameSetter>
+<javaType>Integer</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>
 <jsType></jsType>

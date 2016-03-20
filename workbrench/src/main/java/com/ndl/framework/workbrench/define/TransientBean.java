@@ -55,6 +55,7 @@ public class TransientBean implements Cloneable,Serializable{
     @XmlElementWrapper(name="columnBeanList")
 	private Set<ColumnBean> columnBeanList = new HashSet<ColumnBean>();
 	
+	//不包括的属性
 	@XmlElement(name = "excludeColumnList")
     @XmlElementWrapper(name="excludeColumnList")
 	private Set<ColumnBean> excludeColumnList = new HashSet<ColumnBean>();
@@ -104,9 +105,13 @@ public class TransientBean implements Cloneable,Serializable{
 	}
 
 	public void addColumnBean(ColumnBean columnBean){
-		if(!this.columnBeanList.contains(columnBean)){
-			this.columnBeanList.add(columnBean);
+		String field=columnBean.getColumnNameNoDash();
+		for(ColumnBean cBean:columnBeanList){
+			if(cBean.getColumnNameNoDash().equals(field)){
+				return;
+			}
 		}
+		this.columnBeanList.add(columnBean);
 	}
 	
 	@Override

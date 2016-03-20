@@ -72,6 +72,13 @@ public class TableBean implements Cloneable,Serializable{
     @XmlElement
     private String pkColumnNameCapitalized;
 
+    //父节点名称
+    @XmlElement
+    private String parentTableNameNoDash;
+    @XmlElement
+    private String parentTableNameCapitalized;
+    
+    
     @XmlElement(name="columnBean")
     @XmlElementWrapper(name="columnBeanList")
     private Set<ColumnBean> columnBeanList = new HashSet<ColumnBean>();
@@ -105,9 +112,24 @@ public class TableBean implements Cloneable,Serializable{
     @XmlID	    		// should be unique across all entities.
     private String uuid; 
 
-	
-	
-    public String getPkColumn() {
+		
+    public String getParentTableNameNoDash() {
+		return parentTableNameNoDash;
+	}
+
+	public void setParentTableNameNoDash(String parentTableNameNoDash) {
+		this.parentTableNameNoDash = parentTableNameNoDash;
+	}
+
+	public String getParentTableNameCapitalized() {
+		return parentTableNameCapitalized;
+	}
+
+	public void setParentTableNameCapitalized(String parentTableNameCapitalized) {
+		this.parentTableNameCapitalized = parentTableNameCapitalized;
+	}
+
+	public String getPkColumn() {
 		return pkColumn;
 	}
 
@@ -188,6 +210,12 @@ public class TableBean implements Cloneable,Serializable{
 
 	
     public void addColumn(ColumnBean columnBean) {
+    	String fieldName=columnBean.getColumnNameNoDash();
+    	for(ColumnBean cBean:columnBeanList){
+    		if(cBean.getColumnNameNoDash().equals(fieldName)){
+    			return ;
+    		}
+    	}
         columnBeanList.add(columnBean);
     }
 

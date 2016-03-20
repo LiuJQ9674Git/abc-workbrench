@@ -59,18 +59,17 @@ public class ${tableBean.tableNameCapitalized}${classSuffix} implements Identifi
 </#if>
 </#list>
 <#list tableBean.columnBeanList as columnBean>
-	<#if columnBean.columnKey == "PRI">
+	<#if ( columnBean.columnKey!='' && columnBean.columnKey == "PRI")>
 	@Override
 	public ${columnBean.columnType} getDefaultId() {
 		// TODO Auto-generated method stub
 	     return ${columnBean.columnNameNoDash};
-	 }
+        }
 
 	@Override
 	public void setDefaultId(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
-	     this.${columnBean.columnNameNoDash} = ${columnBean.columnNameNoDash}£»
-		
-	}
+	     this.${columnBean.columnNameNoDash}=${columnBean.columnNameNoDash};
+       }
 </#if>
 </#list>
 	@Override

@@ -96,5 +96,11 @@
             <columnBeanList/>
             <excludeColumnList/>
         </filterBean>
+
+		<filterBean uuid="c932d53b-ae04-4b6a-9a2b-3082e13d9e40-com.ndl.framework.workbrench.define.TransientBean-15">
+            <tableName>cw_org_site</tableName>
+            <columnBeanList/>
+            <excludeColumnList/>
+        </filterBean>
 	</filterBeanList>
 </TableColumnConfig>

@@ -106,7 +106,7 @@ public class ColumnBean implements Cloneable,Serializable{
 	 * 如果是持久化字段，此列以数据库读取的标识为主
 	 */
 	@XmlElement
-	private String columnKey=null;
+	private String columnKey="DEFUALT";
 
 	// auto_increment
 	/**
