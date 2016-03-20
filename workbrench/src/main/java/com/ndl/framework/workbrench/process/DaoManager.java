@@ -30,7 +30,7 @@ import com.ndl.framework.workbrench.define.ServiceBean;
 import com.ndl.framework.workbrench.define.ServicePackage;
 import com.ndl.framework.workbrench.define.TableBean;
 import com.ndl.framework.workbrench.exception.ConfigRuntimeException;
-import com.ndl.framework.workbrench.freemarker.Generate;
+import com.ndl.framework.workbrench.freemarker.TemplateCommand;
 import com.ndl.framework.workbrench.freemarker.RunConfigure;
 import com.ndl.framework.workbrench.freemarker.template.AtomOrRepositorTemplate;
 import com.ndl.framework.workbrench.util.ClassHelper;

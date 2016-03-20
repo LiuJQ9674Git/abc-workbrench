@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AtomOrRepositoryPackage uuid="966c675c-ef1f-4fd2-8dce-ea1d4ebfc0e4-com.ndl.framework.workbrench.define.AtomOrRepositoryPackage-0">
+    <atomServices>
+        <atomService uuid="4db16a36-b026-4b6e-a039-fed8194c489e-com.ndl.framework.workbrench.define.ServiceBean-1">
+            <serviceId>orderItemATOMService</serviceId>
+            <serivceType>OrderItemATOMService</serivceType>
+            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+            <serviceCategory>ATM</serviceCategory>
+            <annotationBeanList>
+                <annotationBean uuid="9bca2185-1b09-47dd-b48b-01dafa0b9859-com.ndl.framework.workbrench.define.AnnotationBean-8">
+                    <annnoteKey>Component</annnoteKey>
+                    <annoteValue>order</annoteValue>
+                </annotationBean>
+                <annotationBean uuid="e21f1f92-fa9a-4b18-bb6c-1515010da83c-com.ndl.framework.workbrench.define.AnnotationBean-10">
+                    <annnoteKey>Transactional</annnoteKey>
+                </annotationBean>
+            </annotationBeanList>
+            <instanceAnnotationBeanList>
+                <instanceAnnotationBean uuid="34847053-6609-4903-9628-f9b81d03009f-com.ndl.framework.workbrench.define.AnnotationBean-2">
+                    <annnoteKey>Autowired</annnoteKey>
+                    <annoteValue>orderItemJDBCDao</annoteValue>
+                    <annoteType>OrderItemJDBCDao</annoteType>
+                </instanceAnnotationBean>
+            </instanceAnnotationBeanList>
+            <runningMethod uuid="c90e0ef8-bbbd-449f-b2f0-cf1384df65c6-com.ndl.framework.workbrench.define.MethodBean-5">
+                <signature>queryAtomByOrderNameAndPageSize</signature>
+                <responseType uuid="23b89694-72fd-4d6c-8242-1d929d3a3c59-com.ndl.framework.workbrench.define.ColumnBean-11">
+                    <columnType>OrderItem</columnType>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <fieldType>ENTITY</fieldType>
+                    <length>0</length>
+                </responseType>
+                <catetory>ATM</catetory>
+                <assign uuid="c7a95af4-ba24-440e-8fd4-10b0cda2c79f-com.ndl.framework.workbrench.define.TableBean-8">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <methodArugment uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+                        <columnNameNoDash>orderName</columnNameNoDash>
+                        <columnNameCapitalized>OrderName</columnNameCapitalized>
+                        <columnType>String</columnType>
+                        <nextFieldRative>And</nextFieldRative>
+                        <nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+                            <columnNameNoDash>pageSize</columnNameNoDash>
+                            <columnNameCapitalized>PageSize</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </nextColumnBean>
+                        <fieldType>PRIMARY</fieldType>
+                        <length>0</length>
+                    </methodArugment>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </assign>
+            </runningMethod>
+            <includeBeanList>
+                <includeBean uuid="5a9c8ea1-0d74-4eed-93e8-ceaafc436d09-com.ndl.framework.workbrench.define.TableBean-6">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+            <includeDaoList>
+                <includeDao uuid="c6c51afe-a875-442e-ad7b-5c1c0ed5453c-com.ndl.framework.workbrench.define.DaoBean-2">
+                    <daoId>orderItemJDBCDao</daoId>
+                    <daoType>OrderItemJDBCDao</daoType>
+                    <daoDescipter>订单业务的增删改查</daoDescipter>
+                    <daoCategory>JPA</daoCategory>
+                    <annotationBeanList>
+                        <annotationBean uuid="ef365caf-bbc7-4081-a27b-5a5ca04b770c-com.ndl.framework.workbrench.define.AnnotationBean-11">
+                            <annnoteKey>Repository</annnoteKey>
+                            <annoteValue>orderItemJDBCDao</annoteValue>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="4fdccb54-1fea-4c54-8302-5f29c48ad999-com.ndl.framework.workbrench.define.TableBean-7">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeDao>
+            </includeDaoList>
+        </atomService>
+        <atomService uuid="5e790cb8-2e1b-4ae0-a07a-c96f4124fb9e-com.ndl.framework.workbrench.define.ServiceBean-0">
+            <serviceId>orderATOMService</serviceId>
+            <serivceType>OrderATOMService</serivceType>
+            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+            <serviceCategory>ATM</serviceCategory>
+            <annotationBeanList>
+                <annotationBean uuid="9be19ee7-06c6-452f-b1fe-d4c789055cd9-com.ndl.framework.workbrench.define.AnnotationBean-4">
+                    <annnoteKey>Transactional</annnoteKey>
+                </annotationBean>
+                <annotationBean uuid="142fb021-51a6-48b2-b297-52dfe42fc686-com.ndl.framework.workbrench.define.AnnotationBean-3">
+                    <annnoteKey>Component</annnoteKey>
+                    <annoteValue>orderATOMService</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <instanceAnnotationBeanList>
+                <instanceAnnotationBean uuid="34847053-6609-4903-9628-f9b81d03009f-com.ndl.framework.workbrench.define.AnnotationBean-2">
+                    <annnoteKey>Autowired</annnoteKey>
+                    <annoteValue>orderItemJDBCDao</annoteValue>
+                    <annoteType>OrderItemJDBCDao</annoteType>
+                </instanceAnnotationBean>
+                <instanceAnnotationBean uuid="9bca2185-1b09-47dd-b48b-01dafa0b9859-com.ndl.framework.workbrench.define.AnnotationBean-8">
+                    <annnoteKey>Qualifier</annnoteKey>
+                    <annoteValue>orderItemATOMService</annoteValue>
+                    <annoteType>OrderItemATOMService</annoteType>
+                </instanceAnnotationBean>
+                <instanceAnnotationBean uuid="3e4a1c30-dd6b-40d9-9b3f-5127c9d5dcaf-com.ndl.framework.workbrench.define.AnnotationBean-1">
+                    <annnoteKey>Qualifier</annnoteKey>
+                    <annoteValue>orderHeaderJDBCDao</annoteValue>
+                    <annoteType>OrderHeaderJDBCDao</annoteType>
+                </instanceAnnotationBean>
+            </instanceAnnotationBeanList>
+            <serviceMethodList>
+                <serviceMethod uuid="78e58e02-1094-4b2c-9ead-5604742fba17-com.ndl.framework.workbrench.define.MethodBean-3">
+                    <signature>queryBusinessOrderItemByOrderNameAndPageSize</signature>
+                    <signatureDescripter>查询订单头方法</signatureDescripter>
+                    <responseType uuid="f44f6196-0662-4079-8c89-e02ed7d5478d-com.ndl.framework.workbrench.define.ColumnBean-12">
+                        <columnType>Order</columnType>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>ATM</catetory>
+                    <bodyBean uuid="85fb41e1-e03f-48f3-902f-bad7e042f10b-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-3">
+                        <next>1d377413-6cd6-409a-9782-06bb8f6c34dd-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-5</next>
+                        <fromServiceBean>4db16a36-b026-4b6e-a039-fed8194c489e-com.ndl.framework.workbrench.define.ServiceBean-1</fromServiceBean>
+                        <fromMethod>78e58e02-1094-4b2c-9ead-5604742fba17-com.ndl.framework.workbrench.define.MethodBean-3</fromMethod>
+                        <toMethod>d7f2c03d-55cb-4038-8677-5649bd7ac795-com.ndl.framework.workbrench.define.MethodBean-4</toMethod>
+                        <fromTableBean>fd933719-c156-436b-b09c-27fde63a76fe-com.ndl.framework.workbrench.define.TableBean-5</fromTableBean>
+                        <fromColumnBean uuid="fa7e55d9-96b7-445f-9aff-67058804e76a-com.ndl.framework.workbrench.define.ColumnBean-0">
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="595e7c62-a7e1-4449-8587-93d272247ee6-com.ndl.framework.workbrench.define.ColumnBean-1">
+<columnNameNoDash>productId</columnNameNoDash>
+<columnNameCapitalized>Product</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="5d4935c8-0cd1-4a96-83c8-ccc98823b2ae-com.ndl.framework.workbrench.define.ColumnBean-2">
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </fromColumnBean>
+                        <fromResultType uuid="bdd2442f-fb18-4d78-a258-28c13d947013-com.ndl.framework.workbrench.define.ColumnBean-3">
+                            <columnType>Order</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="bdd2442f-fb18-4d78-a258-28c13d947013-com.ndl.framework.workbrench.define.ColumnBean-3">
+                            <columnType>Order</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <toServiceBean>4db16a36-b026-4b6e-a039-fed8194c489e-com.ndl.framework.workbrench.define.ServiceBean-1</toServiceBean>
+                        <toTableBean uuid="c7a95af4-ba24-440e-8fd4-10b0cda2c79f-com.ndl.framework.workbrench.define.TableBean-8">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <methodArugment uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </toTableBean>
+                        <toColumnBean uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+<columnNameNoDash>pageSize</columnNameNoDash>
+<columnNameCapitalized>PageSize</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </toColumnBean>
+                        <toResultType uuid="23b89694-72fd-4d6c-8242-1d929d3a3c59-com.ndl.framework.workbrench.define.ColumnBean-11">
+                            <columnType>OrderItem</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </toResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean uuid="c02038ad-fab6-477f-ace8-f6c99228ecb0-com.ndl.framework.workbrench.define.AnnotationBean-9">
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>queryBusinessOrderItemByOrderNameAndPageSize</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="4db16a36-b026-4b6e-a039-fed8194c489e-com.ndl.framework.workbrench.define.ServiceBean-1">
+                        <serviceId>orderItemATOMService</serviceId>
+                        <serivceType>OrderItemATOMService</serivceType>
+                        <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                        <serviceCategory>ATM</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean uuid="9bca2185-1b09-47dd-b48b-01dafa0b9859-com.ndl.framework.workbrench.define.AnnotationBean-8">
+<annnoteKey>Component</annnoteKey>
+<annoteValue>order</annoteValue>
+                            </annotationBean>
+                            <annotationBean uuid="e21f1f92-fa9a-4b18-bb6c-1515010da83c-com.ndl.framework.workbrench.define.AnnotationBean-10">
+<annnoteKey>Transactional</annnoteKey>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean uuid="34847053-6609-4903-9628-f9b81d03009f-com.ndl.framework.workbrench.define.AnnotationBean-2">
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>orderItemJDBCDao</annoteValue>
+<annoteType>OrderItemJDBCDao</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <runningMethod uuid="c90e0ef8-bbbd-449f-b2f0-cf1384df65c6-com.ndl.framework.workbrench.define.MethodBean-5">
+                            <signature>queryAtomByOrderNameAndPageSize</signature>
+                            <responseType uuid="23b89694-72fd-4d6c-8242-1d929d3a3c59-com.ndl.framework.workbrench.define.ColumnBean-11">
+<columnType>OrderItem</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>ATM</catetory>
+                            <assign uuid="c7a95af4-ba24-440e-8fd4-10b0cda2c79f-com.ndl.framework.workbrench.define.TableBean-8">
+<tableNameNoDash>orderItem</tableNameNoDash>
+<tableNameCapitalized>OrderItem</tableNameCapitalized>
+<columnBeanList/>
+<methodArugment uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+    <columnNameNoDash>orderName</columnNameNoDash>
+    <columnNameCapitalized>OrderName</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+        <columnNameNoDash>pageSize</columnNameNoDash>
+        <columnNameCapitalized>PageSize</columnNameCapitalized>
+        <columnType>String</columnType>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <includeBeanList>
+                            <includeBean uuid="5a9c8ea1-0d74-4eed-93e8-ceaafc436d09-com.ndl.framework.workbrench.define.TableBean-6">
+<tableNameNoDash>orderItem</tableNameNoDash>
+<tableNameCapitalized>OrderItem</tableNameCapitalized>
+<columnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                        <includeDaoList>
+                            <includeDao uuid="c6c51afe-a875-442e-ad7b-5c1c0ed5453c-com.ndl.framework.workbrench.define.DaoBean-2">
+<daoId>orderItemJDBCDao</daoId>
+<daoType>OrderItemJDBCDao</daoType>
+<daoDescipter>订单业务的增删改查</daoDescipter>
+<daoCategory>JPA</daoCategory>
+<annotationBeanList>
+    <annotationBean uuid="ef365caf-bbc7-4081-a27b-5a5ca04b770c-com.ndl.framework.workbrench.define.AnnotationBean-11">
+        <annnoteKey>Repository</annnoteKey>
+        <annoteValue>orderItemJDBCDao</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<includeBeanList>
+    <includeBean uuid="4fdccb54-1fea-4c54-8302-5f29c48ad999-com.ndl.framework.workbrench.define.TableBean-7">
+        <tableNameNoDash>orderItem</tableNameNoDash>
+        <tableNameCapitalized>OrderItem</tableNameCapitalized>
+        <columnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+                            </includeDao>
+                        </includeDaoList>
+                    </calleeMajorService>
+                    <assign uuid="c7a95af4-ba24-440e-8fd4-10b0cda2c79f-com.ndl.framework.workbrench.define.TableBean-8">
+                        <tableNameNoDash>orderItem</tableNameNoDash>
+                        <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                        <columnBeanList/>
+                        <methodArugment uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+<columnNameNoDash>pageSize</columnNameNoDash>
+<columnNameCapitalized>PageSize</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callAtomServicesList>
+                        <callAtomService uuid="4db16a36-b026-4b6e-a039-fed8194c489e-com.ndl.framework.workbrench.define.ServiceBean-1">
+                            <serviceId>orderItemATOMService</serviceId>
+                            <serivceType>OrderItemATOMService</serivceType>
+                            <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                            <serviceCategory>ATM</serviceCategory>
+                            <annotationBeanList>
+<annotationBean uuid="9bca2185-1b09-47dd-b48b-01dafa0b9859-com.ndl.framework.workbrench.define.AnnotationBean-8">
+    <annnoteKey>Component</annnoteKey>
+    <annoteValue>order</annoteValue>
+</annotationBean>
+<annotationBean uuid="e21f1f92-fa9a-4b18-bb6c-1515010da83c-com.ndl.framework.workbrench.define.AnnotationBean-10">
+    <annnoteKey>Transactional</annnoteKey>
+</annotationBean>
+                            </annotationBeanList>
+                            <instanceAnnotationBeanList>
+<instanceAnnotationBean uuid="34847053-6609-4903-9628-f9b81d03009f-com.ndl.framework.workbrench.define.AnnotationBean-2">
+    <annnoteKey>Autowired</annnoteKey>
+    <annoteValue>orderItemJDBCDao</annoteValue>
+    <annoteType>OrderItemJDBCDao</annoteType>
+</instanceAnnotationBean>
+                            </instanceAnnotationBeanList>
+                            <runningMethod uuid="c90e0ef8-bbbd-449f-b2f0-cf1384df65c6-com.ndl.framework.workbrench.define.MethodBean-5">
+<signature>queryAtomByOrderNameAndPageSize</signature>
+<responseType uuid="23b89694-72fd-4d6c-8242-1d929d3a3c59-com.ndl.framework.workbrench.define.ColumnBean-11">
+    <columnType>OrderItem</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>ATM</catetory>
+<assign uuid="c7a95af4-ba24-440e-8fd4-10b0cda2c79f-com.ndl.framework.workbrench.define.TableBean-8">
+    <tableNameNoDash>orderItem</tableNameNoDash>
+    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+    <columnBeanList/>
+    <methodArugment uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+        <columnNameNoDash>orderName</columnNameNoDash>
+        <columnNameCapitalized>OrderName</columnNameCapitalized>
+        <columnType>String</columnType>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <includeBeanList>
+<includeBean uuid="5a9c8ea1-0d74-4eed-93e8-ceaafc436d09-com.ndl.framework.workbrench.define.TableBean-6">
+    <tableNameNoDash>orderItem</tableNameNoDash>
+    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+    <columnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                            <includeDaoList>
+<includeDao uuid="c6c51afe-a875-442e-ad7b-5c1c0ed5453c-com.ndl.framework.workbrench.define.DaoBean-2">
+    <daoId>orderItemJDBCDao</daoId>
+    <daoType>OrderItemJDBCDao</daoType>
+    <daoDescipter>订单业务的增删改查</daoDescipter>
+    <daoCategory>JPA</daoCategory>
+    <annotationBeanList>
+        <annotationBean uuid="ef365caf-bbc7-4081-a27b-5a5ca04b770c-com.ndl.framework.workbrench.define.AnnotationBean-11">
+            <annnoteKey>Repository</annnoteKey>
+            <annoteValue>orderItemJDBCDao</annoteValue>
+        </annotationBean>
+    </annotationBeanList>
+    <includeBeanList>
+        <includeBean uuid="4fdccb54-1fea-4c54-8302-5f29c48ad999-com.ndl.framework.workbrench.define.TableBean-7">
+            <tableNameNoDash>orderItem</tableNameNoDash>
+            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+            <columnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </includeBean>
+    </includeBeanList>
+</includeDao>
+                            </includeDaoList>
+                        </callAtomService>
+                    </callAtomServicesList>
+                </serviceMethod>
+                <serviceMethod uuid="7f2174ff-2d8d-4832-9edb-ee974b6233b8-com.ndl.framework.workbrench.define.MethodBean-0">
+                    <signature>queryBusinessOrderByOrderNameAndPageSize</signature>
+                    <signatureDescripter>查询订单头方法</signatureDescripter>
+                    <responseType uuid="73878ff9-bd54-462f-a123-006c85602265-com.ndl.framework.workbrench.define.ColumnBean-7">
+                        <columnType>Order</columnType>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>JPA</catetory>
+                    <bodyBean uuid="38aa25c8-9945-45b1-a330-e7f7baea7f47-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-0">
+                        <next>b60c1506-a7f7-410c-8e8d-99646f0e1223-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-2</next>
+                        <fromDaoBean>d5125c21-c80e-4e23-bc89-38ec30cf4049-com.ndl.framework.workbrench.define.DaoBean-1</fromDaoBean>
+                        <toDaoBean>d5125c21-c80e-4e23-bc89-38ec30cf4049-com.ndl.framework.workbrench.define.DaoBean-1</toDaoBean>
+                        <fromMethod>7f2174ff-2d8d-4832-9edb-ee974b6233b8-com.ndl.framework.workbrench.define.MethodBean-0</fromMethod>
+                        <toMethod>9f9ca696-9370-4e43-ac6a-00e4dd6eab7f-com.ndl.framework.workbrench.define.MethodBean-1</toMethod>
+                        <fromTableBean>c298a82d-b4b1-4c13-a6de-8e8b4b959b87-com.ndl.framework.workbrench.define.TableBean-2</fromTableBean>
+                        <fromColumnBean uuid="fa7e55d9-96b7-445f-9aff-67058804e76a-com.ndl.framework.workbrench.define.ColumnBean-0">
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="595e7c62-a7e1-4449-8587-93d272247ee6-com.ndl.framework.workbrench.define.ColumnBean-1">
+<columnNameNoDash>productId</columnNameNoDash>
+<columnNameCapitalized>Product</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="5d4935c8-0cd1-4a96-83c8-ccc98823b2ae-com.ndl.framework.workbrench.define.ColumnBean-2">
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </fromColumnBean>
+                        <fromResultType uuid="bdd2442f-fb18-4d78-a258-28c13d947013-com.ndl.framework.workbrench.define.ColumnBean-3">
+                            <columnType>Order</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="bdd2442f-fb18-4d78-a258-28c13d947013-com.ndl.framework.workbrench.define.ColumnBean-3">
+                            <columnType>Order</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>Page</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <toTableBean uuid="b8634eda-5520-4e63-acd8-5c40ee2c30ce-com.ndl.framework.workbrench.define.TableBean-4">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <methodArugment uuid="fa838a01-0408-4aae-b3e8-77afb79bf547-com.ndl.framework.workbrench.define.ColumnBean-4">
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="81599e16-5114-4676-9126-32371a78293a-com.ndl.framework.workbrench.define.ColumnBean-5">
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </toTableBean>
+                        <toColumnBean uuid="fa838a01-0408-4aae-b3e8-77afb79bf547-com.ndl.framework.workbrench.define.ColumnBean-4">
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="81599e16-5114-4676-9126-32371a78293a-com.ndl.framework.workbrench.define.ColumnBean-5">
+<columnNameNoDash>pageSize</columnNameNoDash>
+<columnNameCapitalized>PageSize</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </toColumnBean>
+                        <toResultType uuid="30a1c7fd-19a7-4a33-b3b9-8b964ef3b369-com.ndl.framework.workbrench.define.ColumnBean-6">
+                            <columnType>OrderHeader</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </toResultType>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean uuid="e1e6356c-4fa3-4546-9d99-61246b68fa8a-com.ndl.framework.workbrench.define.AnnotationBean-6">
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>queryBusinessOrderByOrderNameAndPageSize</annoteValue>
+                    </annotationBean>
+                    <callMajorDAOService uuid="d5125c21-c80e-4e23-bc89-38ec30cf4049-com.ndl.framework.workbrench.define.DaoBean-1">
+                        <daoId>orderHeaderJDBCDao</daoId>
+                        <daoType>OrderHeaderJDBCDao</daoType>
+                        <daoDescipter>订单业务的增删改查</daoDescipter>
+                        <daoCategory>JPA</daoCategory>
+                        <runningMethod uuid="0cc586ed-39dc-4e40-aa76-e4ecccb21796-com.ndl.framework.workbrench.define.MethodBean-2">
+                            <signature>queryAtomByOrderNameAndPageSize</signature>
+                            <responseType uuid="30a1c7fd-19a7-4a33-b3b9-8b964ef3b369-com.ndl.framework.workbrench.define.ColumnBean-6">
+<columnType>OrderHeader</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <assign uuid="b8634eda-5520-4e63-acd8-5c40ee2c30ce-com.ndl.framework.workbrench.define.TableBean-4">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList/>
+<methodArugment uuid="fa838a01-0408-4aae-b3e8-77afb79bf547-com.ndl.framework.workbrench.define.ColumnBean-4">
+    <columnNameNoDash>orderName</columnNameNoDash>
+    <columnNameCapitalized>OrderName</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="81599e16-5114-4676-9126-32371a78293a-com.ndl.framework.workbrench.define.ColumnBean-5">
+        <columnNameNoDash>pageSize</columnNameNoDash>
+        <columnNameCapitalized>PageSize</columnNameCapitalized>
+        <columnType>String</columnType>
+        <nextFieldRative>Finished</nextFieldRative>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <annotationBeanList>
+                            <annotationBean uuid="3e4a1c30-dd6b-40d9-9b3f-5127c9d5dcaf-com.ndl.framework.workbrench.define.AnnotationBean-1">
+<annnoteKey>Qualifier</annnoteKey>
+<annoteValue>orderHeaderJDBCDao</annoteValue>
+<annoteType>OrderHeaderJDBCDao</annoteType>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <includeBeanList>
+                            <includeBean uuid="558155e7-b8c8-40e0-b4e9-8f71a7f5b02e-com.ndl.framework.workbrench.define.TableBean-3">
+<tableNameNoDash>orderHeader</tableNameNoDash>
+<tableNameCapitalized>OrderHeader</tableNameCapitalized>
+<columnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </callMajorDAOService>
+                    <assign uuid="b8634eda-5520-4e63-acd8-5c40ee2c30ce-com.ndl.framework.workbrench.define.TableBean-4">
+                        <tableNameNoDash>orderHeader</tableNameNoDash>
+                        <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                        <columnBeanList/>
+                        <methodArugment uuid="fa838a01-0408-4aae-b3e8-77afb79bf547-com.ndl.framework.workbrench.define.ColumnBean-4">
+                            <columnNameNoDash>orderName</columnNameNoDash>
+                            <columnNameCapitalized>OrderName</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="81599e16-5114-4676-9126-32371a78293a-com.ndl.framework.workbrench.define.ColumnBean-5">
+<columnNameNoDash>pageSize</columnNameNoDash>
+<columnNameCapitalized>PageSize</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>Finished</nextFieldRative>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callDAOServiceList>
+                        <callDAOService uuid="d5125c21-c80e-4e23-bc89-38ec30cf4049-com.ndl.framework.workbrench.define.DaoBean-1">
+                            <daoId>orderHeaderJDBCDao</daoId>
+                            <daoType>OrderHeaderJDBCDao</daoType>
+                            <daoDescipter>订单业务的增删改查</daoDescipter>
+                            <daoCategory>JPA</daoCategory>
+                            <runningMethod uuid="0cc586ed-39dc-4e40-aa76-e4ecccb21796-com.ndl.framework.workbrench.define.MethodBean-2">
+<signature>queryAtomByOrderNameAndPageSize</signature>
+<responseType uuid="30a1c7fd-19a7-4a33-b3b9-8b964ef3b369-com.ndl.framework.workbrench.define.ColumnBean-6">
+    <columnType>OrderHeader</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</responseType>
+<assign uuid="b8634eda-5520-4e63-acd8-5c40ee2c30ce-com.ndl.framework.workbrench.define.TableBean-4">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <methodArugment uuid="fa838a01-0408-4aae-b3e8-77afb79bf547-com.ndl.framework.workbrench.define.ColumnBean-4">
+        <columnNameNoDash>orderName</columnNameNoDash>
+        <columnNameCapitalized>OrderName</columnNameCapitalized>
+        <columnType>String</columnType>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="81599e16-5114-4676-9126-32371a78293a-com.ndl.framework.workbrench.define.ColumnBean-5">
+            <columnNameNoDash>pageSize</columnNameNoDash>
+            <columnNameCapitalized>PageSize</columnNameCapitalized>
+            <columnType>String</columnType>
+            <nextFieldRative>Finished</nextFieldRative>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <annotationBeanList>
+<annotationBean uuid="3e4a1c30-dd6b-40d9-9b3f-5127c9d5dcaf-com.ndl.framework.workbrench.define.AnnotationBean-1">
+    <annnoteKey>Qualifier</annnoteKey>
+    <annoteValue>orderHeaderJDBCDao</annoteValue>
+    <annoteType>OrderHeaderJDBCDao</annoteType>
+</annotationBean>
+                            </annotationBeanList>
+                            <includeBeanList>
+<includeBean uuid="558155e7-b8c8-40e0-b4e9-8f71a7f5b02e-com.ndl.framework.workbrench.define.TableBean-3">
+    <tableNameNoDash>orderHeader</tableNameNoDash>
+    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+    <columnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callDAOService>
+                    </callDAOServiceList>
+                </serviceMethod>
+            </serviceMethodList>
+            <includeServiceList>
+                <includeService uuid="4db16a36-b026-4b6e-a039-fed8194c489e-com.ndl.framework.workbrench.define.ServiceBean-1">
+                    <serviceId>orderItemATOMService</serviceId>
+                    <serivceType>OrderItemATOMService</serivceType>
+                    <serviceDescipter>订单业务的增删改查</serviceDescipter>
+                    <serviceCategory>ATM</serviceCategory>
+                    <annotationBeanList>
+                        <annotationBean uuid="9bca2185-1b09-47dd-b48b-01dafa0b9859-com.ndl.framework.workbrench.define.AnnotationBean-8">
+                            <annnoteKey>Component</annnoteKey>
+                            <annoteValue>order</annoteValue>
+                        </annotationBean>
+                        <annotationBean uuid="e21f1f92-fa9a-4b18-bb6c-1515010da83c-com.ndl.framework.workbrench.define.AnnotationBean-10">
+                            <annnoteKey>Transactional</annnoteKey>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <instanceAnnotationBeanList>
+                        <instanceAnnotationBean uuid="34847053-6609-4903-9628-f9b81d03009f-com.ndl.framework.workbrench.define.AnnotationBean-2">
+                            <annnoteKey>Autowired</annnoteKey>
+                            <annoteValue>orderItemJDBCDao</annoteValue>
+                            <annoteType>OrderItemJDBCDao</annoteType>
+                        </instanceAnnotationBean>
+                    </instanceAnnotationBeanList>
+                    <runningMethod uuid="c90e0ef8-bbbd-449f-b2f0-cf1384df65c6-com.ndl.framework.workbrench.define.MethodBean-5">
+                        <signature>queryAtomByOrderNameAndPageSize</signature>
+                        <responseType uuid="23b89694-72fd-4d6c-8242-1d929d3a3c59-com.ndl.framework.workbrench.define.ColumnBean-11">
+                            <columnType>OrderItem</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </responseType>
+                        <catetory>ATM</catetory>
+                        <assign uuid="c7a95af4-ba24-440e-8fd4-10b0cda2c79f-com.ndl.framework.workbrench.define.TableBean-8">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <methodArugment uuid="eb9e7829-1165-44c1-80be-eb66a18c00eb-com.ndl.framework.workbrench.define.ColumnBean-9">
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="6398675e-0757-4117-a4f1-b8836ad6e5b6-com.ndl.framework.workbrench.define.ColumnBean-10">
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </runningMethod>
+                    <includeBeanList>
+                        <includeBean uuid="5a9c8ea1-0d74-4eed-93e8-ceaafc436d09-com.ndl.framework.workbrench.define.TableBean-6">
+                            <tableNameNoDash>orderItem</tableNameNoDash>
+                            <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                    <includeDaoList>
+                        <includeDao uuid="c6c51afe-a875-442e-ad7b-5c1c0ed5453c-com.ndl.framework.workbrench.define.DaoBean-2">
+                            <daoId>orderItemJDBCDao</daoId>
+                            <daoType>OrderItemJDBCDao</daoType>
+                            <daoDescipter>订单业务的增删改查</daoDescipter>
+                            <daoCategory>JPA</daoCategory>
+                            <annotationBeanList>
+<annotationBean uuid="ef365caf-bbc7-4081-a27b-5a5ca04b770c-com.ndl.framework.workbrench.define.AnnotationBean-11">
+    <annnoteKey>Repository</annnoteKey>
+    <annoteValue>orderItemJDBCDao</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <includeBeanList>
+<includeBean uuid="4fdccb54-1fea-4c54-8302-5f29c48ad999-com.ndl.framework.workbrench.define.TableBean-7">
+    <tableNameNoDash>orderItem</tableNameNoDash>
+    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+    <columnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </includeDao>
+                    </includeDaoList>
+                </includeService>
+            </includeServiceList>
+            <includeBeanList>
+                <includeBean uuid="ed108ee7-8b20-41ca-911a-2b1c96542abf-com.ndl.framework.workbrench.define.TableBean-0">
+                    <tableNameNoDash>order</tableNameNoDash>
+                    <tableNameCapitalized>Order</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+                <includeBean uuid="558155e7-b8c8-40e0-b4e9-8f71a7f5b02e-com.ndl.framework.workbrench.define.TableBean-3">
+                    <tableNameNoDash>orderHeader</tableNameNoDash>
+                    <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+                <includeBean uuid="5a9c8ea1-0d74-4eed-93e8-ceaafc436d09-com.ndl.framework.workbrench.define.TableBean-6">
+                    <tableNameNoDash>orderItem</tableNameNoDash>
+                    <tableNameCapitalized>OrderItem</tableNameCapitalized>
+                    <columnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+            <includeDaoList>
+                <includeDao uuid="89a24e6e-a824-4a06-b468-5227ac5a5547-com.ndl.framework.workbrench.define.DaoBean-0">
+                    <daoId>orderJDBCDao</daoId>
+                    <daoType>OrderJDBCDao</daoType>
+                    <daoDescipter>订单业务的增删改查</daoDescipter>
+                    <daoCategory>JPA</daoCategory>
+                    <annotationBeanList>
+                        <annotationBean uuid="0a2d9b54-b6f1-4347-9ed0-be52631aaeb4-com.ndl.framework.workbrench.define.AnnotationBean-5">
+                            <annnoteKey>Repository</annnoteKey>
+                            <annoteValue>orderJDBCDao</annoteValue>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="8bf13841-03fa-4929-8661-3f333af7fea6-com.ndl.framework.workbrench.define.TableBean-1">
+                            <tableNameNoDash>order</tableNameNoDash>
+                            <tableNameCapitalized>Order</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeDao>
+                <includeDao uuid="d5125c21-c80e-4e23-bc89-38ec30cf4049-com.ndl.framework.workbrench.define.DaoBean-1">
+                    <daoId>orderHeaderJDBCDao</daoId>
+                    <daoType>OrderHeaderJDBCDao</daoType>
+                    <daoDescipter>订单业务的增删改查</daoDescipter>
+                    <daoCategory>JPA</daoCategory>
+                    <runningMethod uuid="0cc586ed-39dc-4e40-aa76-e4ecccb21796-com.ndl.framework.workbrench.define.MethodBean-2">
+                        <signature>queryAtomByOrderNameAndPageSize</signature>
+                        <responseType uuid="30a1c7fd-19a7-4a33-b3b9-8b964ef3b369-com.ndl.framework.workbrench.define.ColumnBean-6">
+                            <columnType>OrderHeader</columnType>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </responseType>
+                        <assign uuid="b8634eda-5520-4e63-acd8-5c40ee2c30ce-com.ndl.framework.workbrench.define.TableBean-4">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <methodArugment uuid="fa838a01-0408-4aae-b3e8-77afb79bf547-com.ndl.framework.workbrench.define.ColumnBean-4">
+<columnNameNoDash>orderName</columnNameNoDash>
+<columnNameCapitalized>OrderName</columnNameCapitalized>
+<columnType>String</columnType>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="81599e16-5114-4676-9126-32371a78293a-com.ndl.framework.workbrench.define.ColumnBean-5">
+    <columnNameNoDash>pageSize</columnNameNoDash>
+    <columnNameCapitalized>PageSize</columnNameCapitalized>
+    <columnType>String</columnType>
+    <nextFieldRative>Finished</nextFieldRative>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </methodArugment>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </assign>
+                    </runningMethod>
+                    <annotationBeanList>
+                        <annotationBean uuid="3e4a1c30-dd6b-40d9-9b3f-5127c9d5dcaf-com.ndl.framework.workbrench.define.AnnotationBean-1">
+                            <annnoteKey>Qualifier</annnoteKey>
+                            <annoteValue>orderHeaderJDBCDao</annoteValue>
+                            <annoteType>OrderHeaderJDBCDao</annoteType>
+                        </annotationBean>
+                    </annotationBeanList>
+                    <includeBeanList>
+                        <includeBean uuid="558155e7-b8c8-40e0-b4e9-8f71a7f5b02e-com.ndl.framework.workbrench.define.TableBean-3">
+                            <tableNameNoDash>orderHeader</tableNameNoDash>
+                            <tableNameCapitalized>OrderHeader</tableNameCapitalized>
+                            <columnBeanList/>
+                            <hasDateColumn>false</hasDateColumn>
+                            <hasBigDecimal>false</hasBigDecimal>
+                        </includeBean>
+                    </includeBeanList>
+                </includeDao>
+            </includeDaoList>
+        </atomService>
+    </atomServices>
+    <atomOrRepository>testAtomService</atomOrRepository>
+    <atomServiceTemplates/>
+    <repositoryTemplates/>
+</AtomOrRepositoryPackage>

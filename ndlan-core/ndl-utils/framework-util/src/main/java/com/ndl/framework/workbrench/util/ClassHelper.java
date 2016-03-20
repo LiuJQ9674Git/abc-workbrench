@@ -160,6 +160,21 @@ public class ClassHelper {
         
     }
     
+    public static String lowerCaseUsingJavaMethod(String str){
+    	if(StringUtils.isBlank(str)){
+    		return null;
+    	}
+    	String lowerCaseStr = str;//.toLowerCase();
+		
+		
+		if(isCapitalion(lowerCaseStr)){
+			String firstA=lowerCaseStr.substring(0, 1);
+			String lower=firstA.toLowerCase();
+			lowerCaseStr=StringUtils.replace(lowerCaseStr, firstA, lower, 1);
+		}
+		return lowerCaseStr;
+    }
+    
     public static String namingUsingJavaMethod(String str){
     	if(StringUtils.isBlank(str)){
     		return null;

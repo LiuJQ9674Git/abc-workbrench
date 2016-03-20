@@ -67,6 +67,7 @@ public class RunConfigure {
 		return configProperties.getProperty("workbrench.config.process.iosPrefix");
 	}
 
+	/////////////////////////////////////////////
 	public String getOutputPath() {
 		return configProperties.getProperty("workbrench.config.template.outputPath");
 	}
@@ -105,6 +106,7 @@ public class RunConfigure {
 	public String getIOSOutputPath() {
 		return configProperties.getProperty("workbrench.config.template.iosOutputPath");
 	}
+	////////////////////////////////////////////////////////
 	
 	public static String getBuinessservcietemplate() {
 		return buinessServcieTemplate;
@@ -222,23 +224,24 @@ public class RunConfigure {
 	public String getMyBatisConfigPath() {
 		return configProperties.getProperty("workbrench.config.process.myBatis");
 	}
+	
 	public static String getConfigPath() {
 		return instanceRunConfigure().getConfigurePackge();
 	}
 
 	public static String getControllerSuffix() {
-		return instanceRunConfigure().getClassPrefix() + CONTROLLER_SUFFIX;
+		return POJO_SUFFIX + CONTROLLER_SUFFIX;
 	}
 
 	public static String getBusinessServiceSuffix() {
-		return instanceRunConfigure().getClassPrefix() + BUSINESS_SERVICE_SUFFIX;
+		return POJO_SUFFIX + BUSINESS_SERVICE_SUFFIX;
 	}
 
 	public static String getAtomServiceSuffix() {
-		return instanceRunConfigure().getClassPrefix() + ATOM_SERVICE_SUFFIX;
+		return POJO_SUFFIX + ATOM_SERVICE_SUFFIX;
 	}
 
 	public static String getDaoSuffix() {
-		return instanceRunConfigure().getClassPrefix() + DAO_SUFFIX;
+		return POJO_SUFFIX + DAO_SUFFIX;
 	}
 }

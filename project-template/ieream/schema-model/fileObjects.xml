@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+    <name>suo</name>
+    <age>29</age>
+    <id>100</id>
+    <bookSet>
+        <book>
+            <id>1</id>
+            <name>哈里波特</name>
+            <price>100.0</price>
+        </book>
+        <book>
+            <id>2</id>
+            <name>苹果</name>
+            <price>50.0</price>
+        </book>
+    </bookSet>
+</customer>

@@ -127,6 +127,10 @@ public class BusinessDescripter implements Cloneable,Serializable{
 	public Collection<MethodDescripter> getMethods() {
 		return methods.values();
 	}
+	
+	public Set<String> getMethodSignature() {
+		return methods.keySet();
+	}
 
 	public Set<String> getHeaderAnnotations() {
 		return headerAnnotations;

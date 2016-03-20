@@ -10,7 +10,7 @@ import com.ndl.framework.workbrench.define.TableBean;
 import com.ndl.framework.workbrench.define.TransientBean;
 import com.ndl.framework.workbrench.exception.ConfigRuntimeException;
 import com.ndl.framework.workbrench.define.TableColumnConfig;
-import com.ndl.framework.workbrench.freemarker.Generate;
+import com.ndl.framework.workbrench.freemarker.TemplateCommand;
 import com.ndl.framework.workbrench.freemarker.RunConfigure;
 import com.ndl.framework.workbrench.util.JAXBUtil;
 import com.ndl.framework.workbrench.util.WorkBrenchConfigProperty;
@@ -24,7 +24,7 @@ import org.springframework.util.Assert;
 public class APIModelManager {
 	private static final Logger logger = LoggerFactory.getLogger(APIModelManager.class);
 	
-	private final Generate generate =Generate.getInstance();
+	protected final TemplateCommand generate =TemplateCommand.getInstance();
 	
 	JAXBUtil jaxbUtilConfig = new JAXBUtil(TableColumnConfig.class);
 	//不需要持久化的数据，但是在展现层次上需要，例如IOS需要模型实例变量，或者实体中包含其它实体，例如订单头，包含订单详细项

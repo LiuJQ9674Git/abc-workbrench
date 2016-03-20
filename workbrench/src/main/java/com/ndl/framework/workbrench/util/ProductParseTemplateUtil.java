@@ -243,13 +243,24 @@ public class ProductParseTemplateUtil {
     	return sb.toString();
 	}
 	
-	public static String parseInstanceValiable(ColumnBean columnBean){
+	public static String parseInstanceValiable(ColumnBean columnBean,String suffix){
+		modifiedColumnBeanSuffix(columnBean,suffix);
 		String valiable=parseMethodValiable(columnBean);
 		if(StringUtils.isBlank(valiable)){
 			throw new ConfigRuntimeException(WorkBrenchConfigProperty.PROCESS_PRODUCT_EXCETPION_METHOD_NO_ARGUMENT);
 
 	 	}
 		return StringUtils.trim(valiable);
+	}
+	
+	public static void modifiedColumnBeanSuffix(ColumnBean specialAssign,String suffix){
+		if (specialAssign.getFieldType() == FieldTypeEnum.LIST
+				|| specialAssign.getFieldType() == FieldTypeEnum.DOMAIN
+				|| specialAssign.getFieldType() == FieldTypeEnum.ENTITY
+				|| specialAssign.getFieldType() == FieldTypeEnum.MAPKEY){
+			//columnType = columnType + suffix;
+			specialAssign.setColumnType(specialAssign.getColumnType()+suffix);
+		}
 	}
 	
 	private static String parseMethodValiable(ColumnBean specialAssign){

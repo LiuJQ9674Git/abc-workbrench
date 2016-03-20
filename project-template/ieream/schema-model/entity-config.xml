@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<EntityConfig uuid="bff73d69-e636-41fa-944e-2012ce90dada-com.ndl.framework.workbrench.freemarker.template.EntityConfigTemplate-0">
+<EntityConfig uuid="a60b157c-0266-4ef0-bc0c-86203865ac9a-com.ndl.framework.workbrench.freemarker.template.EntityConfigTemplate-0">
     <tableBeanList>
-        <tableBean uuid="27bcb77e-4fee-4c04-a854-9fdbac9394bb-com.ndl.framework.workbrench.define.TableBean-0">
+        <tableBean uuid="1961cba8-2764-41b8-b0e3-c81414bd6125-com.ndl.framework.workbrench.define.TableBean-0">
             <tableName>guides</tableName>
             <tableComment>http://www.ieream.com/mapi/1/guides.php?action=getlist</tableComment>
             <tableNameNoDash>guides</tableNameNoDash>
             <tableNameCapitalized>Guides</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="29dbe72a-7b1b-4587-ac9a-47138a1bafd5-com.ndl.framework.workbrench.define.ColumnBean-0">
+                <columnBean uuid="d3df785d-2814-4dcd-b750-fc6deb8e8826-com.ndl.framework.workbrench.define.ColumnBean-0">
                     <columnName></columnName>
                     <columnNameNoDash>dataGuides</columnNameNoDash>
                     <columnNameCapitalized>DataGuides</columnNameCapitalized>
@@ -32,7 +32,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="835124a7-02d6-4156-aeba-f57f14468417-com.ndl.framework.workbrench.define.ColumnBean-514">
+                <columnBean uuid="c180c7f7-b0cb-4000-8304-2c8e13ba30e1-com.ndl.framework.workbrench.define.ColumnBean-514">
                     <columnName></columnName>
                     <columnNameNoDash>more</columnNameNoDash>
                     <columnNameCapitalized>More</columnNameCapitalized>
@@ -58,7 +58,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="edc8338a-114b-464c-a514-6a42f9875ae9-com.ndl.framework.workbrench.define.ColumnBean-515">
+                <columnBean uuid="5aa77e0e-0299-43cc-b137-76776f7bfc4c-com.ndl.framework.workbrench.define.ColumnBean-515">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -89,14 +89,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="6179635c-f2a0-4de7-82ca-de9685dc53bf-com.ndl.framework.workbrench.define.TableBean-1">
+        <tableBean uuid="53babc74-4eab-44f6-a89f-98a2f946dff4-com.ndl.framework.workbrench.define.TableBean-1">
             <tableName>dataGuides</tableName>
             <tableNameNoDash>dataGuides</tableNameNoDash>
             <tableNameCapitalized>DataGuides</tableNameCapitalized>
             <parentTableNameNoDash>guides</parentTableNameNoDash>
             <parentTableNameCapitalized>Guides</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="c1c36fa9-ee2f-4473-9567-3c776c5fe9e0-com.ndl.framework.workbrench.define.ColumnBean-44">
+                <columnBean uuid="12b544ef-74ea-4d77-a41e-eaa2dd84a069-com.ndl.framework.workbrench.define.ColumnBean-44">
                     <columnName></columnName>
                     <columnNameNoDash>special</columnNameNoDash>
                     <columnNameCapitalized>Special</columnNameCapitalized>
@@ -122,7 +122,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4b2b419a-70e4-4b0f-be01-bc4afe90d526-com.ndl.framework.workbrench.define.ColumnBean-2">
+                <columnBean uuid="bc6dad29-84a4-48ff-971d-54a7c1dc3b82-com.ndl.framework.workbrench.define.ColumnBean-2">
                     <columnName></columnName>
                     <columnNameNoDash>last_login_time</columnNameNoDash>
                     <columnNameCapitalized>Last_login_time</columnNameCapitalized>
@@ -148,7 +148,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="f34a924f-598a-41d7-9fce-79fc3989605c-com.ndl.framework.workbrench.define.ColumnBean-188">
+                <columnBean uuid="34b6d626-186a-4fba-ae6c-8765ebf8c82e-com.ndl.framework.workbrench.define.ColumnBean-188">
                     <columnName></columnName>
                     <columnNameNoDash>avatarDataGuides</columnNameNoDash>
                     <columnNameCapitalized>AvatarDataGuides</columnNameCapitalized>
@@ -173,7 +173,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7d18e2f4-17e1-43ac-b668-f82888b92a54-com.ndl.framework.workbrench.define.ColumnBean-12">
+                <columnBean uuid="8d2314c7-1832-4b49-8ce7-1575e7d2bccf-com.ndl.framework.workbrench.define.ColumnBean-12">
                     <columnName></columnName>
                     <columnNameNoDash>email_1</columnNameNoDash>
                     <columnNameCapitalized>Email_1</columnNameCapitalized>
@@ -199,7 +199,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b0c3ae60-daf0-4cb1-bf75-83188f12270c-com.ndl.framework.workbrench.define.ColumnBean-32">
+                <columnBean uuid="b41eed1c-f3be-4e13-b994-9430fc43b3fa-com.ndl.framework.workbrench.define.ColumnBean-32">
                     <columnName></columnName>
                     <columnNameNoDash>nickname</columnNameNoDash>
                     <columnNameCapitalized>Nickname</columnNameCapitalized>
@@ -225,7 +225,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="cc4c4561-c675-4b89-8562-0b7fa24f3cb5-com.ndl.framework.workbrench.define.ColumnBean-20">
+                <columnBean uuid="1902cc19-629f-43cc-9479-27685e3b960d-com.ndl.framework.workbrench.define.ColumnBean-20">
                     <columnName></columnName>
                     <columnNameNoDash>recommend_desc</columnNameNoDash>
                     <columnNameCapitalized>Recommend_desc</columnNameCapitalized>
@@ -251,7 +251,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="483e3a85-7d51-4a70-b8c1-49f279d4a6a6-com.ndl.framework.workbrench.define.ColumnBean-4">
+                <columnBean uuid="f67a6818-f0cd-4ec7-aa1f-0cc9d9f5c26f-com.ndl.framework.workbrench.define.ColumnBean-4">
                     <columnName></columnName>
                     <columnNameNoDash>union_guide_id_listDataGuides</columnNameNoDash>
                     <columnNameCapitalized>Union_guide_id_listDataGuides</columnNameCapitalized>
@@ -276,7 +276,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0e8db90e-794f-4e86-ad8e-bdee7ab68f6c-com.ndl.framework.workbrench.define.ColumnBean-152">
+                <columnBean uuid="422bb26d-c84b-421b-95f6-b0df632f19ee-com.ndl.framework.workbrench.define.ColumnBean-152">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataGuides</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataGuides</columnNameCapitalized>
@@ -301,7 +301,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7495e39b-fd2a-4c73-ad7b-02460489a70e-com.ndl.framework.workbrench.define.ColumnBean-38">
+                <columnBean uuid="486522ea-698f-42f2-b946-f5c121aeadb7-com.ndl.framework.workbrench.define.ColumnBean-38">
                     <columnName></columnName>
                     <columnNameNoDash>wechat</columnNameNoDash>
                     <columnNameCapitalized>Wechat</columnNameCapitalized>
@@ -327,7 +327,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="8987bc0e-970b-4947-a83c-c95fafee5947-com.ndl.framework.workbrench.define.ColumnBean-29">
+                <columnBean uuid="7c6cd1cf-bbee-464a-a43b-73789acd13bb-com.ndl.framework.workbrench.define.ColumnBean-29">
                     <columnName></columnName>
                     <columnNameNoDash>uid</columnNameNoDash>
                     <columnNameCapitalized>Uid</columnNameCapitalized>
@@ -353,7 +353,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="58cb0311-3042-4c38-ba59-6b5abfcdf7d2-com.ndl.framework.workbrench.define.ColumnBean-34">
+                <columnBean uuid="1ff5eefc-e739-4c67-a808-67dace65f293-com.ndl.framework.workbrench.define.ColumnBean-34">
                     <columnName></columnName>
                     <columnNameNoDash>address</columnNameNoDash>
                     <columnNameCapitalized>Address</columnNameCapitalized>
@@ -379,7 +379,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2c819939-464c-49b5-a0c7-cfef4699ac1d-com.ndl.framework.workbrench.define.ColumnBean-3">
+                <columnBean uuid="04066f1c-7b83-4dbf-8b52-8fd871d7e6e1-com.ndl.framework.workbrench.define.ColumnBean-3">
                     <columnName></columnName>
                     <columnNameNoDash>self_desc</columnNameNoDash>
                     <columnNameCapitalized>Self_desc</columnNameCapitalized>
@@ -405,7 +405,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="303be36b-fad1-492f-9cae-d428302d2fd1-com.ndl.framework.workbrench.define.ColumnBean-28">
+                <columnBean uuid="de59874a-5e0b-4492-9b23-de2ab86d54c8-com.ndl.framework.workbrench.define.ColumnBean-28">
                     <columnName></columnName>
                     <columnNameNoDash>remark_one</columnNameNoDash>
                     <columnNameCapitalized>Remark_one</columnNameCapitalized>
@@ -431,7 +431,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="469e9813-d81f-4686-b866-9644d67fb23b-com.ndl.framework.workbrench.define.ColumnBean-33">
+                <columnBean uuid="867338ef-8f94-446d-b5df-805ae1197428-com.ndl.framework.workbrench.define.ColumnBean-33">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_type</columnNameNoDash>
                     <columnNameCapitalized>Service_days_type</columnNameCapitalized>
@@ -457,7 +457,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c1455af2-169a-421f-9005-ee7a904439b8-com.ndl.framework.workbrench.define.ColumnBean-161">
+                <columnBean uuid="77e36c28-caa5-44ea-a8b6-bebe47c8d183-com.ndl.framework.workbrench.define.ColumnBean-161">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataGuides</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataGuides</columnNameCapitalized>
@@ -482,7 +482,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="6f608a16-53c8-4172-9a73-cd9295423c5a-com.ndl.framework.workbrench.define.ColumnBean-46">
+                <columnBean uuid="586633cf-5949-420a-bbc1-1ef826f58380-com.ndl.framework.workbrench.define.ColumnBean-46">
                     <columnName></columnName>
                     <columnNameNoDash>last_login_role</columnNameNoDash>
                     <columnNameCapitalized>Last_login_role</columnNameCapitalized>
@@ -508,7 +508,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="bb748bf6-4f56-4be5-8014-53c0e77ca064-com.ndl.framework.workbrench.define.ColumnBean-19">
+                <columnBean uuid="28901f66-b5f6-4f20-959a-ecd7f715ba29-com.ndl.framework.workbrench.define.ColumnBean-19">
                     <columnName></columnName>
                     <columnNameNoDash>bi_language</columnNameNoDash>
                     <columnNameCapitalized>Bi_language</columnNameCapitalized>
@@ -534,7 +534,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="a1372bc8-154e-499b-bb4b-7c8b223d58ee-com.ndl.framework.workbrench.define.ColumnBean-43">
+                <columnBean uuid="33294875-8800-4b9e-9e93-16b5a2fa1b9f-com.ndl.framework.workbrench.define.ColumnBean-43">
                     <columnName></columnName>
                     <columnNameNoDash>recommend_person</columnNameNoDash>
                     <columnNameCapitalized>Recommend_person</columnNameCapitalized>
@@ -560,7 +560,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="e9a36b2b-ba50-4ea3-b433-15a80a29b285-com.ndl.framework.workbrench.define.ColumnBean-52">
+                <columnBean uuid="519817ae-38e9-4644-9e97-5ab877cdee5a-com.ndl.framework.workbrench.define.ColumnBean-52">
                     <columnName></columnName>
                     <columnNameNoDash>reg_ip</columnNameNoDash>
                     <columnNameCapitalized>Reg_ip</columnNameCapitalized>
@@ -586,7 +586,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="8b6f469c-ee6a-48f0-850e-bf9c68944522-com.ndl.framework.workbrench.define.ColumnBean-51">
+                <columnBean uuid="59f41c8b-7a76-4b6f-b2b3-ede80dae5dbf-com.ndl.framework.workbrench.define.ColumnBean-51">
                     <columnName></columnName>
                     <columnNameNoDash>domicile</columnNameNoDash>
                     <columnNameCapitalized>Domicile</columnNameCapitalized>
@@ -612,7 +612,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="be8e2758-36dd-44e8-8c84-a8463a4a49e1-com.ndl.framework.workbrench.define.ColumnBean-30">
+                <columnBean uuid="aaee57bf-bc0d-4d35-a47f-b0b7ddc145ac-com.ndl.framework.workbrench.define.ColumnBean-30">
                     <columnName></columnName>
                     <columnNameNoDash>last_login_ip</columnNameNoDash>
                     <columnNameCapitalized>Last_login_ip</columnNameCapitalized>
@@ -638,7 +638,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="892237f2-30dd-4463-ac2c-a62b3fd2db41-com.ndl.framework.workbrench.define.ColumnBean-22">
+                <columnBean uuid="aeec8a39-0901-401a-bac9-a00e823bc85f-com.ndl.framework.workbrench.define.ColumnBean-22">
                     <columnName></columnName>
                     <columnNameNoDash>invite_code</columnNameNoDash>
                     <columnNameCapitalized>Invite_code</columnNameCapitalized>
@@ -664,7 +664,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="990e0e34-9e85-46e2-968c-29882f35dffd-com.ndl.framework.workbrench.define.ColumnBean-14">
+                <columnBean uuid="105459fe-9e88-4956-a26a-9c716ff5f71d-com.ndl.framework.workbrench.define.ColumnBean-14">
                     <columnName></columnName>
                     <columnNameNoDash>tel</columnNameNoDash>
                     <columnNameCapitalized>Tel</columnNameCapitalized>
@@ -690,7 +690,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="6e1f88f7-37e0-4b98-83db-f205954d3849-com.ndl.framework.workbrench.define.ColumnBean-18">
+                <columnBean uuid="7edface8-5031-4087-ad08-fb173ee970f4-com.ndl.framework.workbrench.define.ColumnBean-18">
                     <columnName></columnName>
                     <columnNameNoDash>postcode</columnNameNoDash>
                     <columnNameCapitalized>Postcode</columnNameCapitalized>
@@ -716,7 +716,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="cc6a2939-68d6-456f-9649-9d2aadcddbba-com.ndl.framework.workbrench.define.ColumnBean-24">
+                <columnBean uuid="53a73e41-b633-42cf-bbcb-45447f858e1c-com.ndl.framework.workbrench.define.ColumnBean-24">
                     <columnName></columnName>
                     <columnNameNoDash>signature</columnNameNoDash>
                     <columnNameCapitalized>Signature</columnNameCapitalized>
@@ -742,7 +742,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="aca8a24d-0c0f-4e6c-8616-3e1bdd3be813-com.ndl.framework.workbrench.define.ColumnBean-31">
+                <columnBean uuid="3d879f89-69ef-4361-aa62-67577962978c-com.ndl.framework.workbrench.define.ColumnBean-31">
                     <columnName></columnName>
                     <columnNameNoDash>reg_time</columnNameNoDash>
                     <columnNameCapitalized>Reg_time</columnNameCapitalized>
@@ -768,7 +768,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c0e2ea1f-63cf-48c8-9703-ee99b315201f-com.ndl.framework.workbrench.define.ColumnBean-169">
+                <columnBean uuid="c1bb5806-87e7-409e-9fa9-4e655718e503-com.ndl.framework.workbrench.define.ColumnBean-169">
                     <columnName></columnName>
                     <columnNameNoDash>cityDataGuides</columnNameNoDash>
                     <columnNameCapitalized>CityDataGuides</columnNameCapitalized>
@@ -793,7 +793,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="9e34d8ff-9766-497a-bdb8-7b996517d1b0-com.ndl.framework.workbrench.define.ColumnBean-36">
+                <columnBean uuid="4b5cca02-9e90-4262-946d-d8fb8a94b340-com.ndl.framework.workbrench.define.ColumnBean-36">
                     <columnName></columnName>
                     <columnNameNoDash>union_count</columnNameNoDash>
                     <columnNameCapitalized>Union_count</columnNameCapitalized>
@@ -819,7 +819,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b654956e-1ca2-4c9b-ad2d-8b8b695b2fad-com.ndl.framework.workbrench.define.ColumnBean-35">
+                <columnBean uuid="7e3db9cb-2f49-46e0-968f-5d9695dbca1e-com.ndl.framework.workbrench.define.ColumnBean-35">
                     <columnName></columnName>
                     <columnNameNoDash>value_added_items</columnNameNoDash>
                     <columnNameCapitalized>Value_added_items</columnNameCapitalized>
@@ -845,7 +845,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="49a4493c-b0ef-4710-8363-e97592a6445e-com.ndl.framework.workbrench.define.ColumnBean-50">
+                <columnBean uuid="10e8d977-7006-4295-a6e0-47bc753c0abb-com.ndl.framework.workbrench.define.ColumnBean-50">
                     <columnName></columnName>
                     <columnNameNoDash>idcard</columnNameNoDash>
                     <columnNameCapitalized>Idcard</columnNameCapitalized>
@@ -871,7 +871,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2ae5adff-8e3c-4260-8769-84619114fa5c-com.ndl.framework.workbrench.define.ColumnBean-21">
+                <columnBean uuid="cf16036c-9c4f-443e-8e79-632b32c15235-com.ndl.framework.workbrench.define.ColumnBean-21">
                     <columnName></columnName>
                     <columnNameNoDash>institute</columnNameNoDash>
                     <columnNameCapitalized>Institute</columnNameCapitalized>
@@ -897,7 +897,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="a4d3dcb6-359c-4cb9-9909-c225497ef0e9-com.ndl.framework.workbrench.define.ColumnBean-16">
+                <columnBean uuid="0721500b-5b54-4682-a3e1-5ec6a20a54ff-com.ndl.framework.workbrench.define.ColumnBean-16">
                     <columnName></columnName>
                     <columnNameNoDash>qq</columnNameNoDash>
                     <columnNameCapitalized>Qq</columnNameCapitalized>
@@ -923,7 +923,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0b74fef1-bc8f-4b78-942f-e2466883d1a4-com.ndl.framework.workbrench.define.ColumnBean-40">
+                <columnBean uuid="76054d0d-d046-43d1-8632-9034a582c2cb-com.ndl.framework.workbrench.define.ColumnBean-40">
                     <columnName></columnName>
                     <columnNameNoDash>begin_time</columnNameNoDash>
                     <columnNameCapitalized>Begin_time</columnNameCapitalized>
@@ -949,7 +949,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="d0fabec2-46c1-4e72-935a-ad60ee157922-com.ndl.framework.workbrench.define.ColumnBean-48">
+                <columnBean uuid="1556366a-5f05-4fe9-8516-d2561cfabf7a-com.ndl.framework.workbrench.define.ColumnBean-48">
                     <columnName></columnName>
                     <columnNameNoDash>show_role</columnNameNoDash>
                     <columnNameCapitalized>Show_role</columnNameCapitalized>
@@ -975,7 +975,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="54d3b933-9527-4645-972f-211352252232-com.ndl.framework.workbrench.define.ColumnBean-53">
+                <columnBean uuid="b0349fd0-5dfb-4337-8c39-9ce3716ba4d3-com.ndl.framework.workbrench.define.ColumnBean-53">
                     <columnName></columnName>
                     <columnNameNoDash>price_rule</columnNameNoDash>
                     <columnNameCapitalized>Price_rule</columnNameCapitalized>
@@ -1001,7 +1001,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="14ef05b9-15ba-42e6-b12d-1d7cb07e6058-com.ndl.framework.workbrench.define.ColumnBean-47">
+                <columnBean uuid="9912bedd-9bd4-4c17-838d-6c90730aef7c-com.ndl.framework.workbrench.define.ColumnBean-47">
                     <columnName></columnName>
                     <columnNameNoDash>work_unit</columnNameNoDash>
                     <columnNameCapitalized>Work_unit</columnNameCapitalized>
@@ -1027,7 +1027,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4013ab67-965c-496a-83e5-89a05059150b-com.ndl.framework.workbrench.define.ColumnBean-25">
+                <columnBean uuid="d20ad433-e2b4-40f2-b74b-25c385294f45-com.ndl.framework.workbrench.define.ColumnBean-25">
                     <columnName></columnName>
                     <columnNameNoDash>login</columnNameNoDash>
                     <columnNameCapitalized>Login</columnNameCapitalized>
@@ -1053,7 +1053,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="d30f1cc2-0a2a-4842-86d0-30f0a48cf46e-com.ndl.framework.workbrench.define.ColumnBean-13">
+                <columnBean uuid="8c3c9924-fe18-4905-86bb-460d4662f128-com.ndl.framework.workbrench.define.ColumnBean-13">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_week</columnNameNoDash>
                     <columnNameCapitalized>Service_days_week</columnNameCapitalized>
@@ -1079,7 +1079,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="aff90a0f-ce49-4589-be4c-c56b69c0c447-com.ndl.framework.workbrench.define.ColumnBean-42">
+                <columnBean uuid="0c367a21-656d-4ffb-aa21-e85c0c049b11-com.ndl.framework.workbrench.define.ColumnBean-42">
                     <columnName></columnName>
                     <columnNameNoDash>realname</columnNameNoDash>
                     <columnNameCapitalized>Realname</columnNameCapitalized>
@@ -1105,7 +1105,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="9dbca920-cb67-47e3-a496-f6095b684053-com.ndl.framework.workbrench.define.ColumnBean-49">
+                <columnBean uuid="902f3060-39b0-42dc-8d42-0a4336d917aa-com.ndl.framework.workbrench.define.ColumnBean-49">
                     <columnName></columnName>
                     <columnNameNoDash>netname</columnNameNoDash>
                     <columnNameCapitalized>Netname</columnNameCapitalized>
@@ -1131,7 +1131,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="5b9db6c5-2438-49cf-95db-2396f0a1100d-com.ndl.framework.workbrench.define.ColumnBean-17">
+                <columnBean uuid="ab57e030-4b5b-4971-99d3-8098fc95bdc2-com.ndl.framework.workbrench.define.ColumnBean-17">
                     <columnName></columnName>
                     <columnNameNoDash>pos_community</columnNameNoDash>
                     <columnNameCapitalized>Pos_community</columnNameCapitalized>
@@ -1157,7 +1157,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="f2f25bdf-bf35-4a12-959e-2f4309093352-com.ndl.framework.workbrench.define.ColumnBean-1">
+                <columnBean uuid="fb30797b-22b5-4d89-9b2a-e0a27f74c2e5-com.ndl.framework.workbrench.define.ColumnBean-1">
                     <columnName></columnName>
                     <columnNameNoDash>self_introduction</columnNameNoDash>
                     <columnNameCapitalized>Self_introduction</columnNameCapitalized>
@@ -1183,7 +1183,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c070f61e-0e4e-4972-8552-6ab728ba053f-com.ndl.framework.workbrench.define.ColumnBean-15">
+                <columnBean uuid="4082f98e-ee1b-4869-87be-e20be8015218-com.ndl.framework.workbrench.define.ColumnBean-15">
                     <columnName></columnName>
                     <columnNameNoDash>diploma</columnNameNoDash>
                     <columnNameCapitalized>Diploma</columnNameCapitalized>
@@ -1209,7 +1209,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="fbf290f5-87be-4f16-989a-d01215046212-com.ndl.framework.workbrench.define.ColumnBean-45">
+                <columnBean uuid="0920de59-2079-4978-85e1-145a0d34a3f4-com.ndl.framework.workbrench.define.ColumnBean-45">
                     <columnName></columnName>
                     <columnNameNoDash>price_unit</columnNameNoDash>
                     <columnNameCapitalized>Price_unit</columnNameCapitalized>
@@ -1235,7 +1235,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="1dab93b6-b35b-4f78-a500-254cc7598a31-com.ndl.framework.workbrench.define.ColumnBean-23">
+                <columnBean uuid="abb95ac1-68b4-4e6a-8b31-a003d6703caf-com.ndl.framework.workbrench.define.ColumnBean-23">
                     <columnName></columnName>
                     <columnNameNoDash>birthday</columnNameNoDash>
                     <columnNameCapitalized>Birthday</columnNameCapitalized>
@@ -1261,7 +1261,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="82ca756c-b530-44ff-ba8e-21b2b82199c3-com.ndl.framework.workbrench.define.ColumnBean-39">
+                <columnBean uuid="b001dff7-630f-406c-afcb-0322a22dfa17-com.ndl.framework.workbrench.define.ColumnBean-39">
                     <columnName></columnName>
                     <columnNameNoDash>end_time</columnNameNoDash>
                     <columnNameCapitalized>End_time</columnNameCapitalized>
@@ -1287,7 +1287,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="83273625-d7d9-4ab5-be87-fb808e31ba7d-com.ndl.framework.workbrench.define.ColumnBean-37">
+                <columnBean uuid="5b1f315a-e364-4e08-856a-aa0935aeab32-com.ndl.framework.workbrench.define.ColumnBean-37">
                     <columnName></columnName>
                     <columnNameNoDash>sex</columnNameNoDash>
                     <columnNameCapitalized>Sex</columnNameCapitalized>
@@ -1313,7 +1313,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="38e42ad0-af30-49f2-8fcc-9d12e0c162a8-com.ndl.framework.workbrench.define.ColumnBean-41">
+                <columnBean uuid="c00e64dd-264e-47b2-9743-3d9d32006a17-com.ndl.framework.workbrench.define.ColumnBean-41">
                     <columnName></columnName>
                     <columnNameNoDash>recommend_tel</columnNameNoDash>
                     <columnNameCapitalized>Recommend_tel</columnNameCapitalized>
@@ -1339,7 +1339,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="344a42f6-903d-4efa-90ed-d58f4c1c563a-com.ndl.framework.workbrench.define.ColumnBean-26">
+                <columnBean uuid="514e5966-2424-4094-8144-037daace7b95-com.ndl.framework.workbrench.define.ColumnBean-26">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_special</columnNameNoDash>
                     <columnNameCapitalized>Service_days_special</columnNameCapitalized>
@@ -1365,7 +1365,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0519cd7d-0272-44db-b9e1-fb38d7f9bd2e-com.ndl.framework.workbrench.define.ColumnBean-27">
+                <columnBean uuid="fb76b664-1d71-4b83-9506-87aa9a46aed8-com.ndl.framework.workbrench.define.ColumnBean-27">
                     <columnName></columnName>
                     <columnNameNoDash>guidecard</columnNameNoDash>
                     <columnNameCapitalized>Guidecard</columnNameCapitalized>
@@ -1396,14 +1396,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="e5c1a695-fe24-4950-9ca0-1ad567c7a978-com.ndl.framework.workbrench.define.TableBean-2">
+        <tableBean uuid="adfc36d3-ded6-40f9-81a8-cf29218c63b5-com.ndl.framework.workbrench.define.TableBean-2">
             <tableName>union_guide_id_listDataGuides</tableName>
             <tableNameNoDash>union_guide_id_listDataGuides</tableNameNoDash>
             <tableNameCapitalized>Union_guide_id_listDataGuides</tableNameCapitalized>
             <parentTableNameNoDash>dataGuides</parentTableNameNoDash>
             <parentTableNameCapitalized>DataGuides</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="bbc3c9bd-9cb9-4142-8db7-0347270db7a5-com.ndl.framework.workbrench.define.ColumnBean-5">
+                <columnBean uuid="1fd95dd9-617b-4447-83f9-2c4d7f7e2314-com.ndl.framework.workbrench.define.ColumnBean-5">
                     <columnName></columnName>
                     <columnNameNoDash>uid</columnNameNoDash>
                     <columnNameCapitalized>Uid</columnNameCapitalized>
@@ -1434,14 +1434,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="93f29048-674f-4284-95f9-78a481e6fda8-com.ndl.framework.workbrench.define.TableBean-3">
+        <tableBean uuid="286499d9-c357-43b0-8967-0013e19761d3-com.ndl.framework.workbrench.define.TableBean-3">
             <tableName>provinceDataGuides</tableName>
             <tableNameNoDash>provinceDataGuides</tableNameNoDash>
             <tableNameCapitalized>ProvinceDataGuides</tableNameCapitalized>
             <parentTableNameNoDash>dataGuides</parentTableNameNoDash>
             <parentTableNameCapitalized>DataGuides</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="6f2cae21-a86a-487a-be9e-c2a504582ae5-com.ndl.framework.workbrench.define.ColumnBean-154">
+                <columnBean uuid="9dae3183-e61d-4d0d-bedd-e99185ffa6ca-com.ndl.framework.workbrench.define.ColumnBean-154">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -1467,7 +1467,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c4b73c30-cf76-4478-8917-769f1a7fc5b2-com.ndl.framework.workbrench.define.ColumnBean-153">
+                <columnBean uuid="c20422d2-dd54-428e-a277-6daedb90276d-com.ndl.framework.workbrench.define.ColumnBean-153">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -1498,14 +1498,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="d021cf5b-4894-4280-9851-9679d47570e5-com.ndl.framework.workbrench.define.TableBean-4">
+        <tableBean uuid="610b0a8f-01eb-4f9f-8f14-dde3efc6cb8f-com.ndl.framework.workbrench.define.TableBean-4">
             <tableName>districtDataGuides</tableName>
             <tableNameNoDash>districtDataGuides</tableNameNoDash>
             <tableNameCapitalized>DistrictDataGuides</tableNameCapitalized>
             <parentTableNameNoDash>dataGuides</parentTableNameNoDash>
             <parentTableNameCapitalized>DataGuides</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="69908c58-c7df-463c-8c2c-6ce10411648f-com.ndl.framework.workbrench.define.ColumnBean-162">
+                <columnBean uuid="c18c7fce-ea60-4c32-95f7-657b26b26ab2-com.ndl.framework.workbrench.define.ColumnBean-162">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -1531,7 +1531,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="235cafa0-6d41-4669-a205-a793d56eee9b-com.ndl.framework.workbrench.define.ColumnBean-163">
+                <columnBean uuid="95e38da1-a274-48ba-b93a-1dd79acd455a-com.ndl.framework.workbrench.define.ColumnBean-163">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -1562,14 +1562,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="b6b4be80-a0d5-4be3-92f2-626e36297773-com.ndl.framework.workbrench.define.TableBean-5">
+        <tableBean uuid="9d720ac9-7bcc-4cc6-b3e3-fc6043d3ab4b-com.ndl.framework.workbrench.define.TableBean-5">
             <tableName>cityDataGuides</tableName>
             <tableNameNoDash>cityDataGuides</tableNameNoDash>
             <tableNameCapitalized>CityDataGuides</tableNameCapitalized>
             <parentTableNameNoDash>dataGuides</parentTableNameNoDash>
             <parentTableNameCapitalized>DataGuides</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="1f3ab385-973d-4bfb-87f9-94b6026cdbee-com.ndl.framework.workbrench.define.ColumnBean-171">
+                <columnBean uuid="d8c4a35e-1bf6-4994-8298-b12938f42a5e-com.ndl.framework.workbrench.define.ColumnBean-171">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -1595,7 +1595,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="ebb90394-8325-456d-be2a-9a529d736f43-com.ndl.framework.workbrench.define.ColumnBean-170">
+                <columnBean uuid="560cb469-3de1-42ad-9fa7-f2fd188a7910-com.ndl.framework.workbrench.define.ColumnBean-170">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -1626,14 +1626,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="2a59e817-db37-4ae6-9d6e-87f93a88efce-com.ndl.framework.workbrench.define.TableBean-6">
+        <tableBean uuid="cba4eb2b-6452-4743-8daf-e7ae0d43d133-com.ndl.framework.workbrench.define.TableBean-6">
             <tableName>avatarDataGuides</tableName>
             <tableNameNoDash>avatarDataGuides</tableNameNoDash>
             <tableNameCapitalized>AvatarDataGuides</tableNameCapitalized>
             <parentTableNameNoDash>dataGuides</parentTableNameNoDash>
             <parentTableNameCapitalized>DataGuides</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="bad5ab60-5947-451d-b688-826a693e0df0-com.ndl.framework.workbrench.define.ColumnBean-189">
+                <columnBean uuid="7bdafc1d-0d6b-4d7d-97ca-8455155bdcd3-com.ndl.framework.workbrench.define.ColumnBean-189">
                     <columnName></columnName>
                     <columnNameNoDash>avatar</columnNameNoDash>
                     <columnNameCapitalized>Avatar</columnNameCapitalized>
@@ -1664,13 +1664,13 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="8fae1b0d-78d6-487e-b781-4e852fff108f-com.ndl.framework.workbrench.define.TableBean-7">
+        <tableBean uuid="3b465c30-efad-4bdc-baa5-45d5d30b3025-com.ndl.framework.workbrench.define.TableBean-7">
             <tableName>tags</tableName>
             <tableComment>http://www.ieream.com/mapi/1/tags.php?action=getlist&amp;psize=30</tableComment>
             <tableNameNoDash>tags</tableNameNoDash>
             <tableNameCapitalized>Tags</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="8947971d-0c75-44d1-84d8-d31fac153ec5-com.ndl.framework.workbrench.define.ColumnBean-564">
+                <columnBean uuid="ca7fa21c-908c-4a09-ba87-84e78b3739da-com.ndl.framework.workbrench.define.ColumnBean-564">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -1696,7 +1696,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c80bcc71-e96d-4552-a826-fb7b4e2af316-com.ndl.framework.workbrench.define.ColumnBean-563">
+                <columnBean uuid="47d63144-4a22-4181-8b5a-d78d37c83ad6-com.ndl.framework.workbrench.define.ColumnBean-563">
                     <columnName></columnName>
                     <columnNameNoDash>more</columnNameNoDash>
                     <columnNameCapitalized>More</columnNameCapitalized>
@@ -1722,7 +1722,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="3f472dfd-2606-4c11-a0c0-05583be1b3e1-com.ndl.framework.workbrench.define.ColumnBean-516">
+                <columnBean uuid="d7baf110-71dc-44c3-80a9-31e289af5b7a-com.ndl.framework.workbrench.define.ColumnBean-516">
                     <columnName></columnName>
                     <columnNameNoDash>dataTags</columnNameNoDash>
                     <columnNameCapitalized>DataTags</columnNameCapitalized>
@@ -1752,14 +1752,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="32cb100b-1eeb-4a9b-bcb2-c2d2fa1a8b10-com.ndl.framework.workbrench.define.TableBean-8">
+        <tableBean uuid="8d10131b-a62d-4038-9645-303c279d7ee2-com.ndl.framework.workbrench.define.TableBean-8">
             <tableName>dataTags</tableName>
             <tableNameNoDash>dataTags</tableNameNoDash>
             <tableNameCapitalized>DataTags</tableNameCapitalized>
             <parentTableNameNoDash>tags</parentTableNameNoDash>
             <parentTableNameCapitalized>Tags</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="715a0f8f-d4d8-4f65-9777-f5f2b88ad7ab-com.ndl.framework.workbrench.define.ColumnBean-517">
+                <columnBean uuid="303dd652-6f14-48a8-bd90-a85a92308beb-com.ndl.framework.workbrench.define.ColumnBean-517">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -1785,7 +1785,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="255e4973-dfd6-4d7b-bd70-c06671eb566b-com.ndl.framework.workbrench.define.ColumnBean-518">
+                <columnBean uuid="7e548454-6ac6-4a33-9619-3b6cbfef0099-com.ndl.framework.workbrench.define.ColumnBean-518">
                     <columnName></columnName>
                     <columnNameNoDash>title</columnNameNoDash>
                     <columnNameCapitalized>Title</columnNameCapitalized>
@@ -1816,13 +1816,13 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="5ae0ec3c-30ec-4ecd-8077-f0b7e2966ea7-com.ndl.framework.workbrench.define.TableBean-9">
+        <tableBean uuid="b615b0e3-3fd9-4a01-a4cc-a732d3dc2429-com.ndl.framework.workbrench.define.TableBean-9">
             <tableName>locations</tableName>
             <tableComment>http://www.ieream.com/mapi/1/locations.php?action=getlist&amp;loc_type=ream&amp;data_type=exact</tableComment>
             <tableNameNoDash>locations</tableNameNoDash>
             <tableNameCapitalized>Locations</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="ac9a0ec2-5fbc-4f68-8a05-778550393bcf-com.ndl.framework.workbrench.define.ColumnBean-565">
+                <columnBean uuid="20d08598-b481-4a66-aadd-ac02ab731124-com.ndl.framework.workbrench.define.ColumnBean-565">
                     <columnName></columnName>
                     <columnNameNoDash>dataLocations</columnNameNoDash>
                     <columnNameCapitalized>DataLocations</columnNameCapitalized>
@@ -1847,7 +1847,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="649d4d62-4df3-4242-8212-a75db9d1fe8b-com.ndl.framework.workbrench.define.ColumnBean-600">
+                <columnBean uuid="c01339a6-c7ff-4977-b340-35a0f6c0bd68-com.ndl.framework.workbrench.define.ColumnBean-600">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -1873,7 +1873,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="ea208190-922d-4059-a91d-82d615553f85-com.ndl.framework.workbrench.define.ColumnBean-599">
+                <columnBean uuid="07f72b0c-8aed-4ff3-a6f7-5dddb6e17774-com.ndl.framework.workbrench.define.ColumnBean-599">
                     <columnName></columnName>
                     <columnNameNoDash>more</columnNameNoDash>
                     <columnNameCapitalized>More</columnNameCapitalized>
@@ -1904,14 +1904,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="6585c751-cdc4-4d08-862e-bfb0585dbfcc-com.ndl.framework.workbrench.define.TableBean-10">
+        <tableBean uuid="51a91df1-1e5f-4bba-98dd-21e5d9e47a39-com.ndl.framework.workbrench.define.TableBean-10">
             <tableName>dataLocations</tableName>
             <tableNameNoDash>dataLocations</tableNameNoDash>
             <tableNameCapitalized>DataLocations</tableNameCapitalized>
             <parentTableNameNoDash>locations</parentTableNameNoDash>
             <parentTableNameCapitalized>Locations</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="31f8dc19-ea18-4d41-ab0c-469bfbce3961-com.ndl.framework.workbrench.define.ColumnBean-567">
+                <columnBean uuid="854b6551-9e7b-4ac1-8176-c4ad71bc8a93-com.ndl.framework.workbrench.define.ColumnBean-567">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataLocations</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataLocations</columnNameCapitalized>
@@ -1941,14 +1941,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="deb1face-152e-46a8-a5fa-3e68fa47a0ff-com.ndl.framework.workbrench.define.TableBean-11">
+        <tableBean uuid="914c557e-0f1c-4874-9a86-fac0c5a9073e-com.ndl.framework.workbrench.define.TableBean-11">
             <tableName>provinceDataLocations</tableName>
             <tableNameNoDash>provinceDataLocations</tableNameNoDash>
             <tableNameCapitalized>ProvinceDataLocations</tableNameCapitalized>
             <parentTableNameNoDash>DataLocations</parentTableNameNoDash>
             <parentTableNameCapitalized>DataLocations</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="feb468aa-e8f8-4bef-ba2b-2c2dcb620961-com.ndl.framework.workbrench.define.ColumnBean-571">
+                <columnBean uuid="5964f6be-549a-4a96-b97e-87c987d323bd-com.ndl.framework.workbrench.define.ColumnBean-571">
                     <columnName></columnName>
                     <columnNameNoDash>count_item</columnNameNoDash>
                     <columnNameCapitalized>Count_item</columnNameCapitalized>
@@ -1974,7 +1974,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="f4bf6dd2-27e9-49ea-87bd-bafb65936d20-com.ndl.framework.workbrench.define.ColumnBean-569">
+                <columnBean uuid="5c453f3c-2d5e-4a34-9945-af4619057830-com.ndl.framework.workbrench.define.ColumnBean-569">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -2000,7 +2000,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="52153f27-8587-4986-9db6-683ab83351bb-com.ndl.framework.workbrench.define.ColumnBean-572">
+                <columnBean uuid="a61ab5cd-4985-4098-bb65-e1e86db4f93a-com.ndl.framework.workbrench.define.ColumnBean-572">
                     <columnName></columnName>
                     <columnNameNoDash>city_listProvinceDataLocations</columnNameNoDash>
                     <columnNameCapitalized>City_listProvinceDataLocations</columnNameCapitalized>
@@ -2025,7 +2025,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="21107016-8188-4858-8cfe-a787cc28f24b-com.ndl.framework.workbrench.define.ColumnBean-568">
+                <columnBean uuid="3910f602-d9e2-461c-a920-3622bf6775f7-com.ndl.framework.workbrench.define.ColumnBean-568">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -2051,7 +2051,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="84db8e09-f3b2-4c3c-90c3-418ea3d9bd53-com.ndl.framework.workbrench.define.ColumnBean-570">
+                <columnBean uuid="20d10e39-a5a1-4cff-bd4f-cdebbbdba5e0-com.ndl.framework.workbrench.define.ColumnBean-570">
                     <columnName></columnName>
                     <columnNameNoDash>has_child</columnNameNoDash>
                     <columnNameCapitalized>Has_child</columnNameCapitalized>
@@ -2082,14 +2082,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="4ab10544-3c3b-4feb-a742-4b27b4ae5547-com.ndl.framework.workbrench.define.TableBean-12">
+        <tableBean uuid="0657e843-0597-4317-ab69-756be7c36c9d-com.ndl.framework.workbrench.define.TableBean-12">
             <tableName>city_listProvinceDataLocations</tableName>
             <tableNameNoDash>city_listProvinceDataLocations</tableNameNoDash>
             <tableNameCapitalized>City_listProvinceDataLocations</tableNameCapitalized>
             <parentTableNameNoDash>provinceDataLocations</parentTableNameNoDash>
             <parentTableNameCapitalized>ProvinceDataLocations</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="c76dc584-52a6-4be1-a929-13990dd12b72-com.ndl.framework.workbrench.define.ColumnBean-575">
+                <columnBean uuid="5a0cb4ba-9f4e-4ea7-a546-f2ae403fe7c6-com.ndl.framework.workbrench.define.ColumnBean-575">
                     <columnName></columnName>
                     <columnNameNoDash>count_item</columnNameNoDash>
                     <columnNameCapitalized>Count_item</columnNameCapitalized>
@@ -2115,7 +2115,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7dc17eab-6cd8-4448-8d07-121842f00e1c-com.ndl.framework.workbrench.define.ColumnBean-573">
+                <columnBean uuid="e7f0f369-7ace-4eff-9a5b-e6c55820db0d-com.ndl.framework.workbrench.define.ColumnBean-573">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -2141,7 +2141,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="68301f5a-0cff-4b7f-ad9d-580a9a0344bb-com.ndl.framework.workbrench.define.ColumnBean-574">
+                <columnBean uuid="9a7d81dd-3ba1-4629-834d-bdddc0249913-com.ndl.framework.workbrench.define.ColumnBean-574">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -2172,13 +2172,13 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="c8d5f736-1a69-4803-b036-c9c38b9036d5-com.ndl.framework.workbrench.define.TableBean-13">
+        <tableBean uuid="1e02098c-b182-4a76-9a8f-f34becf2d945-com.ndl.framework.workbrench.define.TableBean-13">
             <tableName>hotels</tableName>
             <tableComment>http://www.ieream.com/mapi/1/hotels.php?action=search&amp;filter=regions:0;tags:养,学;keywords:</tableComment>
             <tableNameNoDash>hotels</tableNameNoDash>
             <tableNameCapitalized>Hotels</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="b9da074e-584d-4c00-819a-b613d53b9858-com.ndl.framework.workbrench.define.ColumnBean-1035">
+                <columnBean uuid="8f7edc1c-d9f1-46fa-aa94-ad0ab32fc19b-com.ndl.framework.workbrench.define.ColumnBean-1035">
                     <columnName></columnName>
                     <columnNameNoDash>more</columnNameNoDash>
                     <columnNameCapitalized>More</columnNameCapitalized>
@@ -2204,7 +2204,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="343b685d-b86b-4ed0-89e7-4ae45f555c12-com.ndl.framework.workbrench.define.ColumnBean-601">
+                <columnBean uuid="99420ec8-38ce-4739-989a-9e819cc765c6-com.ndl.framework.workbrench.define.ColumnBean-601">
                     <columnName></columnName>
                     <columnNameNoDash>dataHotels</columnNameNoDash>
                     <columnNameCapitalized>DataHotels</columnNameCapitalized>
@@ -2229,7 +2229,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2d159fdb-7540-485b-8e64-899e17b3cd37-com.ndl.framework.workbrench.define.ColumnBean-1036">
+                <columnBean uuid="d83dcf5d-2efa-4cba-9b81-1afc5d779886-com.ndl.framework.workbrench.define.ColumnBean-1036">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -2260,14 +2260,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="b65473d6-aee8-43de-9d39-04b3b1b93267-com.ndl.framework.workbrench.define.TableBean-14">
+        <tableBean uuid="39635889-9660-4cc0-aa62-beb30bd14331-com.ndl.framework.workbrench.define.TableBean-14">
             <tableName>dataHotels</tableName>
             <tableNameNoDash>dataHotels</tableNameNoDash>
             <tableNameCapitalized>DataHotels</tableNameCapitalized>
             <parentTableNameNoDash>hotels</parentTableNameNoDash>
             <parentTableNameCapitalized>Hotels</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="691aab36-5d19-4cbb-abe4-b8e64638fd38-com.ndl.framework.workbrench.define.ColumnBean-612">
+                <columnBean uuid="82abac97-ddc2-418a-88c8-6d3ca543a705-com.ndl.framework.workbrench.define.ColumnBean-612">
                     <columnName></columnName>
                     <columnNameNoDash>cover</columnNameNoDash>
                     <columnNameCapitalized>Cover</columnNameCapitalized>
@@ -2293,7 +2293,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="fa5de368-089b-481a-acdd-56981d7bbb03-com.ndl.framework.workbrench.define.ColumnBean-613">
+                <columnBean uuid="c1ed3ea8-7f04-4037-854e-f50b8297f60b-com.ndl.framework.workbrench.define.ColumnBean-613">
                     <columnName></columnName>
                     <columnNameNoDash>update_time</columnNameNoDash>
                     <columnNameCapitalized>Update_time</columnNameCapitalized>
@@ -2319,7 +2319,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0f6d9898-f82c-4814-9afd-4cd6b8a70a59-com.ndl.framework.workbrench.define.ColumnBean-645">
+                <columnBean uuid="5af1ad5f-b228-4700-b0cd-1058da078e9d-com.ndl.framework.workbrench.define.ColumnBean-645">
                     <columnName></columnName>
                     <columnNameNoDash>detail</columnNameNoDash>
                     <columnNameCapitalized>Detail</columnNameCapitalized>
@@ -2345,7 +2345,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0731d247-c222-46cf-a03e-b55b9d4ce672-com.ndl.framework.workbrench.define.ColumnBean-603">
+                <columnBean uuid="df03173a-6a04-43a7-89e8-52bbce783755-com.ndl.framework.workbrench.define.ColumnBean-603">
                     <columnName></columnName>
                     <columnNameNoDash>cityDataHotels</columnNameNoDash>
                     <columnNameCapitalized>CityDataHotels</columnNameCapitalized>
@@ -2370,7 +2370,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2b4985b3-0ae8-431f-b1ea-cd937ef71fcc-com.ndl.framework.workbrench.define.ColumnBean-640">
+                <columnBean uuid="6164255f-42c6-4e07-bfb8-f0afeca5e197-com.ndl.framework.workbrench.define.ColumnBean-640">
                     <columnName></columnName>
                     <columnNameNoDash>is_recommend</columnNameNoDash>
                     <columnNameCapitalized>Is_recommend</columnNameCapitalized>
@@ -2396,7 +2396,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c415f7d3-a2de-4e3f-acdc-f45a40a2789f-com.ndl.framework.workbrench.define.ColumnBean-638">
+                <columnBean uuid="22718c3d-a983-46e5-82d6-95edeb530f93-com.ndl.framework.workbrench.define.ColumnBean-638">
                     <columnName></columnName>
                     <columnNameNoDash>price_unit</columnNameNoDash>
                     <columnNameCapitalized>Price_unit</columnNameCapitalized>
@@ -2422,7 +2422,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c36f98eb-e480-48a2-968f-7355945ca6bf-com.ndl.framework.workbrench.define.ColumnBean-607">
+                <columnBean uuid="7e1e4573-30b6-4ec2-a203-b3a70685ff9f-com.ndl.framework.workbrench.define.ColumnBean-607">
                     <columnName></columnName>
                     <columnNameNoDash>wechat_public</columnNameNoDash>
                     <columnNameCapitalized>Wechat_public</columnNameCapitalized>
@@ -2448,7 +2448,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="713b23a3-06c9-44a7-8348-40bee2df78a9-com.ndl.framework.workbrench.define.ColumnBean-606">
+                <columnBean uuid="3256e7b1-a666-4191-9870-34b70d64f8f8-com.ndl.framework.workbrench.define.ColumnBean-606">
                     <columnName></columnName>
                     <columnNameNoDash>discount</columnNameNoDash>
                     <columnNameCapitalized>Discount</columnNameCapitalized>
@@ -2474,7 +2474,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="db3c0482-3a3a-4889-bac8-d16c0ee55de5-com.ndl.framework.workbrench.define.ColumnBean-610">
+                <columnBean uuid="07dea2a0-1aaf-44c7-aeeb-76093c5cf58c-com.ndl.framework.workbrench.define.ColumnBean-610">
                     <columnName></columnName>
                     <columnNameNoDash>presentation</columnNameNoDash>
                     <columnNameCapitalized>Presentation</columnNameCapitalized>
@@ -2500,7 +2500,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="60b6b60e-fbad-44d7-8708-73618dfa7bf3-com.ndl.framework.workbrench.define.ColumnBean-647">
+                <columnBean uuid="687b694f-fe88-4f9d-b7aa-8a7bc9c92618-com.ndl.framework.workbrench.define.ColumnBean-647">
                     <columnName></columnName>
                     <columnNameNoDash>price_rule</columnNameNoDash>
                     <columnNameCapitalized>Price_rule</columnNameCapitalized>
@@ -2526,7 +2526,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="bf4a094c-6779-4f24-bb33-65b315895d92-com.ndl.framework.workbrench.define.ColumnBean-646">
+                <columnBean uuid="20308390-d6e5-408d-977a-0c02b23a82a3-com.ndl.framework.workbrench.define.ColumnBean-646">
                     <columnName></columnName>
                     <columnNameNoDash>limit_count</columnNameNoDash>
                     <columnNameCapitalized>Limit_count</columnNameCapitalized>
@@ -2552,7 +2552,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b9f5da3c-d5d2-41a4-8430-4de3a6b3aa03-com.ndl.framework.workbrench.define.ColumnBean-623">
+                <columnBean uuid="6accf66d-4e63-4e20-b8f8-1bb72c05e727-com.ndl.framework.workbrench.define.ColumnBean-623">
                     <columnName></columnName>
                     <columnNameNoDash>tel</columnNameNoDash>
                     <columnNameCapitalized>Tel</columnNameCapitalized>
@@ -2578,7 +2578,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7cddaffb-9614-4d93-815a-65a5871c389a-com.ndl.framework.workbrench.define.ColumnBean-635">
+                <columnBean uuid="cb239b60-5799-46c7-8108-3ec3ad89d4e9-com.ndl.framework.workbrench.define.ColumnBean-635">
                     <columnName></columnName>
                     <columnNameNoDash>begin_time</columnNameNoDash>
                     <columnNameCapitalized>Begin_time</columnNameCapitalized>
@@ -2604,7 +2604,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="205ed0e6-070f-4d97-89af-e6bdc7f1d5f9-com.ndl.framework.workbrench.define.ColumnBean-644">
+                <columnBean uuid="1d0a4ccb-69d1-436c-833a-3b1a9e4075a9-com.ndl.framework.workbrench.define.ColumnBean-644">
                     <columnName></columnName>
                     <columnNameNoDash>producer</columnNameNoDash>
                     <columnNameCapitalized>Producer</columnNameCapitalized>
@@ -2630,7 +2630,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b5200575-fbbf-407d-a5e3-e4e30bcde53c-com.ndl.framework.workbrench.define.ColumnBean-648">
+                <columnBean uuid="2f033944-dcc6-486e-9797-fe1bcabe582a-com.ndl.framework.workbrench.define.ColumnBean-648">
                     <columnName></columnName>
                     <columnNameNoDash>view_count</columnNameNoDash>
                     <columnNameCapitalized>View_count</columnNameCapitalized>
@@ -2656,7 +2656,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="cbccb193-0a5b-49d0-8dcc-f9d9663fb4aa-com.ndl.framework.workbrench.define.ColumnBean-633">
+                <columnBean uuid="7a285d42-b335-4cfd-8090-40356d714f3b-com.ndl.framework.workbrench.define.ColumnBean-633">
                     <columnName></columnName>
                     <columnNameNoDash>wechat</columnNameNoDash>
                     <columnNameCapitalized>Wechat</columnNameCapitalized>
@@ -2682,7 +2682,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7f7f5956-6e16-40d8-844a-8f824c625ae7-com.ndl.framework.workbrench.define.ColumnBean-625">
+                <columnBean uuid="f6d16f75-def3-459b-a552-56e2acad89c0-com.ndl.framework.workbrench.define.ColumnBean-625">
                     <columnName></columnName>
                     <columnNameNoDash>camera</columnNameNoDash>
                     <columnNameCapitalized>Camera</columnNameCapitalized>
@@ -2708,7 +2708,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="086f6271-07cd-4410-8f58-54848ea308fb-com.ndl.framework.workbrench.define.ColumnBean-627">
+                <columnBean uuid="58192aa8-6115-4548-bd55-7d4f583a46e0-com.ndl.framework.workbrench.define.ColumnBean-627">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_type</columnNameNoDash>
                     <columnNameCapitalized>Service_days_type</columnNameCapitalized>
@@ -2734,7 +2734,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="5022e54f-731b-415d-bec4-3e5428ed5b47-com.ndl.framework.workbrench.define.ColumnBean-630">
+                <columnBean uuid="c0822bc3-2705-4d7c-b19a-8bdd248ff22f-com.ndl.framework.workbrench.define.ColumnBean-630">
                     <columnName></columnName>
                     <columnNameNoDash>create_time</columnNameNoDash>
                     <columnNameCapitalized>Create_time</columnNameCapitalized>
@@ -2760,7 +2760,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="33a7c4c6-565b-44d1-88e6-92c058d7bd3c-com.ndl.framework.workbrench.define.ColumnBean-609">
+                <columnBean uuid="513681e4-9fcc-4be0-9a5a-81c9bb9c21bf-com.ndl.framework.workbrench.define.ColumnBean-609">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_specialDataHotels</columnNameNoDash>
                     <columnNameCapitalized>Service_days_specialDataHotels</columnNameCapitalized>
@@ -2785,7 +2785,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="6173c85c-cecd-455b-a23e-82122d3fd54f-com.ndl.framework.workbrench.define.ColumnBean-615">
+                <columnBean uuid="d294deb9-5126-4472-a553-4595e17ab781-com.ndl.framework.workbrench.define.ColumnBean-615">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataHotels</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataHotels</columnNameCapitalized>
@@ -2810,7 +2810,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="62c10357-e6da-484f-9db5-b4c7de26ca70-com.ndl.framework.workbrench.define.ColumnBean-614">
+                <columnBean uuid="44f3e613-d99a-4c06-b3e4-397b092885c7-com.ndl.framework.workbrench.define.ColumnBean-614">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_week</columnNameNoDash>
                     <columnNameCapitalized>Service_days_week</columnNameCapitalized>
@@ -2836,7 +2836,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="63152d8b-27b0-4bdc-a08a-5878f2f1ec59-com.ndl.framework.workbrench.define.ColumnBean-618">
+                <columnBean uuid="3e4efcf1-633a-41fc-a385-696e00f5c92b-com.ndl.framework.workbrench.define.ColumnBean-618">
                     <columnName></columnName>
                     <columnNameNoDash>tag_listDataHotels</columnNameNoDash>
                     <columnNameCapitalized>Tag_listDataHotels</columnNameCapitalized>
@@ -2861,7 +2861,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0b5cc7a5-07e9-40bd-9ad3-bf6560afe768-com.ndl.framework.workbrench.define.ColumnBean-611">
+                <columnBean uuid="d86a47ce-5154-40f5-9173-9914f0e94799-com.ndl.framework.workbrench.define.ColumnBean-611">
                     <columnName></columnName>
                     <columnNameNoDash>duration</columnNameNoDash>
                     <columnNameCapitalized>Duration</columnNameCapitalized>
@@ -2887,7 +2887,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="20f5afa3-f3cb-4b4f-b8bb-76c653cbcc66-com.ndl.framework.workbrench.define.ColumnBean-790">
+                <columnBean uuid="6645b723-071e-484d-8734-12585642fdff-com.ndl.framework.workbrench.define.ColumnBean-790">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_weekDataHotels</columnNameNoDash>
                     <columnNameCapitalized>Service_days_weekDataHotels</columnNameCapitalized>
@@ -2912,7 +2912,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="523d2b65-c84f-4074-a5a2-f0bcc9212337-com.ndl.framework.workbrench.define.ColumnBean-602">
+                <columnBean uuid="99c3640c-463b-4131-a946-e8adda448b2d-com.ndl.framework.workbrench.define.ColumnBean-602">
                     <columnName></columnName>
                     <columnNameNoDash>pos_address</columnNameNoDash>
                     <columnNameCapitalized>Pos_address</columnNameCapitalized>
@@ -2938,7 +2938,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="1ff1b130-67c8-45e8-a7af-10d828ce4d84-com.ndl.framework.workbrench.define.ColumnBean-608">
+                <columnBean uuid="9b6bc6c5-a89c-4582-8b36-21ec22c49b91-com.ndl.framework.workbrench.define.ColumnBean-608">
                     <columnName></columnName>
                     <columnNameNoDash>title</columnNameNoDash>
                     <columnNameCapitalized>Title</columnNameCapitalized>
@@ -2964,7 +2964,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="fd1cb0e9-1b46-43d9-ba4c-9d316aec82ea-com.ndl.framework.workbrench.define.ColumnBean-629">
+                <columnBean uuid="5eac7dff-300d-4e72-a925-c56354a2171d-com.ndl.framework.workbrench.define.ColumnBean-629">
                     <columnName></columnName>
                     <columnNameNoDash>summary</columnNameNoDash>
                     <columnNameCapitalized>Summary</columnNameCapitalized>
@@ -2990,7 +2990,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="ab0cab81-33d5-45d7-9370-9ec8602f2ae1-com.ndl.framework.workbrench.define.ColumnBean-626">
+                <columnBean uuid="0943c2f7-f0f3-4ed3-af7b-45da0358e626-com.ndl.framework.workbrench.define.ColumnBean-626">
                     <columnName></columnName>
                     <columnNameNoDash>sTime</columnNameNoDash>
                     <columnNameCapitalized>STime</columnNameCapitalized>
@@ -3016,7 +3016,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="09515aea-8884-42c2-ad60-855d06ebcf1f-com.ndl.framework.workbrench.define.ColumnBean-641">
+                <columnBean uuid="c4a1dcd5-7a35-48e4-9721-557079fc6ab7-com.ndl.framework.workbrench.define.ColumnBean-641">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataHotels</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataHotels</columnNameCapitalized>
@@ -3041,7 +3041,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="ca8862bc-665c-4659-a3b0-55f8450ec7f7-com.ndl.framework.workbrench.define.ColumnBean-631">
+                <columnBean uuid="446c1c45-a596-4815-9d66-9c3c59876e2e-com.ndl.framework.workbrench.define.ColumnBean-631">
                     <columnName></columnName>
                     <columnNameNoDash>eTime</columnNameNoDash>
                     <columnNameCapitalized>ETime</columnNameCapitalized>
@@ -3067,7 +3067,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="1aed6015-1f34-417e-951e-01dadfc74481-com.ndl.framework.workbrench.define.ColumnBean-628">
+                <columnBean uuid="21fe2318-053a-4031-b7c5-834264416ea1-com.ndl.framework.workbrench.define.ColumnBean-628">
                     <columnName></columnName>
                     <columnNameNoDash>email</columnNameNoDash>
                     <columnNameCapitalized>Email</columnNameCapitalized>
@@ -3093,7 +3093,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="d3345209-ee3e-436c-83ff-f767e3df2e4a-com.ndl.framework.workbrench.define.ColumnBean-634">
+                <columnBean uuid="02e30d0d-bb3c-4809-aa91-823f7727c625-com.ndl.framework.workbrench.define.ColumnBean-634">
                     <columnName></columnName>
                     <columnNameNoDash>end_time</columnNameNoDash>
                     <columnNameCapitalized>End_time</columnNameCapitalized>
@@ -3119,7 +3119,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="557543b2-5475-4a83-9ef1-594635e6187c-com.ndl.framework.workbrench.define.ColumnBean-637">
+                <columnBean uuid="152d73f5-e62f-43f3-a4f9-1f56c9b287e0-com.ndl.framework.workbrench.define.ColumnBean-637">
                     <columnName></columnName>
                     <columnNameNoDash>reply_count</columnNameNoDash>
                     <columnNameCapitalized>Reply_count</columnNameCapitalized>
@@ -3145,7 +3145,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7777782c-7304-49f7-a28b-c4233c2e30a5-com.ndl.framework.workbrench.define.ColumnBean-624">
+                <columnBean uuid="403ebb3b-327f-44c8-b16e-8a33da2467ce-com.ndl.framework.workbrench.define.ColumnBean-624">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -3171,7 +3171,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="e1a81736-d404-43ee-890b-0cffd8be4911-com.ndl.framework.workbrench.define.ColumnBean-632">
+                <columnBean uuid="7d9130e5-2f23-4071-a9d8-6a896b30dff4-com.ndl.framework.workbrench.define.ColumnBean-632">
                     <columnName></columnName>
                     <columnNameNoDash>mobile</columnNameNoDash>
                     <columnNameCapitalized>Mobile</columnNameCapitalized>
@@ -3197,7 +3197,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="92649bb8-510c-49e8-bf95-c3e3b592d220-com.ndl.framework.workbrench.define.ColumnBean-636">
+                <columnBean uuid="91b697bf-26e9-4791-9971-6b61fa281d2c-com.ndl.framework.workbrench.define.ColumnBean-636">
                     <columnName></columnName>
                     <columnNameNoDash>designer</columnNameNoDash>
                     <columnNameCapitalized>Designer</columnNameCapitalized>
@@ -3223,7 +3223,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="63e63fc8-4daf-435b-bb0a-468cdfa12dbb-com.ndl.framework.workbrench.define.ColumnBean-639">
+                <columnBean uuid="4abc5716-3931-4b03-b971-bfbf195b7473-com.ndl.framework.workbrench.define.ColumnBean-639">
                     <columnName></columnName>
                     <columnNameNoDash>site</columnNameNoDash>
                     <columnNameCapitalized>Site</columnNameCapitalized>
@@ -3254,14 +3254,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="bdc187e7-2991-4a34-a8c5-6470af5f13d4-com.ndl.framework.workbrench.define.TableBean-15">
+        <tableBean uuid="af67d8d1-024b-45e2-9134-b017011e20f0-com.ndl.framework.workbrench.define.TableBean-15">
             <tableName>cityDataHotels</tableName>
             <tableNameNoDash>cityDataHotels</tableNameNoDash>
             <tableNameCapitalized>CityDataHotels</tableNameCapitalized>
             <parentTableNameNoDash>dataHotels</parentTableNameNoDash>
             <parentTableNameCapitalized>DataHotels</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="b7add01f-b2a4-416e-8fd4-667e489e7c28-com.ndl.framework.workbrench.define.ColumnBean-604">
+                <columnBean uuid="04f9f8f5-c3d1-44b1-85a4-7e10d858b6f0-com.ndl.framework.workbrench.define.ColumnBean-604">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -3287,7 +3287,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="821444b0-ceac-403c-9c4c-985ae29f786d-com.ndl.framework.workbrench.define.ColumnBean-605">
+                <columnBean uuid="a648d6f3-1b00-4c03-9a55-6d6bf827ce18-com.ndl.framework.workbrench.define.ColumnBean-605">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -3318,7 +3318,7 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="80fdc44a-cc79-4f16-94a7-1df64675a5fc-com.ndl.framework.workbrench.define.TableBean-16">
+        <tableBean uuid="5c708279-223f-4bb0-93e6-8cfcc220be30-com.ndl.framework.workbrench.define.TableBean-16">
             <tableName>service_days_specialDataHotels</tableName>
             <tableNameNoDash>service_days_specialDataHotels</tableNameNoDash>
             <tableNameCapitalized>Service_days_specialDataHotels</tableNameCapitalized>
@@ -3329,14 +3329,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="cac532f5-dc4c-4a78-be0c-6aa1c0534823-com.ndl.framework.workbrench.define.TableBean-17">
+        <tableBean uuid="05b6da6a-7c63-4364-ac41-1f318db98ba7-com.ndl.framework.workbrench.define.TableBean-17">
             <tableName>provinceDataHotels</tableName>
             <tableNameNoDash>provinceDataHotels</tableNameNoDash>
             <tableNameCapitalized>ProvinceDataHotels</tableNameCapitalized>
             <parentTableNameNoDash>dataHotels</parentTableNameNoDash>
             <parentTableNameCapitalized>DataHotels</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="5dcfe740-247b-4e35-8c59-d1068c52c2cf-com.ndl.framework.workbrench.define.ColumnBean-616">
+                <columnBean uuid="437aed1f-7bc4-4d11-a009-0c45baa34037-com.ndl.framework.workbrench.define.ColumnBean-616">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -3362,7 +3362,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="78e2bd60-0c30-472d-8122-40175a193b00-com.ndl.framework.workbrench.define.ColumnBean-617">
+                <columnBean uuid="eebb535a-6828-4cc0-a6cd-d080ec015744-com.ndl.framework.workbrench.define.ColumnBean-617">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -3393,14 +3393,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="4a38641a-3d65-4727-b903-563654b4c38a-com.ndl.framework.workbrench.define.TableBean-18">
+        <tableBean uuid="df13f811-af2c-4fbb-a8ff-914b9736dc8f-com.ndl.framework.workbrench.define.TableBean-18">
             <tableName>tag_listDataHotels</tableName>
             <tableNameNoDash>tag_listDataHotels</tableNameNoDash>
             <tableNameCapitalized>Tag_listDataHotels</tableNameCapitalized>
             <parentTableNameNoDash>dataHotels</parentTableNameNoDash>
             <parentTableNameCapitalized>DataHotels</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="3865d854-10f9-49c8-8f30-30619a392459-com.ndl.framework.workbrench.define.ColumnBean-619">
+                <columnBean uuid="c16ff762-ae0a-4259-b798-c1c25e4a2d20-com.ndl.framework.workbrench.define.ColumnBean-619">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -3426,7 +3426,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="f76b9b03-0668-4d35-ac1d-7a9f899a3ebc-com.ndl.framework.workbrench.define.ColumnBean-620">
+                <columnBean uuid="ca6fcb18-2428-437e-8be2-4d3564b8914e-com.ndl.framework.workbrench.define.ColumnBean-620">
                     <columnName></columnName>
                     <columnNameNoDash>title</columnNameNoDash>
                     <columnNameCapitalized>Title</columnNameCapitalized>
@@ -3457,14 +3457,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="2ffae49d-0dc3-4dbc-b65d-a16b04619b2c-com.ndl.framework.workbrench.define.TableBean-19">
+        <tableBean uuid="7ad3f318-6694-4845-b002-795e4f72d1f9-com.ndl.framework.workbrench.define.TableBean-19">
             <tableName>districtDataHotels</tableName>
             <tableNameNoDash>districtDataHotels</tableNameNoDash>
             <tableNameCapitalized>DistrictDataHotels</tableNameCapitalized>
             <parentTableNameNoDash>dataHotels</parentTableNameNoDash>
             <parentTableNameCapitalized>DataHotels</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="306a2480-d638-4b0d-a758-b7b01bc58814-com.ndl.framework.workbrench.define.ColumnBean-643">
+                <columnBean uuid="8a82462d-0eaa-45c7-b1fc-bddaa10782a0-com.ndl.framework.workbrench.define.ColumnBean-643">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -3490,7 +3490,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="8a469a09-b01d-4650-9808-353872c409a6-com.ndl.framework.workbrench.define.ColumnBean-642">
+                <columnBean uuid="eedfcf09-0e17-42cb-aaf3-a2b3ed6d4a98-com.ndl.framework.workbrench.define.ColumnBean-642">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -3521,7 +3521,7 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="4b89edae-317b-4b8f-83dc-bb4d95c68c55-com.ndl.framework.workbrench.define.TableBean-20">
+        <tableBean uuid="21fdf07c-811b-43b6-86c7-597c11d0ac9a-com.ndl.framework.workbrench.define.TableBean-20">
             <tableName>service_days_weekDataHotels</tableName>
             <tableNameNoDash>service_days_weekDataHotels</tableNameNoDash>
             <tableNameCapitalized>Service_days_weekDataHotels</tableNameCapitalized>
@@ -3532,13 +3532,13 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="0c487653-4f98-4325-8af6-7dd5e1402454-com.ndl.framework.workbrench.define.TableBean-21">
+        <tableBean uuid="3984af95-72c0-4891-8e39-882fcff48bcd-com.ndl.framework.workbrench.define.TableBean-21">
             <tableName>reams</tableName>
             <tableComment>http://www.ieream.com/mapi/1/reams.php?action=search&amp;filter=locations:320000;tags:2,3;keywords</tableComment>
             <tableNameNoDash>reams</tableNameNoDash>
             <tableNameCapitalized>Reams</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="d0cf4e0b-a258-44cc-99f0-e7b24eaba7a4-com.ndl.framework.workbrench.define.ColumnBean-1037">
+                <columnBean uuid="15e97846-4567-4fd3-bf04-951dde994326-com.ndl.framework.workbrench.define.ColumnBean-1037">
                     <columnName></columnName>
                     <columnNameNoDash>dataReams</columnNameNoDash>
                     <columnNameCapitalized>DataReams</columnNameCapitalized>
@@ -3563,7 +3563,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4f255b3a-1720-4d44-97c2-1617801e9d85-com.ndl.framework.workbrench.define.ColumnBean-1086">
+                <columnBean uuid="77b5f6c0-f7eb-428d-9bb2-90e6d6404c6a-com.ndl.framework.workbrench.define.ColumnBean-1086">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -3589,7 +3589,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="288cad5d-98c0-424e-9b08-68667341ec47-com.ndl.framework.workbrench.define.ColumnBean-1085">
+                <columnBean uuid="7b39215a-b9a2-420e-bfc9-625cfcc9dd95-com.ndl.framework.workbrench.define.ColumnBean-1085">
                     <columnName></columnName>
                     <columnNameNoDash>more</columnNameNoDash>
                     <columnNameCapitalized>More</columnNameCapitalized>
@@ -3620,14 +3620,14 @@
             <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="6da0af4b-6096-410c-aa86-6de3444c28dd-com.ndl.framework.workbrench.define.TableBean-22">
+        <tableBean uuid="2553b169-ca43-4e7d-a4b6-0856dcfdc364-com.ndl.framework.workbrench.define.TableBean-22">
             <tableName>dataReams</tableName>
             <tableNameNoDash>dataReams</tableNameNoDash>
             <tableNameCapitalized>DataReams</tableNameCapitalized>
             <parentTableNameNoDash>reams</parentTableNameNoDash>
             <parentTableNameCapitalized>Reams</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="02e3a634-6ec1-4f33-bebf-655c7b5a2a92-com.ndl.framework.workbrench.define.ColumnBean-1047">
+                <columnBean uuid="5c6caa72-954e-49e1-a970-23d14c7213d9-com.ndl.framework.workbrench.define.ColumnBean-1047">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataReams</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataReams</columnNameCapitalized>
@@ -3652,7 +3652,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="8e7d12aa-a616-461a-9b41-d0e8769dbc98-com.ndl.framework.workbrench.define.ColumnBean-1043">
+                <columnBean uuid="875fa209-8bd2-4ff7-b04a-590f3021e4c1-com.ndl.framework.workbrench.define.ColumnBean-1043">
                     <columnName></columnName>
                     <columnNameNoDash>title</columnNameNoDash>
                     <columnNameCapitalized>Title</columnNameCapitalized>
@@ -3678,7 +3678,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4d4aaef9-2615-4d5e-91ae-8124d989b6b9-com.ndl.framework.workbrench.define.ColumnBean-1074">
+                <columnBean uuid="f32e4a8a-8316-46bb-bdb7-487bf0f46c8b-com.ndl.framework.workbrench.define.ColumnBean-1074">
                     <columnName></columnName>
                     <columnNameNoDash>price_unit</columnNameNoDash>
                     <columnNameCapitalized>Price_unit</columnNameCapitalized>
@@ -3704,7 +3704,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="da1dd3e3-6ce2-4935-af83-f60cf2497968-com.ndl.framework.workbrench.define.ColumnBean-1076">
+                <columnBean uuid="477d0532-c693-43f9-aa17-705488f546fa-com.ndl.framework.workbrench.define.ColumnBean-1076">
                     <columnName></columnName>
                     <columnNameNoDash>is_recommend</columnNameNoDash>
                     <columnNameCapitalized>Is_recommend</columnNameCapitalized>
@@ -3730,7 +3730,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="03f6255c-593e-4f93-8126-7adf8a380ef5-com.ndl.framework.workbrench.define.ColumnBean-1083">
+                <columnBean uuid="fbf788eb-350e-4f6d-8544-f016f0f71f4f-com.ndl.framework.workbrench.define.ColumnBean-1083">
                     <columnName></columnName>
                     <columnNameNoDash>price_rule</columnNameNoDash>
                     <columnNameCapitalized>Price_rule</columnNameCapitalized>
@@ -3756,7 +3756,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4acc32eb-47a1-47b2-a3db-e8a4cc3075b4-com.ndl.framework.workbrench.define.ColumnBean-1045">
+                <columnBean uuid="d00af492-ad32-4098-970a-78f716176db6-com.ndl.framework.workbrench.define.ColumnBean-1045">
                     <columnName></columnName>
                     <columnNameNoDash>update_time</columnNameNoDash>
                     <columnNameCapitalized>Update_time</columnNameCapitalized>
@@ -3782,7 +3782,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="35c7e1d7-18cf-4762-b9bc-fd43585b2c0e-com.ndl.framework.workbrench.define.ColumnBean-1070">
+                <columnBean uuid="e00420f2-b1b2-4fa3-abe4-fca6270b70de-com.ndl.framework.workbrench.define.ColumnBean-1070">
                     <columnName></columnName>
                     <columnNameNoDash>eTime</columnNameNoDash>
                     <columnNameCapitalized>ETime</columnNameCapitalized>
@@ -3808,7 +3808,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2688ff72-c195-47ea-be37-16c3d5397818-com.ndl.framework.workbrench.define.ColumnBean-1072">
+                <columnBean uuid="74b42a2f-cf11-45ce-967d-4a0eab8ce4bd-com.ndl.framework.workbrench.define.ColumnBean-1072">
                     <columnName></columnName>
                     <columnNameNoDash>wechat</columnNameNoDash>
                     <columnNameCapitalized>Wechat</columnNameCapitalized>
@@ -3834,7 +3834,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c93c99a1-41dd-4749-b800-73fa033974ee-com.ndl.framework.workbrench.define.ColumnBean-1069">
+                <columnBean uuid="7ccec149-6e5d-4c5c-b0a5-988769349b1d-com.ndl.framework.workbrench.define.ColumnBean-1069">
                     <columnName></columnName>
                     <columnNameNoDash>create_time</columnNameNoDash>
                     <columnNameCapitalized>Create_time</columnNameCapitalized>
@@ -3860,7 +3860,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="663a5bfc-eac1-46ae-8a29-4d7171153b78-com.ndl.framework.workbrench.define.ColumnBean-1039">
+                <columnBean uuid="1815d6b1-a499-4e09-bb19-cf8a0d39b8c7-com.ndl.framework.workbrench.define.ColumnBean-1039">
                     <columnName></columnName>
                     <columnNameNoDash>cityDataReams</columnNameNoDash>
                     <columnNameCapitalized>CityDataReams</columnNameCapitalized>
@@ -3885,7 +3885,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="cebcf84c-0e19-465c-86db-0d5c261a8607-com.ndl.framework.workbrench.define.ColumnBean-1065">
+                <columnBean uuid="f1b5f658-3a63-4546-af79-2bbe74a1b966-com.ndl.framework.workbrench.define.ColumnBean-1065">
                     <columnName></columnName>
                     <columnNameNoDash>camera</columnNameNoDash>
                     <columnNameCapitalized>Camera</columnNameCapitalized>
@@ -3911,7 +3911,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7e75c6b5-d64e-4fee-a500-ba805c8664f4-com.ndl.framework.workbrench.define.ColumnBean-1042">
+                <columnBean uuid="068fe294-065a-48ad-9a07-b3200917cdd5-com.ndl.framework.workbrench.define.ColumnBean-1042">
                     <columnName></columnName>
                     <columnNameNoDash>discount</columnNameNoDash>
                     <columnNameCapitalized>Discount</columnNameCapitalized>
@@ -3937,7 +3937,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="bdbb37b2-7071-4826-a52f-ee3f5c267088-com.ndl.framework.workbrench.define.ColumnBean-1067">
+                <columnBean uuid="669a4437-1be6-4ac7-a1df-106a485b1e17-com.ndl.framework.workbrench.define.ColumnBean-1067">
                     <columnName></columnName>
                     <columnNameNoDash>email</columnNameNoDash>
                     <columnNameCapitalized>Email</columnNameCapitalized>
@@ -3963,7 +3963,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="e329ace7-e48b-4b22-abba-29c8f3b3a216-com.ndl.framework.workbrench.define.ColumnBean-1050">
+                <columnBean uuid="64aa323d-faac-449a-b179-059c73cb46ad-com.ndl.framework.workbrench.define.ColumnBean-1050">
                     <columnName></columnName>
                     <columnNameNoDash>tag_listDataReams</columnNameNoDash>
                     <columnNameCapitalized>Tag_listDataReams</columnNameCapitalized>
@@ -3988,7 +3988,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="1c2f2928-0c7c-4a11-a785-62008b30abd1-com.ndl.framework.workbrench.define.ColumnBean-1063">
+                <columnBean uuid="2c393d37-5bdd-460b-8bd6-c7f7333da094-com.ndl.framework.workbrench.define.ColumnBean-1063">
                     <columnName></columnName>
                     <columnNameNoDash>tel</columnNameNoDash>
                     <columnNameCapitalized>Tel</columnNameCapitalized>
@@ -4014,7 +4014,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="6b466dee-8767-4e0f-ad4d-9491467fe57c-com.ndl.framework.workbrench.define.ColumnBean-1068">
+                <columnBean uuid="ed065a5f-f941-4eb6-b48e-6d56d3e2a222-com.ndl.framework.workbrench.define.ColumnBean-1068">
                     <columnName></columnName>
                     <columnNameNoDash>summary</columnNameNoDash>
                     <columnNameCapitalized>Summary</columnNameCapitalized>
@@ -4040,7 +4040,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="eb5f7def-1d26-4921-9636-b03e63a3defd-com.ndl.framework.workbrench.define.ColumnBean-1084">
+                <columnBean uuid="79756022-3846-4775-9b55-f076306b8267-com.ndl.framework.workbrench.define.ColumnBean-1084">
                     <columnName></columnName>
                     <columnNameNoDash>view_count</columnNameNoDash>
                     <columnNameCapitalized>View_count</columnNameCapitalized>
@@ -4066,7 +4066,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="d95bf3f2-e4fb-44f5-b9b5-d16503df48de-com.ndl.framework.workbrench.define.ColumnBean-1075">
+                <columnBean uuid="68a18581-7f36-4fad-af7c-a8b75ac189a6-com.ndl.framework.workbrench.define.ColumnBean-1075">
                     <columnName></columnName>
                     <columnNameNoDash>site</columnNameNoDash>
                     <columnNameCapitalized>Site</columnNameCapitalized>
@@ -4092,7 +4092,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="9d76ca95-f56a-43a2-b4ec-2cc436ecb458-com.ndl.framework.workbrench.define.ColumnBean-1046">
+                <columnBean uuid="1d23a876-0635-4a46-9916-75a891533d44-com.ndl.framework.workbrench.define.ColumnBean-1046">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_week</columnNameNoDash>
                     <columnNameCapitalized>Service_days_week</columnNameCapitalized>
@@ -4118,7 +4118,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2ec895ea-3f4f-43e8-bdaf-83064001cb9e-com.ndl.framework.workbrench.define.ColumnBean-1038">
+                <columnBean uuid="7af42f15-9c1c-4db7-b89c-6528eb51b2ef-com.ndl.framework.workbrench.define.ColumnBean-1038">
                     <columnName></columnName>
                     <columnNameNoDash>pos_address</columnNameNoDash>
                     <columnNameCapitalized>Pos_address</columnNameCapitalized>
@@ -4144,7 +4144,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="f94ee60e-b639-41ed-972a-958e0ff9b128-com.ndl.framework.workbrench.define.ColumnBean-1081">
+                <columnBean uuid="bb92c958-63e7-47b5-bcfa-41a31197acd3-com.ndl.framework.workbrench.define.ColumnBean-1081">
                     <columnName></columnName>
                     <columnNameNoDash>detail</columnNameNoDash>
                     <columnNameCapitalized>Detail</columnNameCapitalized>
@@ -4170,7 +4170,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="d892cd83-2afb-4729-b464-20b8b48fa9d3-com.ndl.framework.workbrench.define.ColumnBean-1077">
+                <columnBean uuid="3cee3262-fd33-49a8-91f9-1e265b30356e-com.ndl.framework.workbrench.define.ColumnBean-1077">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataReams</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataReams</columnNameCapitalized>
@@ -4195,7 +4195,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="6306c218-25d4-48bc-b401-1ad470292953-com.ndl.framework.workbrench.define.ColumnBean-1071">
+                <columnBean uuid="32ff14f6-264c-4e2f-93ad-1141639c9351-com.ndl.framework.workbrench.define.ColumnBean-1071">
                     <columnName></columnName>
                     <columnNameNoDash>mobile</columnNameNoDash>
                     <columnNameCapitalized>Mobile</columnNameCapitalized>
@@ -4221,7 +4221,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="76ed0e7f-a67b-4cf4-9182-b4cad4c1d445-com.ndl.framework.workbrench.define.ColumnBean-1044">
+                <columnBean uuid="014b5ab0-9458-4b7f-9278-e9efbdf2c53c-com.ndl.framework.workbrench.define.ColumnBean-1044">
                     <columnName></columnName>
                     <columnNameNoDash>duration</columnNameNoDash>
                     <columnNameCapitalized>Duration</columnNameCapitalized>
@@ -4247,7 +4247,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="9a80f119-bf93-4dc0-9559-7652e0c6f8c5-com.ndl.framework.workbrench.define.ColumnBean-1064">
+                <columnBean uuid="6cf06b05-a670-4bbe-acfb-449e55aa7d89-com.ndl.framework.workbrench.define.ColumnBean-1064">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -4273,7 +4273,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="04c3e1bb-b5b1-46bf-8d7c-e373dffc38e5-com.ndl.framework.workbrench.define.ColumnBean-1066">
+                <columnBean uuid="3279d271-99ac-46c1-b2e6-70dd2210e6e7-com.ndl.framework.workbrench.define.ColumnBean-1066">
                     <columnName></columnName>
                     <columnNameNoDash>sTime</columnNameNoDash>
                     <columnNameCapitalized>STime</columnNameCapitalized>
@@ -4299,7 +4299,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="ef47fc2b-98ca-4118-9855-19791f1477c4-com.ndl.framework.workbrench.define.ColumnBean-1073">
+                <columnBean uuid="cceac066-9e1e-4a22-bf45-854bfa4c4613-com.ndl.framework.workbrench.define.ColumnBean-1073">
                     <columnName></columnName>
                     <columnNameNoDash>reply_count</columnNameNoDash>
                     <columnNameCapitalized>Reply_count</columnNameCapitalized>
@@ -4325,7 +4325,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="fc389e1c-4262-44ce-8a72-37e42bda186e-com.ndl.framework.workbrench.define.ColumnBean-1080">
+                <columnBean uuid="ec9112a5-7011-4e71-a6ef-ae5a1ec5b6c1-com.ndl.framework.workbrench.define.ColumnBean-1080">
                     <columnName></columnName>
                     <columnNameNoDash>producer</columnNameNoDash>
                     <columnNameCapitalized>Producer</columnNameCapitalized>
@@ -4351,7 +4351,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="21ac8c7f-f473-43ed-8462-103a86e50eca-com.ndl.framework.workbrench.define.ColumnBean-1082">
+                <columnBean uuid="9befb745-b081-4f9b-8bcd-35497832ee00-com.ndl.framework.workbrench.define.ColumnBean-1082">
                     <columnName></columnName>
                     <columnNameNoDash>limit_count</columnNameNoDash>
                     <columnNameCapitalized>Limit_count</columnNameCapitalized>
@@ -4382,14 +4382,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="b284ba0f-2ade-4019-8c9e-163e83b45181-com.ndl.framework.workbrench.define.TableBean-23">
+        <tableBean uuid="1e0be84f-e4d3-4677-bc85-5647c61d01c3-com.ndl.framework.workbrench.define.TableBean-23">
             <tableName>cityDataReams</tableName>
             <tableNameNoDash>cityDataReams</tableNameNoDash>
             <tableNameCapitalized>CityDataReams</tableNameCapitalized>
             <parentTableNameNoDash>dataReams</parentTableNameNoDash>
             <parentTableNameCapitalized>DataReams</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="2f5e2e85-a354-486c-9308-0a475751fc3b-com.ndl.framework.workbrench.define.ColumnBean-1041">
+                <columnBean uuid="190d95b8-d2e8-402a-8f71-a74bff51b6fa-com.ndl.framework.workbrench.define.ColumnBean-1041">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -4415,7 +4415,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b5a01df5-fe66-406f-be1e-b601473ce1c7-com.ndl.framework.workbrench.define.ColumnBean-1040">
+                <columnBean uuid="39338748-a610-42e9-b92d-d168c87a671b-com.ndl.framework.workbrench.define.ColumnBean-1040">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -4446,14 +4446,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="b638310e-680d-4f5f-95ab-d020834d98e6-com.ndl.framework.workbrench.define.TableBean-24">
+        <tableBean uuid="679b9478-5e5f-4d1d-bb48-d740b369c92e-com.ndl.framework.workbrench.define.TableBean-24">
             <tableName>provinceDataReams</tableName>
             <tableNameNoDash>provinceDataReams</tableNameNoDash>
             <tableNameCapitalized>ProvinceDataReams</tableNameCapitalized>
             <parentTableNameNoDash>dataReams</parentTableNameNoDash>
             <parentTableNameCapitalized>DataReams</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="620e99ce-6b8d-4d87-802b-0c909774c454-com.ndl.framework.workbrench.define.ColumnBean-1049">
+                <columnBean uuid="ee856fbc-9620-435c-98b5-9dc1cfa15268-com.ndl.framework.workbrench.define.ColumnBean-1049">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -4479,7 +4479,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="de69166d-1f60-4379-95cb-d5d5f3700aee-com.ndl.framework.workbrench.define.ColumnBean-1048">
+                <columnBean uuid="fe0c4e6e-7522-4e9c-ab61-094ef78a800c-com.ndl.framework.workbrench.define.ColumnBean-1048">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -4510,14 +4510,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="a3841acd-1399-4e10-8642-2df063637698-com.ndl.framework.workbrench.define.TableBean-25">
+        <tableBean uuid="8fa01da4-5434-4ac5-a133-415fb776089d-com.ndl.framework.workbrench.define.TableBean-25">
             <tableName>tag_listDataReams</tableName>
             <tableNameNoDash>tag_listDataReams</tableNameNoDash>
             <tableNameCapitalized>Tag_listDataReams</tableNameCapitalized>
             <parentTableNameNoDash>dataReams</parentTableNameNoDash>
             <parentTableNameCapitalized>DataReams</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="92c4175b-a102-475d-86e6-00ed8ac82ce9-com.ndl.framework.workbrench.define.ColumnBean-1051">
+                <columnBean uuid="306e4c4b-2684-44d1-bb69-f69ef2df7df0-com.ndl.framework.workbrench.define.ColumnBean-1051">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -4543,7 +4543,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2ca3b0b4-eba2-419e-af96-67cc00b47a40-com.ndl.framework.workbrench.define.ColumnBean-1052">
+                <columnBean uuid="f512b740-8d3e-4d48-beee-899289ae04d6-com.ndl.framework.workbrench.define.ColumnBean-1052">
                     <columnName></columnName>
                     <columnNameNoDash>title</columnNameNoDash>
                     <columnNameCapitalized>Title</columnNameCapitalized>
@@ -4574,14 +4574,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="bd0aef31-1d7a-47c1-ac58-245850ef8bc3-com.ndl.framework.workbrench.define.TableBean-26">
+        <tableBean uuid="b6af32a6-a1e2-448f-bbd4-bee56c4f52ae-com.ndl.framework.workbrench.define.TableBean-26">
             <tableName>districtDataReams</tableName>
             <tableNameNoDash>districtDataReams</tableNameNoDash>
             <tableNameCapitalized>DistrictDataReams</tableNameCapitalized>
             <parentTableNameNoDash>dataReams</parentTableNameNoDash>
             <parentTableNameCapitalized>DataReams</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="b9161b6d-3338-47d9-affb-5be9fead21e9-com.ndl.framework.workbrench.define.ColumnBean-1078">
+                <columnBean uuid="8c88e0a7-82f7-461c-9dcf-1c6285a3e097-com.ndl.framework.workbrench.define.ColumnBean-1078">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -4607,7 +4607,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7c207591-1da5-4b19-8d8a-ee12873ab945-com.ndl.framework.workbrench.define.ColumnBean-1079">
+                <columnBean uuid="970fa289-82d7-4cf6-b51f-05562fbc223b-com.ndl.framework.workbrench.define.ColumnBean-1079">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -4638,13 +4638,13 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="f83bc85d-f12d-461d-b909-71f6fa2fe433-com.ndl.framework.workbrench.define.TableBean-27">
+        <tableBean uuid="4646afba-0a55-42ff-be66-7e94c0143938-com.ndl.framework.workbrench.define.TableBean-27">
             <tableName>users</tableName>
             <tableComment>http://www.ieream.com/mapi/1/users.php?action=getitem&amp;uid=102</tableComment>
             <tableNameNoDash>users</tableNameNoDash>
             <tableNameCapitalized>Users</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="d0517948-b065-41ce-9f76-6b992f800626-com.ndl.framework.workbrench.define.ColumnBean-1087">
+                <columnBean uuid="65658b56-7987-4f1c-b764-a89b80ca5655-com.ndl.framework.workbrench.define.ColumnBean-1087">
                     <columnName></columnName>
                     <columnNameNoDash>dataUsers</columnNameNoDash>
                     <columnNameCapitalized>DataUsers</columnNameCapitalized>
@@ -4669,7 +4669,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="12091a6e-361d-4e53-ac3d-7c92ef69d18b-com.ndl.framework.workbrench.define.ColumnBean-1147">
+                <columnBean uuid="0cb2fcd4-6d11-456a-b808-f77aa4084711-com.ndl.framework.workbrench.define.ColumnBean-1147">
                     <columnName></columnName>
                     <columnNameNoDash>info</columnNameNoDash>
                     <columnNameCapitalized>Info</columnNameCapitalized>
@@ -4695,7 +4695,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c94e8086-553f-4091-805d-c35c14004bbf-com.ndl.framework.workbrench.define.ColumnBean-1146">
+                <columnBean uuid="6a1bcc07-c9f9-4c0b-a94a-39bdfb044081-com.ndl.framework.workbrench.define.ColumnBean-1146">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -4726,14 +4726,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="7b323d73-3632-498b-aaac-8c97b3e8a338-com.ndl.framework.workbrench.define.TableBean-28">
+        <tableBean uuid="0c391dcd-8511-4bb6-895f-6ae0c7cb6453-com.ndl.framework.workbrench.define.TableBean-28">
             <tableName>dataUsers</tableName>
             <tableNameNoDash>dataUsers</tableNameNoDash>
             <tableNameCapitalized>DataUsers</tableNameCapitalized>
             <parentTableNameNoDash>users</parentTableNameNoDash>
             <parentTableNameCapitalized>Users</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="d4fdffe3-a694-4912-b877-ba4c94276565-com.ndl.framework.workbrench.define.ColumnBean-1094">
+                <columnBean uuid="35598ed2-5c0d-4a22-9397-0303ae565098-com.ndl.framework.workbrench.define.ColumnBean-1094">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataUsers</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataUsers</columnNameCapitalized>
@@ -4758,7 +4758,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="3ec969ac-c07e-4f5e-87ce-e2d1eff02f2f-com.ndl.framework.workbrench.define.ColumnBean-1130">
+                <columnBean uuid="cbb7576e-f12d-4a1b-9cbd-e3c0fb623c99-com.ndl.framework.workbrench.define.ColumnBean-1130">
                     <columnName></columnName>
                     <columnNameNoDash>mobile</columnNameNoDash>
                     <columnNameCapitalized>Mobile</columnNameCapitalized>
@@ -4784,7 +4784,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="31d89889-e545-4036-9453-fa90f0e82fc6-com.ndl.framework.workbrench.define.ColumnBean-1138">
+                <columnBean uuid="8be04130-3de4-4219-a5f4-6cc5e1087c5b-com.ndl.framework.workbrench.define.ColumnBean-1138">
                     <columnName></columnName>
                     <columnNameNoDash>work_unit</columnNameNoDash>
                     <columnNameCapitalized>Work_unit</columnNameCapitalized>
@@ -4810,7 +4810,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c5272543-dcf6-4200-84b5-28a6e5813d28-com.ndl.framework.workbrench.define.ColumnBean-1111">
+                <columnBean uuid="c55f5bb7-ba07-49f3-bb11-edee68dc93c6-com.ndl.framework.workbrench.define.ColumnBean-1111">
                     <columnName></columnName>
                     <columnNameNoDash>cityDataUsers</columnNameNoDash>
                     <columnNameCapitalized>CityDataUsers</columnNameCapitalized>
@@ -4835,7 +4835,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7b469df1-7d95-4aa5-ac02-1b31c7140d19-com.ndl.framework.workbrench.define.ColumnBean-1140">
+                <columnBean uuid="9dd2b932-d674-44f6-8d2d-6e872462cffa-com.ndl.framework.workbrench.define.ColumnBean-1140">
                     <columnName></columnName>
                     <columnNameNoDash>netname</columnNameNoDash>
                     <columnNameCapitalized>Netname</columnNameCapitalized>
@@ -4861,7 +4861,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c482977d-cd2d-4cbd-80ab-3000b6b6b4b8-com.ndl.framework.workbrench.define.ColumnBean-1117">
+                <columnBean uuid="22591659-51a4-4fdd-8a6f-8587ca24e2bd-com.ndl.framework.workbrench.define.ColumnBean-1117">
                     <columnName></columnName>
                     <columnNameNoDash>remark_one</columnNameNoDash>
                     <columnNameCapitalized>Remark_one</columnNameCapitalized>
@@ -4887,7 +4887,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0e37de34-281f-4307-85fd-cc644e85964f-com.ndl.framework.workbrench.define.ColumnBean-1114">
+                <columnBean uuid="d543e0d6-e649-491a-b41c-11a34bcd2b6c-com.ndl.framework.workbrench.define.ColumnBean-1114">
                     <columnName></columnName>
                     <columnNameNoDash>login</columnNameNoDash>
                     <columnNameCapitalized>Login</columnNameCapitalized>
@@ -4913,7 +4913,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b9f76166-f0ac-4f2e-ab10-8e2c707c5b6e-com.ndl.framework.workbrench.define.ColumnBean-1128">
+                <columnBean uuid="1752d78f-0059-483c-bcce-c59f51363320-com.ndl.framework.workbrench.define.ColumnBean-1128">
                     <columnName></columnName>
                     <columnNameNoDash>wechat</columnNameNoDash>
                     <columnNameCapitalized>Wechat</columnNameCapitalized>
@@ -4939,7 +4939,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="1195c5b6-3de9-45ba-84db-51e34e96a352-com.ndl.framework.workbrench.define.ColumnBean-1101">
+                <columnBean uuid="182c344f-3116-4004-90a5-75b20c3360ab-com.ndl.framework.workbrench.define.ColumnBean-1101">
                     <columnName></columnName>
                     <columnNameNoDash>bi_language</columnNameNoDash>
                     <columnNameCapitalized>Bi_language</columnNameCapitalized>
@@ -4965,7 +4965,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="fddb535d-8355-4900-87ef-36a2098d6d3f-com.ndl.framework.workbrench.define.ColumnBean-1129">
+                <columnBean uuid="c4bd5a53-2e0a-4d4d-8e43-29bba921410f-com.ndl.framework.workbrench.define.ColumnBean-1129">
                     <columnName></columnName>
                     <columnNameNoDash>end_time</columnNameNoDash>
                     <columnNameCapitalized>End_time</columnNameCapitalized>
@@ -4991,7 +4991,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="e28e615c-2be7-419f-ac3c-6b57c6712782-com.ndl.framework.workbrench.define.ColumnBean-1133">
+                <columnBean uuid="9b3e8299-4295-4f2a-abe7-6f29ecacf7c3-com.ndl.framework.workbrench.define.ColumnBean-1133">
                     <columnName></columnName>
                     <columnNameNoDash>realname</columnNameNoDash>
                     <columnNameCapitalized>Realname</columnNameCapitalized>
@@ -5017,7 +5017,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="554be852-4157-45ed-a4b9-b54f4af4a801-com.ndl.framework.workbrench.define.ColumnBean-1119">
+                <columnBean uuid="411df829-bb19-40b4-b88f-c7eb200e9a2f-com.ndl.framework.workbrench.define.ColumnBean-1119">
                     <columnName></columnName>
                     <columnNameNoDash>last_login_ip</columnNameNoDash>
                     <columnNameCapitalized>Last_login_ip</columnNameCapitalized>
@@ -5043,7 +5043,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c7708d4f-4d7d-48cc-a8e0-52cf2550524a-com.ndl.framework.workbrench.define.ColumnBean-1097">
+                <columnBean uuid="e25f9eea-15b7-4f7b-b033-8bdb60d67400-com.ndl.framework.workbrench.define.ColumnBean-1097">
                     <columnName></columnName>
                     <columnNameNoDash>tel</columnNameNoDash>
                     <columnNameCapitalized>Tel</columnNameCapitalized>
@@ -5069,7 +5069,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="026e570d-c587-407f-b0a7-2ca9e01ca3de-com.ndl.framework.workbrench.define.ColumnBean-1141">
+                <columnBean uuid="d03a8a7b-e465-459a-881b-99c7472b387f-com.ndl.framework.workbrench.define.ColumnBean-1141">
                     <columnName></columnName>
                     <columnNameNoDash>idcard</columnNameNoDash>
                     <columnNameCapitalized>Idcard</columnNameCapitalized>
@@ -5095,7 +5095,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="92ac9b30-b45f-46d9-9462-d053a72d2d4e-com.ndl.framework.workbrench.define.ColumnBean-1131">
+                <columnBean uuid="3b1df3fe-1706-4c65-bebe-1ec3a88c75fa-com.ndl.framework.workbrench.define.ColumnBean-1131">
                     <columnName></columnName>
                     <columnNameNoDash>begin_time</columnNameNoDash>
                     <columnNameCapitalized>Begin_time</columnNameCapitalized>
@@ -5121,7 +5121,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="9f9570d9-42fc-4ca6-9809-5e80df9b74f9-com.ndl.framework.workbrench.define.ColumnBean-1091">
+                <columnBean uuid="6f009489-0801-426b-a4c1-4df96e4ed3c6-com.ndl.framework.workbrench.define.ColumnBean-1091">
                     <columnName></columnName>
                     <columnNameNoDash>self_desc</columnNameNoDash>
                     <columnNameCapitalized>Self_desc</columnNameCapitalized>
@@ -5147,7 +5147,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="10243251-062e-401a-a33f-7750a7fbf0b2-com.ndl.framework.workbrench.define.ColumnBean-1120">
+                <columnBean uuid="5d867f42-1914-47e1-b83b-ef6900e48199-com.ndl.framework.workbrench.define.ColumnBean-1120">
                     <columnName></columnName>
                     <columnNameNoDash>reg_time</columnNameNoDash>
                     <columnNameCapitalized>Reg_time</columnNameCapitalized>
@@ -5173,7 +5173,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="edaf737b-9398-4fa9-aaf5-647d9dcf0068-com.ndl.framework.workbrench.define.ColumnBean-1139">
+                <columnBean uuid="c2567ba0-e393-40a5-b596-29d06254d460-com.ndl.framework.workbrench.define.ColumnBean-1139">
                     <columnName></columnName>
                     <columnNameNoDash>show_role</columnNameNoDash>
                     <columnNameCapitalized>Show_role</columnNameCapitalized>
@@ -5199,7 +5199,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="66f955ee-b7a6-4c85-9f1f-20c54b79325e-com.ndl.framework.workbrench.define.ColumnBean-1102">
+                <columnBean uuid="c207320e-f15b-4bab-ab46-c58ab5f6371d-com.ndl.framework.workbrench.define.ColumnBean-1102">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataUsers</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataUsers</columnNameCapitalized>
@@ -5224,7 +5224,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2924260d-b0ff-4509-97fd-c94e812d3e9d-com.ndl.framework.workbrench.define.ColumnBean-1110">
+                <columnBean uuid="a9889094-ffb3-42a2-b69f-2f478238edd1-com.ndl.framework.workbrench.define.ColumnBean-1110">
                     <columnName></columnName>
                     <columnNameNoDash>signature</columnNameNoDash>
                     <columnNameCapitalized>Signature</columnNameCapitalized>
@@ -5250,7 +5250,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b2da7056-51b1-4ec9-b097-1c6b39438054-com.ndl.framework.workbrench.define.ColumnBean-1100">
+                <columnBean uuid="cf5d64fb-8a0d-4652-a93c-60bfdc714c0c-com.ndl.framework.workbrench.define.ColumnBean-1100">
                     <columnName></columnName>
                     <columnNameNoDash>postcode</columnNameNoDash>
                     <columnNameCapitalized>Postcode</columnNameCapitalized>
@@ -5276,7 +5276,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="3c41954b-732b-4bf1-a8ed-f00b1793d240-com.ndl.framework.workbrench.define.ColumnBean-1135">
+                <columnBean uuid="50f1bdc0-2ef6-4ba0-8742-60b13217a147-com.ndl.framework.workbrench.define.ColumnBean-1135">
                     <columnName></columnName>
                     <columnNameNoDash>special</columnNameNoDash>
                     <columnNameCapitalized>Special</columnNameCapitalized>
@@ -5302,7 +5302,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b42fffee-6f37-42d4-942b-db453cceb702-com.ndl.framework.workbrench.define.ColumnBean-1143">
+                <columnBean uuid="ffc7b568-f86b-4edf-86e7-c9cad139fbdd-com.ndl.framework.workbrench.define.ColumnBean-1143">
                     <columnName></columnName>
                     <columnNameNoDash>reg_ip</columnNameNoDash>
                     <columnNameCapitalized>Reg_ip</columnNameCapitalized>
@@ -5328,7 +5328,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="ba3d4b24-e66a-44ca-8f80-616bc0fe2562-com.ndl.framework.workbrench.define.ColumnBean-1107">
+                <columnBean uuid="07cd0da2-b16a-4a94-ac1f-6e6519d5e684-com.ndl.framework.workbrench.define.ColumnBean-1107">
                     <columnName></columnName>
                     <columnNameNoDash>invite_code</columnNameNoDash>
                     <columnNameCapitalized>Invite_code</columnNameCapitalized>
@@ -5354,7 +5354,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4ad4eb7a-0042-4f38-b8cd-244673c652e7-com.ndl.framework.workbrench.define.ColumnBean-1137">
+                <columnBean uuid="d3e2aaf6-dd53-41cd-b16f-01714cce1adb-com.ndl.framework.workbrench.define.ColumnBean-1137">
                     <columnName></columnName>
                     <columnNameNoDash>last_login_role</columnNameNoDash>
                     <columnNameCapitalized>Last_login_role</columnNameCapitalized>
@@ -5380,7 +5380,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="801afc93-4774-49fd-8372-85ec744f9d92-com.ndl.framework.workbrench.define.ColumnBean-1124">
+                <columnBean uuid="b09705b7-1231-40b2-9476-eae5e89840ab-com.ndl.framework.workbrench.define.ColumnBean-1124">
                     <columnName></columnName>
                     <columnNameNoDash>address</columnNameNoDash>
                     <columnNameCapitalized>Address</columnNameCapitalized>
@@ -5406,7 +5406,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="3f137965-4e5c-4023-82dc-ddfda15b45e5-com.ndl.framework.workbrench.define.ColumnBean-1125">
+                <columnBean uuid="dfa72cbb-6895-4c23-accc-27f340d949f1-com.ndl.framework.workbrench.define.ColumnBean-1125">
                     <columnName></columnName>
                     <columnNameNoDash>value_added_items</columnNameNoDash>
                     <columnNameCapitalized>Value_added_items</columnNameCapitalized>
@@ -5432,7 +5432,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7f5e0a8d-85b1-42fb-b211-6d4383e5f22b-com.ndl.framework.workbrench.define.ColumnBean-1105">
+                <columnBean uuid="412c59c2-f6c6-4240-b7f1-646c18c94ca2-com.ndl.framework.workbrench.define.ColumnBean-1105">
                     <columnName></columnName>
                     <columnNameNoDash>recommend_desc</columnNameNoDash>
                     <columnNameCapitalized>Recommend_desc</columnNameCapitalized>
@@ -5458,7 +5458,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="1a67e545-e44a-474a-8c2d-84835e0b7a98-com.ndl.framework.workbrench.define.ColumnBean-1093">
+                <columnBean uuid="1177d3ce-8c3d-4735-9a78-3cc4b42a4327-com.ndl.framework.workbrench.define.ColumnBean-1093">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_week</columnNameNoDash>
                     <columnNameCapitalized>Service_days_week</columnNameCapitalized>
@@ -5484,7 +5484,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="bbaa7bb4-f144-4388-8b44-d1f03eae095a-com.ndl.framework.workbrench.define.ColumnBean-1132">
+                <columnBean uuid="b74efbce-ab1c-471e-9bfa-caace69ddc54-com.ndl.framework.workbrench.define.ColumnBean-1132">
                     <columnName></columnName>
                     <columnNameNoDash>recommend_tel</columnNameNoDash>
                     <columnNameCapitalized>Recommend_tel</columnNameCapitalized>
@@ -5510,7 +5510,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="b91221d7-c3b0-432e-a0dd-d15595750211-com.ndl.framework.workbrench.define.ColumnBean-1099">
+                <columnBean uuid="48f9433e-9410-47ed-b4e1-167e607ccb6e-com.ndl.framework.workbrench.define.ColumnBean-1099">
                     <columnName></columnName>
                     <columnNameNoDash>qq</columnNameNoDash>
                     <columnNameCapitalized>Qq</columnNameCapitalized>
@@ -5536,7 +5536,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="9971fd90-e6f5-4467-9a8d-a1e870e5931b-com.ndl.framework.workbrench.define.ColumnBean-1098">
+                <columnBean uuid="04f0e489-0a95-439b-8418-49f4a38d9ed6-com.ndl.framework.workbrench.define.ColumnBean-1098">
                     <columnName></columnName>
                     <columnNameNoDash>diploma</columnNameNoDash>
                     <columnNameCapitalized>Diploma</columnNameCapitalized>
@@ -5562,7 +5562,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c53b00dc-bba2-42ba-970d-ba76ecc5ee37-com.ndl.framework.workbrench.define.ColumnBean-1122">
+                <columnBean uuid="2b6793bc-70eb-4b78-a8ea-291c21b46e7c-com.ndl.framework.workbrench.define.ColumnBean-1122">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_type</columnNameNoDash>
                     <columnNameCapitalized>Service_days_type</columnNameCapitalized>
@@ -5588,7 +5588,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="398aa5bc-6b49-4994-8f6d-112872ca27e2-com.ndl.framework.workbrench.define.ColumnBean-1123">
+                <columnBean uuid="be1b1f33-da5a-4c2e-9fff-fdc8bdd746fe-com.ndl.framework.workbrench.define.ColumnBean-1123">
                     <columnName></columnName>
                     <columnNameNoDash>email</columnNameNoDash>
                     <columnNameCapitalized>Email</columnNameCapitalized>
@@ -5614,7 +5614,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="cd4b7523-5eac-4d0f-9a6d-b017f1f288c6-com.ndl.framework.workbrench.define.ColumnBean-1090">
+                <columnBean uuid="4630a170-96f8-4233-9a46-a529463b9d12-com.ndl.framework.workbrench.define.ColumnBean-1090">
                     <columnName></columnName>
                     <columnNameNoDash>last_login_time</columnNameNoDash>
                     <columnNameCapitalized>Last_login_time</columnNameCapitalized>
@@ -5640,7 +5640,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="e3795406-1cbf-4e2c-aa73-6f8f5092d0e9-com.ndl.framework.workbrench.define.ColumnBean-1116">
+                <columnBean uuid="08e80e06-1655-4cfe-a4c7-d09e5ef52409-com.ndl.framework.workbrench.define.ColumnBean-1116">
                     <columnName></columnName>
                     <columnNameNoDash>guidecard</columnNameNoDash>
                     <columnNameCapitalized>Guidecard</columnNameCapitalized>
@@ -5666,7 +5666,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="916d8494-6dc5-4ef4-ab5a-8825222a6545-com.ndl.framework.workbrench.define.ColumnBean-1136">
+                <columnBean uuid="f5406928-7bee-4f1f-91a5-51e2122c924f-com.ndl.framework.workbrench.define.ColumnBean-1136">
                     <columnName></columnName>
                     <columnNameNoDash>price_unit</columnNameNoDash>
                     <columnNameCapitalized>Price_unit</columnNameCapitalized>
@@ -5692,7 +5692,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="bcca7735-0982-4b3b-acb1-3b7d091e13a3-com.ndl.framework.workbrench.define.ColumnBean-1106">
+                <columnBean uuid="4428cd80-1053-4f49-a65e-43fbbed9b270-com.ndl.framework.workbrench.define.ColumnBean-1106">
                     <columnName></columnName>
                     <columnNameNoDash>institute</columnNameNoDash>
                     <columnNameCapitalized>Institute</columnNameCapitalized>
@@ -5718,7 +5718,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="5ee5eb0a-b6a8-4af0-bef3-ca1b3057aabb-com.ndl.framework.workbrench.define.ColumnBean-1109">
+                <columnBean uuid="0c20ef63-5502-4a26-b188-fd232b503e7f-com.ndl.framework.workbrench.define.ColumnBean-1109">
                     <columnName></columnName>
                     <columnNameNoDash>birthday</columnNameNoDash>
                     <columnNameCapitalized>Birthday</columnNameCapitalized>
@@ -5744,7 +5744,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="25abb860-642b-42fa-9fc5-75e7d3b988c6-com.ndl.framework.workbrench.define.ColumnBean-1118">
+                <columnBean uuid="4a59f5ec-62b5-4bd9-b698-2410c6ca69b3-com.ndl.framework.workbrench.define.ColumnBean-1118">
                     <columnName></columnName>
                     <columnNameNoDash>uid</columnNameNoDash>
                     <columnNameCapitalized>Uid</columnNameCapitalized>
@@ -5770,7 +5770,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="eca3b225-201a-4398-8565-1cf97175b401-com.ndl.framework.workbrench.define.ColumnBean-1145">
+                <columnBean uuid="daa6a4c5-9a03-499c-8992-b2cd164b0916-com.ndl.framework.workbrench.define.ColumnBean-1145">
                     <columnName></columnName>
                     <columnNameNoDash>username</columnNameNoDash>
                     <columnNameCapitalized>Username</columnNameCapitalized>
@@ -5796,7 +5796,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="4dd7b8c5-8f65-463e-92d7-d921ee0d5f40-com.ndl.framework.workbrench.define.ColumnBean-1115">
+                <columnBean uuid="dff560d5-bae4-4322-8ba9-981d478f687d-com.ndl.framework.workbrench.define.ColumnBean-1115">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_special</columnNameNoDash>
                     <columnNameCapitalized>Service_days_special</columnNameCapitalized>
@@ -5822,7 +5822,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2f4fa7a0-801c-4a46-84a6-b1335f402840-com.ndl.framework.workbrench.define.ColumnBean-1121">
+                <columnBean uuid="3d376cf9-b92f-432a-9dad-d106e09c15ad-com.ndl.framework.workbrench.define.ColumnBean-1121">
                     <columnName></columnName>
                     <columnNameNoDash>nickname</columnNameNoDash>
                     <columnNameCapitalized>Nickname</columnNameCapitalized>
@@ -5848,7 +5848,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0951cb8f-9c3f-4945-aa24-da8d980c5772-com.ndl.framework.workbrench.define.ColumnBean-1108">
+                <columnBean uuid="4fafca65-10e6-4744-aea5-8f5fe35649a9-com.ndl.framework.workbrench.define.ColumnBean-1108">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -5874,7 +5874,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="fb408b47-f327-431f-b808-ba5acd0c08d7-com.ndl.framework.workbrench.define.ColumnBean-1134">
+                <columnBean uuid="486d5993-6143-4cb2-a052-6840173ff49d-com.ndl.framework.workbrench.define.ColumnBean-1134">
                     <columnName></columnName>
                     <columnNameNoDash>recommend_person</columnNameNoDash>
                     <columnNameCapitalized>Recommend_person</columnNameCapitalized>
@@ -5900,7 +5900,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0427e51c-f752-44be-b999-5ba3bb17fed1-com.ndl.framework.workbrench.define.ColumnBean-1089">
+                <columnBean uuid="7f19ff49-d625-4124-ad55-45637d789cef-com.ndl.framework.workbrench.define.ColumnBean-1089">
                     <columnName></columnName>
                     <columnNameNoDash>self_introduction</columnNameNoDash>
                     <columnNameCapitalized>Self_introduction</columnNameCapitalized>
@@ -5926,7 +5926,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="dc64ad36-f710-43f1-aa48-f6113c11389c-com.ndl.framework.workbrench.define.ColumnBean-1127">
+                <columnBean uuid="356ce060-1aaa-4e0e-8d88-3437497a07b3-com.ndl.framework.workbrench.define.ColumnBean-1127">
                     <columnName></columnName>
                     <columnNameNoDash>sex</columnNameNoDash>
                     <columnNameCapitalized>Sex</columnNameCapitalized>
@@ -5952,7 +5952,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2e7b06f9-938f-47f8-bb5a-16ebb9181de5-com.ndl.framework.workbrench.define.ColumnBean-1126">
+                <columnBean uuid="70765216-169c-4ee2-8ade-b976206e525f-com.ndl.framework.workbrench.define.ColumnBean-1126">
                     <columnName></columnName>
                     <columnNameNoDash>union_count</columnNameNoDash>
                     <columnNameCapitalized>Union_count</columnNameCapitalized>
@@ -5978,7 +5978,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="679fbeb6-5da0-451a-a680-17356b7847c7-com.ndl.framework.workbrench.define.ColumnBean-1092">
+                <columnBean uuid="4ca6975d-ec7e-400e-9357-70bdb4609e80-com.ndl.framework.workbrench.define.ColumnBean-1092">
                     <columnName></columnName>
                     <columnNameNoDash>email_1</columnNameNoDash>
                     <columnNameCapitalized>Email_1</columnNameCapitalized>
@@ -6004,7 +6004,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7355a090-012d-4e19-9ef1-689120bff717-com.ndl.framework.workbrench.define.ColumnBean-1142">
+                <columnBean uuid="9c48cac2-c7a1-412d-b7ee-2e754f8f1b9b-com.ndl.framework.workbrench.define.ColumnBean-1142">
                     <columnName></columnName>
                     <columnNameNoDash>domicile</columnNameNoDash>
                     <columnNameCapitalized>Domicile</columnNameCapitalized>
@@ -6030,7 +6030,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="59592ab6-f6ad-42a8-8cb9-681ee8ec8f0d-com.ndl.framework.workbrench.define.ColumnBean-1144">
+                <columnBean uuid="2cc8860d-8f56-4d2d-b78a-278ffb9e9e71-com.ndl.framework.workbrench.define.ColumnBean-1144">
                     <columnName></columnName>
                     <columnNameNoDash>price_rule</columnNameNoDash>
                     <columnNameCapitalized>Price_rule</columnNameCapitalized>
@@ -6061,14 +6061,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="7044c3c2-a458-43d3-bb48-98d51fab3e25-com.ndl.framework.workbrench.define.TableBean-29">
+        <tableBean uuid="c5745c0e-c94f-48f3-9286-2feb5023af42-com.ndl.framework.workbrench.define.TableBean-29">
             <tableName>provinceDataUsers</tableName>
             <tableNameNoDash>provinceDataUsers</tableNameNoDash>
             <tableNameCapitalized>ProvinceDataUsers</tableNameCapitalized>
             <parentTableNameNoDash>dataUsers</parentTableNameNoDash>
             <parentTableNameCapitalized>DataUsers</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="80710ca6-4309-489b-a540-1a8a77055161-com.ndl.framework.workbrench.define.ColumnBean-1096">
+                <columnBean uuid="c98a8e08-de24-4086-8f04-bcd1f2f2d011-com.ndl.framework.workbrench.define.ColumnBean-1096">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -6094,7 +6094,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="43f1b5f9-5f23-4849-b1f3-4ca31bd368e9-com.ndl.framework.workbrench.define.ColumnBean-1095">
+                <columnBean uuid="f69f7ed1-b5e6-4819-86be-4c605b231085-com.ndl.framework.workbrench.define.ColumnBean-1095">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -6125,14 +6125,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="76714ba7-db07-4451-b645-8389ffbd9fd2-com.ndl.framework.workbrench.define.TableBean-30">
+        <tableBean uuid="cddd77df-6788-4a1c-ba6a-981ba12b5cdc-com.ndl.framework.workbrench.define.TableBean-30">
             <tableName>districtDataUsers</tableName>
             <tableNameNoDash>districtDataUsers</tableNameNoDash>
             <tableNameCapitalized>DistrictDataUsers</tableNameCapitalized>
             <parentTableNameNoDash>dataUsers</parentTableNameNoDash>
             <parentTableNameCapitalized>DataUsers</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="e7ce15e5-a9eb-4832-a9c6-ef539b5911fe-com.ndl.framework.workbrench.define.ColumnBean-1103">
+                <columnBean uuid="1a89b528-06ff-4f35-b45b-8ee274014fcd-com.ndl.framework.workbrench.define.ColumnBean-1103">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -6158,7 +6158,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="2c337237-1712-46dc-a267-9726c65c96f8-com.ndl.framework.workbrench.define.ColumnBean-1104">
+                <columnBean uuid="c61081a3-e96c-4c21-b942-172c411a23a4-com.ndl.framework.workbrench.define.ColumnBean-1104">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -6189,14 +6189,14 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="375ae76a-642a-4406-8087-4110b2c560a9-com.ndl.framework.workbrench.define.TableBean-31">
+        <tableBean uuid="7134bd75-5e5f-42b1-aeda-1421f90b1f5b-com.ndl.framework.workbrench.define.TableBean-31">
             <tableName>cityDataUsers</tableName>
             <tableNameNoDash>cityDataUsers</tableNameNoDash>
             <tableNameCapitalized>CityDataUsers</tableNameCapitalized>
             <parentTableNameNoDash>dataUsers</parentTableNameNoDash>
             <parentTableNameCapitalized>DataUsers</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="0bc8330c-74c7-4382-bf7e-0acd5e253bbf-com.ndl.framework.workbrench.define.ColumnBean-1113">
+                <columnBean uuid="caabc792-a780-426e-baf9-2f30192746c7-com.ndl.framework.workbrench.define.ColumnBean-1113">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -6222,7 +6222,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="cf69e59e-a6c8-41ad-be88-2585fc0d2d48-com.ndl.framework.workbrench.define.ColumnBean-1112">
+                <columnBean uuid="bf6f0547-ac79-4d4e-8989-f696bcd0e02d-com.ndl.framework.workbrench.define.ColumnBean-1112">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>

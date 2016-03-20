@@ -27,6 +27,7 @@ import com.ndl.framework.workbrench.define.FieldTypeEnum;
 import com.ndl.framework.workbrench.define.TableBean;
 import com.ndl.framework.workbrench.define.TransientBean;
 import com.ndl.framework.workbrench.exception.ConfigRuntimeException;
+import com.ndl.framework.workbrench.freemarker.template.FrontTemplete;
 import com.ndl.framework.workbrench.util.ClassHelper;
 import com.ndl.framework.workbrench.util.ProductParseTemplateUtil;
 import com.ndl.framework.workbrench.util.WorkBrenchConfigProperty;
@@ -78,7 +79,12 @@ public class APIModelForFrontPointManager extends APIModelManager {
 		super.loadModelDataFromXML();
 		generateIOSModel();
 		generateModlePojo();
-		generateSimpleAndroidRestful();
+		
+	}
+	
+	public void generateAndroidRestfulForFrontSimpleFileFormXML(String moduleName){
+		ControllerManager.generateFrontTemplateToXML(moduleName);
+		generateAndroidRestfulForFrontByTemplate();
 	}
 	
 	protected void generateModelDamainFromRawData(Map<String,String> urlPathEndChar){
@@ -422,7 +428,7 @@ public class APIModelForFrontPointManager extends APIModelManager {
 							parserTableBean.addColumn(childColumnBean);
 							parseJSONArray(parseKey,parserContreteObject,childParserTableBean);
 						}else if(parserContreteObject.getClass()==JSONObject.class){
-							parseJSONArray(parseKey,parserContreteObject,parserTableBean);
+							parseJSONObject(parseKey,parserContreteObject,parserTableBean);
 						}else{
 							boolean isParseString=ClassHelper.isString(parserContreteObject);
 							boolean isParsePrimitive=ClassHelper.isPrimitiveOrWrapper(parserContreteObject);
@@ -524,6 +530,7 @@ public class APIModelForFrontPointManager extends APIModelManager {
 		ProductParseTemplateUtil.parseTypeToIOS(columnBean);
 		return columnBean;
 	}
+	
 	private ColumnBean createColumnBean(String columnNameNoDash,String columnKey,String comment){
 		
 		ColumnBean columnBean=new ColumnBean();
@@ -541,5 +548,10 @@ public class APIModelForFrontPointManager extends APIModelManager {
 		return columnBean;
 	}
 	
-
+	////////////////////////////////////////////////
+	protected void generateAndroidRestfulForFrontByTemplate(){
+		FrontTemplete frontTemplete=ControllerManager.loadFrontTempleteFromXML();
+		Assert.notNull(frontTemplete, "frontTemplete must not be null");
+		super.generate.generateAndroidRestfulForFrontByTemplate(frontTemplete);
+	}
 }

@@ -49,7 +49,7 @@ public class ${tableBean.tableNameCapitalized}${classSuffix} extends DefaultBean
 </#list>
 
 <#list tableBean.transientColumnBeanList as columnBean>
- <#if ('' != columnBean.columnType)>
+ <#if ('' != columnBean.columnType )>
  public void set${columnBean.columnNameCapitalized}(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
         this.${columnBean.columnNameNoDash} = ${columnBean.columnNameNoDash};
     }

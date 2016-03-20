@@ -34,7 +34,7 @@ import com.ndl.framework.workbrench.define.ServiceBean;
 import com.ndl.framework.workbrench.define.TableBean;
 import com.ndl.framework.workbrench.define.TableColumnConfig;
 import com.ndl.framework.workbrench.exception.ConfigRuntimeException;
-import com.ndl.framework.workbrench.freemarker.Generate;
+import com.ndl.framework.workbrench.freemarker.TemplateCommand;
 import com.ndl.framework.workbrench.freemarker.RunConfigure;
 import com.ndl.framework.workbrench.freemarker.template.AtomOrRepositorTemplate;
 import com.ndl.framework.workbrench.freemarker.template.FrontTemplete;
@@ -170,9 +170,33 @@ public class ControllerManager {
 			logger.error(e.getMessage(), e);
 			throw new java.lang.RuntimeException("生成业务服务模板，写入配置文件失败", e);
 		}
-		
-		;
 	}
+	
+	public static FrontTemplete loadFrontTempleteFromXML() {
+		String controllPath=RunConfigure.getConfigPath() + "/controller-config-class-templete.xml";
+		FrontTemplete moudleAtom=null;
+		if (logger.isInfoEnabled()) {
+			logger.info("ControllerManager generateControllerBeanToXML Begin:");
+			logger.info("controllPath:\t"+controllPath);
+		}
+		
+		try {
+		
+			File file = new File(controllPath);
+			synchronized(ControllerManager.class){
+				moudleAtom= jaxbUtilTemplate.xmlToObject(file,FrontTemplete.class);
+			}
+		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
+			throw new java.lang.RuntimeException("生成控制器模板，写入配置文件失败", e);
+		}
+		if (logger.isInfoEnabled()) {
+			logger.info("ControllerManager loadControllerBeanFromXML Over:");
+			logger.info("frontBean:\t"+moudleAtom);
+		}
+		return  moudleAtom;
+	}
+	
 	public static void parseFrontPackage(FrontPackage frontBean){
 		if (logger.isInfoEnabled()) {
 			logger.info("ControllerManager parseFrontPackage Begin:");
@@ -310,6 +334,14 @@ public class ControllerManager {
 				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum);
 	}
 	
+	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
+			String descripter,  String methodSignatureDescripter,
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+		String methodSignature=ClassHelper.namingUsingJavaMethod(controllerType);
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri);
+	}
+	
 	/**
 	 * 1.2.处理请求：
 	 * 		RequestMethod.GET+@RequestBody @ModelAttribute
@@ -336,6 +368,13 @@ public class ControllerManager {
 				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum);
 	}
 	
+	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
+			String descripter, String methodSignature, String methodSignatureDescripter,
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum ,String methodSignatureUri) {
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri);
+	}
+	
 	/**
 	 * 1.3.处理请求：
 	 * 	RequestMethod.GET+@RequestBody @ModelAttribute
@@ -356,11 +395,19 @@ public class ControllerManager {
 	 *	ShoppingCartDomain shoppingCartDomain)
 	 *
 	 */
+	
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
 			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
 				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum);
+	}
+	
+	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
+			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri);
 	}
 	
 	/**
@@ -384,6 +431,14 @@ public class ControllerManager {
 				startColumnBean,defualtCalleeAnnotationBean, MethCategoryEnum.POST,returnFieldEnum);
 	}
 	
+	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
+			String descripter,  String methodSignatureDescripter,
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+		String methodSignature=ClassHelper.namingUsingJavaMethod(controllerType);
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
+				startColumnBean,defualtCalleeAnnotationBean, MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri);
+	}
+	
 	/**
 	 * 2.2	RequestMethod.POST+@RequestBody
 	 *	@RequestMapping(value = "/addcart", method = RequestMethod.POST)
@@ -405,6 +460,12 @@ public class ControllerManager {
 				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum);
 	}
 	
+	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
+			String descripter, String methodSignature, String methodSignatureDescripter,
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri);
+	}
 	/**
 	 * 
 	 * 2.3	RequestMethod.POST+@RequestBody
@@ -428,6 +489,13 @@ public class ControllerManager {
 				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum);
 	}
 	
+	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
+			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri);
+	}
+	
 	/**
 	 * 	3.RequestMethod.GET+ PathVariable
 	 *	@RequestMapping(value = "/usercarts/{sessionId}", method = RequestMethod.GET)
@@ -449,6 +517,23 @@ public class ControllerManager {
 				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GETPATH,returnFieldEnum);
 	}
 
+	public static ControllerManager addControllerMethodGetPathVariable(String controllerType, String uri,
+			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
+			ColumnBean startColumnBean ,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GETPATH,returnFieldEnum,methodSignatureUri);
+	}
+	
+	private static ControllerManager addControllerMethod(String controllerType, String uri, String descripter,
+			String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
+			ColumnBean startColumnBean,AnnotationBean calleeServiceAnnotationBean,MethCategoryEnum methodCategory,
+			FieldTypeEnum returnFieldEnum){
+		return addControllerMethod( controllerType,  uri,  descripter,
+				 methodSignature, servicemethodSignature,  methodSignatureDescripter,
+				 startColumnBean, calleeServiceAnnotationBean, methodCategory,
+				 returnFieldEnum,  uri);
+	}
+	
 	/**
 	 * 1.RequestMethod.GET+@RequestBody @ModelAttribute
 	 * @RequestMapping(value = "/getShoppingCart", method = RequestMethod.GET)
@@ -473,7 +558,8 @@ public class ControllerManager {
 	 */
 	private static ControllerManager addControllerMethod(String controllerType, String uri, String descripter,
 			String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,AnnotationBean calleeServiceAnnotationBean,MethCategoryEnum methodCategory,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,AnnotationBean calleeServiceAnnotationBean,MethCategoryEnum methodCategory,
+			FieldTypeEnum returnFieldEnum, String methodSignatureUri) {
 
 		if (logger.isInfoEnabled()) {
 			logger.info("ControllerManager addControllerMethod Begin:");
@@ -494,7 +580,9 @@ public class ControllerManager {
 		}
 
 		ControllerManager manager = ControllerManager.createDefaultControllerHearder(controllerType, descripter);
-		
+		if(StringUtils.isNoneEmpty(uri)){
+			manager.setBaseAnnotationBean(uri);
+		}
 		String serviceId = ClassHelper.namingUsingJavaMethod(controllerType);
 		// Controller方法
 		// 调用服务方法的参数
@@ -516,13 +604,13 @@ public class ControllerManager {
 		ServiceBean toServiceBean = (ServiceBean) manager.getIncludeService().clone();
 		MethodManager methodManager = null;
 		if (methodCategory == MethCategoryEnum.GET) {
-			methodManager = MethodManager.createControllerMethodGetModelAttribute(methodSignature, uri,
+			methodManager = MethodManager.createControllerMethodGetModelAttribute(methodSignature, methodSignatureUri,
 					methodSignatureDescripter, entityBean);
 		} else if (methodCategory == MethCategoryEnum.POST) {
-			methodManager = MethodManager.createControllerMethodPost(methodSignature, uri, methodSignatureDescripter,
+			methodManager = MethodManager.createControllerMethodPost(methodSignature, methodSignatureUri, methodSignatureDescripter,
 					entityBean);
 		} else if (methodCategory == MethCategoryEnum.GETPATH) {
-			methodManager=MethodManager.createControllerMothodGetPathVariable(methodSignature,uri,methodSignatureDescripter,
+			methodManager=MethodManager.createControllerMothodGetPathVariable(methodSignature,methodSignatureUri,methodSignatureDescripter,
 			 entityBean);
 		} else {
 			if (logger.isWarnEnabled()) {
@@ -603,12 +691,12 @@ public class ControllerManager {
 	 * @Controller @RequestMapping({"/order"})
 	 */
 	protected void setBaseAnnotationBean(String requestMapping) {
+//		AnnotationBean annotationBean = new AnnotationBean();
+//		//annotationBean.setAnnnoteKey("Controller");
+//		annotationBean.setAnnnoteKey(AnnotationTypeEnum.Controller);
+//		
+//		addAnnotationBean(annotationBean);
 		AnnotationBean annotationBean = new AnnotationBean();
-		//annotationBean.setAnnnoteKey("Controller");
-		annotationBean.setAnnnoteKey(AnnotationTypeEnum.Controller);
-		
-		addAnnotationBean(annotationBean);
-		annotationBean = new AnnotationBean();
 		//annotationBean.setAnnnoteKey("RequestMapping");
 		annotationBean.setAnnnoteKey(AnnotationTypeEnum.RequestMapping);
 		annotationBean.setAnnoteValue(requestMapping);
@@ -748,7 +836,7 @@ public class ControllerManager {
 		
 		setControllerBaseInfo(controllerId, controllerType, controllerDescipter);
 		//头部信息
-		setBaseAnnotationBean(controllerId);
+		//setBaseAnnotationBean(controllerId);
 
 		String serviceDescipter = "Service Type:" + controllerType + "\n " + descipter;
 

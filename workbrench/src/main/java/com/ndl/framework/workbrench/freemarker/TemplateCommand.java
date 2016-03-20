@@ -16,12 +16,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.util.Assert;
 
+import com.ndl.framework.workbrench.define.AnnotationTypeEnum;
+import com.ndl.framework.workbrench.define.BusinessDescripter;
 import com.ndl.framework.workbrench.define.ColumnBean;
 import com.ndl.framework.workbrench.define.FieldTypeEnum;
+import com.ndl.framework.workbrench.define.MethodDescripter;
 import com.ndl.framework.workbrench.define.TableBean;
 import com.ndl.framework.workbrench.define.TransientBean;
 import com.ndl.framework.workbrench.freemarker.template.EntityConfigTemplate;
+import com.ndl.framework.workbrench.freemarker.template.FrontTemplete;
 import com.ndl.framework.workbrench.util.ClassHelper;
 import com.ndl.framework.workbrench.util.FreemarkerUtil;
 import com.ndl.framework.workbrench.util.JAXBUtil;
@@ -39,9 +44,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Generate {
+public class TemplateCommand {
 
-	private final static Logger logger = LoggerFactory.getLogger(Generate.class);
+	private final static Logger logger = LoggerFactory.getLogger(TemplateCommand.class);
 	private final static RunConfigure runConfigure = RunConfigure.instanceRunConfigure();
 	private final static JAXBUtil jaxbUtilEntity = new JAXBUtil(EntityConfigTemplate.class);
 	private final static JdbcTemplate jdbcTemplate = (JdbcTemplate) new ClassPathXmlApplicationContext(
@@ -65,8 +70,8 @@ public class Generate {
 	private final static String JDBC_TEMPLATE_NAME = "jdbcTemplate";
 
 	private final static String SCHEMA_NAME = runConfigure.getSchemaName();
-	
-	private static boolean generateSimpleAndroidRestfulConfig=true;
+
+	private static boolean generateSimpleAndroidRestfulConfig = true;
 
 	// 过滤表,只有这些表生成
 	private String tablesFilter;
@@ -81,11 +86,11 @@ public class Generate {
 	// 输出目录
 	private String outputDirs;
 
-	public static Generate getInstance() {
-		return new Generate();
+	public static TemplateCommand getInstance() {
+		return new TemplateCommand();
 	}
 
-	protected Generate() {
+	protected TemplateCommand() {
 		configDirs();
 		configFreeMarK();
 	}
@@ -194,14 +199,15 @@ public class Generate {
 					 * LIST,//则为ArrayList<JavaBean> MAPKEY,//则为HashMap< objKey,
 					 * JavaBean> ENTITY,//实体Bean DOMAIN,//域模型 Page,//实体分页
 					 */
-					if (specialAssign.getFieldType() == FieldTypeEnum.LIST
-							|| specialAssign.getFieldType() == FieldTypeEnum.DOMAIN
-							|| specialAssign.getFieldType() == FieldTypeEnum.ENTITY
-							|| specialAssign.getFieldType() == FieldTypeEnum.MAPKEY) {
-						columnType = columnType + suffix;
-						specialAssign.setColumnType(columnType);
-					}
-					columnType = ProductParseTemplateUtil.parseInstanceValiable(specialAssign);
+					// if (specialAssign.getFieldType() == FieldTypeEnum.LIST
+					// || specialAssign.getFieldType() == FieldTypeEnum.DOMAIN
+					// || specialAssign.getFieldType() == FieldTypeEnum.ENTITY
+					// || specialAssign.getFieldType() == FieldTypeEnum.MAPKEY)
+					// {
+					// columnType = columnType + suffix;
+					// specialAssign.setColumnType(columnType);
+					// }
+					columnType = ProductParseTemplateUtil.parseInstanceValiable(specialAssign, suffix);
 
 					ColumnBean transientColumnBean = (ColumnBean) specialAssign.clone();
 					String columnNameCapitalized = specialAssign.getColumnNameCapitalized();
@@ -239,7 +245,7 @@ public class Generate {
 	 * 把模型配置信息写入XML文件
 	 */
 	public void writeEntityConfigToFile(final Set<TableBean> tableBeanList) {
-		Set<TableBean> list=tableBeanList;
+		Set<TableBean> list = tableBeanList;
 		EntityConfigTemplate entityConfig = new EntityConfigTemplate();
 		entityConfig.setTableBeanList(list);
 		try {
@@ -284,8 +290,8 @@ public class Generate {
 	}
 
 	private void generateIOSModelH(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
 		loadTransientColumnBean(tableBean, runConfigure.getIOSPrefix());
 		setFreemarkerModel("tableBean", tableBean);
@@ -296,8 +302,8 @@ public class Generate {
 	}
 
 	private void generateIOSModelM(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
 		loadTransientColumnBean(tableBean, runConfigure.getIOSPrefix());
 		setFreemarkerModel("tableBean", tableBean);
@@ -316,8 +322,8 @@ public class Generate {
 	}
 
 	private void generateService(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
 		forceMkdirServiceOutputPath();
 		// atom的接口应当在业务服务实现中
@@ -366,10 +372,10 @@ public class Generate {
 
 	// 简单接口定义
 	private void generateSimpleService(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		forceMkdirServiceOutputPath();
 		Template serviceTemplate = FreemarkerUtil.getTemplate("template/atomService.ftl");
@@ -394,10 +400,10 @@ public class Generate {
 	}
 
 	private void generateSimpleServiceImpl(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/atomServiceimpl.ftl");
 		forceMkdirServiceOutputPath();
@@ -434,10 +440,10 @@ public class Generate {
 
 	// 简单接口定义
 	private void generateSimpleBusinessService(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		forceMkdirAPIServiceOutputPath();
 		Template serviceTemplate = FreemarkerUtil.getTemplate("template/businessService.ftl");
@@ -448,8 +454,6 @@ public class Generate {
 		setFreemarkerModel("classQuerySuffix", runConfigure.getClassQuerySuffix());// Query
 		setFreemarkerModel("packageModel", runConfigure.packageModel);// Query
 
-		
-		
 		setFreemarkerModel("businessServiceSuffix", RunConfigure.BUSINESS_SERVICE_SUFFIX);// 业务服务
 		setFreemarkerModel("packageBusinessService", RunConfigure.packageBusinessService);// 业务服务
 		setFreemarkerModel("tableBean", tableBean);//
@@ -460,23 +464,23 @@ public class Generate {
 	}
 
 	private void generateSimpleBusinessServiceImpl(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
-		//forceMkdirAPIServiceOutputPath();
+		// forceMkdirAPIServiceOutputPath();
 		forceMkdirAPIImplServiceOutputPath();
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/businessServiceimpl.ftl");
-		//forceMkdirAPIImplServiceOutputPath();
+		// forceMkdirAPIImplServiceOutputPath();
 		setFreemarkerModel("tableBean", tableBean);
 		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
 		setFreemarkerModel("classQuerySuffix", runConfigure.getClassQuerySuffix());
 		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);
-		
+
 		setFreemarkerModel("pojoSuffix", RunConfigure.POJO_SUFFIX);
 		setFreemarkerModel("packageModel", RunConfigure.packageModel);
-		
+
 		setFreemarkerModel("daoIntefaceSuffix", RunConfigure.DAO_SUFFIX);
 		setFreemarkerModel("packageDao", RunConfigure.packageDao);// dao
 
@@ -504,10 +508,10 @@ public class Generate {
 
 	// 简单接口定义
 	private void generateSimpleDAO(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		forceMkdirDaoOutputPath();
 		Template serviceTemplate = FreemarkerUtil.getTemplate("template/abcDao.ftl");
@@ -528,10 +532,10 @@ public class Generate {
 	}
 
 	private void generateSimpleDAOImpl(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcDaoImpl.ftl");
 		forceMkdirDaoOutputPath();
@@ -545,15 +549,91 @@ public class Generate {
 
 		setFreemarkerModel("daoImplSuffix", RunConfigure.DAO_IMPL_SUFFIX);
 		setFreemarkerModel("packageDaoImpl", RunConfigure.packageDaoImpl);// 原子服务
-		
+
 		setFreemarkerModel("tableBean", tableBean);
 
-		FreemarkerUtil.outputProcessResult(
-				outputDirs + "/" + RunConfigure.packageDaoImpl + "/" + tableBean.getTableNameCapitalized()
-						+ CLASS_PREFIX + RunConfigure.DAO_IMPL_SUFFIX + ".java",
+		FreemarkerUtil.outputProcessResult(outputDirs + "/" + RunConfigure.packageDaoImpl + "/"
+				+ tableBean.getTableNameCapitalized() + CLASS_PREFIX + RunConfigure.DAO_IMPL_SUFFIX + ".java",
 				serviceimplTemplate, varMap);
 	}
-	
+
+	public synchronized void generateSimpleMyBatis() {
+		for (TableBean tableBean : tableBeanList) {
+			generateSimpleMyBatis(tableBean);
+		}
+		String pathDirectory = runConfigure.getMyBatisXMLOutPath() + "/" + runConfigure.getMyBatisConfigPath();
+		;
+		deleteStringInDirectory(pathDirectory, "\\");
+	}
+
+	private void generateSimpleMyBatis(TableBean tableBean) {
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
+		}
+		// PACKAGE_BASE=runConfigure.getModulePakage();
+		// outputDirs=runConfigure.getMyBatisXMLOutPath();
+		varMap.put("packageBase", runConfigure.getModulePakage());
+		Template serviceimplTemplate = null;// =
+											// FreemarkerUtil.getTemplate("template/abcMapper.ftl");
+		try {
+			serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcMapper.ftl");
+		} catch (Exception e) {
+			logger.error("tableBean:\t", e);
+		}
+		forceMkdirMyBatisXMLOutputPath();
+		setFreemarkerModel("tableBean", tableBean);
+		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
+		setFreemarkerModel("pojoSuffix", RunConfigure.POJO_SUFFIX);
+		setFreemarkerModel("packageModel", RunConfigure.packageModel);
+		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);// Query
+		setFreemarkerModel("classQuerySuffix", runConfigure.getClassQuerySuffix());
+
+		setFreemarkerModel("daoXMLSuffix", RunConfigure.DAO_XML_SUFFIX);
+		setFreemarkerModel("packageDaoXML", runConfigure.getMyBatisConfigPath());// android
+
+		setFreemarkerModel("tableBean", tableBean);
+		String pathDirectory = outputDirs + "/" + runConfigure.getMyBatisConfigPath();
+		String path = pathDirectory + "/" + tableBean.getTableNameCapitalized() + CLASS_PREFIX
+				+ RunConfigure.DAO_XML_SUFFIX + ".xml";
+		FreemarkerUtil.outputProcessResult(path, serviceimplTemplate, varMap);
+		// 生成完的Mapper文件修修改
+
+	}
+
+	private void deleteStringInDirectory(String pathDirectory, String deleteContent) {
+		File directory = new File(pathDirectory);
+		if (!directory.isDirectory()) {
+			// D:\DevT\SpringHelper\ndlan-projects\ndl-warm-project\cwwarm\service-module\src\main\resources\mapper\cwwarm
+			logger.warn("修改目录不存在,pathDirectory:\t" + pathDirectory);
+			return;
+		}
+		Collection<File> fileCollection = FileUtil.listFiles(directory, new String[] { "xml" }, false);
+		try {
+			if (CollectionUtils.isEmpty(fileCollection)) {
+				logger.warn("修改目录中不存在文件,pathDirectory:\t" + pathDirectory);
+				return;
+			}
+			for (File file : fileCollection) {
+				String content = FileUtil.readFileToString(file);
+				if (logger.isDebugEnabled()) {
+					logger.debug("readContent from file:\t" + content);
+				}
+				while (content.contains("\\")) {
+					content = content.replace("\\", "");
+				}
+				if (logger.isDebugEnabled()) {
+					logger.debug("deleteContent:\t" + content);
+				}
+				// 写文件
+				FileUtil.writeStringToFile(file, content);
+
+			}
+		} catch (IOException e) {
+			logger.error("读入文件时产生错误", e);
+		}
+
+	}
+
 	public synchronized void generateSimpleAndroidRestfulJunit() {
 		for (TableBean tableBean : tableBeanList) {
 			generateSimpleAndroidRestfulJunit(tableBean);
@@ -561,10 +641,10 @@ public class Generate {
 	}
 
 	private void generateSimpleAndroidRestfulJunit(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcAndroidRestfulTest.ftl");
 		forceMkdirAndroidTestOutputPath();
@@ -574,18 +654,15 @@ public class Generate {
 		setFreemarkerModel("pojoSuffix", RunConfigure.POJO_SUFFIX);
 
 		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);// Query
-		
-		
-		setFreemarkerModel("parseControllerPath", 
-				parseControllerPath(tableBean.getTableNameCapitalized()));
-		
+
+		setFreemarkerModel("parseControllerPath", parseControllerPath(tableBean.getTableNameCapitalized()));
 
 		setFreemarkerModel("androidRestfulSuffix", RunConfigure.ANDROID_RESTFUL_SUFFIX);
 		// rest controller
 		setFreemarkerModel("packageAndroid", RunConfigure.packageAndroid);// android
-		
-		//setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
-		
+
+		// setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
+
 		setFreemarkerModel("tableBean", tableBean);
 
 		FreemarkerUtil.outputProcessResult(
@@ -593,159 +670,183 @@ public class Generate {
 						+ CLASS_PREFIX + RunConfigure.ANDROID_RESTFUL_SUFFIX + "Test.java",
 				serviceimplTemplate, varMap);
 	}
-	
-	public synchronized void generateSimpleMyBatis() {
-		for (TableBean tableBean : tableBeanList) {
-			generateSimpleMyBatis(tableBean);
-		}
-		String pathDirectory=runConfigure.getMyBatisXMLOutPath()+"/"+runConfigure.getMyBatisConfigPath(); ;
-		deleteStringInDirectory(pathDirectory,"\\");
-	}
 
-	private void generateSimpleMyBatis(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
-		}
-		//PACKAGE_BASE=runConfigure.getModulePakage();
-		//outputDirs=runConfigure.getMyBatisXMLOutPath();
-		varMap.put("packageBase", runConfigure.getModulePakage());
-		Template serviceimplTemplate=null ;//= FreemarkerUtil.getTemplate("template/abcMapper.ftl");
-		try{
-			serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcMapper.ftl");
-		}catch(Exception e){
-			logger.error("tableBean:\t",e);
-		}
-		forceMkdirMyBatisXMLOutputPath();
-		setFreemarkerModel("tableBean", tableBean);
-		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
-		setFreemarkerModel("pojoSuffix", RunConfigure.POJO_SUFFIX);
-		setFreemarkerModel("packageModel", RunConfigure.packageModel);
-		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);// Query
-		setFreemarkerModel("classQuerySuffix", runConfigure.getClassQuerySuffix());
-		
-		setFreemarkerModel("daoXMLSuffix", RunConfigure.DAO_XML_SUFFIX);
-		setFreemarkerModel("packageDaoXML", runConfigure.getMyBatisConfigPath());// android
-		
-		setFreemarkerModel("tableBean", tableBean);
-		String pathDirectory=outputDirs + "/" + runConfigure.getMyBatisConfigPath()  ;
-		String path=pathDirectory+"/" + tableBean.getTableNameCapitalized()
-		+ CLASS_PREFIX + RunConfigure.DAO_XML_SUFFIX + ".xml";
-		FreemarkerUtil.outputProcessResult( path
-				,
-				serviceimplTemplate, varMap);
-		//生成完的Mapper文件修修改
-		
-	}
-	
-	
-	private void deleteStringInDirectory(String pathDirectory,String deleteContent){
-		File directory=new File(pathDirectory);
-		if(!directory.isDirectory()){
-			//D:\DevT\SpringHelper\ndlan-projects\ndl-warm-project\cwwarm\service-module\src\main\resources\mapper\cwwarm
-			logger.warn("修改目录不存在,pathDirectory:\t"+pathDirectory);
-			return;
-		}
-		Collection<File> fileCollection=FileUtil.listFiles(directory, new String[]{"xml"}, false);
-		try {
-			if(CollectionUtils.isEmpty(fileCollection)){
-				logger.warn("修改目录中不存在文件,pathDirectory:\t"+pathDirectory);
-				return;
-			}
-			for(File file:fileCollection){
-				String content=FileUtil.readFileToString(file);
-				if(logger.isDebugEnabled()){
-					logger.debug("readContent from file:\t"+content);
-				}
-				while(content.contains("\\")){
-					content=content.replace("\\", "");
-				}
-				if(logger.isDebugEnabled()){
-					logger.debug("deleteContent:\t"+content);
-				}
-				//写文件
-				FileUtil.writeStringToFile(file, content);
-				
-			}
-		} catch (IOException e) {
-			logger.error("读入文件时产生错误", e);
-		}
-		
-		
-	}
 	public synchronized void generateSimpleAndroidRestful() {
-		//生成AndroidRestful之前按照模块引入地址/和项目的相对路径
+		// 生成AndroidRestful之前按照模块引入地址/和项目的相对路径
 		generateSimpleAndroidRestfulConfig();
 		for (TableBean tableBean : tableBeanList) {
 			generateSimpleAndroidRestful(tableBean);
 		}
 	}
-	
-	
+
 	private boolean generateSimpleAndroidRestfulConfig() {
 
-		if(!generateSimpleAndroidRestfulConfig){
+		if (!generateSimpleAndroidRestfulConfig) {
 			return false;
 		}
-		generateSimpleAndroidRestfulConfig=false;
-		
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		generateSimpleAndroidRestfulConfig = false;
+
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcAndroidRestfulConfig.ftl");
 		forceMkdirAndroidOutputPath();
-		
-		setFreemarkerModel("serviceContext",runConfigure.getServiceContext());
-	
+
+		setFreemarkerModel("serviceContext", runConfigure.getServiceContext());
+
 		setFreemarkerModel("androidRestfulSuffix", RunConfigure.ANDROID_RESTFUL_SUFFIX);
 		// rest controller
 		setFreemarkerModel("packageAndroid", RunConfigure.packageAndroid);// android
-		
+
 		setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
-	
 
 		FreemarkerUtil.outputProcessResult(
 				outputDirs + "/" + RunConfigure.packageAndroid + "/" + "BaseAndroidRestfulConfig.java",
 				serviceimplTemplate, varMap);
 		return false;
 	}
-	
-	
+
 	private void generateSimpleAndroidRestful(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcAndroidRestful.ftl");
 		forceMkdirAndroidOutputPath();
-		
+
 		setFreemarkerModel("tableBean", tableBean);
 		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
 		setFreemarkerModel("classQuerySuffix", runConfigure.getClassQuerySuffix());
 		setFreemarkerModel("pojoSuffix", RunConfigure.POJO_SUFFIX);
-		
-		setFreemarkerModel("serviceContext",runConfigure.getServiceContext());
+
+		setFreemarkerModel("serviceContext", runConfigure.getServiceContext());
 		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);// Query
 		setFreemarkerModel("packageModel", runConfigure.packageModel);// Query
-		
-		
-		setFreemarkerModel("parseControllerPath", 
-				parseControllerPath(tableBean.getTableNameCapitalized()));
-		
+
+		setFreemarkerModel("parseControllerPath", parseControllerPath(tableBean.getTableNameCapitalized()));
 
 		setFreemarkerModel("androidRestfulSuffix", RunConfigure.ANDROID_RESTFUL_SUFFIX);
 		// rest controller
 		setFreemarkerModel("packageAndroid", RunConfigure.packageAndroid);// android
-		
+
 		setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
-		
+
 		setFreemarkerModel("tableBean", tableBean);
 
-		FreemarkerUtil.outputProcessResult(
-				outputDirs + "/" + RunConfigure.packageAndroid + "/" + tableBean.getTableNameCapitalized()
-						+ CLASS_PREFIX + RunConfigure.ANDROID_RESTFUL_SUFFIX + ".java",
-				serviceimplTemplate, varMap);
+		FreemarkerUtil
+				.outputProcessResult(
+						outputDirs + "/" + RunConfigure.packageAndroid + "/" + tableBean.getTableNameCapitalized()
+								+ CLASS_PREFIX + RunConfigure.ANDROID_RESTFUL_SUFFIX + ".java",
+						serviceimplTemplate, varMap);
 	}
-	
+
+	public synchronized void generateAndroidRestfulForFrontByTemplate(FrontTemplete frontTemplete) {
+		if (logger.isDebugEnabled()) {
+			logger.debug("generateAndroidRestfulForFrontByTemplate Begin:\t");
+			logger.debug("frontTemplete:\t" + frontTemplete);
+		}
+		Assert.notNull(frontTemplete, "frontTemplete must not be null");
+		String moduleName = frontTemplete.getModuleName();
+		if (logger.isDebugEnabled()) {
+			logger.debug("moduleName:\t" + moduleName);
+		}
+		Set<BusinessDescripter> businessDescripterSet = frontTemplete.getFrontTemplates();
+		if (CollectionUtils.isEmpty(businessDescripterSet)) {
+			logger.warn("frontTemplete businessDescripterSet must not be null");
+			return;
+		}
+		if (logger.isDebugEnabled()) {
+			logger.debug("businessDescripterSet:\t" + businessDescripterSet);
+		}
+		try {
+			for (BusinessDescripter businessDescripter : businessDescripterSet) {
+				String classAnnotation = businessDescripter.getClassAnnotation();
+				if (logger.isDebugEnabled()) {
+					logger.debug("classAnnotation:\t" + classAnnotation);
+				}
+				Set<String> headerAnnotations = businessDescripter.getHeaderAnnotations();
+				String serviceContext = "";
+				if (CollectionUtils.isNotEmpty(headerAnnotations)) {
+					for (String header : headerAnnotations) {
+						String requestMapping = AnnotationTypeEnum.RequestMapping.name();
+						if (header.contains(requestMapping)) {
+							if (logger.isDebugEnabled()) {
+								logger.debug("header:\t" + header);
+							}
+							serviceContext = header.substring(header.indexOf("(\"")+2 , header.indexOf("\")"));
+							break;
+						}
+					}
+				}
+				generateAndroidRestfulConfigByTemplate(serviceContext);
+				generateAndroidRestfulForFrontByTemplate(businessDescripter);
+
+			}
+		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
+		}
+		if (logger.isDebugEnabled()) {
+			logger.debug("generateAndroidRestfulForFrontByTemplate Over.");
+		}
+	}
+
+	private boolean generateAndroidRestfulConfigByTemplate(String serviceContext) {
+
+		if (!generateSimpleAndroidRestfulConfig) {
+			return false;
+		}
+		generateSimpleAndroidRestfulConfig = false;
+
+		PACKAGE_BASE = runConfigure.getModulePakage();
+		varMap.put("packageBase", runConfigure.getModulePakage());
+		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/androidRestfulForFrontConfig.ftl");
+		forceMkdirAndroidOutputPath();
+
+		setFreemarkerModel("serviceContext", serviceContext);
+
+		setFreemarkerModel("androidRestfulSuffix", RunConfigure.ANDROID_RESTFUL_SUFFIX);
+		// rest controller
+		setFreemarkerModel("packageAndroid", RunConfigure.packageAndroid);// android
+
+		setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
+
+		FreemarkerUtil.outputProcessResult(
+				outputDirs + "/" + RunConfigure.packageAndroid + "/" + "BaseAndroidRestfulConfig.java",
+				serviceimplTemplate, varMap);
+		return false;
+	}
+
+	private void generateAndroidRestfulForFrontByTemplate(BusinessDescripter businessDescripter) {
+		if (logger.isInfoEnabled()) {
+			logger.info("BusinessDescripter:\t" + businessDescripter);
+		}
+		PACKAGE_BASE = runConfigure.getModulePakage();
+		varMap.put("packageBase", runConfigure.getModulePakage());
+		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/androidRestfulForFront.ftl");
+		forceMkdirAndroidOutputPath();
+
+		//setFreemarkerModel("serviceContext", runConfigure.getServiceContext());
+		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);// Query
+		setFreemarkerModel("packageModel", runConfigure.packageModel);// Query
+		String parseControllerPath=ClassHelper.lowerCaseUsingJavaMethod(businessDescripter.getClassName());
+		setFreemarkerModel("parseControllerPath", parseControllerPath);
+
+		setFreemarkerModel("androidRestfulSuffix", RunConfigure.ANDROID_RESTFUL_SUFFIX);
+		// rest controller
+		setFreemarkerModel("packageAndroid", RunConfigure.packageAndroid);// android
+
+		setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
+
+		setFreemarkerModel("businessDescripter", businessDescripter);
+		Collection<MethodDescripter> methodDescripterList=businessDescripter.getMethods();
+		setFreemarkerModel("methodDescripterList", methodDescripterList);
+		FreemarkerUtil
+				.outputProcessResult(
+						outputDirs + "/" + RunConfigure.packageAndroid + "/" + businessDescripter.getClassName()
+								 + RunConfigure.ANDROID_RESTFUL_SUFFIX + ".java",
+						serviceimplTemplate, varMap);
+	}
+
 	public synchronized void generateSimpleController() {
 		for (TableBean tableBean : tableBeanList) {
 			generateSimpleController(tableBean);
@@ -753,15 +854,15 @@ public class Generate {
 	}
 
 	private void generateSimpleController(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		setFreemarkerModel("defaultBeanPackage",runConfigure.getModulePakage() );
+		setFreemarkerModel("defaultBeanPackage", runConfigure.getModulePakage());
 		varMap.put("packageBase", runConfigure.getControllerPakage());
-		PACKAGE_BASE=runConfigure.getControllerPakage();
+		PACKAGE_BASE = runConfigure.getControllerPakage();
 		Template serviceimplTemplate = FreemarkerUtil.getTemplate("template/abcController.ftl");
-		//接口提供者
-		//forceMkdirAPIServiceOutputPath();
+		// 接口提供者
+		// forceMkdirAPIServiceOutputPath();
 		forceMkdirAPIImplServiceOutputPath();
 		setFreemarkerModel("tableBean", tableBean);
 		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
@@ -769,33 +870,30 @@ public class Generate {
 		setFreemarkerModel("pojoSuffix", RunConfigure.POJO_SUFFIX);
 
 		setFreemarkerModel("packageModelQuery", runConfigure.packageModelQuery);// Query
-		
-		
-		setFreemarkerModel("parseControllerPath", 
-				parseControllerPath(tableBean.getTableNameCapitalized()));
-		
+
+		setFreemarkerModel("parseControllerPath", parseControllerPath(tableBean.getTableNameCapitalized()));
 
 		setFreemarkerModel("businessServiceSuffix", RunConfigure.BUSINESS_SERVICE_SUFFIX);
 		setFreemarkerModel("packageBusinessService", RunConfigure.packageBusinessService);// 业务服务
-		
+
 		setFreemarkerModel("businessServiceSuffix", RunConfigure.BUSINESS_SERVICE_SUFFIX);
 		setFreemarkerModel("packageBusinessService", RunConfigure.packageBusinessService);//
 		// rest controller
 		setFreemarkerModel("packageRest", RunConfigure.packageRest);// Controller
 		setFreemarkerModel("restSuffix", RunConfigure.REST_SUFFIX);
-		
+
 		setFreemarkerModel("tableBean", tableBean);
 
-		FreemarkerUtil.outputProcessResult(
-				outputDirs + "/" + RunConfigure.packageRest + "/" + tableBean.getTableNameCapitalized()
-						+ CLASS_PREFIX + RunConfigure.REST_SUFFIX + ".java",
+		FreemarkerUtil.outputProcessResult(outputDirs + "/" + RunConfigure.packageRest + "/"
+				+ tableBean.getTableNameCapitalized() + CLASS_PREFIX + RunConfigure.REST_SUFFIX + ".java",
 				serviceimplTemplate, varMap);
 	}
 
-	private String parseControllerPath(String tableNameCapitalized){
-		String[] words=getWords(tableNameCapitalized);
+	private String parseControllerPath(String tableNameCapitalized) {
+		String[] words = getWords(tableNameCapitalized);
 		return getBasePath(words);
 	}
+
 	private String getBasePath(String[] words) {
 		StringBuffer sb = new StringBuffer();
 		for (String word : words) {
@@ -803,20 +901,23 @@ public class Generate {
 		}
 		return sb.toString();
 	}
+
 	/**
 	 * 以字符串中的大写字母为标示拆分字符串,如果字符串为null或空则返回null
+	 * 
 	 * @param str
 	 * @return String[] 拆分后的字符串，已转换为全小写
 	 */
 	private String[] getWords(String str) {
-		if (StringUtils.isEmpty(str)) return null;
+		if (StringUtils.isEmpty(str))
+			return null;
 		String[] words = str.split("(?<!^)(?=[A-Z])");
 		for (int i = 0; i < words.length; i++) {
 			words[i] = StringUtils.lowerCase(words[i]);
 		}
 		return words;
 	}
-	
+
 	public synchronized void generateServiceJunit() {
 		for (TableBean tableBean : tableBeanList) {
 			generateServiceJunit(tableBean);
@@ -824,8 +925,8 @@ public class Generate {
 	}
 
 	private void generateServiceJunit(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
 		forceMkdirServiceOutputPath();
 		setFreemarkerModel("tableBean", tableBean);
@@ -842,7 +943,7 @@ public class Generate {
 	}
 
 	public synchronized void genernateJDBCTemplete() {
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		for (TableBean tableBean : tableBeanList) {
 			genernateJDBCTemplete(tableBean);
@@ -858,10 +959,10 @@ public class Generate {
 	}
 
 	private void genernateJDBCTemplete(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		forceMkdirDaoOutputPath();
 		setFreemarkerModel("tableBean", tableBean);
@@ -873,10 +974,10 @@ public class Generate {
 	}
 
 	private void genernateJDBCTempleteImpl(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		forceMkdirDaoOutputPath();
 		setFreemarkerModel("tableBean", tableBean);
@@ -896,10 +997,10 @@ public class Generate {
 	}
 
 	private void generateEntity(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		forceMkdirEntityOutputPath();
 		loadTransientColumnBean(tableBean, RunConfigure.Entity_SUFFIX);
@@ -919,11 +1020,12 @@ public class Generate {
 	}
 
 	private void generateModlePojo(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
+		// 在产生时修改类前缀
 		loadTransientColumnBean(tableBean, runConfigure.getClassPrefix());
 		setFreemarkerModel("tableBean", tableBean);
 		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
@@ -940,10 +1042,10 @@ public class Generate {
 	 * @param tableBean
 	 */
 	private void generateModleQuery(TableBean tableBean) {
-		if(logger.isInfoEnabled()){
-			logger.info("tableBean:\t"+tableBean);
+		if (logger.isInfoEnabled()) {
+			logger.info("tableBean:\t" + tableBean);
 		}
-		PACKAGE_BASE=runConfigure.getModulePakage();
+		PACKAGE_BASE = runConfigure.getModulePakage();
 		varMap.put("packageBase", runConfigure.getModulePakage());
 		setFreemarkerModel("tableBean", tableBean);
 		setFreemarkerModel("classSuffix", runConfigure.getClassPrefix());
@@ -1093,17 +1195,17 @@ public class Generate {
 	private void forceMkdirServiceOutputPath() {
 		forceMkdir(runConfigure.getServiceOutputPath());
 	}
-	
+
 	private void forceMkdirAPIImplServiceOutputPath() {
 		forceMkdir(runConfigure.getAPIImplOutputPath());
 	}
-	
+
 	private void forceMkdirAPIServiceOutputPath() {
 		forceMkdir(runConfigure.getAPIOutputPath());
 	}
-	
+
 	private void forceMkdirMyBatisXMLOutputPath() {
-		//forceMkdir(runConfigure.getAndroidOutPath());
+		// forceMkdir(runConfigure.getAndroidOutPath());
 		try {
 			String path = runConfigure.getMyBatisXMLOutPath();
 			File outputPath = new File(path);
@@ -1115,14 +1217,15 @@ public class Generate {
 			logger.error(e.getMessage(), e);
 		}
 	}
-	
+
 	private void forceMkdirAndroidOutputPath() {
 		forceMkdir(runConfigure.getAndroidOutPath());
 	}
-	
+
 	private void forceMkdirAndroidTestOutputPath() {
 		forceMkdir(runConfigure.getAndroidTestOutputPath());
 	}
+
 	private void forceMkdirDaoOutputPath() {
 		forceMkdir(runConfigure.getDaoOutputPath());
 	}

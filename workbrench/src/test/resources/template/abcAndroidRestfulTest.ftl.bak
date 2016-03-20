@@ -7,7 +7,7 @@ import org.junit.Test;
 import com.ndlan.framework.core.status.EnumStatus;
 import com.ndlan.framework.core.web.domain.Result;
 
-import ${packageBase}.${packageModelQuery}.${tableBean.tableNameCapitalized}${classQuerySuffix};
+
 import ${packageBase}.${packageModel}.${tableBean.tableNameCapitalized}${classSuffix};
 
 public class ${tableBean.tableNameCapitalized}${classSuffix}${androidRestfulSuffix}Test {
@@ -46,7 +46,7 @@ public class ${tableBean.tableNameCapitalized}${classSuffix}${androidRestfulSuff
 
 	@Test
 	public void selectList() {
-		${tableBean.tableNameCapitalized}${classQuerySuffix} entity=new ${tableBean.tableNameCapitalized}${classQuerySuffix}();
+		${tableBean.tableNameCapitalized}${classSuffix} entity=new ${tableBean.tableNameCapitalized}${classSuffix}();
 		//todo
 		Result result=productCatatoryBustinessRestful.selectList(entity);
 		assertNotNull(result);
@@ -68,4 +68,3 @@ public class ${tableBean.tableNameCapitalized}${classSuffix}${androidRestfulSuff
 		Result result=productCatatoryBustinessRestful.editOne(entity);
 		assertNotNull(result);
 	}
-}

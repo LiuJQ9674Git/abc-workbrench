@@ -260,9 +260,9 @@ public class MethodManager {
 				if (fieldRative != RunConfigure.AssignFinishedCategory) {
 					// nextSpecialAssign=specialAssign.getNextColumnBean();
 					signatureEntirety = methodBean.getMethodDescripter().getSignatureEntirety();
-					methodBean.getMethodDescripter().setSignatureEntirety(signatureEntirety + " , ");
+					
 					while (null != nextSpecialAssign) {
-
+						methodBean.getMethodDescripter().setSignatureEntirety(signatureEntirety + " , ");
 						String specialAssignNameRative = nextSpecialAssign.getColumnNameNoDash();
 						if (logger.isDebugEnabled()) {
 							logger.debug("parseMethod methods specialAssignNameRative:\t" + specialAssignNameRative);

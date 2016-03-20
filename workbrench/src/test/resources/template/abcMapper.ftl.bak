@@ -10,7 +10,7 @@
 	</#list>
 	
 	<#list tableBean.columnBeanList as columnBean>
-		<#if '' != columnBean.columnType && columnBean.columnKey ！= "PRI">
+		<#if '' != columnBean.columnType && columnBean.columnKey != "PRI">
     
 		<result column="${columnBean.columnName}" property="${columnBean.columnNameNoDash}" jdbcType="${columnBean.columnDBType}" />
 		</#if>
@@ -98,7 +98,7 @@
 		<set>
 		<#list tableBean.columnBeanList as columnBean >
 		    <#if columnBean.columnKey != "PRI">
-		  	<if test=\"${columnBean.columnNameNoDash} != null\"> and ${columnBean.columnName} = #\{${columnBean.columnNameNoDash}\}</if>
+		  	<if test=\"${columnBean.columnNameNoDash} != null\">  ${columnBean.columnName} = #\{${columnBean.columnNameNoDash}\} ,</if>
 			</#if>
 		</#list>
 		</set>
