@@ -3,31 +3,110 @@
     <moduleName>ieream</moduleName>
     <frontTemplates>
         <frontTemplate>
-            <comment>Controller Type:DataGuidesBean
+            <comment>Controller Type:GuidesBean
  霞客</comment>
-            <className>DataGuidesBeanBeanController</className>
+            <className>GuidesBeanBeanController</className>
             <componentCategory>POST</componentCategory>
             <includeClasses>
-                <includeClass>DataGuidesBean</includeClass>
-                <includeClass>DataGuidesBeanBeanBusinessService</includeClass>
+                <includeClass>GuidesBeanBeanBusinessService</includeClass>
+                <includeClass>GuidesBean</includeClass>
             </includeClasses>
             <headerAnnotations>
                 <headerAnnotation>@RequestMapping("http://www.ieream.com/mapi/1/")</headerAnnotation>
-                <headerAnnotation>@Controller("dataGuidesBeanBeanController")</headerAnnotation>
+                <headerAnnotation>@Controller("guidesBeanBeanController")</headerAnnotation>
             </headerAnnotations>
             <instanceAnnotations/>
             <methodDescripterMap>
                 <entry>
-                    <key>public  List&lt;DataGuidesBean&gt; getList(  Integer  p ,   String  dataOrder)</key>
+                    <key>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</key>
                     <value>
+                        <methodReturnAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>GuidesBean</annoteValue>
+                        </methodReturnAnnotation>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>guides.php?action=getRelList</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+* className:GuidesBeanBeanController* serviceCategory:POST获取霞客相关列表信息(合伙霞客列表)
+**/</comment>
+                        <signatureEntirety>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>uid</columnName>
+<fieldName>uid</fieldName>
+<fieldNameSetter>Uid</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment>相关的霞客ID</fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>p</columnName>
+<fieldName>p</fieldName>
+<fieldNameSetter>P</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>psize</columnName>
+<fieldName>dataType</fieldName>
+<fieldNameSetter>DataType</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>10</defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  GuidesBean getList(  Integer  p ,   String  dataOrder)</key>
+                    <value>
+                        <methodReturnAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>GuidesBean</annoteValue>
+                        </methodReturnAnnotation>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
                             <annoteValue>guides.php?action=getList</annoteValue>
                         </methodHeaderAnnotation>
                         <comment>/**
-* className:DataGuidesBeanBeanController* serviceCategory:POST获取霞客列表
+* className:GuidesBeanBeanController* serviceCategory:POST获取霞客列表
 **/</comment>
-                        <signatureEntirety>public  List&lt;DataGuidesBean&gt; getList(  Integer  p ,   String  dataOrder)</signatureEntirety>
+                        <signatureEntirety>public  GuidesBean getList(  Integer  p ,   String  dataOrder)</signatureEntirety>
                         <argumentDescripterList>
                             <argumentDescripter>
 <columnName>p</columnName>
@@ -107,87 +186,20 @@
                     </value>
                 </entry>
                 <entry>
-                    <key>public  List&lt;DataGuidesBean&gt; getRelList(  Integer  uid ,   Integer  dataType)</key>
+                    <key>public  GuidesBean getItemById(  String  action ,   Integer  id)</key>
                     <value>
-                        <methodHeaderAnnotation>
+                        <methodReturnAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>guides.php?action=getRelList</annoteValue>
-                        </methodHeaderAnnotation>
-                        <comment>/**
-* className:DataGuidesBeanBeanController* serviceCategory:POST获取霞客相关列表信息(合伙霞客列表)
-**/</comment>
-                        <signatureEntirety>public  List&lt;DataGuidesBean&gt; getRelList(  Integer  uid ,   Integer  dataType)</signatureEntirety>
-                        <argumentDescripterList>
-                            <argumentDescripter>
-<columnName>uid</columnName>
-<fieldName>uid</fieldName>
-<fieldNameSetter>Uid</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment>相关的霞客ID</fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>1</defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName>p</columnName>
-<fieldName>p</fieldName>
-<fieldNameSetter>P</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>1</defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName>psize</columnName>
-<fieldName>dataType</fieldName>
-<fieldNameSetter>DataType</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>10</defaultValue>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                        </argumentDescripterList>
-                        <bodyMethodMap/>
-                        <bodyFragmentSlice/>
-                    </value>
-                </entry>
-                <entry>
-                    <key>public  DataGuidesBean getItemById(  String  action ,   Integer  id)</key>
-                    <value>
+                            <annoteValue>GuidesBean</annoteValue>
+                        </methodReturnAnnotation>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
                             <annoteValue>guides.php?action=getItemById</annoteValue>
                         </methodHeaderAnnotation>
                         <comment>/**
-* className:DataGuidesBeanBeanController* serviceCategory:POST获取霞客信
+* className:GuidesBeanBeanController* serviceCategory:POST获取霞客信
 **/</comment>
-                        <signatureEntirety>public  DataGuidesBean getItemById(  String  action ,   Integer  id)</signatureEntirety>
+                        <signatureEntirety>public  GuidesBean getItemById(  String  action ,   Integer  id)</signatureEntirety>
                         <argumentDescripterList>
                             <argumentDescripter>
 <columnName></columnName>

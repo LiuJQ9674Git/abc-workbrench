@@ -50,9 +50,31 @@ public class ${businessDescripter.className}${androidRestfulSuffix} {
 	</#if>
 	<#if '' != methodDescripter.signatureEntirety>
 	${methodDescripter.signatureEntirety}{
-		String path=url+"${methodDescripter.methodHeaderAnnotation.annoteValue}";
+		final String path=url+"${methodDescripter.methodHeaderAnnotation.annoteValue}";
 	
-		return null;
+		FutureTask<${methodDescripter.methodReturnAnnotation.annoteValue}> future = new FutureTask<${methodDescripter.methodReturnAnnotation.annoteValue}>(new Callable< ${methodDescripter.methodReturnAnnotation.annoteValue}>() {
+			public ${methodDescripter.methodReturnAnnotation.annoteValue} call() {
+				try{
+					ResponseEntity<${methodDescripter.methodReturnAnnotation.annoteValue}> response = 
+					restTemplate.getForEntity(path, ${methodDescripter.methodReturnAnnotation.annoteValue}.class);
+					
+					return response.getBody();
+				}catch(Exception e){
+					e.printStackTrace();
+					return new ${methodDescripter.methodReturnAnnotation.annoteValue}();
+				}
+			}
+		});
+		executorService.execute(future);
+	        ${methodDescripter.methodReturnAnnotation.annoteValue} result = null;
+		try {
+			result = future.get();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+		return result;
 
 	}
 	</#if>

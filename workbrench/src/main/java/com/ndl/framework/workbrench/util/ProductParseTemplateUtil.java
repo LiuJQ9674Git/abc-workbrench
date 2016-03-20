@@ -136,7 +136,11 @@ public class ProductParseTemplateUtil {
  			
 		sb.append(methodDescripter.getSignatureEntirety());
 		methodDescripter.setSignatureEntirety(sb.toString());
-		
+		AnnotationBean methodReturnAnnotation=new AnnotationBean();
+		methodReturnAnnotation.setAnnnoteKey(AnnotationTypeEnum.RequestMapping);
+		methodReturnAnnotation.setAnnoteValue(reposeType.getColumnType());
+		 
+		methodDescripter.setMethodReturnAnnotation(methodReturnAnnotation);
 		if (logger.isDebugEnabled()) {
 			logger.debug("ProductManager parseMethodResponseType Over");
 		}

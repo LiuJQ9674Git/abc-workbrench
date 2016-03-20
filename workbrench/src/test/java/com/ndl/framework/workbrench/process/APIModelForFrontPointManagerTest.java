@@ -51,7 +51,7 @@ public class APIModelForFrontPointManagerTest {
 		try {
 			// 基本信息
 			// Controller签名
-			String controllerType = "DataGuidesBean";
+			String controllerType = "GuidesBean";
 			String descipter = "霞客";
 			//action=getitem&id=:id
 			String controllerUri = "http://www.ieream.com/mapi/1/";
@@ -127,7 +127,7 @@ public class APIModelForFrontPointManagerTest {
 			startColumnBean.setNextColumnBean(psizeColumnBean);
 
 		
-			returnFieldEnum=FieldTypeEnum.LIST;
+			//returnFieldEnum=FieldTypeEnum.LIST;
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
 					startColumnBean,returnFieldEnum,methodUri);
@@ -168,7 +168,7 @@ public class APIModelForFrontPointManagerTest {
 			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
 		
 			startColumnBean.setNextColumnBean(psizeColumnBean);
-			returnFieldEnum=FieldTypeEnum.LIST;
+			//returnFieldEnum=FieldTypeEnum.LIST;
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
 					startColumnBean,returnFieldEnum,methodUri);
