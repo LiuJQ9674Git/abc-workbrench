@@ -210,9 +210,10 @@ public class TemplateCommand {
 					columnType = ProductParseTemplateUtil.parseInstanceValiable(specialAssign, suffix);
 
 					ColumnBean transientColumnBean = (ColumnBean) specialAssign.clone();
-					String columnNameCapitalized = specialAssign.getColumnNameCapitalized();
-					String str = ClassHelper.namingUsingJavaClass(columnNameCapitalized);
-					transientColumnBean.setColumnNameCapitalized(str);
+					String fieldType = specialAssign.getColumnType();
+					transientColumnBean.setColumnNameCapitalized(
+							specialAssign.getColumnNameCapitalized());
+					transientColumnBean.setColumnNameNoDash(specialAssign.getColumnNameNoDash());
 					transientColumnBean.setColumnType(columnType);
 					ProductParseTemplateUtil.parseTypeToIOS(transientColumnBean);
 					transientColumnBeanList.add(transientColumnBean);

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FrontPackage uuid="2905aed7-6aeb-4845-ba0b-ab23724c1e52-com.ndl.framework.workbrench.define.FrontPackage-0">
+<FrontPackage uuid="4f475d7d-923c-4acb-9434-de89509c38f8-com.ndl.framework.workbrench.define.FrontPackage-0">
     <FrontName>ieream</FrontName>
     <controlleres>
-        <controller uuid="5faf61d1-a6b6-4960-9307-edc45e430a65-com.ndl.framework.workbrench.define.ControllerBean-0">
+        <controller uuid="e76d1a53-b466-4b9b-ad96-67f7d6880944-com.ndl.framework.workbrench.define.ControllerBean-0">
             <controllerId>guidesBeanBeanController</controllerId>
             <uri>guidesBean</uri>
             <controllerType>GuidesBeanBeanController</controllerType>
@@ -32,10 +32,10 @@
                 </instanceAnnotationBean>
             </instanceAnnotationBeanList>
             <controllerMethodList>
-                <controllerMethod uuid="17e7b5aa-8687-4d2e-a7d1-dcc415e37412-com.ndl.framework.workbrench.define.MethodBean-2">
-                    <signature>getList</signature>
-                    <signatureDescripter>获取霞客列表</signatureDescripter>
-                    <responseType uuid="a174eb50-e130-4516-84a7-79b90beb22de-com.ndl.framework.workbrench.define.ColumnBean-9">
+                <controllerMethod uuid="b56dda67-b797-4260-b487-397e66d9d307-com.ndl.framework.workbrench.define.MethodBean-4">
+                    <signature>getRelList</signature>
+                    <signatureDescripter>获取霞客相关列表信息(合伙霞客列表)</signatureDescripter>
+                    <responseType uuid="66114a85-8447-4281-b5e0-8b7c5f35fb6b-com.ndl.framework.workbrench.define.ColumnBean-17">
                         <columnName></columnName>
                         <columnNameNoDash></columnNameNoDash>
                         <columnNameCapitalized></columnNameCapitalized>
@@ -61,9 +61,9 @@
                     </responseType>
                     <catetory>GET</catetory>
                     <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="ca82071c-1c72-4e3b-8112-7ec8305544b7-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-1">
-                        <fromMethod>17e7b5aa-8687-4d2e-a7d1-dcc415e37412-com.ndl.framework.workbrench.define.MethodBean-2</fromMethod>
-                        <fromResultType uuid="3c514f12-f1c8-4871-a023-0b7811a059ee-com.ndl.framework.workbrench.define.ColumnBean-8">
+                    <bodyBean uuid="dd43ead0-abdf-4d17-b78c-0e09737ba014-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-2">
+                        <fromMethod>b56dda67-b797-4260-b487-397e66d9d307-com.ndl.framework.workbrench.define.MethodBean-4</fromMethod>
+                        <fromResultType uuid="ac99a2fe-250c-4853-9ea6-a3779ef16b4e-com.ndl.framework.workbrench.define.ColumnBean-16">
                             <columnName></columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
@@ -87,11 +87,1067 @@
                             <fieldType>ENTITY</fieldType>
                             <length>0</length>
                         </fromResultType>
-                        <resultColumnBean uuid="a174eb50-e130-4516-84a7-79b90beb22de-com.ndl.framework.workbrench.define.ColumnBean-9">
+                        <resultColumnBean uuid="0ec62d9f-897a-4c9d-8c75-35cf533582f2-com.ndl.framework.workbrench.define.ColumnBean-15">
+                            <columnName>dataGuidesBean</columnName>
+                            <columnNameNoDash>dataGuidesBean</columnNameNoDash>
+                            <columnNameCapitalized>DataGuidesBean</columnNameCapitalized>
+                            <columnType>DataGuidesBean</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <columnKey>DEFUALT</columnKey>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>guides.php?action=getRelList</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
+                        <serviceId>guidesBeanBeanBusinessService</serviceId>
+                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
+                        <serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Service</annnoteKey>
+<annoteValue>guidesBeanBeanBusinessService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean>
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>guidesBeanBeanAtomService</annoteValue>
+<annoteType>GuidesBeanBeanAtomService</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <runningMethod uuid="8e71589c-bd8a-4d1b-a87c-891ec1e87c7d-com.ndl.framework.workbrench.define.MethodBean-5">
+                            <signature>getRelList</signature>
+                            <responseType uuid="66114a85-8447-4281-b5e0-8b7c5f35fb6b-com.ndl.framework.workbrench.define.ColumnBean-17">
+<columnName></columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>GuidesBean</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>BNS</catetory>
+                            <assign uuid="fd605383-2d0e-42c5-923b-4f56cf284d0e-com.ndl.framework.workbrench.define.TableBean-6">
+<tableNameNoDash>guidesBean</tableNameNoDash>
+<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="4860789c-ee05-4900-99d1-0f2d8a87ffba-com.ndl.framework.workbrench.define.ColumnBean-12">
+    <columnName>uid</columnName>
+    <columnNameNoDash>uid</columnNameNoDash>
+    <columnNameCapitalized>Uid</columnNameCapitalized>
+    <columnType>Integer</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment>相关的霞客ID</columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault>1</columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="1e690d9b-689b-4607-80f4-8a3c5715b08d-com.ndl.framework.workbrench.define.ColumnBean-13">
+        <columnName>p</columnName>
+        <columnNameNoDash>p</columnNameNoDash>
+        <columnNameCapitalized>P</columnNameCapitalized>
+        <columnType>Integer</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault>1</columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="49e4d2c8-9e69-4e45-8bcc-a5e34ed41074-com.ndl.framework.workbrench.define.ColumnBean-14">
+            <columnName>psize</columnName>
+            <columnNameNoDash>dataType</columnNameNoDash>
+            <columnNameCapitalized>DataType</columnNameCapitalized>
+            <columnType>Integer</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault>10</columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <columnKey>DEFUALT</columnKey>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <columnKey>DEFUALT</columnKey>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <columnKey>DEFUALT</columnKey>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
+<serviceId>guidesBeanBeanAtomService</serviceId>
+<serivceType>GuidesBeanBeanAtomService</serivceType>
+<serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+<serviceCategory>ATM</serviceCategory>
+<annotationBeanList>
+    <annotationBean>
+        <annnoteKey>Transactional</annnoteKey>
+    </annotationBean>
+    <annotationBean>
+        <annnoteKey>Component</annnoteKey>
+        <annoteValue>guidesBeanBeanAtomService</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<instanceAnnotationBeanList>
+    <instanceAnnotationBean>
+        <annnoteKey>Autowired</annnoteKey>
+        <annoteValue>guidesBeanJPABeanDao</annoteValue>
+        <annoteType>GuidesBeanJPABeanDao</annoteType>
+    </instanceAnnotationBean>
+</instanceAnnotationBeanList>
+<includeBeanList>
+    <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
+        <tableNameNoDash>guidesBean</tableNameNoDash>
+        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+        <columnBeanList/>
+        <transientColumnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+<includeDaoList>
+    <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
+        <daoId>guidesBeanJPABeanDao</daoId>
+        <daoType>GuidesBeanJPABeanDao</daoType>
+        <daoDescipter>Service Type:GuidesBean
+ 霞客</daoDescipter>
+        <daoCategory>JPA</daoCategory>
+        <annotationBeanList>
+            <annotationBean>
+                <annnoteKey>Repository</annnoteKey>
+                <annoteValue>guidesBeanJPABeanDao</annoteValue>
+            </annotationBean>
+        </annotationBeanList>
+        <includeBeanList>
+            <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
+                <tableNameNoDash>guidesBean</tableNameNoDash>
+                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                <columnBeanList/>
+                <transientColumnBeanList/>
+                <hasDateColumn>false</hasDateColumn>
+                <hasBigDecimal>false</hasBigDecimal>
+            </includeBean>
+        </includeBeanList>
+    </includeDao>
+</includeDaoList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
+<tableNameNoDash>guidesBean</tableNameNoDash>
+<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assign uuid="fd605383-2d0e-42c5-923b-4f56cf284d0e-com.ndl.framework.workbrench.define.TableBean-6">
+                        <tableNameNoDash>guidesBean</tableNameNoDash>
+                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="4860789c-ee05-4900-99d1-0f2d8a87ffba-com.ndl.framework.workbrench.define.ColumnBean-12">
+                            <columnName>uid</columnName>
+                            <columnNameNoDash>uid</columnNameNoDash>
+                            <columnNameCapitalized>Uid</columnNameCapitalized>
+                            <columnType>Integer</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment>相关的霞客ID</columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault>1</columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="1e690d9b-689b-4607-80f4-8a3c5715b08d-com.ndl.framework.workbrench.define.ColumnBean-13">
+<columnName>p</columnName>
+<columnNameNoDash>p</columnNameNoDash>
+<columnNameCapitalized>P</columnNameCapitalized>
+<columnType>Integer</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault>1</columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>And</nextFieldRative>
+<nextColumnBean uuid="49e4d2c8-9e69-4e45-8bcc-a5e34ed41074-com.ndl.framework.workbrench.define.ColumnBean-14">
+    <columnName>psize</columnName>
+    <columnNameNoDash>dataType</columnNameNoDash>
+    <columnNameCapitalized>DataType</columnNameCapitalized>
+    <columnType>Integer</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault>10</columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <columnKey>DEFUALT</columnKey>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</nextColumnBean>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <columnKey>DEFUALT</columnKey>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
+                            <serviceId>guidesBeanBeanBusinessService</serviceId>
+                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
+                            <serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Service</annnoteKey>
+    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <instanceAnnotationBeanList>
+<instanceAnnotationBean>
+    <annnoteKey>Autowired</annnoteKey>
+    <annoteValue>guidesBeanBeanAtomService</annoteValue>
+    <annoteType>GuidesBeanBeanAtomService</annoteType>
+</instanceAnnotationBean>
+                            </instanceAnnotationBeanList>
+                            <runningMethod uuid="8e71589c-bd8a-4d1b-a87c-891ec1e87c7d-com.ndl.framework.workbrench.define.MethodBean-5">
+<signature>getRelList</signature>
+<responseType uuid="66114a85-8447-4281-b5e0-8b7c5f35fb6b-com.ndl.framework.workbrench.define.ColumnBean-17">
+    <columnName></columnName>
+    <columnNameNoDash></columnNameNoDash>
+    <columnNameCapitalized></columnNameCapitalized>
+    <columnType>GuidesBean</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <columnKey>DEFUALT</columnKey>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>BNS</catetory>
+<assign uuid="fd605383-2d0e-42c5-923b-4f56cf284d0e-com.ndl.framework.workbrench.define.TableBean-6">
+    <tableNameNoDash>guidesBean</tableNameNoDash>
+    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="4860789c-ee05-4900-99d1-0f2d8a87ffba-com.ndl.framework.workbrench.define.ColumnBean-12">
+        <columnName>uid</columnName>
+        <columnNameNoDash>uid</columnNameNoDash>
+        <columnNameCapitalized>Uid</columnNameCapitalized>
+        <columnType>Integer</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment>相关的霞客ID</columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault>1</columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="1e690d9b-689b-4607-80f4-8a3c5715b08d-com.ndl.framework.workbrench.define.ColumnBean-13">
+            <columnName>p</columnName>
+            <columnNameNoDash>p</columnNameNoDash>
+            <columnNameCapitalized>P</columnNameCapitalized>
+            <columnType>Integer</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault>1</columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="49e4d2c8-9e69-4e45-8bcc-a5e34ed41074-com.ndl.framework.workbrench.define.ColumnBean-14">
+                <columnName>psize</columnName>
+                <columnNameNoDash>dataType</columnNameNoDash>
+                <columnNameCapitalized>DataType</columnNameCapitalized>
+                <columnType>Integer</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault>10</columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>Finished</nextFieldRative>
+                <columnKey>DEFUALT</columnKey>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
+            <columnKey>DEFUALT</columnKey>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <columnKey>DEFUALT</columnKey>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <includeServiceList>
+<includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
+    <serviceId>guidesBeanBeanAtomService</serviceId>
+    <serivceType>GuidesBeanBeanAtomService</serivceType>
+    <serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+    <serviceCategory>ATM</serviceCategory>
+    <annotationBeanList>
+        <annotationBean>
+            <annnoteKey>Transactional</annnoteKey>
+        </annotationBean>
+        <annotationBean>
+            <annnoteKey>Component</annnoteKey>
+            <annoteValue>guidesBeanBeanAtomService</annoteValue>
+        </annotationBean>
+    </annotationBeanList>
+    <instanceAnnotationBeanList>
+        <instanceAnnotationBean>
+            <annnoteKey>Autowired</annnoteKey>
+            <annoteValue>guidesBeanJPABeanDao</annoteValue>
+            <annoteType>GuidesBeanJPABeanDao</annoteType>
+        </instanceAnnotationBean>
+    </instanceAnnotationBeanList>
+    <includeBeanList>
+        <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
+            <tableNameNoDash>guidesBean</tableNameNoDash>
+            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+            <columnBeanList/>
+            <transientColumnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </includeBean>
+    </includeBeanList>
+    <includeDaoList>
+        <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
+            <daoId>guidesBeanJPABeanDao</daoId>
+            <daoType>GuidesBeanJPABeanDao</daoType>
+            <daoDescipter>Service Type:GuidesBean
+ 霞客</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
+                    <tableNameNoDash>guidesBean</tableNameNoDash>
+                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </includeDao>
+    </includeDaoList>
+</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+<includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
+    <tableNameNoDash>guidesBean</tableNameNoDash>
+    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </controllerMethod>
+                <controllerMethod uuid="d432f150-a04d-450b-b873-3652368b86ac-com.ndl.framework.workbrench.define.MethodBean-0">
+                    <signature>getItemById</signature>
+                    <signatureDescripter>获取霞客信</signatureDescripter>
+                    <responseType uuid="099eb95c-c892-42d5-813b-9a2d7ebcd8af-com.ndl.framework.workbrench.define.ColumnBean-4">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>GuidesBean</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <columnKey>DEFUALT</columnKey>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>GET</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="57d1fa6a-16d0-4d72-95d3-3a91f776400c-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-0">
+                        <fromMethod>d432f150-a04d-450b-b873-3652368b86ac-com.ndl.framework.workbrench.define.MethodBean-0</fromMethod>
+                        <fromResultType uuid="f9df51ad-f3d9-4bd2-ac96-461ff0fe2ae5-com.ndl.framework.workbrench.define.ColumnBean-3">
                             <columnName></columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
                             <columnType>GuidesBean</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <columnKey>DEFUALT</columnKey>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="29c84b65-2ab2-453b-91ec-2b4a7b80f2cb-com.ndl.framework.workbrench.define.ColumnBean-2">
+                            <columnName>dataGuidesBean</columnName>
+                            <columnNameNoDash>dataGuidesBean</columnNameNoDash>
+                            <columnNameCapitalized>DataGuidesBean</columnNameCapitalized>
+                            <columnType>DataGuidesBean</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <columnKey>DEFUALT</columnKey>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </resultColumnBean>
+                        <catetory>CALL_OUTER</catetory>
+                    </bodyBean>
+                    <annotationBean>
+                        <annnoteKey>RequestMapping</annnoteKey>
+                        <annoteValue>guides.php?action=getItemById</annoteValue>
+                    </annotationBean>
+                    <calleeMajorService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
+                        <serviceId>guidesBeanBeanBusinessService</serviceId>
+                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
+                        <serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+                        <serviceCategory>BNS</serviceCategory>
+                        <annotationBeanList>
+                            <annotationBean>
+<annnoteKey>Service</annnoteKey>
+<annoteValue>guidesBeanBeanBusinessService</annoteValue>
+                            </annotationBean>
+                        </annotationBeanList>
+                        <instanceAnnotationBeanList>
+                            <instanceAnnotationBean>
+<annnoteKey>Autowired</annnoteKey>
+<annoteValue>guidesBeanBeanAtomService</annoteValue>
+<annoteType>GuidesBeanBeanAtomService</annoteType>
+                            </instanceAnnotationBean>
+                        </instanceAnnotationBeanList>
+                        <runningMethod uuid="62280aea-39ff-4007-959b-bb88a8fee248-com.ndl.framework.workbrench.define.MethodBean-1">
+                            <signature>getItemById</signature>
+                            <responseType uuid="099eb95c-c892-42d5-813b-9a2d7ebcd8af-com.ndl.framework.workbrench.define.ColumnBean-4">
+<columnName></columnName>
+<columnNameNoDash></columnNameNoDash>
+<columnNameCapitalized></columnNameCapitalized>
+<columnType>GuidesBean</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>ENTITY</fieldType>
+<length>0</length>
+                            </responseType>
+                            <catetory>BNS</catetory>
+                            <assign uuid="011d5169-aed3-419b-a0e4-8d8d0dd7f034-com.ndl.framework.workbrench.define.TableBean-4">
+<tableNameNoDash>guidesBean</tableNameNoDash>
+<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<methodArugment uuid="7fb66396-312d-40c7-94dc-f56588a2993c-com.ndl.framework.workbrench.define.ColumnBean-0">
+    <columnName></columnName>
+    <columnNameNoDash>action</columnNameNoDash>
+    <columnNameCapitalized>Action</columnNameCapitalized>
+    <columnType>String</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault>getitem</columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="1d2b15f6-d47a-456b-b873-0e93674e3161-com.ndl.framework.workbrench.define.ColumnBean-1">
+        <columnName></columnName>
+        <columnNameNoDash>id</columnNameNoDash>
+        <columnNameCapitalized>Id</columnNameCapitalized>
+        <columnType>Integer</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault></columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>Finished</nextFieldRative>
+        <columnKey>DEFUALT</columnKey>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
+    <columnKey>DEFUALT</columnKey>
+    <fieldType>PRIMARY</fieldType>
+    <length>0</length>
+</methodArugment>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </assign>
+                        </runningMethod>
+                        <includeServiceList>
+                            <includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
+<serviceId>guidesBeanBeanAtomService</serviceId>
+<serivceType>GuidesBeanBeanAtomService</serivceType>
+<serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+<serviceCategory>ATM</serviceCategory>
+<annotationBeanList>
+    <annotationBean>
+        <annnoteKey>Transactional</annnoteKey>
+    </annotationBean>
+    <annotationBean>
+        <annnoteKey>Component</annnoteKey>
+        <annoteValue>guidesBeanBeanAtomService</annoteValue>
+    </annotationBean>
+</annotationBeanList>
+<instanceAnnotationBeanList>
+    <instanceAnnotationBean>
+        <annnoteKey>Autowired</annnoteKey>
+        <annoteValue>guidesBeanJPABeanDao</annoteValue>
+        <annoteType>GuidesBeanJPABeanDao</annoteType>
+    </instanceAnnotationBean>
+</instanceAnnotationBeanList>
+<includeBeanList>
+    <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
+        <tableNameNoDash>guidesBean</tableNameNoDash>
+        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+        <columnBeanList/>
+        <transientColumnBeanList/>
+        <hasDateColumn>false</hasDateColumn>
+        <hasBigDecimal>false</hasBigDecimal>
+    </includeBean>
+</includeBeanList>
+<includeDaoList>
+    <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
+        <daoId>guidesBeanJPABeanDao</daoId>
+        <daoType>GuidesBeanJPABeanDao</daoType>
+        <daoDescipter>Service Type:GuidesBean
+ 霞客</daoDescipter>
+        <daoCategory>JPA</daoCategory>
+        <annotationBeanList>
+            <annotationBean>
+                <annnoteKey>Repository</annnoteKey>
+                <annoteValue>guidesBeanJPABeanDao</annoteValue>
+            </annotationBean>
+        </annotationBeanList>
+        <includeBeanList>
+            <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
+                <tableNameNoDash>guidesBean</tableNameNoDash>
+                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                <columnBeanList/>
+                <transientColumnBeanList/>
+                <hasDateColumn>false</hasDateColumn>
+                <hasBigDecimal>false</hasBigDecimal>
+            </includeBean>
+        </includeBeanList>
+    </includeDao>
+</includeDaoList>
+                            </includeService>
+                        </includeServiceList>
+                        <includeBeanList>
+                            <includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
+<tableNameNoDash>guidesBean</tableNameNoDash>
+<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+<columnBeanList/>
+<transientColumnBeanList/>
+<hasDateColumn>false</hasDateColumn>
+<hasBigDecimal>false</hasBigDecimal>
+                            </includeBean>
+                        </includeBeanList>
+                    </calleeMajorService>
+                    <assign uuid="011d5169-aed3-419b-a0e4-8d8d0dd7f034-com.ndl.framework.workbrench.define.TableBean-4">
+                        <tableNameNoDash>guidesBean</tableNameNoDash>
+                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                        <columnBeanList/>
+                        <transientColumnBeanList/>
+                        <methodArugment uuid="7fb66396-312d-40c7-94dc-f56588a2993c-com.ndl.framework.workbrench.define.ColumnBean-0">
+                            <columnName></columnName>
+                            <columnNameNoDash>action</columnNameNoDash>
+                            <columnNameCapitalized>Action</columnNameCapitalized>
+                            <columnType>String</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault>getitem</columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>And</nextFieldRative>
+                            <nextColumnBean uuid="1d2b15f6-d47a-456b-b873-0e93674e3161-com.ndl.framework.workbrench.define.ColumnBean-1">
+<columnName></columnName>
+<columnNameNoDash>id</columnNameNoDash>
+<columnNameCapitalized>Id</columnNameCapitalized>
+<columnType>Integer</columnType>
+<columnTypeIOS></columnTypeIOS>
+<columnTypePropertyIOS></columnTypePropertyIOS>
+<columnTypeJS></columnTypeJS>
+<columnTypeRsGetter></columnTypeRsGetter>
+<referNameNoDash></referNameNoDash>
+<referNameCapitalized></referNameCapitalized>
+<referType></referType>
+<referRieldType>PRIMARY</referRieldType>
+<referLength>0</referLength>
+<columnComment></columnComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<columnDefault></columnDefault>
+<isMutable>true</isMutable>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </nextColumnBean>
+                            <columnKey>DEFUALT</columnKey>
+                            <fieldType>PRIMARY</fieldType>
+                            <length>0</length>
+                        </methodArugment>
+                        <hasDateColumn>false</hasDateColumn>
+                        <hasBigDecimal>false</hasBigDecimal>
+                    </assign>
+                    <callBusinessServiceList>
+                        <callBusinessService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
+                            <serviceId>guidesBeanBeanBusinessService</serviceId>
+                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
+                            <serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+                            <serviceCategory>BNS</serviceCategory>
+                            <annotationBeanList>
+<annotationBean>
+    <annnoteKey>Service</annnoteKey>
+    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
+</annotationBean>
+                            </annotationBeanList>
+                            <instanceAnnotationBeanList>
+<instanceAnnotationBean>
+    <annnoteKey>Autowired</annnoteKey>
+    <annoteValue>guidesBeanBeanAtomService</annoteValue>
+    <annoteType>GuidesBeanBeanAtomService</annoteType>
+</instanceAnnotationBean>
+                            </instanceAnnotationBeanList>
+                            <runningMethod uuid="62280aea-39ff-4007-959b-bb88a8fee248-com.ndl.framework.workbrench.define.MethodBean-1">
+<signature>getItemById</signature>
+<responseType uuid="099eb95c-c892-42d5-813b-9a2d7ebcd8af-com.ndl.framework.workbrench.define.ColumnBean-4">
+    <columnName></columnName>
+    <columnNameNoDash></columnNameNoDash>
+    <columnNameCapitalized></columnNameCapitalized>
+    <columnType>GuidesBean</columnType>
+    <columnTypeIOS></columnTypeIOS>
+    <columnTypePropertyIOS></columnTypePropertyIOS>
+    <columnTypeJS></columnTypeJS>
+    <columnTypeRsGetter></columnTypeRsGetter>
+    <referNameNoDash></referNameNoDash>
+    <referNameCapitalized></referNameCapitalized>
+    <referType></referType>
+    <referRieldType>PRIMARY</referRieldType>
+    <referLength>0</referLength>
+    <columnComment></columnComment>
+    <ordinalPosition></ordinalPosition>
+    <isNullable></isNullable>
+    <columnDefault></columnDefault>
+    <isMutable>true</isMutable>
+    <nextFieldRative>Finished</nextFieldRative>
+    <columnKey>DEFUALT</columnKey>
+    <fieldType>ENTITY</fieldType>
+    <length>0</length>
+</responseType>
+<catetory>BNS</catetory>
+<assign uuid="011d5169-aed3-419b-a0e4-8d8d0dd7f034-com.ndl.framework.workbrench.define.TableBean-4">
+    <tableNameNoDash>guidesBean</tableNameNoDash>
+    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <methodArugment uuid="7fb66396-312d-40c7-94dc-f56588a2993c-com.ndl.framework.workbrench.define.ColumnBean-0">
+        <columnName></columnName>
+        <columnNameNoDash>action</columnNameNoDash>
+        <columnNameCapitalized>Action</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault>getitem</columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="1d2b15f6-d47a-456b-b873-0e93674e3161-com.ndl.framework.workbrench.define.ColumnBean-1">
+            <columnName></columnName>
+            <columnNameNoDash>id</columnNameNoDash>
+            <columnNameCapitalized>Id</columnNameCapitalized>
+            <columnType>Integer</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault></columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <columnKey>DEFUALT</columnKey>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <columnKey>DEFUALT</columnKey>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </methodArugment>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</assign>
+                            </runningMethod>
+                            <includeServiceList>
+<includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
+    <serviceId>guidesBeanBeanAtomService</serviceId>
+    <serivceType>GuidesBeanBeanAtomService</serivceType>
+    <serviceDescipter>Service Type:GuidesBean
+ 霞客</serviceDescipter>
+    <serviceCategory>ATM</serviceCategory>
+    <annotationBeanList>
+        <annotationBean>
+            <annnoteKey>Transactional</annnoteKey>
+        </annotationBean>
+        <annotationBean>
+            <annnoteKey>Component</annnoteKey>
+            <annoteValue>guidesBeanBeanAtomService</annoteValue>
+        </annotationBean>
+    </annotationBeanList>
+    <instanceAnnotationBeanList>
+        <instanceAnnotationBean>
+            <annnoteKey>Autowired</annnoteKey>
+            <annoteValue>guidesBeanJPABeanDao</annoteValue>
+            <annoteType>GuidesBeanJPABeanDao</annoteType>
+        </instanceAnnotationBean>
+    </instanceAnnotationBeanList>
+    <includeBeanList>
+        <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
+            <tableNameNoDash>guidesBean</tableNameNoDash>
+            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+            <columnBeanList/>
+            <transientColumnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </includeBean>
+    </includeBeanList>
+    <includeDaoList>
+        <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
+            <daoId>guidesBeanJPABeanDao</daoId>
+            <daoType>GuidesBeanJPABeanDao</daoType>
+            <daoDescipter>Service Type:GuidesBean
+ 霞客</daoDescipter>
+            <daoCategory>JPA</daoCategory>
+            <annotationBeanList>
+                <annotationBean>
+                    <annnoteKey>Repository</annnoteKey>
+                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
+                </annotationBean>
+            </annotationBeanList>
+            <includeBeanList>
+                <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
+                    <tableNameNoDash>guidesBean</tableNameNoDash>
+                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                    <columnBeanList/>
+                    <transientColumnBeanList/>
+                    <hasDateColumn>false</hasDateColumn>
+                    <hasBigDecimal>false</hasBigDecimal>
+                </includeBean>
+            </includeBeanList>
+        </includeDao>
+    </includeDaoList>
+</includeService>
+                            </includeServiceList>
+                            <includeBeanList>
+<includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
+    <tableNameNoDash>guidesBean</tableNameNoDash>
+    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+    <columnBeanList/>
+    <transientColumnBeanList/>
+    <hasDateColumn>false</hasDateColumn>
+    <hasBigDecimal>false</hasBigDecimal>
+</includeBean>
+                            </includeBeanList>
+                        </callBusinessService>
+                    </callBusinessServiceList>
+                </controllerMethod>
+                <controllerMethod uuid="294944a8-6a6d-4975-9f61-4a8ddf034b4b-com.ndl.framework.workbrench.define.MethodBean-2">
+                    <signature>getList</signature>
+                    <signatureDescripter>获取霞客列表</signatureDescripter>
+                    <responseType uuid="dbb7b6b0-92b9-4fdd-bb67-b8775b69a9a3-com.ndl.framework.workbrench.define.ColumnBean-11">
+                        <columnName></columnName>
+                        <columnNameNoDash></columnNameNoDash>
+                        <columnNameCapitalized></columnNameCapitalized>
+                        <columnType>GuidesBean</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault></columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <columnKey>DEFUALT</columnKey>
+                        <fieldType>ENTITY</fieldType>
+                        <length>0</length>
+                    </responseType>
+                    <catetory>GET</catetory>
+                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
+                    <bodyBean uuid="c51ca0d2-f6a9-4338-986f-46d3ce9643a6-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-1">
+                        <fromMethod>294944a8-6a6d-4975-9f61-4a8ddf034b4b-com.ndl.framework.workbrench.define.MethodBean-2</fromMethod>
+                        <fromResultType uuid="2eb4aa7c-8405-4b33-835a-0bfbf9538a30-com.ndl.framework.workbrench.define.ColumnBean-10">
+                            <columnName></columnName>
+                            <columnNameNoDash></columnNameNoDash>
+                            <columnNameCapitalized></columnNameCapitalized>
+                            <columnType>GuidesBean</columnType>
+                            <columnTypeIOS></columnTypeIOS>
+                            <columnTypePropertyIOS></columnTypePropertyIOS>
+                            <columnTypeJS></columnTypeJS>
+                            <columnTypeRsGetter></columnTypeRsGetter>
+                            <referNameNoDash></referNameNoDash>
+                            <referNameCapitalized></referNameCapitalized>
+                            <referType></referType>
+                            <referRieldType>PRIMARY</referRieldType>
+                            <referLength>0</referLength>
+                            <columnComment></columnComment>
+                            <ordinalPosition></ordinalPosition>
+                            <isNullable></isNullable>
+                            <columnDefault></columnDefault>
+                            <isMutable>true</isMutable>
+                            <nextFieldRative>Finished</nextFieldRative>
+                            <columnKey>DEFUALT</columnKey>
+                            <fieldType>ENTITY</fieldType>
+                            <length>0</length>
+                        </fromResultType>
+                        <resultColumnBean uuid="2a0ebbb6-e24c-4586-a2d2-72110280c1b9-com.ndl.framework.workbrench.define.ColumnBean-9">
+                            <columnName>dataGuidesBean</columnName>
+                            <columnNameNoDash>dataGuidesBean</columnNameNoDash>
+                            <columnNameCapitalized>DataGuidesBean</columnNameCapitalized>
+                            <columnType>DataGuidesBean</columnType>
                             <columnTypeIOS></columnTypeIOS>
                             <columnTypePropertyIOS></columnTypePropertyIOS>
                             <columnTypeJS></columnTypeJS>
@@ -117,7 +1173,7 @@
                         <annnoteKey>RequestMapping</annnoteKey>
                         <annoteValue>guides.php?action=getList</annoteValue>
                     </annotationBean>
-                    <calleeMajorService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
+                    <calleeMajorService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
                         <serviceId>guidesBeanBeanBusinessService</serviceId>
                         <serivceType>GuidesBeanBeanBusinessService</serivceType>
                         <serviceDescipter>Service Type:GuidesBean
@@ -136,9 +1192,9 @@
 <annoteType>GuidesBeanBeanAtomService</annoteType>
                             </instanceAnnotationBean>
                         </instanceAnnotationBeanList>
-                        <runningMethod uuid="214be891-49ad-487f-8a8b-225a2314d421-com.ndl.framework.workbrench.define.MethodBean-3">
+                        <runningMethod uuid="bd182815-4e7c-46d9-bc18-d714299899eb-com.ndl.framework.workbrench.define.MethodBean-3">
                             <signature>getList</signature>
-                            <responseType uuid="a174eb50-e130-4516-84a7-79b90beb22de-com.ndl.framework.workbrench.define.ColumnBean-9">
+                            <responseType uuid="dbb7b6b0-92b9-4fdd-bb67-b8775b69a9a3-com.ndl.framework.workbrench.define.ColumnBean-11">
 <columnName></columnName>
 <columnNameNoDash></columnNameNoDash>
 <columnNameCapitalized></columnNameCapitalized>
@@ -163,12 +1219,12 @@
 <length>0</length>
                             </responseType>
                             <catetory>BNS</catetory>
-                            <assign uuid="eb6f1bf4-98fa-4e10-8132-34729c9221a7-com.ndl.framework.workbrench.define.TableBean-5">
+                            <assign uuid="16c085e6-91bc-4607-a767-afd40b7a6704-com.ndl.framework.workbrench.define.TableBean-5">
 <tableNameNoDash>guidesBean</tableNameNoDash>
 <tableNameCapitalized>GuidesBean</tableNameCapitalized>
 <columnBeanList/>
 <transientColumnBeanList/>
-<methodArugment uuid="338f613f-16fd-47cf-b04b-3c80d6204d71-com.ndl.framework.workbrench.define.ColumnBean-4">
+<methodArugment uuid="caf85194-e360-47c9-9d75-b4cc0a53bd7e-com.ndl.framework.workbrench.define.ColumnBean-5">
     <columnName>p</columnName>
     <columnNameNoDash>p</columnNameNoDash>
     <columnNameCapitalized>p</columnNameCapitalized>
@@ -188,7 +1244,7 @@
     <columnDefault>1</columnDefault>
     <isMutable>true</isMutable>
     <nextFieldRative>And</nextFieldRative>
-    <nextColumnBean uuid="7ac98862-ed04-41ba-8b8a-b09d23c8fc60-com.ndl.framework.workbrench.define.ColumnBean-5">
+    <nextColumnBean uuid="fc20bc32-8466-4f83-a4fa-7aeab9ead0f2-com.ndl.framework.workbrench.define.ColumnBean-6">
         <columnName>psize</columnName>
         <columnNameNoDash>psize</columnNameNoDash>
         <columnNameCapitalized>Psize</columnNameCapitalized>
@@ -208,7 +1264,7 @@
         <columnDefault>10</columnDefault>
         <isMutable>true</isMutable>
         <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="bc0786f8-5b4c-4b28-897d-494daef23db9-com.ndl.framework.workbrench.define.ColumnBean-6">
+        <nextColumnBean uuid="3b408da0-090a-4867-b2cf-5ac555e69d07-com.ndl.framework.workbrench.define.ColumnBean-7">
             <columnName>dataType</columnName>
             <columnNameNoDash>dataType</columnNameNoDash>
             <columnNameCapitalized>DataType</columnNameCapitalized>
@@ -228,7 +1284,7 @@
             <columnDefault></columnDefault>
             <isMutable>true</isMutable>
             <nextFieldRative>And</nextFieldRative>
-            <nextColumnBean uuid="2d52eedc-6994-4302-8d0b-1426b413d52f-com.ndl.framework.workbrench.define.ColumnBean-7">
+            <nextColumnBean uuid="2ff8a87d-2bfe-40c8-8dc0-6f916d697901-com.ndl.framework.workbrench.define.ColumnBean-8">
                 <columnName>dataOrder</columnName>
                 <columnNameNoDash>dataOrder</columnNameNoDash>
                 <columnNameCapitalized>DataOrder</columnNameCapitalized>
@@ -269,7 +1325,7 @@
                             </assign>
                         </runningMethod>
                         <includeServiceList>
-                            <includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
+                            <includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
 <serviceId>guidesBeanBeanAtomService</serviceId>
 <serivceType>GuidesBeanBeanAtomService</serivceType>
 <serviceDescipter>Service Type:GuidesBean
@@ -277,11 +1333,11 @@
 <serviceCategory>ATM</serviceCategory>
 <annotationBeanList>
     <annotationBean>
-        <annnoteKey>Component</annnoteKey>
-        <annoteValue>guidesBeanBeanAtomService</annoteValue>
+        <annnoteKey>Transactional</annnoteKey>
     </annotationBean>
     <annotationBean>
-        <annnoteKey>Transactional</annnoteKey>
+        <annnoteKey>Component</annnoteKey>
+        <annoteValue>guidesBeanBeanAtomService</annoteValue>
     </annotationBean>
 </annotationBeanList>
 <instanceAnnotationBeanList>
@@ -292,7 +1348,7 @@
     </instanceAnnotationBean>
 </instanceAnnotationBeanList>
 <includeBeanList>
-    <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
+    <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
         <tableNameNoDash>guidesBean</tableNameNoDash>
         <tableNameCapitalized>GuidesBean</tableNameCapitalized>
         <columnBeanList/>
@@ -302,7 +1358,7 @@
     </includeBean>
 </includeBeanList>
 <includeDaoList>
-    <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
+    <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
         <daoId>guidesBeanJPABeanDao</daoId>
         <daoType>GuidesBeanJPABeanDao</daoType>
         <daoDescipter>Service Type:GuidesBean
@@ -315,7 +1371,7 @@
             </annotationBean>
         </annotationBeanList>
         <includeBeanList>
-            <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
+            <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
                 <tableNameNoDash>guidesBean</tableNameNoDash>
                 <tableNameCapitalized>GuidesBean</tableNameCapitalized>
                 <columnBeanList/>
@@ -329,7 +1385,7 @@
                             </includeService>
                         </includeServiceList>
                         <includeBeanList>
-                            <includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
+                            <includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
 <tableNameNoDash>guidesBean</tableNameNoDash>
 <tableNameCapitalized>GuidesBean</tableNameCapitalized>
 <columnBeanList/>
@@ -339,12 +1395,12 @@
                             </includeBean>
                         </includeBeanList>
                     </calleeMajorService>
-                    <assign uuid="eb6f1bf4-98fa-4e10-8132-34729c9221a7-com.ndl.framework.workbrench.define.TableBean-5">
+                    <assign uuid="16c085e6-91bc-4607-a767-afd40b7a6704-com.ndl.framework.workbrench.define.TableBean-5">
                         <tableNameNoDash>guidesBean</tableNameNoDash>
                         <tableNameCapitalized>GuidesBean</tableNameCapitalized>
                         <columnBeanList/>
                         <transientColumnBeanList/>
-                        <methodArugment uuid="338f613f-16fd-47cf-b04b-3c80d6204d71-com.ndl.framework.workbrench.define.ColumnBean-4">
+                        <methodArugment uuid="caf85194-e360-47c9-9d75-b4cc0a53bd7e-com.ndl.framework.workbrench.define.ColumnBean-5">
                             <columnName>p</columnName>
                             <columnNameNoDash>p</columnNameNoDash>
                             <columnNameCapitalized>p</columnNameCapitalized>
@@ -364,7 +1420,7 @@
                             <columnDefault>1</columnDefault>
                             <isMutable>true</isMutable>
                             <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="7ac98862-ed04-41ba-8b8a-b09d23c8fc60-com.ndl.framework.workbrench.define.ColumnBean-5">
+                            <nextColumnBean uuid="fc20bc32-8466-4f83-a4fa-7aeab9ead0f2-com.ndl.framework.workbrench.define.ColumnBean-6">
 <columnName>psize</columnName>
 <columnNameNoDash>psize</columnNameNoDash>
 <columnNameCapitalized>Psize</columnNameCapitalized>
@@ -384,7 +1440,7 @@
 <columnDefault>10</columnDefault>
 <isMutable>true</isMutable>
 <nextFieldRative>And</nextFieldRative>
-<nextColumnBean uuid="bc0786f8-5b4c-4b28-897d-494daef23db9-com.ndl.framework.workbrench.define.ColumnBean-6">
+<nextColumnBean uuid="3b408da0-090a-4867-b2cf-5ac555e69d07-com.ndl.framework.workbrench.define.ColumnBean-7">
     <columnName>dataType</columnName>
     <columnNameNoDash>dataType</columnNameNoDash>
     <columnNameCapitalized>DataType</columnNameCapitalized>
@@ -404,7 +1460,7 @@
     <columnDefault></columnDefault>
     <isMutable>true</isMutable>
     <nextFieldRative>And</nextFieldRative>
-    <nextColumnBean uuid="2d52eedc-6994-4302-8d0b-1426b413d52f-com.ndl.framework.workbrench.define.ColumnBean-7">
+    <nextColumnBean uuid="2ff8a87d-2bfe-40c8-8dc0-6f916d697901-com.ndl.framework.workbrench.define.ColumnBean-8">
         <columnName>dataOrder</columnName>
         <columnNameNoDash>dataOrder</columnNameNoDash>
         <columnNameCapitalized>DataOrder</columnNameCapitalized>
@@ -444,7 +1500,7 @@
                         <hasBigDecimal>false</hasBigDecimal>
                     </assign>
                     <callBusinessServiceList>
-                        <callBusinessService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
+                        <callBusinessService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
                             <serviceId>guidesBeanBeanBusinessService</serviceId>
                             <serivceType>GuidesBeanBeanBusinessService</serivceType>
                             <serviceDescipter>Service Type:GuidesBean
@@ -463,9 +1519,9 @@
     <annoteType>GuidesBeanBeanAtomService</annoteType>
 </instanceAnnotationBean>
                             </instanceAnnotationBeanList>
-                            <runningMethod uuid="214be891-49ad-487f-8a8b-225a2314d421-com.ndl.framework.workbrench.define.MethodBean-3">
+                            <runningMethod uuid="bd182815-4e7c-46d9-bc18-d714299899eb-com.ndl.framework.workbrench.define.MethodBean-3">
 <signature>getList</signature>
-<responseType uuid="a174eb50-e130-4516-84a7-79b90beb22de-com.ndl.framework.workbrench.define.ColumnBean-9">
+<responseType uuid="dbb7b6b0-92b9-4fdd-bb67-b8775b69a9a3-com.ndl.framework.workbrench.define.ColumnBean-11">
     <columnName></columnName>
     <columnNameNoDash></columnNameNoDash>
     <columnNameCapitalized></columnNameCapitalized>
@@ -490,12 +1546,12 @@
     <length>0</length>
 </responseType>
 <catetory>BNS</catetory>
-<assign uuid="eb6f1bf4-98fa-4e10-8132-34729c9221a7-com.ndl.framework.workbrench.define.TableBean-5">
+<assign uuid="16c085e6-91bc-4607-a767-afd40b7a6704-com.ndl.framework.workbrench.define.TableBean-5">
     <tableNameNoDash>guidesBean</tableNameNoDash>
     <tableNameCapitalized>GuidesBean</tableNameCapitalized>
     <columnBeanList/>
     <transientColumnBeanList/>
-    <methodArugment uuid="338f613f-16fd-47cf-b04b-3c80d6204d71-com.ndl.framework.workbrench.define.ColumnBean-4">
+    <methodArugment uuid="caf85194-e360-47c9-9d75-b4cc0a53bd7e-com.ndl.framework.workbrench.define.ColumnBean-5">
         <columnName>p</columnName>
         <columnNameNoDash>p</columnNameNoDash>
         <columnNameCapitalized>p</columnNameCapitalized>
@@ -515,7 +1571,7 @@
         <columnDefault>1</columnDefault>
         <isMutable>true</isMutable>
         <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="7ac98862-ed04-41ba-8b8a-b09d23c8fc60-com.ndl.framework.workbrench.define.ColumnBean-5">
+        <nextColumnBean uuid="fc20bc32-8466-4f83-a4fa-7aeab9ead0f2-com.ndl.framework.workbrench.define.ColumnBean-6">
             <columnName>psize</columnName>
             <columnNameNoDash>psize</columnNameNoDash>
             <columnNameCapitalized>Psize</columnNameCapitalized>
@@ -535,7 +1591,7 @@
             <columnDefault>10</columnDefault>
             <isMutable>true</isMutable>
             <nextFieldRative>And</nextFieldRative>
-            <nextColumnBean uuid="bc0786f8-5b4c-4b28-897d-494daef23db9-com.ndl.framework.workbrench.define.ColumnBean-6">
+            <nextColumnBean uuid="3b408da0-090a-4867-b2cf-5ac555e69d07-com.ndl.framework.workbrench.define.ColumnBean-7">
                 <columnName>dataType</columnName>
                 <columnNameNoDash>dataType</columnNameNoDash>
                 <columnNameCapitalized>DataType</columnNameCapitalized>
@@ -555,7 +1611,7 @@
                 <columnDefault></columnDefault>
                 <isMutable>true</isMutable>
                 <nextFieldRative>And</nextFieldRative>
-                <nextColumnBean uuid="2d52eedc-6994-4302-8d0b-1426b413d52f-com.ndl.framework.workbrench.define.ColumnBean-7">
+                <nextColumnBean uuid="2ff8a87d-2bfe-40c8-8dc0-6f916d697901-com.ndl.framework.workbrench.define.ColumnBean-8">
                     <columnName>dataOrder</columnName>
                     <columnNameNoDash>dataOrder</columnNameNoDash>
                     <columnNameCapitalized>DataOrder</columnNameCapitalized>
@@ -596,7 +1652,7 @@
 </assign>
                             </runningMethod>
                             <includeServiceList>
-<includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
+<includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
     <serviceId>guidesBeanBeanAtomService</serviceId>
     <serivceType>GuidesBeanBeanAtomService</serivceType>
     <serviceDescipter>Service Type:GuidesBean
@@ -604,11 +1660,11 @@
     <serviceCategory>ATM</serviceCategory>
     <annotationBeanList>
         <annotationBean>
-            <annnoteKey>Component</annnoteKey>
-            <annoteValue>guidesBeanBeanAtomService</annoteValue>
+            <annnoteKey>Transactional</annnoteKey>
         </annotationBean>
         <annotationBean>
-            <annnoteKey>Transactional</annnoteKey>
+            <annnoteKey>Component</annnoteKey>
+            <annoteValue>guidesBeanBeanAtomService</annoteValue>
         </annotationBean>
     </annotationBeanList>
     <instanceAnnotationBeanList>
@@ -619,7 +1675,7 @@
         </instanceAnnotationBean>
     </instanceAnnotationBeanList>
     <includeBeanList>
-        <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
+        <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
             <tableNameNoDash>guidesBean</tableNameNoDash>
             <tableNameCapitalized>GuidesBean</tableNameCapitalized>
             <columnBeanList/>
@@ -629,7 +1685,7 @@
         </includeBean>
     </includeBeanList>
     <includeDaoList>
-        <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
+        <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
             <daoId>guidesBeanJPABeanDao</daoId>
             <daoType>GuidesBeanJPABeanDao</daoType>
             <daoDescipter>Service Type:GuidesBean
@@ -642,7 +1698,7 @@
                 </annotationBean>
             </annotationBeanList>
             <includeBeanList>
-                <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
+                <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
                     <tableNameNoDash>guidesBean</tableNameNoDash>
                     <tableNameCapitalized>GuidesBean</tableNameCapitalized>
                     <columnBeanList/>
@@ -656,1063 +1712,7 @@
 </includeService>
                             </includeServiceList>
                             <includeBeanList>
-<includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</includeBean>
-                            </includeBeanList>
-                        </callBusinessService>
-                    </callBusinessServiceList>
-                </controllerMethod>
-                <controllerMethod uuid="0fbc9f8a-ff15-409d-8e6d-19739607dcc9-com.ndl.framework.workbrench.define.MethodBean-0">
-                    <signature>getItemById</signature>
-                    <signatureDescripter>获取霞客信</signatureDescripter>
-                    <responseType uuid="1911e25d-5ac9-4ccc-888c-5ddce9a81bba-com.ndl.framework.workbrench.define.ColumnBean-3">
-                        <columnName></columnName>
-                        <columnNameNoDash></columnNameNoDash>
-                        <columnNameCapitalized></columnNameCapitalized>
-                        <columnType>GuidesBean</columnType>
-                        <columnTypeIOS></columnTypeIOS>
-                        <columnTypePropertyIOS></columnTypePropertyIOS>
-                        <columnTypeJS></columnTypeJS>
-                        <columnTypeRsGetter></columnTypeRsGetter>
-                        <referNameNoDash></referNameNoDash>
-                        <referNameCapitalized></referNameCapitalized>
-                        <referType></referType>
-                        <referRieldType>PRIMARY</referRieldType>
-                        <referLength>0</referLength>
-                        <columnComment></columnComment>
-                        <ordinalPosition></ordinalPosition>
-                        <isNullable></isNullable>
-                        <columnDefault></columnDefault>
-                        <isMutable>true</isMutable>
-                        <nextFieldRative>Finished</nextFieldRative>
-                        <columnKey>DEFUALT</columnKey>
-                        <fieldType>ENTITY</fieldType>
-                        <length>0</length>
-                    </responseType>
-                    <catetory>GET</catetory>
-                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="7f95934b-ee66-4d95-a91c-a31fc270a854-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-0">
-                        <fromMethod>0fbc9f8a-ff15-409d-8e6d-19739607dcc9-com.ndl.framework.workbrench.define.MethodBean-0</fromMethod>
-                        <fromResultType uuid="796ab586-8062-41d0-92ad-2fdd79c51b71-com.ndl.framework.workbrench.define.ColumnBean-2">
-                            <columnName></columnName>
-                            <columnNameNoDash></columnNameNoDash>
-                            <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </fromResultType>
-                        <resultColumnBean uuid="1911e25d-5ac9-4ccc-888c-5ddce9a81bba-com.ndl.framework.workbrench.define.ColumnBean-3">
-                            <columnName></columnName>
-                            <columnNameNoDash></columnNameNoDash>
-                            <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </resultColumnBean>
-                        <catetory>CALL_OUTER</catetory>
-                    </bodyBean>
-                    <annotationBean>
-                        <annnoteKey>RequestMapping</annnoteKey>
-                        <annoteValue>guides.php?action=getItemById</annoteValue>
-                    </annotationBean>
-                    <calleeMajorService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
-                        <serviceId>guidesBeanBeanBusinessService</serviceId>
-                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                        <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                        <serviceCategory>BNS</serviceCategory>
-                        <annotationBeanList>
-                            <annotationBean>
-<annnoteKey>Service</annnoteKey>
-<annoteValue>guidesBeanBeanBusinessService</annoteValue>
-                            </annotationBean>
-                        </annotationBeanList>
-                        <instanceAnnotationBeanList>
-                            <instanceAnnotationBean>
-<annnoteKey>Autowired</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
-<annoteType>GuidesBeanBeanAtomService</annoteType>
-                            </instanceAnnotationBean>
-                        </instanceAnnotationBeanList>
-                        <runningMethod uuid="af5e6f4a-6681-4fd6-8ed6-a323b86d2698-com.ndl.framework.workbrench.define.MethodBean-1">
-                            <signature>getItemById</signature>
-                            <responseType uuid="1911e25d-5ac9-4ccc-888c-5ddce9a81bba-com.ndl.framework.workbrench.define.ColumnBean-3">
-<columnName></columnName>
-<columnNameNoDash></columnNameNoDash>
-<columnNameCapitalized></columnNameCapitalized>
-<columnType>GuidesBean</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault></columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>ENTITY</fieldType>
-<length>0</length>
-                            </responseType>
-                            <catetory>BNS</catetory>
-                            <assign uuid="efbe30f4-0a4c-4ebd-96e2-d23221a6c529-com.ndl.framework.workbrench.define.TableBean-4">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<methodArugment uuid="5870ea8b-5185-4d87-977c-73d20d23a71a-com.ndl.framework.workbrench.define.ColumnBean-0">
-    <columnName></columnName>
-    <columnNameNoDash>action</columnNameNoDash>
-    <columnNameCapitalized>Action</columnNameCapitalized>
-    <columnType>String</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault>getitem</columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>And</nextFieldRative>
-    <nextColumnBean uuid="6dbcd460-b797-4be0-8922-2fc784e06607-com.ndl.framework.workbrench.define.ColumnBean-1">
-        <columnName></columnName>
-        <columnNameNoDash>id</columnNameNoDash>
-        <columnNameCapitalized>Id</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment></columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault></columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>Finished</nextFieldRative>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </nextColumnBean>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>PRIMARY</fieldType>
-    <length>0</length>
-</methodArugment>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </assign>
-                        </runningMethod>
-                        <includeServiceList>
-                            <includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
-<serviceId>guidesBeanBeanAtomService</serviceId>
-<serivceType>GuidesBeanBeanAtomService</serivceType>
-<serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-<serviceCategory>ATM</serviceCategory>
-<annotationBeanList>
-    <annotationBean>
-        <annnoteKey>Component</annnoteKey>
-        <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    </annotationBean>
-    <annotationBean>
-        <annnoteKey>Transactional</annnoteKey>
-    </annotationBean>
-</annotationBeanList>
-<instanceAnnotationBeanList>
-    <instanceAnnotationBean>
-        <annnoteKey>Autowired</annnoteKey>
-        <annoteValue>guidesBeanJPABeanDao</annoteValue>
-        <annoteType>GuidesBeanJPABeanDao</annoteType>
-    </instanceAnnotationBean>
-</instanceAnnotationBeanList>
-<includeBeanList>
-    <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
-        <tableNameNoDash>guidesBean</tableNameNoDash>
-        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-        <columnBeanList/>
-        <transientColumnBeanList/>
-        <hasDateColumn>false</hasDateColumn>
-        <hasBigDecimal>false</hasBigDecimal>
-    </includeBean>
-</includeBeanList>
-<includeDaoList>
-    <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
-        <daoId>guidesBeanJPABeanDao</daoId>
-        <daoType>GuidesBeanJPABeanDao</daoType>
-        <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-        <daoCategory>JPA</daoCategory>
-        <annotationBeanList>
-            <annotationBean>
-                <annnoteKey>Repository</annnoteKey>
-                <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            </annotationBean>
-        </annotationBeanList>
-        <includeBeanList>
-            <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
-                <tableNameNoDash>guidesBean</tableNameNoDash>
-                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                <columnBeanList/>
-                <transientColumnBeanList/>
-                <hasDateColumn>false</hasDateColumn>
-                <hasBigDecimal>false</hasBigDecimal>
-            </includeBean>
-        </includeBeanList>
-    </includeDao>
-</includeDaoList>
-                            </includeService>
-                        </includeServiceList>
-                        <includeBeanList>
-                            <includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </includeBean>
-                        </includeBeanList>
-                    </calleeMajorService>
-                    <assign uuid="efbe30f4-0a4c-4ebd-96e2-d23221a6c529-com.ndl.framework.workbrench.define.TableBean-4">
-                        <tableNameNoDash>guidesBean</tableNameNoDash>
-                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                        <columnBeanList/>
-                        <transientColumnBeanList/>
-                        <methodArugment uuid="5870ea8b-5185-4d87-977c-73d20d23a71a-com.ndl.framework.workbrench.define.ColumnBean-0">
-                            <columnName></columnName>
-                            <columnNameNoDash>action</columnNameNoDash>
-                            <columnNameCapitalized>Action</columnNameCapitalized>
-                            <columnType>String</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault>getitem</columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="6dbcd460-b797-4be0-8922-2fc784e06607-com.ndl.framework.workbrench.define.ColumnBean-1">
-<columnName></columnName>
-<columnNameNoDash>id</columnNameNoDash>
-<columnNameCapitalized>Id</columnNameCapitalized>
-<columnType>Integer</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault></columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </nextColumnBean>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>PRIMARY</fieldType>
-                            <length>0</length>
-                        </methodArugment>
-                        <hasDateColumn>false</hasDateColumn>
-                        <hasBigDecimal>false</hasBigDecimal>
-                    </assign>
-                    <callBusinessServiceList>
-                        <callBusinessService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
-                            <serviceId>guidesBeanBeanBusinessService</serviceId>
-                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                            <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                            <serviceCategory>BNS</serviceCategory>
-                            <annotationBeanList>
-<annotationBean>
-    <annnoteKey>Service</annnoteKey>
-    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
-</annotationBean>
-                            </annotationBeanList>
-                            <instanceAnnotationBeanList>
-<instanceAnnotationBean>
-    <annnoteKey>Autowired</annnoteKey>
-    <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    <annoteType>GuidesBeanBeanAtomService</annoteType>
-</instanceAnnotationBean>
-                            </instanceAnnotationBeanList>
-                            <runningMethod uuid="af5e6f4a-6681-4fd6-8ed6-a323b86d2698-com.ndl.framework.workbrench.define.MethodBean-1">
-<signature>getItemById</signature>
-<responseType uuid="1911e25d-5ac9-4ccc-888c-5ddce9a81bba-com.ndl.framework.workbrench.define.ColumnBean-3">
-    <columnName></columnName>
-    <columnNameNoDash></columnNameNoDash>
-    <columnNameCapitalized></columnNameCapitalized>
-    <columnType>GuidesBean</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault></columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>ENTITY</fieldType>
-    <length>0</length>
-</responseType>
-<catetory>BNS</catetory>
-<assign uuid="efbe30f4-0a4c-4ebd-96e2-d23221a6c529-com.ndl.framework.workbrench.define.TableBean-4">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <methodArugment uuid="5870ea8b-5185-4d87-977c-73d20d23a71a-com.ndl.framework.workbrench.define.ColumnBean-0">
-        <columnName></columnName>
-        <columnNameNoDash>action</columnNameNoDash>
-        <columnNameCapitalized>Action</columnNameCapitalized>
-        <columnType>String</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment></columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault>getitem</columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="6dbcd460-b797-4be0-8922-2fc784e06607-com.ndl.framework.workbrench.define.ColumnBean-1">
-            <columnName></columnName>
-            <columnNameNoDash>id</columnNameNoDash>
-            <columnNameCapitalized>Id</columnNameCapitalized>
-            <columnType>Integer</columnType>
-            <columnTypeIOS></columnTypeIOS>
-            <columnTypePropertyIOS></columnTypePropertyIOS>
-            <columnTypeJS></columnTypeJS>
-            <columnTypeRsGetter></columnTypeRsGetter>
-            <referNameNoDash></referNameNoDash>
-            <referNameCapitalized></referNameCapitalized>
-            <referType></referType>
-            <referRieldType>PRIMARY</referRieldType>
-            <referLength>0</referLength>
-            <columnComment></columnComment>
-            <ordinalPosition></ordinalPosition>
-            <isNullable></isNullable>
-            <columnDefault></columnDefault>
-            <isMutable>true</isMutable>
-            <nextFieldRative>Finished</nextFieldRative>
-            <columnKey>DEFUALT</columnKey>
-            <fieldType>PRIMARY</fieldType>
-            <length>0</length>
-        </nextColumnBean>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </methodArugment>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</assign>
-                            </runningMethod>
-                            <includeServiceList>
-<includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
-    <serviceId>guidesBeanBeanAtomService</serviceId>
-    <serivceType>GuidesBeanBeanAtomService</serivceType>
-    <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-    <serviceCategory>ATM</serviceCategory>
-    <annotationBeanList>
-        <annotationBean>
-            <annnoteKey>Component</annnoteKey>
-            <annoteValue>guidesBeanBeanAtomService</annoteValue>
-        </annotationBean>
-        <annotationBean>
-            <annnoteKey>Transactional</annnoteKey>
-        </annotationBean>
-    </annotationBeanList>
-    <instanceAnnotationBeanList>
-        <instanceAnnotationBean>
-            <annnoteKey>Autowired</annnoteKey>
-            <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            <annoteType>GuidesBeanJPABeanDao</annoteType>
-        </instanceAnnotationBean>
-    </instanceAnnotationBeanList>
-    <includeBeanList>
-        <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
-            <tableNameNoDash>guidesBean</tableNameNoDash>
-            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-            <columnBeanList/>
-            <transientColumnBeanList/>
-            <hasDateColumn>false</hasDateColumn>
-            <hasBigDecimal>false</hasBigDecimal>
-        </includeBean>
-    </includeBeanList>
-    <includeDaoList>
-        <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
-            <daoId>guidesBeanJPABeanDao</daoId>
-            <daoType>GuidesBeanJPABeanDao</daoType>
-            <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
-                    <tableNameNoDash>guidesBean</tableNameNoDash>
-                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </includeDao>
-    </includeDaoList>
-</includeService>
-                            </includeServiceList>
-                            <includeBeanList>
-<includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</includeBean>
-                            </includeBeanList>
-                        </callBusinessService>
-                    </callBusinessServiceList>
-                </controllerMethod>
-                <controllerMethod uuid="acc0f2f2-16f8-4407-a3fa-c00e1cee5b50-com.ndl.framework.workbrench.define.MethodBean-4">
-                    <signature>getRelList</signature>
-                    <signatureDescripter>获取霞客相关列表信息(合伙霞客列表)</signatureDescripter>
-                    <responseType uuid="6d6fa370-360d-4706-b371-63df3de5a51c-com.ndl.framework.workbrench.define.ColumnBean-14">
-                        <columnName></columnName>
-                        <columnNameNoDash></columnNameNoDash>
-                        <columnNameCapitalized></columnNameCapitalized>
-                        <columnType>GuidesBean</columnType>
-                        <columnTypeIOS></columnTypeIOS>
-                        <columnTypePropertyIOS></columnTypePropertyIOS>
-                        <columnTypeJS></columnTypeJS>
-                        <columnTypeRsGetter></columnTypeRsGetter>
-                        <referNameNoDash></referNameNoDash>
-                        <referNameCapitalized></referNameCapitalized>
-                        <referType></referType>
-                        <referRieldType>PRIMARY</referRieldType>
-                        <referLength>0</referLength>
-                        <columnComment></columnComment>
-                        <ordinalPosition></ordinalPosition>
-                        <isNullable></isNullable>
-                        <columnDefault></columnDefault>
-                        <isMutable>true</isMutable>
-                        <nextFieldRative>Finished</nextFieldRative>
-                        <columnKey>DEFUALT</columnKey>
-                        <fieldType>ENTITY</fieldType>
-                        <length>0</length>
-                    </responseType>
-                    <catetory>GET</catetory>
-                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="18c69a4f-6830-4a01-bde8-88ef74f2d34a-com.ndl.framework.workbrench.define.MethodCallChainInBodyBean-2">
-                        <fromMethod>acc0f2f2-16f8-4407-a3fa-c00e1cee5b50-com.ndl.framework.workbrench.define.MethodBean-4</fromMethod>
-                        <fromResultType uuid="4139ebc7-7f9d-4252-99f6-500dbe3dce6b-com.ndl.framework.workbrench.define.ColumnBean-13">
-                            <columnName></columnName>
-                            <columnNameNoDash></columnNameNoDash>
-                            <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </fromResultType>
-                        <resultColumnBean uuid="6d6fa370-360d-4706-b371-63df3de5a51c-com.ndl.framework.workbrench.define.ColumnBean-14">
-                            <columnName></columnName>
-                            <columnNameNoDash></columnNameNoDash>
-                            <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </resultColumnBean>
-                        <catetory>CALL_OUTER</catetory>
-                    </bodyBean>
-                    <annotationBean>
-                        <annnoteKey>RequestMapping</annnoteKey>
-                        <annoteValue>guides.php?action=getRelList</annoteValue>
-                    </annotationBean>
-                    <calleeMajorService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
-                        <serviceId>guidesBeanBeanBusinessService</serviceId>
-                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                        <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                        <serviceCategory>BNS</serviceCategory>
-                        <annotationBeanList>
-                            <annotationBean>
-<annnoteKey>Service</annnoteKey>
-<annoteValue>guidesBeanBeanBusinessService</annoteValue>
-                            </annotationBean>
-                        </annotationBeanList>
-                        <instanceAnnotationBeanList>
-                            <instanceAnnotationBean>
-<annnoteKey>Autowired</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
-<annoteType>GuidesBeanBeanAtomService</annoteType>
-                            </instanceAnnotationBean>
-                        </instanceAnnotationBeanList>
-                        <runningMethod uuid="0c9a580e-c6d4-42a1-be13-04ccaa71351b-com.ndl.framework.workbrench.define.MethodBean-5">
-                            <signature>getRelList</signature>
-                            <responseType uuid="6d6fa370-360d-4706-b371-63df3de5a51c-com.ndl.framework.workbrench.define.ColumnBean-14">
-<columnName></columnName>
-<columnNameNoDash></columnNameNoDash>
-<columnNameCapitalized></columnNameCapitalized>
-<columnType>GuidesBean</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault></columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>ENTITY</fieldType>
-<length>0</length>
-                            </responseType>
-                            <catetory>BNS</catetory>
-                            <assign uuid="4d88f8ce-a00c-4788-bb8f-9df213a8b433-com.ndl.framework.workbrench.define.TableBean-6">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<methodArugment uuid="b6aa1443-e1ba-4832-8e81-a854892e43c3-com.ndl.framework.workbrench.define.ColumnBean-10">
-    <columnName>uid</columnName>
-    <columnNameNoDash>uid</columnNameNoDash>
-    <columnNameCapitalized>Uid</columnNameCapitalized>
-    <columnType>Integer</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment>相关的霞客ID</columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault>1</columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>And</nextFieldRative>
-    <nextColumnBean uuid="a58d9ef8-a72a-4f49-b425-b2c8e4305e52-com.ndl.framework.workbrench.define.ColumnBean-11">
-        <columnName>p</columnName>
-        <columnNameNoDash>p</columnNameNoDash>
-        <columnNameCapitalized>P</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment></columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault>1</columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="75bb1052-10c2-4ba5-9cc4-cad632e4f85d-com.ndl.framework.workbrench.define.ColumnBean-12">
-            <columnName>psize</columnName>
-            <columnNameNoDash>dataType</columnNameNoDash>
-            <columnNameCapitalized>DataType</columnNameCapitalized>
-            <columnType>Integer</columnType>
-            <columnTypeIOS></columnTypeIOS>
-            <columnTypePropertyIOS></columnTypePropertyIOS>
-            <columnTypeJS></columnTypeJS>
-            <columnTypeRsGetter></columnTypeRsGetter>
-            <referNameNoDash></referNameNoDash>
-            <referNameCapitalized></referNameCapitalized>
-            <referType></referType>
-            <referRieldType>PRIMARY</referRieldType>
-            <referLength>0</referLength>
-            <columnComment></columnComment>
-            <ordinalPosition></ordinalPosition>
-            <isNullable></isNullable>
-            <columnDefault>10</columnDefault>
-            <isMutable>true</isMutable>
-            <nextFieldRative>Finished</nextFieldRative>
-            <columnKey>DEFUALT</columnKey>
-            <fieldType>PRIMARY</fieldType>
-            <length>0</length>
-        </nextColumnBean>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </nextColumnBean>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>PRIMARY</fieldType>
-    <length>0</length>
-</methodArugment>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </assign>
-                        </runningMethod>
-                        <includeServiceList>
-                            <includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
-<serviceId>guidesBeanBeanAtomService</serviceId>
-<serivceType>GuidesBeanBeanAtomService</serivceType>
-<serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-<serviceCategory>ATM</serviceCategory>
-<annotationBeanList>
-    <annotationBean>
-        <annnoteKey>Component</annnoteKey>
-        <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    </annotationBean>
-    <annotationBean>
-        <annnoteKey>Transactional</annnoteKey>
-    </annotationBean>
-</annotationBeanList>
-<instanceAnnotationBeanList>
-    <instanceAnnotationBean>
-        <annnoteKey>Autowired</annnoteKey>
-        <annoteValue>guidesBeanJPABeanDao</annoteValue>
-        <annoteType>GuidesBeanJPABeanDao</annoteType>
-    </instanceAnnotationBean>
-</instanceAnnotationBeanList>
-<includeBeanList>
-    <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
-        <tableNameNoDash>guidesBean</tableNameNoDash>
-        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-        <columnBeanList/>
-        <transientColumnBeanList/>
-        <hasDateColumn>false</hasDateColumn>
-        <hasBigDecimal>false</hasBigDecimal>
-    </includeBean>
-</includeBeanList>
-<includeDaoList>
-    <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
-        <daoId>guidesBeanJPABeanDao</daoId>
-        <daoType>GuidesBeanJPABeanDao</daoType>
-        <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-        <daoCategory>JPA</daoCategory>
-        <annotationBeanList>
-            <annotationBean>
-                <annnoteKey>Repository</annnoteKey>
-                <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            </annotationBean>
-        </annotationBeanList>
-        <includeBeanList>
-            <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
-                <tableNameNoDash>guidesBean</tableNameNoDash>
-                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                <columnBeanList/>
-                <transientColumnBeanList/>
-                <hasDateColumn>false</hasDateColumn>
-                <hasBigDecimal>false</hasBigDecimal>
-            </includeBean>
-        </includeBeanList>
-    </includeDao>
-</includeDaoList>
-                            </includeService>
-                        </includeServiceList>
-                        <includeBeanList>
-                            <includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </includeBean>
-                        </includeBeanList>
-                    </calleeMajorService>
-                    <assign uuid="4d88f8ce-a00c-4788-bb8f-9df213a8b433-com.ndl.framework.workbrench.define.TableBean-6">
-                        <tableNameNoDash>guidesBean</tableNameNoDash>
-                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                        <columnBeanList/>
-                        <transientColumnBeanList/>
-                        <methodArugment uuid="b6aa1443-e1ba-4832-8e81-a854892e43c3-com.ndl.framework.workbrench.define.ColumnBean-10">
-                            <columnName>uid</columnName>
-                            <columnNameNoDash>uid</columnNameNoDash>
-                            <columnNameCapitalized>Uid</columnNameCapitalized>
-                            <columnType>Integer</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment>相关的霞客ID</columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault>1</columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="a58d9ef8-a72a-4f49-b425-b2c8e4305e52-com.ndl.framework.workbrench.define.ColumnBean-11">
-<columnName>p</columnName>
-<columnNameNoDash>p</columnNameNoDash>
-<columnNameCapitalized>P</columnNameCapitalized>
-<columnType>Integer</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault>1</columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>And</nextFieldRative>
-<nextColumnBean uuid="75bb1052-10c2-4ba5-9cc4-cad632e4f85d-com.ndl.framework.workbrench.define.ColumnBean-12">
-    <columnName>psize</columnName>
-    <columnNameNoDash>dataType</columnNameNoDash>
-    <columnNameCapitalized>DataType</columnNameCapitalized>
-    <columnType>Integer</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault>10</columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>PRIMARY</fieldType>
-    <length>0</length>
-</nextColumnBean>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </nextColumnBean>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>PRIMARY</fieldType>
-                            <length>0</length>
-                        </methodArugment>
-                        <hasDateColumn>false</hasDateColumn>
-                        <hasBigDecimal>false</hasBigDecimal>
-                    </assign>
-                    <callBusinessServiceList>
-                        <callBusinessService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
-                            <serviceId>guidesBeanBeanBusinessService</serviceId>
-                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                            <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                            <serviceCategory>BNS</serviceCategory>
-                            <annotationBeanList>
-<annotationBean>
-    <annnoteKey>Service</annnoteKey>
-    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
-</annotationBean>
-                            </annotationBeanList>
-                            <instanceAnnotationBeanList>
-<instanceAnnotationBean>
-    <annnoteKey>Autowired</annnoteKey>
-    <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    <annoteType>GuidesBeanBeanAtomService</annoteType>
-</instanceAnnotationBean>
-                            </instanceAnnotationBeanList>
-                            <runningMethod uuid="0c9a580e-c6d4-42a1-be13-04ccaa71351b-com.ndl.framework.workbrench.define.MethodBean-5">
-<signature>getRelList</signature>
-<responseType uuid="6d6fa370-360d-4706-b371-63df3de5a51c-com.ndl.framework.workbrench.define.ColumnBean-14">
-    <columnName></columnName>
-    <columnNameNoDash></columnNameNoDash>
-    <columnNameCapitalized></columnNameCapitalized>
-    <columnType>GuidesBean</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault></columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>ENTITY</fieldType>
-    <length>0</length>
-</responseType>
-<catetory>BNS</catetory>
-<assign uuid="4d88f8ce-a00c-4788-bb8f-9df213a8b433-com.ndl.framework.workbrench.define.TableBean-6">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <methodArugment uuid="b6aa1443-e1ba-4832-8e81-a854892e43c3-com.ndl.framework.workbrench.define.ColumnBean-10">
-        <columnName>uid</columnName>
-        <columnNameNoDash>uid</columnNameNoDash>
-        <columnNameCapitalized>Uid</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment>相关的霞客ID</columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault>1</columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="a58d9ef8-a72a-4f49-b425-b2c8e4305e52-com.ndl.framework.workbrench.define.ColumnBean-11">
-            <columnName>p</columnName>
-            <columnNameNoDash>p</columnNameNoDash>
-            <columnNameCapitalized>P</columnNameCapitalized>
-            <columnType>Integer</columnType>
-            <columnTypeIOS></columnTypeIOS>
-            <columnTypePropertyIOS></columnTypePropertyIOS>
-            <columnTypeJS></columnTypeJS>
-            <columnTypeRsGetter></columnTypeRsGetter>
-            <referNameNoDash></referNameNoDash>
-            <referNameCapitalized></referNameCapitalized>
-            <referType></referType>
-            <referRieldType>PRIMARY</referRieldType>
-            <referLength>0</referLength>
-            <columnComment></columnComment>
-            <ordinalPosition></ordinalPosition>
-            <isNullable></isNullable>
-            <columnDefault>1</columnDefault>
-            <isMutable>true</isMutable>
-            <nextFieldRative>And</nextFieldRative>
-            <nextColumnBean uuid="75bb1052-10c2-4ba5-9cc4-cad632e4f85d-com.ndl.framework.workbrench.define.ColumnBean-12">
-                <columnName>psize</columnName>
-                <columnNameNoDash>dataType</columnNameNoDash>
-                <columnNameCapitalized>DataType</columnNameCapitalized>
-                <columnType>Integer</columnType>
-                <columnTypeIOS></columnTypeIOS>
-                <columnTypePropertyIOS></columnTypePropertyIOS>
-                <columnTypeJS></columnTypeJS>
-                <columnTypeRsGetter></columnTypeRsGetter>
-                <referNameNoDash></referNameNoDash>
-                <referNameCapitalized></referNameCapitalized>
-                <referType></referType>
-                <referRieldType>PRIMARY</referRieldType>
-                <referLength>0</referLength>
-                <columnComment></columnComment>
-                <ordinalPosition></ordinalPosition>
-                <isNullable></isNullable>
-                <columnDefault>10</columnDefault>
-                <isMutable>true</isMutable>
-                <nextFieldRative>Finished</nextFieldRative>
-                <columnKey>DEFUALT</columnKey>
-                <fieldType>PRIMARY</fieldType>
-                <length>0</length>
-            </nextColumnBean>
-            <columnKey>DEFUALT</columnKey>
-            <fieldType>PRIMARY</fieldType>
-            <length>0</length>
-        </nextColumnBean>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </methodArugment>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</assign>
-                            </runningMethod>
-                            <includeServiceList>
-<includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
-    <serviceId>guidesBeanBeanAtomService</serviceId>
-    <serivceType>GuidesBeanBeanAtomService</serivceType>
-    <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-    <serviceCategory>ATM</serviceCategory>
-    <annotationBeanList>
-        <annotationBean>
-            <annnoteKey>Component</annnoteKey>
-            <annoteValue>guidesBeanBeanAtomService</annoteValue>
-        </annotationBean>
-        <annotationBean>
-            <annnoteKey>Transactional</annnoteKey>
-        </annotationBean>
-    </annotationBeanList>
-    <instanceAnnotationBeanList>
-        <instanceAnnotationBean>
-            <annnoteKey>Autowired</annnoteKey>
-            <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            <annoteType>GuidesBeanJPABeanDao</annoteType>
-        </instanceAnnotationBean>
-    </instanceAnnotationBeanList>
-    <includeBeanList>
-        <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
-            <tableNameNoDash>guidesBean</tableNameNoDash>
-            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-            <columnBeanList/>
-            <transientColumnBeanList/>
-            <hasDateColumn>false</hasDateColumn>
-            <hasBigDecimal>false</hasBigDecimal>
-        </includeBean>
-    </includeBeanList>
-    <includeDaoList>
-        <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
-            <daoId>guidesBeanJPABeanDao</daoId>
-            <daoType>GuidesBeanJPABeanDao</daoType>
-            <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
-                    <tableNameNoDash>guidesBean</tableNameNoDash>
-                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </includeDao>
-    </includeDaoList>
-</includeService>
-                            </includeServiceList>
-                            <includeBeanList>
-<includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
+<includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
     <tableNameNoDash>guidesBean</tableNameNoDash>
     <tableNameCapitalized>GuidesBean</tableNameCapitalized>
     <columnBeanList/>
@@ -1725,7 +1725,7 @@
                     </callBusinessServiceList>
                 </controllerMethod>
             </controllerMethodList>
-            <includeService uuid="25c7686e-5421-42a2-a4a6-45b4d45f4760-com.ndl.framework.workbrench.define.ServiceBean-0">
+            <includeService uuid="23e85ccd-8eb2-49fb-93ff-c94de179b1d2-com.ndl.framework.workbrench.define.ServiceBean-0">
                 <serviceId>guidesBeanBeanBusinessService</serviceId>
                 <serivceType>GuidesBeanBeanBusinessService</serivceType>
                 <serviceDescipter>Service Type:GuidesBean
@@ -1745,7 +1745,7 @@
                     </instanceAnnotationBean>
                 </instanceAnnotationBeanList>
                 <includeServiceList>
-                    <includeService uuid="c5de8109-9ff2-4d83-ad8e-4319786fcfce-com.ndl.framework.workbrench.define.ServiceBean-1">
+                    <includeService uuid="a407bc5b-fb92-4adc-bb8f-1cdb08d18b34-com.ndl.framework.workbrench.define.ServiceBean-1">
                         <serviceId>guidesBeanBeanAtomService</serviceId>
                         <serivceType>GuidesBeanBeanAtomService</serivceType>
                         <serviceDescipter>Service Type:GuidesBean
@@ -1753,11 +1753,11 @@
                         <serviceCategory>ATM</serviceCategory>
                         <annotationBeanList>
                             <annotationBean>
-<annnoteKey>Component</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
+<annnoteKey>Transactional</annnoteKey>
                             </annotationBean>
                             <annotationBean>
-<annnoteKey>Transactional</annnoteKey>
+<annnoteKey>Component</annnoteKey>
+<annoteValue>guidesBeanBeanAtomService</annoteValue>
                             </annotationBean>
                         </annotationBeanList>
                         <instanceAnnotationBeanList>
@@ -1768,7 +1768,7 @@
                             </instanceAnnotationBean>
                         </instanceAnnotationBeanList>
                         <includeBeanList>
-                            <includeBean uuid="a5a38802-106f-4015-8254-0a190daf735a-com.ndl.framework.workbrench.define.TableBean-2">
+                            <includeBean uuid="4da65f08-c658-4885-ad07-ad15ed092b3e-com.ndl.framework.workbrench.define.TableBean-2">
 <tableNameNoDash>guidesBean</tableNameNoDash>
 <tableNameCapitalized>GuidesBean</tableNameCapitalized>
 <columnBeanList/>
@@ -1778,7 +1778,7 @@
                             </includeBean>
                         </includeBeanList>
                         <includeDaoList>
-                            <includeDao uuid="6501f4c9-5589-42aa-9670-093130850a6c-com.ndl.framework.workbrench.define.DaoBean-0">
+                            <includeDao uuid="52fa8f57-c9f3-4b6b-9d35-d5c9e541776b-com.ndl.framework.workbrench.define.DaoBean-0">
 <daoId>guidesBeanJPABeanDao</daoId>
 <daoType>GuidesBeanJPABeanDao</daoType>
 <daoDescipter>Service Type:GuidesBean
@@ -1791,7 +1791,7 @@
     </annotationBean>
 </annotationBeanList>
 <includeBeanList>
-    <includeBean uuid="b5ca87f2-4f31-47e1-807a-c6a91db0c611-com.ndl.framework.workbrench.define.TableBean-3">
+    <includeBean uuid="f54c7096-c285-4bf7-9cbb-fe17a991f8ee-com.ndl.framework.workbrench.define.TableBean-3">
         <tableNameNoDash>guidesBean</tableNameNoDash>
         <tableNameCapitalized>GuidesBean</tableNameCapitalized>
         <columnBeanList/>
@@ -1805,7 +1805,7 @@
                     </includeService>
                 </includeServiceList>
                 <includeBeanList>
-                    <includeBean uuid="944cd373-b09d-4c38-87ba-09fa34381bc4-com.ndl.framework.workbrench.define.TableBean-1">
+                    <includeBean uuid="a9148b6a-f94c-40c2-9302-91c59ed5c670-com.ndl.framework.workbrench.define.TableBean-1">
                         <tableNameNoDash>guidesBean</tableNameNoDash>
                         <tableNameCapitalized>GuidesBean</tableNameCapitalized>
                         <columnBeanList/>
@@ -1816,7 +1816,7 @@
                 </includeBeanList>
             </includeService>
             <includeBeanList>
-                <includeBean uuid="27322a87-a025-448d-a661-5ce353fc45d8-com.ndl.framework.workbrench.define.TableBean-0">
+                <includeBean uuid="dcf5c649-3a29-441e-b2aa-17a3bbe84a14-com.ndl.framework.workbrench.define.TableBean-0">
                     <tableNameNoDash>guidesBean</tableNameNoDash>
                     <tableNameCapitalized>GuidesBean</tableNameCapitalized>
                     <columnBeanList/>

@@ -365,9 +365,9 @@ public class APIModelForFrontPointManager extends APIModelManager {
 			String objectType=StringUtils.capitalize(className);//+tableBean.getTableNameCapitalized();
 	
 			if (object.getClass()==JSONArray.class){
-				columnBean=createColumnBean(className,objectType,FieldTypeEnum.LIST);
+				columnBean=createColumnBean(className,className,objectType,FieldTypeEnum.LIST,key);
 			}else{
-				columnBean=createColumnBean(className,objectType,FieldTypeEnum.ENTITY);
+				columnBean=createColumnBean(className,className,objectType,FieldTypeEnum.ENTITY,key);
 			}
 			columnBean.setColumnKey("TST");
 			addTransientBean(transientBean,columnBean);
@@ -518,15 +518,17 @@ public class APIModelForFrontPointManager extends APIModelManager {
 		}
 	}
 	
-	private ColumnBean createColumnBean(String columnNameNoDash,
-			String columnKey,FieldTypeEnum fieldType){
+	private ColumnBean createColumnBean(String columnNameNoDash,String columnNameCapitalized,
+			String columnKey,FieldTypeEnum fieldType,String referNameNoDash){
 		
 		ColumnBean columnBean=new ColumnBean();
 		columnBean.setColumnType(columnKey);
 		columnBean.setColumnNameNoDash(columnNameNoDash);
 		columnBean.setColumnComment(columnKey);
-		columnBean.setColumnNameCapitalized(StringUtils.capitalize(columnNameNoDash));
+		columnBean.setColumnNameCapitalized(StringUtils.capitalize(columnNameCapitalized));
 		columnBean.setFieldType(fieldType);
+		columnBean.setReferNameNoDash(referNameNoDash);
+		columnBean.setReferNameCapitalized(StringUtils.capitalize(referNameNoDash));
 		ProductParseTemplateUtil.parseTypeToIOS(columnBean);
 		return columnBean;
 	}

@@ -40,13 +40,18 @@ public class AnnotationBean implements Cloneable,Serializable{
 	private AnnotationTypeEnum annnoteKey;
 	
 	/**
-	 * 注解值
+	 * 在生成的JSON调用中
+	 * annoteValue
+	 */
+	/**
+	 * 注解值,或者是方法的返回值
 	 */
 	@XmlElement
 	private String annoteValue;
 	
 	/**
 	 * 当是实例变量时，实例变量的类型，它应当和TableBean的值一致。
+	 * 具体类型，或者是方法返回值、调用值
 	 */
 	@XmlElement
 	private String annoteType;

@@ -105,9 +105,9 @@ public class TransientBean implements Cloneable,Serializable{
 	}
 
 	public void addColumnBean(ColumnBean columnBean){
-		String field=columnBean.getColumnNameNoDash();
+		String field=columnBean.getColumnType();
 		for(ColumnBean cBean:columnBeanList){
-			if(cBean.getColumnNameNoDash().equals(field)){
+			if(cBean.getColumnType().equals(field)){
 				return;
 			}
 		}

@@ -328,18 +328,19 @@ public class ControllerManager {
 	 */
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter,  String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		String methodSignature=ClassHelper.namingUsingJavaMethod(controllerType);
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,returnColumnBeanType);
 	}
 	
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter,  String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+			ColumnBean startColumnBean,String methodSignatureUri,
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		String methodSignature=ClassHelper.namingUsingJavaMethod(controllerType);
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri,returnColumnBeanType);
 	}
 	
 	/**
@@ -363,16 +364,17 @@ public class ControllerManager {
 	 */
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter, String methodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,returnColumnBeanType);
 	}
 	
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter, String methodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum ,String methodSignatureUri) {
+			ColumnBean startColumnBean,String methodSignatureUri,
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri,returnColumnBeanType);
 	}
 	
 	/**
@@ -398,16 +400,17 @@ public class ControllerManager {
 	
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,returnColumnBeanType);
 	}
 	
 	public static ControllerManager addControllerMethodGetModelAttribute(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+			ColumnBean startColumnBean,String methodSignatureUri,
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GET,returnFieldEnum,methodSignatureUri,returnColumnBeanType);
 	}
 	
 	/**
@@ -425,18 +428,19 @@ public class ControllerManager {
 	 */
 	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
 			String descripter,  String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		String methodSignature=ClassHelper.namingUsingJavaMethod(controllerType);
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean,defualtCalleeAnnotationBean, MethCategoryEnum.POST,returnFieldEnum);
+				startColumnBean,defualtCalleeAnnotationBean, MethCategoryEnum.POST,returnFieldEnum,returnColumnBeanType);
 	}
 	
 	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
 			String descripter,  String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+			ColumnBean startColumnBean,String methodSignatureUri,
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		String methodSignature=ClassHelper.namingUsingJavaMethod(controllerType);
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean,defualtCalleeAnnotationBean, MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri);
+				startColumnBean,defualtCalleeAnnotationBean, MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri, returnColumnBeanType);
 	}
 	
 	/**
@@ -455,16 +459,17 @@ public class ControllerManager {
 	 */
 	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
 			String descripter, String methodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,returnColumnBeanType);
 	}
 	
 	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
 			String descripter, String methodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+			ColumnBean startColumnBean,String methodSignatureUri,
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,methodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri,returnColumnBeanType);
 	}
 	/**
 	 * 
@@ -484,16 +489,17 @@ public class ControllerManager {
 	 */
 	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,returnColumnBeanType);
 	}
 	
 	public static ControllerManager addControllerMethodPostRequestBody(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+			ColumnBean startColumnBean,String methodSignatureUri,
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.POST,returnFieldEnum,methodSignatureUri,returnColumnBeanType);
 	}
 	
 	/**
@@ -512,26 +518,26 @@ public class ControllerManager {
 	 */
 	public static ControllerManager addControllerMethodGetPathVariable(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean ,FieldTypeEnum returnFieldEnum) {
+			ColumnBean startColumnBean ,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GETPATH,returnFieldEnum);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GETPATH,returnFieldEnum,returnColumnBeanType);
 	}
 
 	public static ControllerManager addControllerMethodGetPathVariable(String controllerType, String uri,
 			String descripter, String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
-			ColumnBean startColumnBean ,FieldTypeEnum returnFieldEnum,String methodSignatureUri) {
+			ColumnBean startColumnBean ,String methodSignatureUri,FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType) {
 		return addControllerMethod(controllerType, uri, descripter,methodSignature,servicemethodSignature, methodSignatureDescripter,
-				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GETPATH,returnFieldEnum,methodSignatureUri);
+				startColumnBean, defualtCalleeAnnotationBean,MethCategoryEnum.GETPATH,returnFieldEnum,methodSignatureUri,returnColumnBeanType);
 	}
 	
 	private static ControllerManager addControllerMethod(String controllerType, String uri, String descripter,
 			String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
 			ColumnBean startColumnBean,AnnotationBean calleeServiceAnnotationBean,MethCategoryEnum methodCategory,
-			FieldTypeEnum returnFieldEnum){
+			FieldTypeEnum returnFieldEnum,ColumnBean returnColumnBeanType){
 		return addControllerMethod( controllerType,  uri,  descripter,
 				 methodSignature, servicemethodSignature,  methodSignatureDescripter,
 				 startColumnBean, calleeServiceAnnotationBean, methodCategory,
-				 returnFieldEnum,  uri);
+				 returnFieldEnum,  uri,returnColumnBeanType);
 	}
 	
 	/**
@@ -559,7 +565,7 @@ public class ControllerManager {
 	private static ControllerManager addControllerMethod(String controllerType, String uri, String descripter,
 			String methodSignature,String servicemethodSignature, String methodSignatureDescripter,
 			ColumnBean startColumnBean,AnnotationBean calleeServiceAnnotationBean,MethCategoryEnum methodCategory,
-			FieldTypeEnum returnFieldEnum, String methodSignatureUri) {
+			FieldTypeEnum returnFieldEnum, String methodSignatureUri,ColumnBean returnColumnBeanType) {
 
 		if (logger.isInfoEnabled()) {
 			logger.info("ControllerManager addControllerMethod Begin:");
@@ -619,13 +625,22 @@ public class ControllerManager {
 			return null;
 
 		}
+		ColumnBean responseType=null;
+		
 		// 调用服务方法的返回类型,此处定义为TableBean更为合适
-		ColumnBean responseType = new ColumnBean();
+		responseType = new ColumnBean();
 		responseType.setColumnType(controllerType);
 		responseType.setFieldType(returnFieldEnum);
+
+		// responseType=returnColumnBeanType;
+		
 		methodManager.setAssignList(entityBean);
-		methodManager.setResultColumnBean(responseType);
 		methodManager.setResponseType(responseType);
+		if(returnColumnBeanType==null){//返回类型和返回类型的声明有别
+			methodManager.setResultColumnBean(responseType);
+		}else{
+			methodManager.setResultColumnBean(returnColumnBeanType);
+		}
 		methodManager.setCallBusinessServiceMethod(toServiceBean, servicemethodSignature, responseType, entityBean,MethodRuntimeEnum.CALL_OUTER);
 		methodManager.addCallBusinessService(toServiceBean);
 		

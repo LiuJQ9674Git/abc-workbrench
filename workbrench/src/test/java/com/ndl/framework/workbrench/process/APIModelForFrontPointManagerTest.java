@@ -80,13 +80,17 @@ public class APIModelForFrontPointManagerTest {
 
 			ControllerManager manager;
 			FieldTypeEnum returnFieldEnum=FieldTypeEnum.ENTITY;
+			ColumnBean returnColumnBeanType=new ColumnBean();
+			returnColumnBeanType.setColumnName("dataGuidesBean");
+			returnColumnBeanType.setColumnNameCapitalized("DataGuidesBean");
+			returnColumnBeanType.setColumnNameNoDash("dataGuidesBean");
+			returnColumnBeanType.setColumnType("DataGuidesBean");
+			returnColumnBeanType.setFieldType(FieldTypeEnum.ENTITY);
 			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum,methodUri);
-			
-			
-			//manager.set
+					startColumnBean,methodUri,returnFieldEnum,returnColumnBeanType);
+
 			controllerMethodSignature = "getList";
 			toServiceMethodSignature = "getList";
 			methodUri= "guides.php?action=getList";
@@ -125,12 +129,19 @@ public class APIModelForFrontPointManagerTest {
 			dataTypeColumnBean.setNextColumnBean(dataOrderColumnBean);
 			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
 			startColumnBean.setNextColumnBean(psizeColumnBean);
-
-		
-			//returnFieldEnum=FieldTypeEnum.LIST;
+			
+			ColumnBean returnTypeGetList=new ColumnBean();
+			returnTypeGetList.setColumnName("dataGuidesBean");
+			returnTypeGetList.setColumnNameCapitalized("DataGuidesBean");
+			returnTypeGetList.setColumnNameNoDash("dataGuidesBean");
+			returnTypeGetList.setColumnType("DataGuidesBean");
+			returnTypeGetList.setFieldType(FieldTypeEnum.ENTITY);
+			returnTypeGetList.setColumnType("DataGuidesBean");
+			FieldTypeEnum returnGetListEnum=FieldTypeEnum.ENTITY;
+			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum,methodUri);
+					startColumnBean,methodUri,returnGetListEnum,returnTypeGetList);
 			
 			//获取霞客相关列表信息(合伙霞客列表)
 			controllerMethodSignature = "getRelList";
@@ -168,10 +179,18 @@ public class APIModelForFrontPointManagerTest {
 			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
 		
 			startColumnBean.setNextColumnBean(psizeColumnBean);
-			//returnFieldEnum=FieldTypeEnum.LIST;
+			FieldTypeEnum returnGetRelListFieldEnum=FieldTypeEnum.ENTITY;
+			ColumnBean returnTypeGetRelList=new ColumnBean();
+			returnTypeGetRelList.setColumnName("dataGuidesBean");
+			returnTypeGetRelList.setColumnNameCapitalized("DataGuidesBean");
+			returnTypeGetRelList.setColumnNameNoDash("dataGuidesBean");
+			returnTypeGetRelList.setColumnType("DataGuidesBean");
+			returnTypeGetRelList.setFieldType(FieldTypeEnum.ENTITY);
+			returnTypeGetRelList.setColumnType("DataGuidesBean");
+			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum,methodUri);
+					startColumnBean,methodUri,returnGetRelListFieldEnum,returnTypeGetRelList);
 			
 			assertNotNull(manager);
 			

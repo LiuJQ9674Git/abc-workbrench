@@ -18,93 +18,19 @@
             <instanceAnnotations/>
             <methodDescripterMap>
                 <entry>
-                    <key>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</key>
-                    <value>
-                        <methodReturnAnnotation>
-                            <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>GuidesBean</annoteValue>
-                        </methodReturnAnnotation>
-                        <methodHeaderAnnotation>
-                            <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>guides.php?action=getRelList</annoteValue>
-                        </methodHeaderAnnotation>
-                        <comment>/**
-* className:GuidesBeanBeanController* serviceCategory:POST获取霞客相关列表信息(合伙霞客列表)
-**/</comment>
-                        <signatureEntirety>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</signatureEntirety>
-                        <argumentDescripterList>
-                            <argumentDescripter>
-<columnName>uid</columnName>
-<fieldName>uid</fieldName>
-<fieldNameSetter>Uid</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment>相关的霞客ID</fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>1</defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName>p</columnName>
-<fieldName>p</fieldName>
-<fieldNameSetter>P</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>1</defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName>psize</columnName>
-<fieldName>dataType</fieldName>
-<fieldNameSetter>DataType</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>10</defaultValue>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                        </argumentDescripterList>
-                        <bodyMethodMap/>
-                        <bodyFragmentSlice/>
-                    </value>
-                </entry>
-                <entry>
                     <key>public  GuidesBean getList(  Integer  p ,   String  dataOrder)</key>
                     <value>
                         <methodReturnAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>GuidesBean</annoteValue>
+                            <annoteValue> GuidesBean </annoteValue>
+                            <annoteType>DataGuidesBean</annoteType>
                         </methodReturnAnnotation>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
                             <annoteValue>guides.php?action=getList</annoteValue>
                         </methodHeaderAnnotation>
                         <comment>/**
-* className:GuidesBeanBeanController* serviceCategory:POST获取霞客列表
+获取霞客列表
 **/</comment>
                         <signatureEntirety>public  GuidesBean getList(  Integer  p ,   String  dataOrder)</signatureEntirety>
                         <argumentDescripterList>
@@ -186,18 +112,95 @@
                     </value>
                 </entry>
                 <entry>
+                    <key>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</key>
+                    <value>
+                        <methodReturnAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue> GuidesBean </annoteValue>
+                            <annoteType>DataGuidesBean</annoteType>
+                        </methodReturnAnnotation>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>guides.php?action=getRelList</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+获取霞客相关列表信息(合伙霞客列表)
+**/</comment>
+                        <signatureEntirety>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName>uid</columnName>
+<fieldName>uid</fieldName>
+<fieldNameSetter>Uid</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment>相关的霞客ID</fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>p</columnName>
+<fieldName>p</fieldName>
+<fieldNameSetter>P</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>1</defaultValue>
+<nextFieldRative>And</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                            <argumentDescripter>
+<columnName>psize</columnName>
+<fieldName>dataType</fieldName>
+<fieldNameSetter>DataType</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue>10</defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+                <entry>
                     <key>public  GuidesBean getItemById(  String  action ,   Integer  id)</key>
                     <value>
                         <methodReturnAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>GuidesBean</annoteValue>
+                            <annoteValue> GuidesBean </annoteValue>
+                            <annoteType>DataGuidesBean</annoteType>
                         </methodReturnAnnotation>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
                             <annoteValue>guides.php?action=getItemById</annoteValue>
                         </methodHeaderAnnotation>
                         <comment>/**
-* className:GuidesBeanBeanController* serviceCategory:POST获取霞客信
+获取霞客信
 **/</comment>
                         <signatureEntirety>public  GuidesBean getItemById(  String  action ,   Integer  id)</signatureEntirety>
                         <argumentDescripterList>

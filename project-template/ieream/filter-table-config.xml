@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TableColumnConfig uuid="a9fb431e-2906-447e-b6cd-82fd5ffba841-com.ndl.framework.workbrench.define.TableColumnConfig-5">
+<TableColumnConfig uuid="8002cf71-d7df-4225-b816-1c9c3f9ffc95-com.ndl.framework.workbrench.define.TableColumnConfig-5">
     <excludeBeanList/>
     <transientBeanList>
-        <transientBean uuid="edc96a3a-85ad-40b1-b350-2434c11f62f4-com.ndl.framework.workbrench.define.TransientBean-0">
+        <transientBean uuid="879030bc-bd53-46f9-9b17-c801f9a44fc9-com.ndl.framework.workbrench.define.TransientBean-0">
             <tableNameCapitalized>Guides</tableNameCapitalized>
             <tableName>Guides</tableName>
             <columnBeanList>
-                <columnBean uuid="29dbe72a-7b1b-4587-ac9a-47138a1bafd5-com.ndl.framework.workbrench.define.ColumnBean-0">
+                <columnBean uuid="c7b19da7-ed82-4b3d-830e-3ecd8c305929-com.ndl.framework.workbrench.define.ColumnBean-0">
                     <columnName></columnName>
                     <columnNameNoDash>dataGuides</columnNameNoDash>
                     <columnNameCapitalized>DataGuides</columnNameCapitalized>
@@ -16,8 +16,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -34,11 +34,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="44408976-43ec-4892-aefd-dd3a2ead95c8-com.ndl.framework.workbrench.define.TransientBean-1">
+        <transientBean uuid="b3619011-a6e8-4a2d-86e4-7f1247677d97-com.ndl.framework.workbrench.define.TransientBean-1">
             <tableNameCapitalized>DataGuides</tableNameCapitalized>
             <tableName>DataGuides</tableName>
             <columnBeanList>
-                <columnBean uuid="f34a924f-598a-41d7-9fce-79fc3989605c-com.ndl.framework.workbrench.define.ColumnBean-188">
+                <columnBean uuid="f2c58d38-82fc-4b3b-9676-e0fe783e87e5-com.ndl.framework.workbrench.define.ColumnBean-189">
                     <columnName></columnName>
                     <columnNameNoDash>avatarDataGuides</columnNameNoDash>
                     <columnNameCapitalized>AvatarDataGuides</columnNameCapitalized>
@@ -48,8 +48,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>avatar</referNameNoDash>
+                    <referNameCapitalized>Avatar</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -63,7 +63,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c1455af2-169a-421f-9005-ee7a904439b8-com.ndl.framework.workbrench.define.ColumnBean-161">
+                <columnBean uuid="c0024684-3442-4623-95a5-f7b28fa0914f-com.ndl.framework.workbrench.define.ColumnBean-162">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataGuides</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataGuides</columnNameCapitalized>
@@ -73,8 +73,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>district</referNameNoDash>
+                    <referNameCapitalized>District</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -88,7 +88,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="483e3a85-7d51-4a70-b8c1-49f279d4a6a6-com.ndl.framework.workbrench.define.ColumnBean-4">
+                <columnBean uuid="a4c0beeb-4f47-42dd-a6f3-5570c10ee285-com.ndl.framework.workbrench.define.ColumnBean-4">
                     <columnName></columnName>
                     <columnNameNoDash>union_guide_id_listDataGuides</columnNameNoDash>
                     <columnNameCapitalized>Union_guide_id_listDataGuides</columnNameCapitalized>
@@ -98,8 +98,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>union_guide_id_list</referNameNoDash>
+                    <referNameCapitalized>Union_guide_id_list</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -113,7 +113,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c0e2ea1f-63cf-48c8-9703-ee99b315201f-com.ndl.framework.workbrench.define.ColumnBean-169">
+                <columnBean uuid="61d4b6d7-6868-4d9f-8854-d96088b81152-com.ndl.framework.workbrench.define.ColumnBean-170">
                     <columnName></columnName>
                     <columnNameNoDash>cityDataGuides</columnNameNoDash>
                     <columnNameCapitalized>CityDataGuides</columnNameCapitalized>
@@ -123,8 +123,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>city</referNameNoDash>
+                    <referNameCapitalized>City</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -138,7 +138,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0e8db90e-794f-4e86-ad8e-bdee7ab68f6c-com.ndl.framework.workbrench.define.ColumnBean-152">
+                <columnBean uuid="2db5d5b7-1a9a-400e-8b7a-8524c15b20cd-com.ndl.framework.workbrench.define.ColumnBean-153">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataGuides</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataGuides</columnNameCapitalized>
@@ -148,8 +148,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>province</referNameNoDash>
+                    <referNameCapitalized>Province</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -166,11 +166,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="fbba5186-83a9-4b79-a9fb-0b654c25a9bf-com.ndl.framework.workbrench.define.TransientBean-2">
+        <transientBean uuid="508ca2ee-9e70-414e-af0f-99b867545138-com.ndl.framework.workbrench.define.TransientBean-2">
             <tableNameCapitalized>Tags</tableNameCapitalized>
             <tableName>Tags</tableName>
             <columnBeanList>
-                <columnBean uuid="3f472dfd-2606-4c11-a0c0-05583be1b3e1-com.ndl.framework.workbrench.define.ColumnBean-516">
+                <columnBean uuid="7e422545-b2cc-4912-aff1-bdde4e033a8a-com.ndl.framework.workbrench.define.ColumnBean-520">
                     <columnName></columnName>
                     <columnNameNoDash>dataTags</columnNameNoDash>
                     <columnNameCapitalized>DataTags</columnNameCapitalized>
@@ -180,8 +180,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -198,11 +198,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="453aeba0-eea2-4851-99f0-6b75bee1603c-com.ndl.framework.workbrench.define.TransientBean-3">
+        <transientBean uuid="78b371c0-7547-4c1e-8b6a-65a1316653b9-com.ndl.framework.workbrench.define.TransientBean-3">
             <tableNameCapitalized>Locations</tableNameCapitalized>
             <tableName>Locations</tableName>
             <columnBeanList>
-                <columnBean uuid="ac9a0ec2-5fbc-4f68-8a05-778550393bcf-com.ndl.framework.workbrench.define.ColumnBean-565">
+                <columnBean uuid="aad6bb60-6679-428f-b329-8a2272e96279-com.ndl.framework.workbrench.define.ColumnBean-569">
                     <columnName></columnName>
                     <columnNameNoDash>dataLocations</columnNameNoDash>
                     <columnNameCapitalized>DataLocations</columnNameCapitalized>
@@ -212,8 +212,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -230,11 +230,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="cb05f9ef-1bdd-440d-9bd1-74254f6b0751-com.ndl.framework.workbrench.define.TransientBean-4">
+        <transientBean uuid="647f6054-1bab-4c83-b121-72a05670742a-com.ndl.framework.workbrench.define.TransientBean-4">
             <tableNameCapitalized>DataLocations</tableNameCapitalized>
             <tableName>DataLocations</tableName>
             <columnBeanList>
-                <columnBean uuid="31f8dc19-ea18-4d41-ab0c-469bfbce3961-com.ndl.framework.workbrench.define.ColumnBean-567">
+                <columnBean uuid="626691e1-1b8e-4f08-a170-6ea4c940e4d5-com.ndl.framework.workbrench.define.ColumnBean-571">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataLocations</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataLocations</columnNameCapitalized>
@@ -244,8 +244,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>province</referNameNoDash>
+                    <referNameCapitalized>Province</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -262,11 +262,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="06718719-cb79-4b56-a06a-cb4a5d0a7d67-com.ndl.framework.workbrench.define.TransientBean-5">
+        <transientBean uuid="47a3c2e4-33e8-4491-845f-a2e21556d195-com.ndl.framework.workbrench.define.TransientBean-5">
             <tableNameCapitalized>ProvinceDataLocations</tableNameCapitalized>
             <tableName>ProvinceDataLocations</tableName>
             <columnBeanList>
-                <columnBean uuid="52153f27-8587-4986-9db6-683ab83351bb-com.ndl.framework.workbrench.define.ColumnBean-572">
+                <columnBean uuid="7a25bed9-b314-4eb9-8a7d-2a50265669dd-com.ndl.framework.workbrench.define.ColumnBean-576">
                     <columnName></columnName>
                     <columnNameNoDash>city_listProvinceDataLocations</columnNameNoDash>
                     <columnNameCapitalized>City_listProvinceDataLocations</columnNameCapitalized>
@@ -276,8 +276,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>city_list</referNameNoDash>
+                    <referNameCapitalized>City_list</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -294,11 +294,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="cc9d62e5-26d3-4f07-9226-ca429080e7a4-com.ndl.framework.workbrench.define.TransientBean-6">
+        <transientBean uuid="c40e9502-ef55-4601-af3e-f93d1a30c9f3-com.ndl.framework.workbrench.define.TransientBean-6">
             <tableNameCapitalized>Hotels</tableNameCapitalized>
             <tableName>Hotels</tableName>
             <columnBeanList>
-                <columnBean uuid="343b685d-b86b-4ed0-89e7-4ae45f555c12-com.ndl.framework.workbrench.define.ColumnBean-601">
+                <columnBean uuid="d3c74248-b786-4481-8307-14ac105b3c0a-com.ndl.framework.workbrench.define.ColumnBean-619">
                     <columnName></columnName>
                     <columnNameNoDash>dataHotels</columnNameNoDash>
                     <columnNameCapitalized>DataHotels</columnNameCapitalized>
@@ -308,8 +308,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -326,11 +326,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="5dee601b-0a3c-4491-831a-a28e76cc07ff-com.ndl.framework.workbrench.define.TransientBean-7">
+        <transientBean uuid="12a9241d-193a-4d63-abc1-1f164b681603-com.ndl.framework.workbrench.define.TransientBean-7">
             <tableNameCapitalized>DataHotels</tableNameCapitalized>
             <tableName>DataHotels</tableName>
             <columnBeanList>
-                <columnBean uuid="33a7c4c6-565b-44d1-88e6-92c058d7bd3c-com.ndl.framework.workbrench.define.ColumnBean-609">
+                <columnBean uuid="3893ce43-6dea-4904-b9ac-6ecac274baf1-com.ndl.framework.workbrench.define.ColumnBean-627">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_specialDataHotels</columnNameNoDash>
                     <columnNameCapitalized>Service_days_specialDataHotels</columnNameCapitalized>
@@ -340,8 +340,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>service_days_special</referNameNoDash>
+                    <referNameCapitalized>Service_days_special</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -355,7 +355,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0731d247-c222-46cf-a03e-b55b9d4ce672-com.ndl.framework.workbrench.define.ColumnBean-603">
+                <columnBean uuid="245f3bc3-905c-47e3-b077-3164272a3060-com.ndl.framework.workbrench.define.ColumnBean-621">
                     <columnName></columnName>
                     <columnNameNoDash>cityDataHotels</columnNameNoDash>
                     <columnNameCapitalized>CityDataHotels</columnNameCapitalized>
@@ -365,8 +365,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>city</referNameNoDash>
+                    <referNameCapitalized>City</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -380,7 +380,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="6173c85c-cecd-455b-a23e-82122d3fd54f-com.ndl.framework.workbrench.define.ColumnBean-615">
+                <columnBean uuid="a275f4dd-5825-4754-85b9-d8b5b2c8cc11-com.ndl.framework.workbrench.define.ColumnBean-633">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataHotels</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataHotels</columnNameCapitalized>
@@ -390,8 +390,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>province</referNameNoDash>
+                    <referNameCapitalized>Province</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -405,7 +405,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="09515aea-8884-42c2-ad60-855d06ebcf1f-com.ndl.framework.workbrench.define.ColumnBean-641">
+                <columnBean uuid="ce408194-e36c-4779-a6e9-d43834d16501-com.ndl.framework.workbrench.define.ColumnBean-659">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataHotels</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataHotels</columnNameCapitalized>
@@ -415,8 +415,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>district</referNameNoDash>
+                    <referNameCapitalized>District</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -430,7 +430,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="63152d8b-27b0-4bdc-a08a-5878f2f1ec59-com.ndl.framework.workbrench.define.ColumnBean-618">
+                <columnBean uuid="114e8c78-1606-4e99-ac65-13c49f84fdef-com.ndl.framework.workbrench.define.ColumnBean-636">
                     <columnName></columnName>
                     <columnNameNoDash>tag_listDataHotels</columnNameNoDash>
                     <columnNameCapitalized>Tag_listDataHotels</columnNameCapitalized>
@@ -440,8 +440,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>tag_list</referNameNoDash>
+                    <referNameCapitalized>Tag_list</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -455,7 +455,7 @@
                     <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="20f5afa3-f3cb-4b4f-b8bb-76c653cbcc66-com.ndl.framework.workbrench.define.ColumnBean-790">
+                <columnBean uuid="796a2f7b-2c4d-4e20-979f-448650ea2a18-com.ndl.framework.workbrench.define.ColumnBean-802">
                     <columnName></columnName>
                     <columnNameNoDash>service_days_weekDataHotels</columnNameNoDash>
                     <columnNameCapitalized>Service_days_weekDataHotels</columnNameCapitalized>
@@ -465,8 +465,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>service_days_week</referNameNoDash>
+                    <referNameCapitalized>Service_days_week</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -483,11 +483,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="512c5c30-bcb8-4d5a-b8d8-bb48b4955edd-com.ndl.framework.workbrench.define.TransientBean-8">
+        <transientBean uuid="ac246823-8e60-494d-a053-c0ef33185cdb-com.ndl.framework.workbrench.define.TransientBean-8">
             <tableNameCapitalized>Reams</tableNameCapitalized>
             <tableName>Reams</tableName>
             <columnBeanList>
-                <columnBean uuid="d0cf4e0b-a258-44cc-99f0-e7b24eaba7a4-com.ndl.framework.workbrench.define.ColumnBean-1037">
+                <columnBean uuid="ca95079f-df73-48cd-994a-e1541b5599b9-com.ndl.framework.workbrench.define.ColumnBean-1049">
                     <columnName></columnName>
                     <columnNameNoDash>dataReams</columnNameNoDash>
                     <columnNameCapitalized>DataReams</columnNameCapitalized>
@@ -497,8 +497,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -515,118 +515,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="6bcb52b0-326c-4cd3-87ca-69cabec83c20-com.ndl.framework.workbrench.define.TransientBean-9">
-            <tableNameCapitalized>DataReams</tableNameCapitalized>
-            <tableName>DataReams</tableName>
-            <columnBeanList>
-                <columnBean uuid="02e3a634-6ec1-4f33-bebf-655c7b5a2a92-com.ndl.framework.workbrench.define.ColumnBean-1047">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataReams</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataReams</columnNameCapitalized>
-                    <columnType>ProvinceDataReams</columnType>
-                    <columnTypeIOS>ProvinceDataReams</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataReams *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>ProvinceDataReams</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="d892cd83-2afb-4729-b464-20b8b48fa9d3-com.ndl.framework.workbrench.define.ColumnBean-1077">
-                    <columnName></columnName>
-                    <columnNameNoDash>districtDataReams</columnNameNoDash>
-                    <columnNameCapitalized>DistrictDataReams</columnNameCapitalized>
-                    <columnType>DistrictDataReams</columnType>
-                    <columnTypeIOS>DistrictDataReams</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataReams *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DistrictDataReams</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="e329ace7-e48b-4b22-abba-29c8f3b3a216-com.ndl.framework.workbrench.define.ColumnBean-1050">
-                    <columnName></columnName>
-                    <columnNameNoDash>tag_listDataReams</columnNameNoDash>
-                    <columnNameCapitalized>Tag_listDataReams</columnNameCapitalized>
-                    <columnType>Tag_listDataReams</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>Tag_listDataReams</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="663a5bfc-eac1-46ae-8a29-4d7171153b78-com.ndl.framework.workbrench.define.ColumnBean-1039">
-                    <columnName></columnName>
-                    <columnNameNoDash>cityDataReams</columnNameNoDash>
-                    <columnNameCapitalized>CityDataReams</columnNameCapitalized>
-                    <columnType>CityDataReams</columnType>
-                    <columnTypeIOS>CityDataReams</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataReams *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>CityDataReams</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="7233de79-3a56-4518-a3dd-dfab5742d356-com.ndl.framework.workbrench.define.TransientBean-10">
+        <transientBean uuid="18f5ed53-2963-4562-b5a2-4a2022c90143-com.ndl.framework.workbrench.define.TransientBean-9">
             <tableNameCapitalized>Users</tableNameCapitalized>
             <tableName>Users</tableName>
             <columnBeanList>
-                <columnBean uuid="d0517948-b065-41ce-9f76-6b992f800626-com.ndl.framework.workbrench.define.ColumnBean-1087">
+                <columnBean uuid="b1f3851d-30ae-4ca2-a168-539932ddfef5-com.ndl.framework.workbrench.define.ColumnBean-1052">
                     <columnName></columnName>
                     <columnNameNoDash>dataUsers</columnNameNoDash>
                     <columnNameCapitalized>DataUsers</columnNameCapitalized>
@@ -636,8 +529,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -654,11 +547,11 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="c424a00e-aaa0-47b3-a753-b2673cff8000-com.ndl.framework.workbrench.define.TransientBean-11">
+        <transientBean uuid="cfebd769-51b2-4ef4-af24-57dd0f8e8cbd-com.ndl.framework.workbrench.define.TransientBean-10">
             <tableNameCapitalized>DataUsers</tableNameCapitalized>
             <tableName>DataUsers</tableName>
             <columnBeanList>
-                <columnBean uuid="d4fdffe3-a694-4912-b877-ba4c94276565-com.ndl.framework.workbrench.define.ColumnBean-1094">
+                <columnBean uuid="7cb69e55-fadc-4be2-9335-11e06d9a2cba-com.ndl.framework.workbrench.define.ColumnBean-1059">
                     <columnName></columnName>
                     <columnNameNoDash>provinceDataUsers</columnNameNoDash>
                     <columnNameCapitalized>ProvinceDataUsers</columnNameCapitalized>
@@ -668,8 +561,8 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>province</referNameNoDash>
+                    <referNameCapitalized>Province</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
@@ -683,32 +576,7 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c5272543-dcf6-4200-84b5-28a6e5813d28-com.ndl.framework.workbrench.define.ColumnBean-1111">
-                    <columnName></columnName>
-                    <columnNameNoDash>cityDataUsers</columnNameNoDash>
-                    <columnNameCapitalized>CityDataUsers</columnNameCapitalized>
-                    <columnType>CityDataUsers</columnType>
-                    <columnTypeIOS>CityDataUsers</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataUsers *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>CityDataUsers</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="66f955ee-b7a6-4c85-9f1f-20c54b79325e-com.ndl.framework.workbrench.define.ColumnBean-1102">
+                <columnBean uuid="8b6e6f7b-bbcd-42bb-95f6-d8ea77320e45-com.ndl.framework.workbrench.define.ColumnBean-1067">
                     <columnName></columnName>
                     <columnNameNoDash>districtDataUsers</columnNameNoDash>
                     <columnNameCapitalized>DistrictDataUsers</columnNameCapitalized>
@@ -718,12 +586,37 @@
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <referNameNoDash>district</referNameNoDash>
+                    <referNameCapitalized>District</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
                     <columnComment>DistrictDataUsers</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>TST</columnKey>
+                    <fieldType>ENTITY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="02078a68-9c1f-44f2-bfad-02187ce0b3f2-com.ndl.framework.workbrench.define.ColumnBean-1076">
+                    <columnName></columnName>
+                    <columnNameNoDash>cityDataUsers</columnNameNoDash>
+                    <columnNameCapitalized>CityDataUsers</columnNameCapitalized>
+                    <columnType>CityDataUsers</columnType>
+                    <columnTypeIOS>CityDataUsers</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataUsers *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>city</referNameNoDash>
+                    <referNameCapitalized>City</referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>CityDataUsers</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>

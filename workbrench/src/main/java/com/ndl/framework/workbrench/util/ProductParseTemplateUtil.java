@@ -71,8 +71,6 @@ public class ProductParseTemplateUtil {
 		}
 		StringBuffer sb=new StringBuffer();
 		sb.append("/**\n");
-		sb.append("* className:"+className);
-		sb.append("* serviceCategory:"+serviceCategory);
 		sb.append(descripter);
 		sb.append("\n**/");
 		methodDescripter.setComment(sb.toString());
@@ -124,21 +122,28 @@ public class ProductParseTemplateUtil {
 		}
 	}
 	
+	public static void parseMethodResponseType(MethodDescripter methodDescripter,
+			ColumnBean reposeType,ColumnBean resultColumnBean){
+		parseMethodResponseType(methodDescripter,reposeType);
+		methodDescripter.getMethodReturnAnnotation().setAnnoteType(resultColumnBean.getColumnType());
+	}
+	
 	public static void parseMethodResponseType(MethodDescripter methodDescripter,ColumnBean reposeType){
 		if (logger.isDebugEnabled()) {
 			logger.debug("ProductManager parseMethodResponseType Begin:");
 			logger.debug("methodDescripter:\t" + methodDescripter);
 			logger.debug("reposeType:\t" + reposeType);
 		}
+		String repose=parseMethodResponseType(reposeType);
 		StringBuffer sb=new StringBuffer();
 		sb.append("public ");
-		sb.append(parseMethodResponseType(reposeType));
+		sb.append(repose);
  			
 		sb.append(methodDescripter.getSignatureEntirety());
 		methodDescripter.setSignatureEntirety(sb.toString());
 		AnnotationBean methodReturnAnnotation=new AnnotationBean();
 		methodReturnAnnotation.setAnnnoteKey(AnnotationTypeEnum.RequestMapping);
-		methodReturnAnnotation.setAnnoteValue(reposeType.getColumnType());
+		methodReturnAnnotation.setAnnoteValue(repose);
 		 
 		methodDescripter.setMethodReturnAnnotation(methodReturnAnnotation);
 		if (logger.isDebugEnabled()) {

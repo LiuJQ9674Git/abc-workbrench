@@ -49,7 +49,15 @@ public class ${tableBean.tableNameCapitalized}${classSuffix} extends DefaultBean
 </#list>
 
 <#list tableBean.transientColumnBeanList as columnBean>
- <#if ('' != columnBean.columnType )>
+ <#if ('' != columnBean.columnType&&''!=columnBean.referNameCapitalized ) >
+    public void set${columnBean.referNameCapitalized}(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
+        this.${columnBean.columnNameNoDash} = ${columnBean.columnNameNoDash};
+    }
+
+    public ${columnBean.columnType} get${columnBean.referNameCapitalized}() {
+        return ${columnBean.columnNameNoDash};
+    }
+    <#elseif ('' != columnBean.columnType ) >
  public void set${columnBean.columnNameCapitalized}(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
         this.${columnBean.columnNameNoDash} = ${columnBean.columnNameNoDash};
     }
@@ -57,6 +65,7 @@ public class ${tableBean.tableNameCapitalized}${classSuffix} extends DefaultBean
     public ${columnBean.columnType} get${columnBean.columnNameCapitalized}() {
         return ${columnBean.columnNameNoDash};
     }
+    <#else>
 </#if>
 </#list>
 <#list tableBean.columnBeanList as columnBean>

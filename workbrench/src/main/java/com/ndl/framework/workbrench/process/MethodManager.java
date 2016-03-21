@@ -214,12 +214,18 @@ public class MethodManager {
 		}
 
 		ColumnBean reposeType = methodBean.getResponseType();
+		ColumnBean resultColumnBean=methodBean.getBodyBean().getResultColumnBean();
 		Assert.notNull(reposeType, "parseMethod reposeType must not null");
 		if (logger.isDebugEnabled()) {
 			logger.debug("parseMethod reposeType :\t" + reposeType);
+			logger.debug("parseMethod resultColumnBean :\t" + resultColumnBean);
 		}
-		ProductParseTemplateUtil.parseMethodResponseType(methodBean.getMethodDescripter(), reposeType);
-
+		if(resultColumnBean==null){
+			
+			ProductParseTemplateUtil.parseMethodResponseType(methodBean.getMethodDescripter(), reposeType,reposeType);
+		}else{
+			ProductParseTemplateUtil.parseMethodResponseType(methodBean.getMethodDescripter(), reposeType,resultColumnBean);
+		}
 		AnnotationBean annotationBean = methodBean.getAnnotationBean();
 		if (null != annotationBean) {
 			Assert.notNull(annotationBean, "parseMethod  annotationBean must not null");
@@ -774,6 +780,10 @@ public class MethodManager {
 					WorkBrenchConfigProperty.PROCESS_CONFIGURE_EXCETPION_Method_NO_EXIST_FILED);
 		}
 		bodyBean.setResultColumnBean(resultColumnBean);
+	}
+	
+	protected ColumnBean getResultColumnBean() {
+		return bodyBean.getResultColumnBean();
 	}
 
 	protected void setAssignList(TableBean assignList) {

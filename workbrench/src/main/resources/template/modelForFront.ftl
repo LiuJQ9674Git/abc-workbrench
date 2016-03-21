@@ -49,17 +49,14 @@ public class ${tableBean.tableNameCapitalized}${classSuffix} extends DefaultBean
 </#list>
 
 <#list tableBean.transientColumnBeanList as columnBean>
- <#if ('' != columnBean.columnType&&''!=columnBean.referNameCapitalized ) >
- public void set${columnBean.referNameCapitalized}(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
+ <#if ('' != columnBean.columnType )>
+ public void set${columnBean.columnNameCapitalized}(${columnBean.columnType} ${columnBean.columnNameNoDash}) {
         this.${columnBean.columnNameNoDash} = ${columnBean.columnNameNoDash};
     }
 
     public ${columnBean.columnType} get${columnBean.columnNameCapitalized}() {
         return ${columnBean.columnNameNoDash};
     }
-    <#elseif ('' != columnBean.columnType&&''!=columnBean.referNameCapitalized ) >
-
-    <#else>
 </#if>
 </#list>
 <#list tableBean.columnBeanList as columnBean>
