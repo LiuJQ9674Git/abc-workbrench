@@ -253,7 +253,7 @@ public class MethodManager {
 			}
 			ColumnBean specialAssign = methodAssign.getMethodArugment();
 			if (specialAssign != null) {
-				ColumnBean nextSpecialAssign = specialAssign.getNextColumnBean();
+				ColumnBean nextSpecialAssign = null;//(ColumnBean) specialAssign.getNextColumnBean().clone();
 				if (logger.isDebugEnabled()) {
 					logger.debug("parseMethod methods nextSpecialAssign:\t" + nextSpecialAssign);
 				}
@@ -267,8 +267,10 @@ public class MethodManager {
 					// nextSpecialAssign=specialAssign.getNextColumnBean();
 					signatureEntirety = methodBean.getMethodDescripter().getSignatureEntirety();
 					
-					while (null != nextSpecialAssign) {
-						methodBean.getMethodDescripter().setSignatureEntirety(signatureEntirety + " , ");
+					while (FieldRativeEnum.Finished!= specialAssign.getNextFieldRative()) {
+						methodBean.getMethodDescripter().setSignatureEntirety(methodBean.getMethodDescripter().getSignatureEntirety() + " , ");
+						nextSpecialAssign = (ColumnBean) specialAssign.getNextColumnBean().clone();
+						
 						String specialAssignNameRative = nextSpecialAssign.getColumnNameNoDash();
 						if (logger.isDebugEnabled()) {
 							logger.debug("parseMethod methods specialAssignNameRative:\t" + specialAssignNameRative);
@@ -286,9 +288,16 @@ public class MethodManager {
 						}
 						ProductParseTemplateUtil.parseMethodAssignment(methodBean.getMethodDescripter(), nextSpecialAssign);
 
-						nextSpecialAssign = nextSpecialAssign.getNextColumnBean();
+						//nextSpecialAssign = (ColumnBean) nextSpecialAssign.getNextColumnBean().clone();
+						if(FieldRativeEnum.Finished== nextSpecialAssign.getNextFieldRative()){
+							if (logger.isDebugEnabled()) {
+								logger.debug("parseMethod methods nextSpecialAssign:\t" + nextSpecialAssign);
+							}
+							break;
+						}
+						specialAssign=nextSpecialAssign;
 						if (logger.isDebugEnabled()) {
-							logger.debug("parseMethod methods nextSpecialAssign:\t" + nextSpecialAssign);
+							logger.debug("parseMethod methods nextSpecialAssign:\t" );
 						}
 
 					}

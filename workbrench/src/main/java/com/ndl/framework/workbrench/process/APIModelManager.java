@@ -11,6 +11,7 @@ import com.ndl.framework.workbrench.define.TransientBean;
 import com.ndl.framework.workbrench.exception.ConfigRuntimeException;
 import com.ndl.framework.workbrench.define.TableColumnConfig;
 import com.ndl.framework.workbrench.freemarker.TemplateCommand;
+import com.ndl.framework.workbrench.process.APIModelForFrontPointManager.RestfulApiPathInfo;
 import com.ndl.framework.workbrench.freemarker.RunConfigure;
 import com.ndl.framework.workbrench.util.JAXBUtil;
 import com.ndl.framework.workbrench.util.WorkBrenchConfigProperty;
@@ -464,7 +465,7 @@ public class APIModelManager {
 	 * 生成域模型数据，默认是以数据库方式实现，此方法无需实现
 	 * @param urlPathEndChar,Key url,value:结尾标识符，如.php
 	 */
-	protected void generateModelDamainFromRawData(Map<String,String> urlPathEndChar){
+	protected void generateModelDamainFromRawData(Map<String,RestfulApiPathInfo> urlPathEndChar){
 		throw new ConfigRuntimeException(
 				WorkBrenchConfigProperty.PROCESS_APIMODEL_EXCETPION__NO_METHOD);
 	}

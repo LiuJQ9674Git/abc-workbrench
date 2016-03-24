@@ -13,7 +13,7 @@ public class SequenceGenerator {
 		if(null==seq){
 			seq=new AtomicLong();
 		}
-		String uuid=UUID.randomUUID().toString()+"-"+clzz.getName()+"-"+seq;
+		String uuid=UUID.randomUUID().toString()+"-"+ClassHelper.getShortClassName(clzz)+"-"+seq;
 		seq.incrementAndGet();
 		sequence.put(clzz, seq);
 		return uuid;

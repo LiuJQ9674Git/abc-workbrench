@@ -596,7 +596,8 @@ public class ControllerManager {
 		entityBean.setTableNameNoDash(serviceId);
 		entityBean.setTableNameCapitalized(controllerType);
 		if (null!=startColumnBean) {
-			entityBean.setMethodArugment(startColumnBean);
+			ColumnBean columnBean=(ColumnBean) startColumnBean.clone();
+			entityBean.setMethodArugment(columnBean);
 			/*
 			Set<ColumnBean> assignBeanList=entityBean.getColumnBeanList();
 			if(CollectionUtils.isEmpty(assignBeanList)){

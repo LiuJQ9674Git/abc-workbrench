@@ -5,7 +5,7 @@
 	
 	
 <#list tableBean.columnBeanList as columnBean>
-    <#if ('' != columnBean.columnComment)>
+    <#if ('' != columnBean.columnComment&&columnBean.columnKey=='DEFUALT')>
     /**
      * ${columnBean.columnComment}
      **/
@@ -15,4 +15,14 @@
     </#if>
 </#list>
  
+ <#list tableBean.transientColumnBeanList as columnBean>
+    <#if ('' != columnBean.columnComment)>
+    /**
+     * ${columnBean.columnComment}
+     **/
+    </#if>
+    <#if ('' != columnBean.columnType)>
+    @${columnBean.columnTypePropertyIOS} ${columnBean.columnNameNoDash} ;
+    </#if>
+</#list>
 @end

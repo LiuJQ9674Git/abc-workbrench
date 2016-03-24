@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TableColumnConfig uuid="8002cf71-d7df-4225-b816-1c9c3f9ffc95-com.ndl.framework.workbrench.define.TableColumnConfig-5">
+<TableColumnConfig uuid="23f803e6-f080-4f74-a7d3-6c06ea130592-com.ndl.framework.workbrench.define.TableColumnConfig-0">
     <excludeBeanList/>
     <transientBeanList>
-        <transientBean uuid="879030bc-bd53-46f9-9b17-c801f9a44fc9-com.ndl.framework.workbrench.define.TransientBean-0">
-            <tableNameCapitalized>Guides</tableNameCapitalized>
-            <tableName>Guides</tableName>
+        <transientBean uuid="19b0171a-6b17-4554-aebb-c5d115c45aee-com.ndl.framework.workbrench.define.TransientBean-0">
+            <tableNameCapitalized>UsersGetupdateinfo</tableNameCapitalized>
+            <tableName>UsersGetupdateinfo</tableName>
             <columnBeanList>
-                <columnBean uuid="c7b19da7-ed82-4b3d-830e-3ecd8c305929-com.ndl.framework.workbrench.define.ColumnBean-0">
+                <columnBean uuid="20d71475-a4ae-43f7-871f-a1c51faa113d-com.ndl.framework.workbrench.define.ColumnBean-0">
                     <columnName></columnName>
-                    <columnNameNoDash>dataGuides</columnNameNoDash>
-                    <columnNameCapitalized>DataGuides</columnNameCapitalized>
-                    <columnType>DataGuides</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnNameNoDash>dataUsersGetupdateinfo</columnNameNoDash>
+                    <columnNameCapitalized>DataUsersGetupdateinfo</columnNameCapitalized>
+                    <columnType>DataUsersGetupdateinfo</columnType>
+                    <columnTypeIOS>DataUsersGetupdateinfo</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) DataUsersGetupdateinfo *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
@@ -21,39 +21,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>DataGuides</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="b3619011-a6e8-4a2d-86e4-7f1247677d97-com.ndl.framework.workbrench.define.TransientBean-1">
-            <tableNameCapitalized>DataGuides</tableNameCapitalized>
-            <tableName>DataGuides</tableName>
-            <columnBeanList>
-                <columnBean uuid="f2c58d38-82fc-4b3b-9676-e0fe783e87e5-com.ndl.framework.workbrench.define.ColumnBean-189">
-                    <columnName></columnName>
-                    <columnNameNoDash>avatarDataGuides</columnNameNoDash>
-                    <columnNameCapitalized>AvatarDataGuides</columnNameCapitalized>
-                    <columnType>AvatarDataGuides</columnType>
-                    <columnTypeIOS>AvatarDataGuides</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) AvatarDataGuides *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>avatar</referNameNoDash>
-                    <referNameCapitalized>Avatar</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>AvatarDataGuides</columnComment>
+                    <columnComment>DataUsersGetupdateinfo</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -63,13 +31,20 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c0024684-3442-4623-95a5-f7b28fa0914f-com.ndl.framework.workbrench.define.ColumnBean-162">
+            </columnBeanList>
+            <excludeColumnList/>
+        </transientBean>
+        <transientBean uuid="9248184b-c50b-412d-a426-f00aaec14b8b-com.ndl.framework.workbrench.define.TransientBean-1">
+            <tableNameCapitalized>DataUsersGetupdateinfo</tableNameCapitalized>
+            <tableName>DataUsersGetupdateinfo</tableName>
+            <columnBeanList>
+                <columnBean uuid="29cb2cfb-e95b-4291-800a-20ce977aef1e-com.ndl.framework.workbrench.define.ColumnBean-16">
                     <columnName></columnName>
-                    <columnNameNoDash>districtDataGuides</columnNameNoDash>
-                    <columnNameCapitalized>DistrictDataGuides</columnNameCapitalized>
-                    <columnType>DistrictDataGuides</columnType>
-                    <columnTypeIOS>DistrictDataGuides</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataGuides *</columnTypePropertyIOS>
+                    <columnNameNoDash>districtDataUsersGetupdateinfo</columnNameNoDash>
+                    <columnNameCapitalized>DistrictDataUsersGetupdateinfo</columnNameCapitalized>
+                    <columnType>DistrictDataUsersGetupdateinfo</columnType>
+                    <columnTypeIOS>DistrictDataUsersGetupdateinfo</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataUsersGetupdateinfo *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
@@ -78,7 +53,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>DistrictDataGuides</columnComment>
+                    <columnComment>DistrictDataUsersGetupdateinfo</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -88,38 +63,38 @@
                     <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="a4c0beeb-4f47-42dd-a6f3-5570c10ee285-com.ndl.framework.workbrench.define.ColumnBean-4">
+                <columnBean uuid="5bd8ff80-834e-4421-a7da-22b456ed6684-com.ndl.framework.workbrench.define.ColumnBean-7">
                     <columnName></columnName>
-                    <columnNameNoDash>union_guide_id_listDataGuides</columnNameNoDash>
-                    <columnNameCapitalized>Union_guide_id_listDataGuides</columnNameCapitalized>
-                    <columnType>Union_guide_id_listDataGuides</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnNameNoDash>provinceDataUsersGetupdateinfo</columnNameNoDash>
+                    <columnNameCapitalized>ProvinceDataUsersGetupdateinfo</columnNameCapitalized>
+                    <columnType>ProvinceDataUsersGetupdateinfo</columnType>
+                    <columnTypeIOS>ProvinceDataUsersGetupdateinfo</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataUsersGetupdateinfo *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>union_guide_id_list</referNameNoDash>
-                    <referNameCapitalized>Union_guide_id_list</referNameCapitalized>
+                    <referNameNoDash>province</referNameNoDash>
+                    <referNameCapitalized>Province</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>Union_guide_id_listDataGuides</columnComment>
+                    <columnComment>ProvinceDataUsersGetupdateinfo</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
                     <isMutable>true</isMutable>
                     <nextFieldRative>Finished</nextFieldRative>
                     <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
+                    <fieldType>ENTITY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="61d4b6d7-6868-4d9f-8854-d96088b81152-com.ndl.framework.workbrench.define.ColumnBean-170">
+                <columnBean uuid="abafa9ab-5fc7-4d70-9848-939715397f32-com.ndl.framework.workbrench.define.ColumnBean-26">
                     <columnName></columnName>
-                    <columnNameNoDash>cityDataGuides</columnNameNoDash>
-                    <columnNameCapitalized>CityDataGuides</columnNameCapitalized>
-                    <columnType>CityDataGuides</columnType>
-                    <columnTypeIOS>CityDataGuides</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataGuides *</columnTypePropertyIOS>
+                    <columnNameNoDash>cityDataUsersGetupdateinfo</columnNameNoDash>
+                    <columnNameCapitalized>CityDataUsersGetupdateinfo</columnNameCapitalized>
+                    <columnType>CityDataUsersGetupdateinfo</columnType>
+                    <columnTypeIOS>CityDataUsersGetupdateinfo</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataUsersGetupdateinfo *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
@@ -128,495 +103,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>CityDataGuides</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="2db5d5b7-1a9a-400e-8b7a-8524c15b20cd-com.ndl.framework.workbrench.define.ColumnBean-153">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataGuides</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataGuides</columnNameCapitalized>
-                    <columnType>ProvinceDataGuides</columnType>
-                    <columnTypeIOS>ProvinceDataGuides</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataGuides *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>province</referNameNoDash>
-                    <referNameCapitalized>Province</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>ProvinceDataGuides</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="508ca2ee-9e70-414e-af0f-99b867545138-com.ndl.framework.workbrench.define.TransientBean-2">
-            <tableNameCapitalized>Tags</tableNameCapitalized>
-            <tableName>Tags</tableName>
-            <columnBeanList>
-                <columnBean uuid="7e422545-b2cc-4912-aff1-bdde4e033a8a-com.ndl.framework.workbrench.define.ColumnBean-520">
-                    <columnName></columnName>
-                    <columnNameNoDash>dataTags</columnNameNoDash>
-                    <columnNameCapitalized>DataTags</columnNameCapitalized>
-                    <columnType>DataTags</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>data</referNameNoDash>
-                    <referNameCapitalized>Data</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DataTags</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="78b371c0-7547-4c1e-8b6a-65a1316653b9-com.ndl.framework.workbrench.define.TransientBean-3">
-            <tableNameCapitalized>Locations</tableNameCapitalized>
-            <tableName>Locations</tableName>
-            <columnBeanList>
-                <columnBean uuid="aad6bb60-6679-428f-b329-8a2272e96279-com.ndl.framework.workbrench.define.ColumnBean-569">
-                    <columnName></columnName>
-                    <columnNameNoDash>dataLocations</columnNameNoDash>
-                    <columnNameCapitalized>DataLocations</columnNameCapitalized>
-                    <columnType>DataLocations</columnType>
-                    <columnTypeIOS>DataLocations</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DataLocations *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>data</referNameNoDash>
-                    <referNameCapitalized>Data</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DataLocations</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="647f6054-1bab-4c83-b121-72a05670742a-com.ndl.framework.workbrench.define.TransientBean-4">
-            <tableNameCapitalized>DataLocations</tableNameCapitalized>
-            <tableName>DataLocations</tableName>
-            <columnBeanList>
-                <columnBean uuid="626691e1-1b8e-4f08-a170-6ea4c940e4d5-com.ndl.framework.workbrench.define.ColumnBean-571">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataLocations</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataLocations</columnNameCapitalized>
-                    <columnType>ProvinceDataLocations</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>province</referNameNoDash>
-                    <referNameCapitalized>Province</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>ProvinceDataLocations</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="47a3c2e4-33e8-4491-845f-a2e21556d195-com.ndl.framework.workbrench.define.TransientBean-5">
-            <tableNameCapitalized>ProvinceDataLocations</tableNameCapitalized>
-            <tableName>ProvinceDataLocations</tableName>
-            <columnBeanList>
-                <columnBean uuid="7a25bed9-b314-4eb9-8a7d-2a50265669dd-com.ndl.framework.workbrench.define.ColumnBean-576">
-                    <columnName></columnName>
-                    <columnNameNoDash>city_listProvinceDataLocations</columnNameNoDash>
-                    <columnNameCapitalized>City_listProvinceDataLocations</columnNameCapitalized>
-                    <columnType>City_listProvinceDataLocations</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>city_list</referNameNoDash>
-                    <referNameCapitalized>City_list</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>City_listProvinceDataLocations</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="c40e9502-ef55-4601-af3e-f93d1a30c9f3-com.ndl.framework.workbrench.define.TransientBean-6">
-            <tableNameCapitalized>Hotels</tableNameCapitalized>
-            <tableName>Hotels</tableName>
-            <columnBeanList>
-                <columnBean uuid="d3c74248-b786-4481-8307-14ac105b3c0a-com.ndl.framework.workbrench.define.ColumnBean-619">
-                    <columnName></columnName>
-                    <columnNameNoDash>dataHotels</columnNameNoDash>
-                    <columnNameCapitalized>DataHotels</columnNameCapitalized>
-                    <columnType>DataHotels</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>data</referNameNoDash>
-                    <referNameCapitalized>Data</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="12a9241d-193a-4d63-abc1-1f164b681603-com.ndl.framework.workbrench.define.TransientBean-7">
-            <tableNameCapitalized>DataHotels</tableNameCapitalized>
-            <tableName>DataHotels</tableName>
-            <columnBeanList>
-                <columnBean uuid="3893ce43-6dea-4904-b9ac-6ecac274baf1-com.ndl.framework.workbrench.define.ColumnBean-627">
-                    <columnName></columnName>
-                    <columnNameNoDash>service_days_specialDataHotels</columnNameNoDash>
-                    <columnNameCapitalized>Service_days_specialDataHotels</columnNameCapitalized>
-                    <columnType>Service_days_specialDataHotels</columnType>
-                    <columnTypeIOS>Service_days_specialDataHotels</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) Service_days_specialDataHotels *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>service_days_special</referNameNoDash>
-                    <referNameCapitalized>Service_days_special</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>Service_days_specialDataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="245f3bc3-905c-47e3-b077-3164272a3060-com.ndl.framework.workbrench.define.ColumnBean-621">
-                    <columnName></columnName>
-                    <columnNameNoDash>cityDataHotels</columnNameNoDash>
-                    <columnNameCapitalized>CityDataHotels</columnNameCapitalized>
-                    <columnType>CityDataHotels</columnType>
-                    <columnTypeIOS>CityDataHotels</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataHotels *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>city</referNameNoDash>
-                    <referNameCapitalized>City</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>CityDataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="a275f4dd-5825-4754-85b9-d8b5b2c8cc11-com.ndl.framework.workbrench.define.ColumnBean-633">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataHotels</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataHotels</columnNameCapitalized>
-                    <columnType>ProvinceDataHotels</columnType>
-                    <columnTypeIOS>ProvinceDataHotels</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataHotels *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>province</referNameNoDash>
-                    <referNameCapitalized>Province</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>ProvinceDataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="ce408194-e36c-4779-a6e9-d43834d16501-com.ndl.framework.workbrench.define.ColumnBean-659">
-                    <columnName></columnName>
-                    <columnNameNoDash>districtDataHotels</columnNameNoDash>
-                    <columnNameCapitalized>DistrictDataHotels</columnNameCapitalized>
-                    <columnType>DistrictDataHotels</columnType>
-                    <columnTypeIOS>DistrictDataHotels</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataHotels *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>district</referNameNoDash>
-                    <referNameCapitalized>District</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DistrictDataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="114e8c78-1606-4e99-ac65-13c49f84fdef-com.ndl.framework.workbrench.define.ColumnBean-636">
-                    <columnName></columnName>
-                    <columnNameNoDash>tag_listDataHotels</columnNameNoDash>
-                    <columnNameCapitalized>Tag_listDataHotels</columnNameCapitalized>
-                    <columnType>Tag_listDataHotels</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>tag_list</referNameNoDash>
-                    <referNameCapitalized>Tag_list</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>Tag_listDataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="796a2f7b-2c4d-4e20-979f-448650ea2a18-com.ndl.framework.workbrench.define.ColumnBean-802">
-                    <columnName></columnName>
-                    <columnNameNoDash>service_days_weekDataHotels</columnNameNoDash>
-                    <columnNameCapitalized>Service_days_weekDataHotels</columnNameCapitalized>
-                    <columnType>Service_days_weekDataHotels</columnType>
-                    <columnTypeIOS>Service_days_weekDataHotels</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) Service_days_weekDataHotels *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>service_days_week</referNameNoDash>
-                    <referNameCapitalized>Service_days_week</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>Service_days_weekDataHotels</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="ac246823-8e60-494d-a053-c0ef33185cdb-com.ndl.framework.workbrench.define.TransientBean-8">
-            <tableNameCapitalized>Reams</tableNameCapitalized>
-            <tableName>Reams</tableName>
-            <columnBeanList>
-                <columnBean uuid="ca95079f-df73-48cd-994a-e1541b5599b9-com.ndl.framework.workbrench.define.ColumnBean-1049">
-                    <columnName></columnName>
-                    <columnNameNoDash>dataReams</columnNameNoDash>
-                    <columnNameCapitalized>DataReams</columnNameCapitalized>
-                    <columnType>DataReams</columnType>
-                    <columnTypeIOS>NSArray</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>data</referNameNoDash>
-                    <referNameCapitalized>Data</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DataReams</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>LIST</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="18f5ed53-2963-4562-b5a2-4a2022c90143-com.ndl.framework.workbrench.define.TransientBean-9">
-            <tableNameCapitalized>Users</tableNameCapitalized>
-            <tableName>Users</tableName>
-            <columnBeanList>
-                <columnBean uuid="b1f3851d-30ae-4ca2-a168-539932ddfef5-com.ndl.framework.workbrench.define.ColumnBean-1052">
-                    <columnName></columnName>
-                    <columnNameNoDash>dataUsers</columnNameNoDash>
-                    <columnNameCapitalized>DataUsers</columnNameCapitalized>
-                    <columnType>DataUsers</columnType>
-                    <columnTypeIOS>DataUsers</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DataUsers *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>data</referNameNoDash>
-                    <referNameCapitalized>Data</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DataUsers</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-            </columnBeanList>
-            <excludeColumnList/>
-        </transientBean>
-        <transientBean uuid="cfebd769-51b2-4ef4-af24-57dd0f8e8cbd-com.ndl.framework.workbrench.define.TransientBean-10">
-            <tableNameCapitalized>DataUsers</tableNameCapitalized>
-            <tableName>DataUsers</tableName>
-            <columnBeanList>
-                <columnBean uuid="7cb69e55-fadc-4be2-9335-11e06d9a2cba-com.ndl.framework.workbrench.define.ColumnBean-1059">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataUsers</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataUsers</columnNameCapitalized>
-                    <columnType>ProvinceDataUsers</columnType>
-                    <columnTypeIOS>ProvinceDataUsers</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataUsers *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>province</referNameNoDash>
-                    <referNameCapitalized>Province</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>ProvinceDataUsers</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="8b6e6f7b-bbcd-42bb-95f6-d8ea77320e45-com.ndl.framework.workbrench.define.ColumnBean-1067">
-                    <columnName></columnName>
-                    <columnNameNoDash>districtDataUsers</columnNameNoDash>
-                    <columnNameCapitalized>DistrictDataUsers</columnNameCapitalized>
-                    <columnType>DistrictDataUsers</columnType>
-                    <columnTypeIOS>DistrictDataUsers</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataUsers *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>district</referNameNoDash>
-                    <referNameCapitalized>District</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DistrictDataUsers</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="02078a68-9c1f-44f2-bfad-02187ce0b3f2-com.ndl.framework.workbrench.define.ColumnBean-1076">
-                    <columnName></columnName>
-                    <columnNameNoDash>cityDataUsers</columnNameNoDash>
-                    <columnNameCapitalized>CityDataUsers</columnNameCapitalized>
-                    <columnType>CityDataUsers</columnType>
-                    <columnTypeIOS>CityDataUsers</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataUsers *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>city</referNameNoDash>
-                    <referNameCapitalized>City</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>CityDataUsers</columnComment>
+                    <columnComment>CityDataUsersGetupdateinfo</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>

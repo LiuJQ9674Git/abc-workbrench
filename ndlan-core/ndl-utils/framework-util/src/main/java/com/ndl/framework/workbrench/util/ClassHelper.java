@@ -237,4 +237,10 @@ public class ClassHelper {
         }
 
     }
+    
+    public static String getShortClassName(final Class<?> cls){
+    	return ClassUtils.getShortClassName( cls);
+    }
+    
+    
 }

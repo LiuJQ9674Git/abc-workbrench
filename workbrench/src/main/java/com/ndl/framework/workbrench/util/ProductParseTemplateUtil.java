@@ -124,7 +124,11 @@ public class ProductParseTemplateUtil {
 	
 	public static void parseMethodResponseType(MethodDescripter methodDescripter,
 			ColumnBean reposeType,ColumnBean resultColumnBean){
-		parseMethodResponseType(methodDescripter,reposeType);
+		if(resultColumnBean!=null){
+			parseMethodResponseType(methodDescripter,resultColumnBean);
+		}else{
+			parseMethodResponseType(methodDescripter,reposeType);
+		}
 		methodDescripter.getMethodReturnAnnotation().setAnnoteType(resultColumnBean.getColumnType());
 	}
 	

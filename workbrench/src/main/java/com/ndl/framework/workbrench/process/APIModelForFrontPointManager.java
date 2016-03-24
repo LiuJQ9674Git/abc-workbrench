@@ -82,12 +82,42 @@ public class APIModelForFrontPointManager extends APIModelManager {
 		
 	}
 	
+	public static class RestfulApiPathInfo{
+		String url;
+		String endChar;
+		String clazz;
+		public RestfulApiPathInfo(String url,String endChar,String clazz){
+			this.url=url;
+			this.endChar=endChar;
+			this.clazz=clazz;
+		}
+		
+		public String getUrl() {
+			return url;
+		}
+		public void setUrl(String url) {
+			this.url = url;
+		}
+		public String getEndChar() {
+			return endChar;
+		}
+		public void setEndChar(String endChar) {
+			this.endChar = endChar;
+		}
+		public String getClazz() {
+			return clazz;
+		}
+		public void setClazz(String clazz) {
+			this.clazz = clazz;
+		}
+		
+	}
 	public void generateAndroidRestfulForFrontSimpleFileFormXML(String moduleName){
 		ControllerManager.generateFrontTemplateToXML(moduleName);
 		generateAndroidRestfulForFrontByTemplate();
 	}
 	
-	protected void generateModelDamainFromRawData(Map<String,String> urlPathEndChar){
+	protected void generateModelDamainFromRawData(Map<String,RestfulApiPathInfo> urlPathEndChar){
 		if(logger.isInfoEnabled()){
 			logger.info("APIModelForFrontPointManager generateModelDamainFromRawData Begin.");
 			logger.info("urlPathEndChar:\t"+urlPathEndChar);
@@ -97,8 +127,11 @@ public class APIModelForFrontPointManager extends APIModelManager {
 		if(MapUtils.isNotEmpty(urlPathEndChar)){
 			Set<String> urlPathSet=urlPathEndChar.keySet();
 			for(String urlPath:urlPathSet){
-				String endChar=urlPathEndChar.getOrDefault(urlPath, defualtEndChar);
-				generateModelDamainFromRawData(urlPath,endChar);
+				RestfulApiPathInfo restfulApiPathInfo=urlPathEndChar.getOrDefault(urlPath,
+						new RestfulApiPathInfo("","","Root"));
+				String endChar=restfulApiPathInfo.getEndChar();
+				String suffix=restfulApiPathInfo.getClazz();
+				generateModelDamainFromRawData(urlPath,endChar,suffix);
 			}
 			this.writeEntityConfigToFile();
 		}
@@ -110,14 +143,14 @@ public class APIModelForFrontPointManager extends APIModelManager {
 	/**
 	 * 根据url生成模型
 	 */
-	private void generateModelDamainFromRawData(String urlPath,String endChar){
+	private void generateModelDamainFromRawData(String urlPath,String endChar,String suffix){
 		if(logger.isDebugEnabled()){
 			logger.debug("APIModelForFrontPointManager generateModelDamainFromRawData Begin.");
 			logger.debug("urlPath:\t"+urlPath);
 			logger.debug("endChar:\t"+endChar);
 		}
 		//读入urlPath内容
-		readModelDomainFromRawData(urlPath,endChar);
+		readModelDomainFromRawData(urlPath,endChar,suffix);
 		//
 		modifiedDataTransientBean();
 		modifiedDataTableBean();
@@ -135,7 +168,7 @@ public class APIModelForFrontPointManager extends APIModelManager {
 	}
 	
 	//解析JNSON方法
-	private void readModelDomainFromRawData(String urlPath,String endChar){
+	private void readModelDomainFromRawData(String urlPath,String endChar,String suffix){
 		if(logger.isInfoEnabled()){
 			logger.info("APIModelForFrontPointManager generateModelDamain Begin.");
 			logger.info("urlPath:\t"+urlPath);
@@ -156,6 +189,8 @@ public class APIModelForFrontPointManager extends APIModelManager {
 			String[] strs=urlPath.split("/");
 			String usrShot=strs[strs.length-1];
 			String tableName=usrShot.substring(0,usrShot.indexOf(endChar));
+			//String suffix=usrShot.substring(usrShot.indexOf("=")+1,usrShot.length());
+			tableName=tableName+StringUtils.capitalize(suffix);
 			TableBean tableBean=createTableBean(tableName);
 			tableBean.setTableComment(urlPath);
 

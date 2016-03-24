@@ -11,7 +11,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
-
+import org.apache.commons.lang.StringUtils;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -51,12 +51,32 @@ public class ${businessDescripter.className}${androidRestfulSuffix} {
 	<#if '' != methodDescripter.signatureEntirety>
 	${methodDescripter.signatureEntirety}{
 		final String path=url+"${methodDescripter.methodHeaderAnnotation.annoteValue}";
-	
+		final StringBuffer query=new StringBuffer();
+		query.append("");
+		<#list methodDescripter.calleeArgumentList as columnDescripter>
+		<#if ('' != columnDescripter.columnType &&'String' == columnDescripter.columnType)>
+		if(StringUtils.isNotEmpty(${columnDescripter.columnNameNoDash})){
+			query.append("&");
+			query.append("${columnDescripter.columnNameNoDash}");
+			query.append("=");
+			query.append(${columnDescripter.columnNameNoDash});
+		}
+		 <#elseif ('' != columnDescripter.columnType ) >
+		if(${columnDescripter.columnNameNoDash}!=null){
+			query.append("&");
+			query.append("${columnDescripter.columnNameNoDash}");
+			query.append("=");
+			query.append(${columnDescripter.columnNameNoDash});
+		}
+		 <#else>
+		</#if>
+		</#list>
+		
 		FutureTask<${methodDescripter.methodReturnAnnotation.annoteValue}> future = new FutureTask<${methodDescripter.methodReturnAnnotation.annoteValue}>(new Callable< ${methodDescripter.methodReturnAnnotation.annoteValue}>() {
 			public ${methodDescripter.methodReturnAnnotation.annoteValue} call() {
 				try{
 					ResponseEntity<${methodDescripter.methodReturnAnnotation.annoteValue}> response = 
-					restTemplate.getForEntity(path, ${methodDescripter.methodReturnAnnotation.annoteValue}.class);
+					restTemplate.getForEntity(path+query.toString(), ${methodDescripter.methodReturnAnnotation.annoteValue}.class);
 					
 					return response.getBody();
 				}catch(Exception e){

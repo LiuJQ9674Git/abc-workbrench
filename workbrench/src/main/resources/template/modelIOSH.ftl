@@ -5,12 +5,12 @@
 	
 	
 <#list tableBean.columnBeanList as columnBean>
-    <#if ('' != columnBean.columnComment)>
+    <#if ('' != columnBean.columnComment &&columnBean.columnKey=='DEFUALT')>
     /**
      * ${columnBean.columnComment}
      **/
     </#if>
-    <#if ('' != columnBean.columnType)>
+    <#if ('' != columnBean.columnType &&columnBean.columnKey=='DEFUALT')>
     @${columnBean.columnTypePropertyIOS} ${columnBean.columnNameNoDash} ;
     </#if>
 </#list>

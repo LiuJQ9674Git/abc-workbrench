@@ -18,12 +18,12 @@
             <instanceAnnotations/>
             <methodDescripterMap>
                 <entry>
-                    <key>public  GuidesBean getList(  Integer  p ,   String  dataOrder)</key>
+                    <key>public  GuidesGetRellistBean getList(  Integer  p ,   Integer  psize ,   String  data_order)</key>
                     <value>
                         <methodReturnAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue> GuidesBean </annoteValue>
-                            <annoteType>DataGuidesBean</annoteType>
+                            <annoteValue> GuidesGetRellistBean </annoteValue>
+                            <annoteType>GuidesGetRellistBean</annoteType>
                         </methodReturnAnnotation>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
@@ -32,7 +32,7 @@
                         <comment>/**
 获取霞客列表
 **/</comment>
-                        <signatureEntirety>public  GuidesBean getList(  Integer  p ,   String  dataOrder)</signatureEntirety>
+                        <signatureEntirety>public  GuidesGetRellistBean getList(  Integer  p ,   Integer  psize ,   String  data_order)</signatureEntirety>
                         <argumentDescripterList>
                             <argumentDescripter>
 <columnName>p</columnName>
@@ -71,27 +71,9 @@
 <length>0</length>
                             </argumentDescripter>
                             <argumentDescripter>
-<columnName>dataType</columnName>
-<fieldName>dataType</fieldName>
-<fieldNameSetter>DataType</fieldNameSetter>
-<javaType>String</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue></defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName>dataOrder</columnName>
-<fieldName>dataOrder</fieldName>
-<fieldNameSetter>DataOrder</fieldNameSetter>
+<columnName>data_order</columnName>
+<fieldName>data_order</fieldName>
+<fieldNameSetter>Data_order</fieldNameSetter>
 <javaType>String</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>
@@ -112,12 +94,52 @@
                     </value>
                 </entry>
                 <entry>
-                    <key>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</key>
+                    <key>public  GuidesGetItemBean getItemById(  Integer  id)</key>
                     <value>
                         <methodReturnAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue> GuidesBean </annoteValue>
-                            <annoteType>DataGuidesBean</annoteType>
+                            <annoteValue> GuidesGetItemBean </annoteValue>
+                            <annoteType>GuidesGetItemBean</annoteType>
+                        </methodReturnAnnotation>
+                        <methodHeaderAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue>guides.php?action=getItemById</annoteValue>
+                        </methodHeaderAnnotation>
+                        <comment>/**
+获取霞客信
+**/</comment>
+                        <signatureEntirety>public  GuidesGetItemBean getItemById(  Integer  id)</signatureEntirety>
+                        <argumentDescripterList>
+                            <argumentDescripter>
+<columnName></columnName>
+<fieldName>id</fieldName>
+<fieldNameSetter>Id</fieldNameSetter>
+<javaType>Integer</javaType>
+<iosType></iosType>
+<iosProperty></iosProperty>
+<jsType></jsType>
+<columnTypeRsGetter></columnTypeRsGetter>
+<fieldComment></fieldComment>
+<ordinalPosition></ordinalPosition>
+<isNullable></isNullable>
+<defaultValue></defaultValue>
+<nextFieldRative>Finished</nextFieldRative>
+<columnKey>DEFUALT</columnKey>
+<fieldType>PRIMARY</fieldType>
+<length>0</length>
+                            </argumentDescripter>
+                        </argumentDescripterList>
+                        <bodyMethodMap/>
+                        <bodyFragmentSlice/>
+                    </value>
+                </entry>
+                <entry>
+                    <key>public  GuidesGetRellistBean getRelList(  Integer  uid ,   Integer  p ,   Integer  psize)</key>
+                    <value>
+                        <methodReturnAnnotation>
+                            <annnoteKey>RequestMapping</annnoteKey>
+                            <annoteValue> GuidesGetRellistBean </annoteValue>
+                            <annoteType>GuidesGetRellistBean</annoteType>
                         </methodReturnAnnotation>
                         <methodHeaderAnnotation>
                             <annnoteKey>RequestMapping</annnoteKey>
@@ -126,7 +148,7 @@
                         <comment>/**
 获取霞客相关列表信息(合伙霞客列表)
 **/</comment>
-                        <signatureEntirety>public  GuidesBean getRelList(  Integer  uid ,   Integer  dataType)</signatureEntirety>
+                        <signatureEntirety>public  GuidesGetRellistBean getRelList(  Integer  uid ,   Integer  p ,   Integer  psize)</signatureEntirety>
                         <argumentDescripterList>
                             <argumentDescripter>
 <columnName>uid</columnName>
@@ -166,8 +188,8 @@
                             </argumentDescripter>
                             <argumentDescripter>
 <columnName>psize</columnName>
-<fieldName>dataType</fieldName>
-<fieldNameSetter>DataType</fieldNameSetter>
+<fieldName>psize</fieldName>
+<fieldNameSetter>Psize</fieldNameSetter>
 <javaType>Integer</javaType>
 <iosType></iosType>
 <iosProperty></iosProperty>
@@ -177,64 +199,6 @@
 <ordinalPosition></ordinalPosition>
 <isNullable></isNullable>
 <defaultValue>10</defaultValue>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                        </argumentDescripterList>
-                        <bodyMethodMap/>
-                        <bodyFragmentSlice/>
-                    </value>
-                </entry>
-                <entry>
-                    <key>public  GuidesBean getItemById(  String  action ,   Integer  id)</key>
-                    <value>
-                        <methodReturnAnnotation>
-                            <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue> GuidesBean </annoteValue>
-                            <annoteType>DataGuidesBean</annoteType>
-                        </methodReturnAnnotation>
-                        <methodHeaderAnnotation>
-                            <annnoteKey>RequestMapping</annnoteKey>
-                            <annoteValue>guides.php?action=getItemById</annoteValue>
-                        </methodHeaderAnnotation>
-                        <comment>/**
-获取霞客信
-**/</comment>
-                        <signatureEntirety>public  GuidesBean getItemById(  String  action ,   Integer  id)</signatureEntirety>
-                        <argumentDescripterList>
-                            <argumentDescripter>
-<columnName></columnName>
-<fieldName>action</fieldName>
-<fieldNameSetter>Action</fieldNameSetter>
-<javaType>String</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue>getitem</defaultValue>
-<nextFieldRative>And</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </argumentDescripter>
-                            <argumentDescripter>
-<columnName></columnName>
-<fieldName>id</fieldName>
-<fieldNameSetter>Id</fieldNameSetter>
-<javaType>Integer</javaType>
-<iosType></iosType>
-<iosProperty></iosProperty>
-<jsType></jsType>
-<columnTypeRsGetter></columnTypeRsGetter>
-<fieldComment></fieldComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<defaultValue></defaultValue>
 <nextFieldRative>Finished</nextFieldRative>
 <columnKey>DEFUALT</columnKey>
 <fieldType>PRIMARY</fieldType>
