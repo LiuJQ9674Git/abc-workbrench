@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TableColumnConfig uuid="23f803e6-f080-4f74-a7d3-6c06ea130592-com.ndl.framework.workbrench.define.TableColumnConfig-0">
+<TableColumnConfig uuid="f7b76009-8a57-4750-b78a-80ea5b86c6fc-TableColumnConfig-0">
     <excludeBeanList/>
     <transientBeanList>
-        <transientBean uuid="19b0171a-6b17-4554-aebb-c5d115c45aee-com.ndl.framework.workbrench.define.TransientBean-0">
-            <tableNameCapitalized>UsersGetupdateinfo</tableNameCapitalized>
-            <tableName>UsersGetupdateinfo</tableName>
+        <transientBean uuid="d7ccdbc0-7a63-4f7b-8427-f7bf294364a3-TransientBean-0">
+            <tableNameCapitalized>LocationsGetList</tableNameCapitalized>
+            <tableName>LocationsGetList</tableName>
             <columnBeanList>
-                <columnBean uuid="20d71475-a4ae-43f7-871f-a1c51faa113d-com.ndl.framework.workbrench.define.ColumnBean-0">
+                <columnBean uuid="a92dbf55-4105-41ff-bc8b-43cfe3e30159-ColumnBean-0">
                     <columnName></columnName>
-                    <columnNameNoDash>dataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>DataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>DataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>DataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DataUsersGetupdateinfo *</columnTypePropertyIOS>
+                    <columnNameNoDash>hot_city_dataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>Hot_city_dataLocationsGetList</columnNameCapitalized>
+                    <columnType>Hot_city_dataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>hot_city_data</referNameNoDash>
+                    <referNameCapitalized>Hot_city_data</referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>Hot_city_dataLocationsGetList</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>TST</columnKey>
+                    <fieldType>LIST</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="847a03ff-d974-4bbc-aa20-bfcbd9498468-ColumnBean-25">
+                    <columnName></columnName>
+                    <columnNameNoDash>dataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>DataLocationsGetList</columnNameCapitalized>
+                    <columnType>DataLocationsGetList</columnType>
+                    <columnTypeIOS>DataLocationsGetList</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) DataLocationsGetList *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
@@ -21,7 +46,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>DataUsersGetupdateinfo</columnComment>
+                    <columnComment>DataLocationsGetList</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -34,42 +59,17 @@
             </columnBeanList>
             <excludeColumnList/>
         </transientBean>
-        <transientBean uuid="9248184b-c50b-412d-a426-f00aaec14b8b-com.ndl.framework.workbrench.define.TransientBean-1">
-            <tableNameCapitalized>DataUsersGetupdateinfo</tableNameCapitalized>
-            <tableName>DataUsersGetupdateinfo</tableName>
+        <transientBean uuid="b58b5a2e-4d70-4d8f-a6fe-accb7de08047-TransientBean-1">
+            <tableNameCapitalized>DataLocationsGetList</tableNameCapitalized>
+            <tableName>DataLocationsGetList</tableName>
             <columnBeanList>
-                <columnBean uuid="29cb2cfb-e95b-4291-800a-20ce977aef1e-com.ndl.framework.workbrench.define.ColumnBean-16">
+                <columnBean uuid="30ef37f5-3829-441a-8078-8c5dcda8d5a6-ColumnBean-27">
                     <columnName></columnName>
-                    <columnNameNoDash>districtDataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>DistrictDataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>DistrictDataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>DistrictDataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataUsersGetupdateinfo *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>district</referNameNoDash>
-                    <referNameCapitalized>District</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DistrictDataUsersGetupdateinfo</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="5bd8ff80-834e-4421-a7da-22b456ed6684-com.ndl.framework.workbrench.define.ColumnBean-7">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>ProvinceDataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>ProvinceDataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataUsersGetupdateinfo *</columnTypePropertyIOS>
+                    <columnNameNoDash>provinceDataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>ProvinceDataLocationsGetList</columnNameCapitalized>
+                    <columnType>ProvinceDataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
@@ -78,39 +78,78 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>ProvinceDataUsersGetupdateinfo</columnComment>
+                    <columnComment>ProvinceDataLocationsGetList</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
                     <isMutable>true</isMutable>
                     <nextFieldRative>Finished</nextFieldRative>
                     <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
+                    <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="abafa9ab-5fc7-4d70-9848-939715397f32-com.ndl.framework.workbrench.define.ColumnBean-26">
+            </columnBeanList>
+            <excludeColumnList/>
+        </transientBean>
+        <transientBean uuid="7674dffd-634f-41e1-92b9-57b13f35423a-TransientBean-2">
+            <tableNameCapitalized>ProvinceDataLocationsGetList</tableNameCapitalized>
+            <tableName>ProvinceDataLocationsGetList</tableName>
+            <columnBeanList>
+                <columnBean uuid="d91ba7f6-d027-4e93-b623-bcb1e129be40-ColumnBean-32">
                     <columnName></columnName>
-                    <columnNameNoDash>cityDataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>CityDataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>CityDataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>CityDataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataUsersGetupdateinfo *</columnTypePropertyIOS>
+                    <columnNameNoDash>city_listProvinceDataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>City_listProvinceDataLocationsGetList</columnNameCapitalized>
+                    <columnType>City_listProvinceDataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>city</referNameNoDash>
-                    <referNameCapitalized>City</referNameCapitalized>
+                    <referNameNoDash>city_list</referNameNoDash>
+                    <referNameCapitalized>City_list</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>CityDataUsersGetupdateinfo</columnComment>
+                    <columnComment>City_listProvinceDataLocationsGetList</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
                     <isMutable>true</isMutable>
                     <nextFieldRative>Finished</nextFieldRative>
                     <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
+                    <fieldType>LIST</fieldType>
+                    <length>0</length>
+                </columnBean>
+            </columnBeanList>
+            <excludeColumnList/>
+        </transientBean>
+        <transientBean uuid="da169541-1a46-4089-a370-f65249ff1f9c-TransientBean-3">
+            <tableNameCapitalized>City_listProvinceDataLocationsGetList</tableNameCapitalized>
+            <tableName>City_listProvinceDataLocationsGetList</tableName>
+            <columnBeanList>
+                <columnBean uuid="68a0283a-f9c0-4b96-9b6e-56f6c94ae963-ColumnBean-33">
+                    <columnName></columnName>
+                    <columnNameNoDash>district_listCity_listProvinceDataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>District_listCity_listProvinceDataLocationsGetList</columnNameCapitalized>
+                    <columnType>District_listCity_listProvinceDataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>district_list</referNameNoDash>
+                    <referNameCapitalized>District_list</referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>District_listCity_listProvinceDataLocationsGetList</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>TST</columnKey>
+                    <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
             </columnBeanList>

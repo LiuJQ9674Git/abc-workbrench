@@ -59,12 +59,13 @@ public class APIModelForFrontPointManagerTest {
 				".php", "GetRellist");
 		                              pathUrl.put("http://www.ieream.com/mapi/1/hotels.php?action=getrellist",
 		                            		  restfulApiPathInfo);
+		*/                           		  
 		//2.locations(区域)
 		restfulApiPathInfo=new RestfulApiPathInfo("http://www.ieream.com/mapi/1/locations.php?action=getlist&loc_type=ream&data_type=exact", 
 				".php", "GetList");
 		pathUrl.put("http://www.ieream.com/mapi/1/locations.php?action=getlist&loc_type=ream&data_type=exact", restfulApiPathInfo);
 		
-		
+		/* 
 		//4.reams(游目)
 		
 		restfulApiPathInfo=new RestfulApiPathInfo("//http://www.ieream.com/mapi/1/reams.php?action=search&filter=locations:330000;tags:19;keywords", 
@@ -98,9 +99,9 @@ public class APIModelForFrontPointManagerTest {
 		
 		*/
 		//http://www.ieream.com/mapi/1/helpers.php?action=getupdateinfo&version_type=android&version
-		restfulApiPathInfo=new RestfulApiPathInfo("http://www.ieream.com/mapi/1/helpers.php?action=getupdateinfo&version_type=android&version", 
-				".php", "Getupdateinfo");
-		pathUrl.put("http://www.ieream.com/mapi/1/users.php?action=getitem&uid=102", restfulApiPathInfo);
+		//restfulApiPathInfo=new RestfulApiPathInfo("http://www.ieream.com/mapi/1/helpers.php?action=getupdateinfo&version_type=android&version", 
+		//		".php", "Getupdateinfo");
+		//pathUrl.put("http://www.ieream.com/mapi/1/users.php?action=getitem&uid=102", restfulApiPathInfo);
 		modelManager.generateModelDamainFromRawData(pathUrl);
 	}
 	
@@ -109,6 +110,94 @@ public class APIModelForFrontPointManagerTest {
 		((APIModelForFrontPointManager) modelManager).generateAndroidRestfulForFrontSimpleFileFormXML("ieream");
 	}
 
+	@Test
+	public void generateLocationsBeanControllerMethodToXML() {
+		try {
+			// 基本信息
+			// Controller签名
+			//http://www.ieream.com/mapi/1/locations.php?action=getlist&loc_type=ream&data_type=exact
+			String controllerType = "LocationsGetListBean";
+			String descipter = "获 获取位置列表";
+			//action=getitem&id=:id
+			String controllerUri = "http://www.ieream.com/mapi/1/";
+			///guides.php?action=
+			String methodUri="locations.php?action=getlist";
+			String controllerMethodSignature = "getlist";
+			String toServiceMethodSignatureDescripter = "获 获取位置列表";
+			
+			String toServiceMethodSignature = "getlist";
+			
+			ColumnBean startColumnBean = new ColumnBean();
+			startColumnBean.setColumnNameNoDash("p");
+			startColumnBean.setColumnNameCapitalized("P");
+			startColumnBean.setColumnType("Integer");
+			//startColumnBean.setColumnDefault("1");
+			//
+			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			
+
+			ColumnBean nextColumnBean = new ColumnBean();
+			nextColumnBean.setColumnNameNoDash("psize");
+			nextColumnBean.setColumnNameCapitalized("Psize");
+			nextColumnBean.setColumnType("Integer");
+			//nextColumnBean.setColumnDefault("10");
+			nextColumnBean.setNextFieldRative(FieldRativeEnum.And);
+
+			startColumnBean.setNextColumnBean(nextColumnBean);
+
+			ColumnBean loc_typeColumnBean = new ColumnBean();
+			loc_typeColumnBean.setColumnNameNoDash("loc_type");
+			loc_typeColumnBean.setColumnNameCapitalized("Loc_type");
+			loc_typeColumnBean.setColumnType("String");
+			loc_typeColumnBean.setColumnDefault("ream");
+			loc_typeColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			//
+			nextColumnBean.setNextColumnBean(loc_typeColumnBean);
+			//
+			
+			ColumnBean loc_orderColumnBean = new ColumnBean();
+			loc_orderColumnBean.setColumnNameNoDash("loc_order");
+			loc_orderColumnBean.setColumnNameCapitalized("loc_order");
+			loc_orderColumnBean.setColumnType("String");
+			loc_orderColumnBean.setColumnDefault("asc");
+			loc_orderColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			//
+			loc_typeColumnBean.setNextColumnBean(loc_orderColumnBean);
+			
+			ColumnBean data_typeColumnBean = new ColumnBean();
+			data_typeColumnBean.setColumnNameNoDash("data_type");
+			data_typeColumnBean.setColumnNameCapitalized("Data_type");
+			data_typeColumnBean.setColumnType("String");
+			data_typeColumnBean.setColumnDefault("exact");
+			data_typeColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
+			loc_orderColumnBean.setNextColumnBean(data_typeColumnBean);
+			
+			ControllerManager manager;
+			FieldTypeEnum returnFieldEnum=FieldTypeEnum.ENTITY;
+			ColumnBean returnColumnBeanType=new ColumnBean();
+			returnColumnBeanType.setColumnName("LocationsGetListBean");
+			returnColumnBeanType.setColumnNameCapitalized("LocationsGetListBean");
+			returnColumnBeanType.setColumnNameNoDash("locationsGetListBean");
+			returnColumnBeanType.setColumnType("LocationsGetListBean");
+			returnColumnBeanType.setFieldType(FieldTypeEnum.ENTITY);
+			
+			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
+					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
+					startColumnBean,methodUri,returnFieldEnum,returnColumnBeanType);
+
+			
+			assertNotNull(manager);
+			
+			//生成XML
+			manager.generateControllerBeanToXML("ieream");
+			
+			assertNotNull(manager);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 	@Test
 	public void generateUsersGetupdateinfoBeanControllerMethodToXML() {
 		try {

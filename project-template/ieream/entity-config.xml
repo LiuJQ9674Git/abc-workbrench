@@ -1,13 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<EntityConfig uuid="2aae8faa-0689-4667-823c-44a1b7178af0-com.ndl.framework.workbrench.freemarker.template.EntityConfigTemplate-0">
+<EntityConfig uuid="eaae3e15-3643-41ff-9881-d87dd20b2d34-EntityConfigTemplate-0">
     <tableBeanList>
-        <tableBean uuid="53fd829d-cf6b-438e-bd09-7b545522ea49-com.ndl.framework.workbrench.define.TableBean-0">
-            <tableName>usersGetupdateinfo</tableName>
-            <tableComment>http://www.ieream.com/mapi/1/users.php?action=getitem&amp;uid=102</tableComment>
-            <tableNameNoDash>usersGetupdateinfo</tableNameNoDash>
-            <tableNameCapitalized>UsersGetupdateinfo</tableNameCapitalized>
+        <tableBean uuid="aba97941-13df-4cdc-bb02-e01d089d57d0-TableBean-0">
+            <tableName>locationsGetList</tableName>
+            <tableComment>http://www.ieream.com/mapi/1/locations.php?action=getlist&amp;loc_type=ream&amp;data_type=exact</tableComment>
+            <tableNameNoDash>locationsGetList</tableNameNoDash>
+            <tableNameCapitalized>LocationsGetList</tableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="fe956b3c-a0f6-4d37-9509-cede14ca0d20-com.ndl.framework.workbrench.define.ColumnBean-62">
+                <columnBean uuid="a92dbf55-4105-41ff-bc8b-43cfe3e30159-ColumnBean-0">
+                    <columnName></columnName>
+                    <columnNameNoDash>hot_city_dataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>Hot_city_dataLocationsGetList</columnNameCapitalized>
+                    <columnType>Hot_city_dataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>hot_city_data</referNameNoDash>
+                    <referNameCapitalized>Hot_city_data</referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>Hot_city_dataLocationsGetList</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>TST</columnKey>
+                    <fieldType>LIST</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="847a03ff-d974-4bbc-aa20-bfcbd9498468-ColumnBean-25">
+                    <columnName></columnName>
+                    <columnNameNoDash>dataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>DataLocationsGetList</columnNameCapitalized>
+                    <columnType>DataLocationsGetList</columnType>
+                    <columnTypeIOS>DataLocationsGetList</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy) DataLocationsGetList *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>data</referNameNoDash>
+                    <referNameCapitalized>Data</referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>DataLocationsGetList</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>TST</columnKey>
+                    <fieldType>ENTITY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="a5d289f4-0cd8-4791-9a6e-ff5455dfdeaa-ColumnBean-117">
+                    <columnName></columnName>
+                    <columnNameNoDash>more</columnNameNoDash>
+                    <columnNameCapitalized>More</columnNameCapitalized>
+                    <columnType>Integer</columnType>
+                    <columnDBType>INTEGER</columnDBType>
+                    <columnTypeIOS>NSInteger</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)NSInteger </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getInt</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>more</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="34efec0d-b710-472c-8021-ba845541be7e-ColumnBean-118">
                     <columnName></columnName>
                     <columnNameNoDash>status</columnNameNoDash>
                     <columnNameCapitalized>Status</columnNameCapitalized>
@@ -33,10 +109,48 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="7994766a-5505-46b4-9576-e971a77ede40-com.ndl.framework.workbrench.define.ColumnBean-63">
+            </columnBeanList>
+            <transientColumnBeanList/>
+            <hasDateColumn>false</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </tableBean>
+        <tableBean uuid="e31d22c2-ae56-4af3-8aa4-65c06e6d5ddd-TableBean-1">
+            <tableName>hot_city_dataLocationsgetlist</tableName>
+            <tableNameNoDash>hot_city_dataLocationsgetlist</tableNameNoDash>
+            <tableNameCapitalized>Hot_city_dataLocationsgetlist</tableNameCapitalized>
+            <parentTableNameNoDash>locationsGetList</parentTableNameNoDash>
+            <parentTableNameCapitalized>LocationsGetList</parentTableNameCapitalized>
+            <columnBeanList>
+                <columnBean uuid="052162b4-78b2-4290-9ba9-75ff5d138942-ColumnBean-2">
                     <columnName></columnName>
-                    <columnNameNoDash>info</columnNameNoDash>
-                    <columnNameCapitalized>Info</columnNameCapitalized>
+                    <columnNameNoDash>id</columnNameNoDash>
+                    <columnNameCapitalized>Id</columnNameCapitalized>
+                    <columnType>Integer</columnType>
+                    <columnDBType>INTEGER</columnDBType>
+                    <columnTypeIOS>NSInteger</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)NSInteger </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getInt</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>id</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="3e532221-2b4a-448d-8930-89a96ae2ed9c-ColumnBean-3">
+                    <columnName></columnName>
+                    <columnNameNoDash>count_item</columnNameNoDash>
+                    <columnNameCapitalized>Count_item</columnNameCapitalized>
                     <columnType>String</columnType>
                     <columnDBType>VARCHAR</columnDBType>
                     <columnTypeIOS>NSString</columnTypeIOS>
@@ -49,7 +163,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>获取用户信息成功</columnComment>
+                    <columnComment>5</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -59,29 +173,30 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="20d71475-a4ae-43f7-871f-a1c51faa113d-com.ndl.framework.workbrench.define.ColumnBean-0">
+                <columnBean uuid="db3a37ce-74db-406a-90ff-a684f0e89462-ColumnBean-1">
                     <columnName></columnName>
-                    <columnNameNoDash>dataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>DataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>DataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>DataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DataUsersGetupdateinfo *</columnTypePropertyIOS>
+                    <columnNameNoDash>name</columnNameNoDash>
+                    <columnNameCapitalized>Name</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnDBType>VARCHAR</columnDBType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>data</referNameNoDash>
-                    <referNameCapitalized>Data</referNameCapitalized>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>DataUsersGetupdateinfo</columnComment>
+                    <columnComment>默认</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
                     <isMutable>true</isMutable>
                     <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
             </columnBeanList>
@@ -89,279 +204,20 @@
             <hasDateColumn>true</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="dd9d0596-7850-4096-961f-760d8ef8db97-com.ndl.framework.workbrench.define.TableBean-1">
-            <tableName>dataUsersGetupdateinfo</tableName>
-            <tableNameNoDash>dataUsersGetupdateinfo</tableNameNoDash>
-            <tableNameCapitalized>DataUsersGetupdateinfo</tableNameCapitalized>
-            <parentTableNameNoDash>usersGetupdateinfo</parentTableNameNoDash>
-            <parentTableNameCapitalized>UsersGetupdateinfo</parentTableNameCapitalized>
+        <tableBean uuid="18d6d20d-0565-42b2-bc52-43495467dbf4-TableBean-2">
+            <tableName>dataLocationsGetList</tableName>
+            <tableNameNoDash>dataLocationsGetList</tableNameNoDash>
+            <tableNameCapitalized>DataLocationsGetList</tableNameCapitalized>
+            <parentTableNameNoDash>locationsGetList</parentTableNameNoDash>
+            <parentTableNameCapitalized>LocationsGetList</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="bd8ffee1-02ac-45a4-a5c4-000386c51399-com.ndl.framework.workbrench.define.ColumnBean-48">
+                <columnBean uuid="30ef37f5-3829-441a-8078-8c5dcda8d5a6-ColumnBean-27">
                     <columnName></columnName>
-                    <columnNameNoDash>recommend_tel</columnNameNoDash>
-                    <columnNameCapitalized>Recommend_tel</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>18601013399</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="75b47a05-886d-49fe-9bc7-c08e01c477ac-com.ndl.framework.workbrench.define.ColumnBean-12">
-                    <columnName></columnName>
-                    <columnNameNoDash>diploma</columnNameNoDash>
-                    <columnNameCapitalized>Diploma</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>doctor</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="8b331d38-3fb3-4e15-8855-adbadec0d0f7-com.ndl.framework.workbrench.define.ColumnBean-15">
-                    <columnName></columnName>
-                    <columnNameNoDash>bi_language</columnNameNoDash>
-                    <columnNameCapitalized>Bi_language</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="29cb2cfb-e95b-4291-800a-20ce977aef1e-com.ndl.framework.workbrench.define.ColumnBean-16">
-                    <columnName></columnName>
-                    <columnNameNoDash>districtDataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>DistrictDataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>DistrictDataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>DistrictDataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) DistrictDataUsersGetupdateinfo *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>district</referNameNoDash>
-                    <referNameCapitalized>District</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>DistrictDataUsersGetupdateinfo</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="536f37ed-0297-4188-9159-a03cbd28b437-com.ndl.framework.workbrench.define.ColumnBean-4">
-                    <columnName></columnName>
-                    <columnNameNoDash>self_desc</columnNameNoDash>
-                    <columnNameCapitalized>Self_desc</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>&lt;p&gt;俺的自述，很简单哈&lt;br/&gt;&lt;/p</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="4b3c8986-aef5-4652-8d69-94b3d17c5d23-com.ndl.framework.workbrench.define.ColumnBean-36">
-                    <columnName></columnName>
-                    <columnNameNoDash>reg_time</columnNameNoDash>
-                    <columnNameCapitalized>Reg_time</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>1457745068</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="320b164f-110d-490f-8b95-305872b99147-com.ndl.framework.workbrench.define.ColumnBean-59">
-                    <columnName></columnName>
-                    <columnNameNoDash>reg_ip</columnNameNoDash>
-                    <columnNameCapitalized>Reg_ip</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="da430bb6-666d-44c0-8bb2-977b04ceea28-com.ndl.framework.workbrench.define.ColumnBean-24">
-                    <columnName></columnName>
-                    <columnNameNoDash>birthday</columnNameNoDash>
-                    <columnNameCapitalized>Birthday</columnNameCapitalized>
-                    <columnType>Date</columnType>
-                    <columnDBType>DATE</columnDBType>
-                    <columnTypeIOS>NSDate</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSDate *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getDate</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>0000-00-00</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="c09c5829-76a0-4f87-a79f-4b107a723471-com.ndl.framework.workbrench.define.ColumnBean-2">
-                    <columnName></columnName>
-                    <columnNameNoDash>self_introduction</columnNameNoDash>
-                    <columnNameCapitalized>Self_introduction</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="dc4b9746-aa13-4337-a7ae-aee538bc4f03-com.ndl.framework.workbrench.define.ColumnBean-14">
-                    <columnName></columnName>
-                    <columnNameNoDash>postcode</columnNameNoDash>
-                    <columnNameCapitalized>Postcode</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>100001</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="5bd8ff80-834e-4421-a7da-22b456ed6684-com.ndl.framework.workbrench.define.ColumnBean-7">
-                    <columnName></columnName>
-                    <columnNameNoDash>provinceDataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>ProvinceDataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>ProvinceDataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>ProvinceDataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) ProvinceDataUsersGetupdateinfo *</columnTypePropertyIOS>
+                    <columnNameNoDash>provinceDataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>ProvinceDataLocationsGetList</columnNameCapitalized>
+                    <columnType>ProvinceDataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
                     <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
                     <columnTypeRsGetter></columnTypeRsGetter>
@@ -370,1068 +226,55 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>ProvinceDataUsersGetupdateinfo</columnComment>
+                    <columnComment>ProvinceDataLocationsGetList</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
                     <isMutable>true</isMutable>
                     <nextFieldRative>Finished</nextFieldRative>
                     <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="f0aeca20-5317-403d-beb2-f472dd0f545e-com.ndl.framework.workbrench.define.ColumnBean-58">
-                    <columnName></columnName>
-                    <columnNameNoDash>domicile</columnNameNoDash>
-                    <columnNameCapitalized>Domicile</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>harerbin</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="d7289a87-6940-4818-8788-d64cc2bb93d4-com.ndl.framework.workbrench.define.ColumnBean-42">
-                    <columnName></columnName>
-                    <columnNameNoDash>union_count</columnNameNoDash>
-                    <columnNameCapitalized>Union_count</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="2c63925d-5dd7-4f82-b585-b348121a6257-com.ndl.framework.workbrench.define.ColumnBean-33">
-                    <columnName></columnName>
-                    <columnNameNoDash>remark_one</columnNameNoDash>
-                    <columnNameCapitalized>Remark_one</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>后崖</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="94166c7b-e842-4692-8b4e-5b01486a5b0d-com.ndl.framework.workbrench.define.ColumnBean-38">
-                    <columnName></columnName>
-                    <columnNameNoDash>service_days_type</columnNameNoDash>
-                    <columnNameCapitalized>Service_days_type</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="dc6cd9d1-806d-4ee6-81b6-911ac96b3dcd-com.ndl.framework.workbrench.define.ColumnBean-13">
-                    <columnName></columnName>
-                    <columnNameNoDash>qq</columnNameNoDash>
-                    <columnNameCapitalized>Qq</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>2782948157</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="3f1ea9e5-1414-475d-a55b-9c61e672ca48-com.ndl.framework.workbrench.define.ColumnBean-32">
-                    <columnName></columnName>
-                    <columnNameNoDash>guidecard</columnNameNoDash>
-                    <columnNameCapitalized>Guidecard</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="a4e5f30d-5538-44c2-b730-242aeb7964ac-com.ndl.framework.workbrench.define.ColumnBean-37">
-                    <columnName></columnName>
-                    <columnNameNoDash>nickname</columnNameNoDash>
-                    <columnNameCapitalized>Nickname</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>onc4hy</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="6d7a4ddb-f983-423a-9a09-466cb6e91569-com.ndl.framework.workbrench.define.ColumnBean-61">
-                    <columnName></columnName>
-                    <columnNameNoDash>username</columnNameNoDash>
-                    <columnNameCapitalized>Username</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="ed3bc369-0bbd-4430-8e06-3643f1217e12-com.ndl.framework.workbrench.define.ColumnBean-50">
-                    <columnName></columnName>
-                    <columnNameNoDash>recommend_person</columnNameNoDash>
-                    <columnNameCapitalized>Recommend_person</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>aricha</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="2ba0c955-719f-48d0-818e-b5108985babd-com.ndl.framework.workbrench.define.ColumnBean-23">
-                    <columnName></columnName>
-                    <columnNameNoDash>status</columnNameNoDash>
-                    <columnNameCapitalized>Status</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>1</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="04d2c477-8ad3-4654-8835-352102d28457-com.ndl.framework.workbrench.define.ColumnBean-47">
-                    <columnName></columnName>
-                    <columnNameNoDash>begin_time</columnNameNoDash>
-                    <columnNameCapitalized>Begin_time</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="0472867b-d14b-4a61-a9d5-f5233b4bbf74-com.ndl.framework.workbrench.define.ColumnBean-56">
-                    <columnName></columnName>
-                    <columnNameNoDash>netname</columnNameNoDash>
-                    <columnNameCapitalized>Netname</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>后崖</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="55032062-ddb2-439c-9bb5-5c1505f60b87-com.ndl.framework.workbrench.define.ColumnBean-55">
-                    <columnName></columnName>
-                    <columnNameNoDash>show_role</columnNameNoDash>
-                    <columnNameCapitalized>Show_role</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>1</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="c7fbbeff-668c-4ef2-ab84-ea9c17f844b7-com.ndl.framework.workbrench.define.ColumnBean-34">
-                    <columnName></columnName>
-                    <columnNameNoDash>uid</columnNameNoDash>
-                    <columnNameCapitalized>Uid</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>102</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="abafa9ab-5fc7-4d70-9848-939715397f32-com.ndl.framework.workbrench.define.ColumnBean-26">
-                    <columnName></columnName>
-                    <columnNameNoDash>cityDataUsersGetupdateinfo</columnNameNoDash>
-                    <columnNameCapitalized>CityDataUsersGetupdateinfo</columnNameCapitalized>
-                    <columnType>CityDataUsersGetupdateinfo</columnType>
-                    <columnTypeIOS>CityDataUsersGetupdateinfo</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy) CityDataUsersGetupdateinfo *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter></columnTypeRsGetter>
-                    <referNameNoDash>city</referNameNoDash>
-                    <referNameCapitalized>City</referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>CityDataUsersGetupdateinfo</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>TST</columnKey>
-                    <fieldType>ENTITY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="db187b5f-b2d9-4a65-a512-f47b90d5c542-com.ndl.framework.workbrench.define.ColumnBean-22">
-                    <columnName></columnName>
-                    <columnNameNoDash>invite_code</columnNameNoDash>
-                    <columnNameCapitalized>Invite_code</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="482547de-db92-41d7-a6bf-c077088d9425-com.ndl.framework.workbrench.define.ColumnBean-35">
-                    <columnName></columnName>
-                    <columnNameNoDash>last_login_ip</columnNameNoDash>
-                    <columnNameCapitalized>Last_login_ip</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>3722193911</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="01f3f82e-f9df-49b6-b6c3-3bc6f8958626-com.ndl.framework.workbrench.define.ColumnBean-40">
-                    <columnName></columnName>
-                    <columnNameNoDash>address</columnNameNoDash>
-                    <columnNameCapitalized>Address</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>北京市</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="994abd88-cb34-4f7f-b110-0cc702fcecdc-com.ndl.framework.workbrench.define.ColumnBean-39">
-                    <columnName></columnName>
-                    <columnNameNoDash>email</columnNameNoDash>
-                    <columnNameCapitalized>Email</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>onc4hy@126.com</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="7178b5a2-f1ea-406d-8a4f-19ec26318378-com.ndl.framework.workbrench.define.ColumnBean-60">
-                    <columnName></columnName>
-                    <columnNameNoDash>price_rule</columnNameNoDash>
-                    <columnNameCapitalized>Price_rule</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="24459a77-37fd-4e38-8a1b-b90c8401ba1d-com.ndl.framework.workbrench.define.ColumnBean-54">
-                    <columnName></columnName>
-                    <columnNameNoDash>work_unit</columnNameNoDash>
-                    <columnNameCapitalized>Work_unit</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>ieream</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="e4bddca0-c63a-497d-b26c-9bd693f6e45c-com.ndl.framework.workbrench.define.ColumnBean-25">
-                    <columnName></columnName>
-                    <columnNameNoDash>signature</columnNameNoDash>
-                    <columnNameCapitalized>Signature</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>后崖，无处不在的矫情哈</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="48b8abe7-400a-407d-bf93-baafb0538c93-com.ndl.framework.workbrench.define.ColumnBean-20">
-                    <columnName></columnName>
-                    <columnNameNoDash>recommend_desc</columnNameNoDash>
-                    <columnNameCapitalized>Recommend_desc</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="d62a392b-0b1e-4e28-ae73-0dcaf2ea6277-com.ndl.framework.workbrench.define.ColumnBean-44">
-                    <columnName></columnName>
-                    <columnNameNoDash>wechat</columnNameNoDash>
-                    <columnNameCapitalized>Wechat</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>houyaself</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="5a2dfe10-a609-49ac-818f-76fc43ae4174-com.ndl.framework.workbrench.define.ColumnBean-52">
-                    <columnName></columnName>
-                    <columnNameNoDash>price_unit</columnNameNoDash>
-                    <columnNameCapitalized>Price_unit</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>30</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="b47b5120-e0a0-4065-861b-c55fdc38a946-com.ndl.framework.workbrench.define.ColumnBean-57">
-                    <columnName></columnName>
-                    <columnNameNoDash>idcard</columnNameNoDash>
-                    <columnNameCapitalized>Idcard</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>230108</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="9252a466-21fc-42ae-95fa-0077e97a8a04-com.ndl.framework.workbrench.define.ColumnBean-51">
-                    <columnName></columnName>
-                    <columnNameNoDash>special</columnNameNoDash>
-                    <columnNameCapitalized>Special</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>太多了</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="7d9cb103-b97d-40f5-a54b-9d3356ad6734-com.ndl.framework.workbrench.define.ColumnBean-46">
-                    <columnName></columnName>
-                    <columnNameNoDash>mobile</columnNameNoDash>
-                    <columnNameCapitalized>Mobile</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="c40de3b9-2d03-41ef-89dc-26fc73045610-com.ndl.framework.workbrench.define.ColumnBean-53">
-                    <columnName></columnName>
-                    <columnNameNoDash>last_login_role</columnNameNoDash>
-                    <columnNameCapitalized>Last_login_role</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>1</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="0f80b498-6488-4c45-9702-ec0d7cd4be06-com.ndl.framework.workbrench.define.ColumnBean-21">
-                    <columnName></columnName>
-                    <columnNameNoDash>institute</columnNameNoDash>
-                    <columnNameCapitalized>Institute</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>hljuniversity</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="30c8ac6b-4908-4b05-8dcc-d37ec41e2b30-com.ndl.framework.workbrench.define.ColumnBean-11">
-                    <columnName></columnName>
-                    <columnNameNoDash>tel</columnNameNoDash>
-                    <columnNameCapitalized>Tel</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>15614405706</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="6aed2dea-b64f-44e0-976d-bbdfd6ae526d-com.ndl.framework.workbrench.define.ColumnBean-5">
-                    <columnName></columnName>
-                    <columnNameNoDash>email_1</columnNameNoDash>
-                    <columnNameCapitalized>Email_1</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>onc4hy@126.com</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="5c1f60e2-1e9b-47c2-bbba-39e4cfeecdba-com.ndl.framework.workbrench.define.ColumnBean-3">
-                    <columnName></columnName>
-                    <columnNameNoDash>last_login_time</columnNameNoDash>
-                    <columnNameCapitalized>Last_login_time</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>1458714395</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="6458bbc8-75c3-4f6d-a4a9-48571c97ddfd-com.ndl.framework.workbrench.define.ColumnBean-49">
-                    <columnName></columnName>
-                    <columnNameNoDash>realname</columnNameNoDash>
-                    <columnNameCapitalized>Realname</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>侯义安</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="935c238c-4747-4c93-8350-38eb55a73b5f-com.ndl.framework.workbrench.define.ColumnBean-43">
-                    <columnName></columnName>
-                    <columnNameNoDash>sex</columnNameNoDash>
-                    <columnNameCapitalized>Sex</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>1</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="16c8ca68-172b-4d27-bc89-44e524c0f46a-com.ndl.framework.workbrench.define.ColumnBean-6">
-                    <columnName></columnName>
-                    <columnNameNoDash>service_days_week</columnNameNoDash>
-                    <columnNameCapitalized>Service_days_week</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="d399b9d4-f4f8-47d7-9576-5db254d68028-com.ndl.framework.workbrench.define.ColumnBean-41">
-                    <columnName></columnName>
-                    <columnNameNoDash>value_added_items</columnNameNoDash>
-                    <columnNameCapitalized>Value_added_items</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="7633cf8a-5434-4324-a99a-91834a452b10-com.ndl.framework.workbrench.define.ColumnBean-45">
-                    <columnName></columnName>
-                    <columnNameNoDash>end_time</columnNameNoDash>
-                    <columnNameCapitalized>End_time</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="dc70d0ec-b574-4cfd-878c-0072f5c3a19b-com.ndl.framework.workbrench.define.ColumnBean-30">
-                    <columnName></columnName>
-                    <columnNameNoDash>login</columnNameNoDash>
-                    <columnNameCapitalized>Login</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>17</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="c4fc4d54-4243-4c45-a5c3-4f4970981017-com.ndl.framework.workbrench.define.ColumnBean-31">
-                    <columnName></columnName>
-                    <columnNameNoDash>service_days_special</columnNameNoDash>
-                    <columnNameCapitalized>Service_days_special</columnNameCapitalized>
-                    <columnType>String</columnType>
-                    <columnDBType>VARCHAR</columnDBType>
-                    <columnTypeIOS>NSString</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getString</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment></columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
+                    <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
             </columnBeanList>
             <transientColumnBeanList/>
-            <hasDateColumn>true</hasDateColumn>
+            <hasDateColumn>false</hasDateColumn>
             <hasBigDecimal>false</hasBigDecimal>
         </tableBean>
-        <tableBean uuid="8f46e04c-f099-4970-aca0-24ab98cf2b60-com.ndl.framework.workbrench.define.TableBean-2">
-            <tableName>provinceDataUsersGetupdateinfo</tableName>
-            <tableNameNoDash>provinceDataUsersGetupdateinfo</tableNameNoDash>
-            <tableNameCapitalized>ProvinceDataUsersGetupdateinfo</tableNameCapitalized>
-            <parentTableNameNoDash>dataUsersGetupdateinfo</parentTableNameNoDash>
-            <parentTableNameCapitalized>DataUsersGetupdateinfo</parentTableNameCapitalized>
+        <tableBean uuid="808781b3-0890-42cc-adab-74de085535ba-TableBean-3">
+            <tableName>provinceDataLocationsGetList</tableName>
+            <tableNameNoDash>provinceDataLocationsGetList</tableNameNoDash>
+            <tableNameCapitalized>ProvinceDataLocationsGetList</tableNameCapitalized>
+            <parentTableNameNoDash>DataLocationsGetList</parentTableNameNoDash>
+            <parentTableNameCapitalized>DataLocationsGetList</parentTableNameCapitalized>
             <columnBeanList>
-                <columnBean uuid="399a13de-dff5-49b5-97c3-e3b787efe247-com.ndl.framework.workbrench.define.ColumnBean-8">
+                <columnBean uuid="e3482467-5cff-4ba2-83d9-b889fd97decf-ColumnBean-30">
+                    <columnName></columnName>
+                    <columnNameNoDash>has_child</columnNameNoDash>
+                    <columnNameCapitalized>Has_child</columnNameCapitalized>
+                    <columnType>Integer</columnType>
+                    <columnDBType>INTEGER</columnDBType>
+                    <columnTypeIOS>NSInteger</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)NSInteger </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getInt</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>has_child</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="af3b3e68-e9f2-421c-9ff2-bd1430000eba-ColumnBean-28">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -1457,33 +300,7 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="0dce0d57-c793-4b8c-b9a9-c9db955d98ed-com.ndl.framework.workbrench.define.ColumnBean-10">
-                    <columnName></columnName>
-                    <columnNameNoDash>has_location</columnNameNoDash>
-                    <columnNameCapitalized>Has_location</columnNameCapitalized>
-                    <columnType>Integer</columnType>
-                    <columnDBType>INTEGER</columnDBType>
-                    <columnTypeIOS>NSInteger</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,assign)NSInteger </columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
-                    <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getInt</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
-                    <referType></referType>
-                    <referRieldType>PRIMARY</referRieldType>
-                    <referLength>0</referLength>
-                    <columnComment>has_location</columnComment>
-                    <ordinalPosition></ordinalPosition>
-                    <isNullable></isNullable>
-                    <columnDefault></columnDefault>
-                    <isMutable>true</isMutable>
-                    <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
-                    <length>0</length>
-                </columnBean>
-                <columnBean uuid="fcbd78b2-8ee1-4730-a9ea-46f13305d95b-com.ndl.framework.workbrench.define.ColumnBean-9">
+                <columnBean uuid="a53dd3a7-740a-4574-8492-d42453151943-ColumnBean-29">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -1509,22 +326,35 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-            </columnBeanList>
-            <transientColumnBeanList/>
-            <hasDateColumn>true</hasDateColumn>
-            <hasBigDecimal>false</hasBigDecimal>
-        </tableBean>
-        <tableBean uuid="ec8e559c-211a-4c43-a5af-8e54d6e52fa5-com.ndl.framework.workbrench.define.TableBean-3">
-            <tableName>districtDataUsersGetupdateinfo</tableName>
-            <tableNameNoDash>districtDataUsersGetupdateinfo</tableNameNoDash>
-            <tableNameCapitalized>DistrictDataUsersGetupdateinfo</tableNameCapitalized>
-            <parentTableNameNoDash>dataUsersGetupdateinfo</parentTableNameNoDash>
-            <parentTableNameCapitalized>DataUsersGetupdateinfo</parentTableNameCapitalized>
-            <columnBeanList>
-                <columnBean uuid="472ad89e-abb0-4bd5-8b90-639f06e8c36e-com.ndl.framework.workbrench.define.ColumnBean-18">
+                <columnBean uuid="d91ba7f6-d027-4e93-b623-bcb1e129be40-ColumnBean-32">
                     <columnName></columnName>
-                    <columnNameNoDash>id</columnNameNoDash>
-                    <columnNameCapitalized>Id</columnNameCapitalized>
+                    <columnNameNoDash>city_listProvinceDataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>City_listProvinceDataLocationsGetList</columnNameCapitalized>
+                    <columnType>City_listProvinceDataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>city_list</referNameNoDash>
+                    <referNameCapitalized>City_list</referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>City_listProvinceDataLocationsGetList</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>TST</columnKey>
+                    <fieldType>LIST</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="4b3a7c8c-6ad9-4b6d-9c86-3eb0f0c4aea4-ColumnBean-31">
+                    <columnName></columnName>
+                    <columnNameNoDash>count_item</columnNameNoDash>
+                    <columnNameCapitalized>Count_item</columnNameCapitalized>
                     <columnType>String</columnType>
                     <columnDBType>VARCHAR</columnDBType>
                     <columnTypeIOS>NSString</columnTypeIOS>
@@ -1537,7 +367,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>110102</columnComment>
+                    <columnComment>3</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -1547,33 +377,44 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="561c5910-b3e3-4a78-b881-da998e27c16a-com.ndl.framework.workbrench.define.ColumnBean-19">
+            </columnBeanList>
+            <transientColumnBeanList/>
+            <hasDateColumn>true</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </tableBean>
+        <tableBean uuid="c4986b3b-a84f-452b-9255-ac243ff8d87e-TableBean-4">
+            <tableName>city_listProvinceDataLocationsGetList</tableName>
+            <tableNameNoDash>city_listProvinceDataLocationsGetList</tableNameNoDash>
+            <tableNameCapitalized>City_listProvinceDataLocationsGetList</tableNameCapitalized>
+            <parentTableNameNoDash>provinceDataLocationsGetList</parentTableNameNoDash>
+            <parentTableNameCapitalized>ProvinceDataLocationsGetList</parentTableNameCapitalized>
+            <columnBeanList>
+                <columnBean uuid="68a0283a-f9c0-4b96-9b6e-56f6c94ae963-ColumnBean-33">
                     <columnName></columnName>
-                    <columnNameNoDash>has_location</columnNameNoDash>
-                    <columnNameCapitalized>Has_location</columnNameCapitalized>
-                    <columnType>Integer</columnType>
-                    <columnDBType>INTEGER</columnDBType>
-                    <columnTypeIOS>NSInteger</columnTypeIOS>
-                    <columnTypePropertyIOS>property(nonatomic,assign)NSInteger </columnTypePropertyIOS>
-                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnNameNoDash>district_listCity_listProvinceDataLocationsGetList</columnNameNoDash>
+                    <columnNameCapitalized>District_listCity_listProvinceDataLocationsGetList</columnNameCapitalized>
+                    <columnType>District_listCity_listProvinceDataLocationsGetList</columnType>
+                    <columnTypeIOS>NSArray</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSArray *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
                     <columnTypeJS></columnTypeJS>
-                    <columnTypeRsGetter>getInt</columnTypeRsGetter>
-                    <referNameNoDash></referNameNoDash>
-                    <referNameCapitalized></referNameCapitalized>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash>district_list</referNameNoDash>
+                    <referNameCapitalized>District_list</referNameCapitalized>
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>has_location</columnComment>
+                    <columnComment>District_listCity_listProvinceDataLocationsGetList</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
                     <isMutable>true</isMutable>
                     <nextFieldRative>Finished</nextFieldRative>
-                    <columnKey>DEFUALT</columnKey>
-                    <fieldType>PRIMARY</fieldType>
+                    <columnKey>TST</columnKey>
+                    <fieldType>LIST</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="c6187dd5-3565-485d-ad04-c035bbda3845-com.ndl.framework.workbrench.define.ColumnBean-17">
+                <columnBean uuid="96f7193a-461c-42b1-a8bb-7c1b368f4d3d-ColumnBean-38">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -1589,7 +430,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>西城区</columnComment>
+                    <columnComment>北京市</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -1599,19 +440,33 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-            </columnBeanList>
-            <transientColumnBeanList/>
-            <hasDateColumn>true</hasDateColumn>
-            <hasBigDecimal>false</hasBigDecimal>
-        </tableBean>
-        <tableBean uuid="36bebb06-28ee-4819-94d9-c334e3240fce-com.ndl.framework.workbrench.define.TableBean-4">
-            <tableName>cityDataUsersGetupdateinfo</tableName>
-            <tableNameNoDash>cityDataUsersGetupdateinfo</tableNameNoDash>
-            <tableNameCapitalized>CityDataUsersGetupdateinfo</tableNameCapitalized>
-            <parentTableNameNoDash>dataUsersGetupdateinfo</parentTableNameNoDash>
-            <parentTableNameCapitalized>DataUsersGetupdateinfo</parentTableNameCapitalized>
-            <columnBeanList>
-                <columnBean uuid="fef6f273-5c52-459c-a0b1-02df1e80257f-com.ndl.framework.workbrench.define.ColumnBean-28">
+                <columnBean uuid="d8f54d86-4371-44d2-a418-728b021e99aa-ColumnBean-41">
+                    <columnName></columnName>
+                    <columnNameNoDash>count_item</columnNameNoDash>
+                    <columnNameCapitalized>Count_item</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnDBType>VARCHAR</columnDBType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>2</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="dd7fd43a-8c9e-4044-821c-5a653c818c25-ColumnBean-39">
                     <columnName></columnName>
                     <columnNameNoDash>id</columnNameNoDash>
                     <columnNameCapitalized>Id</columnNameCapitalized>
@@ -1637,10 +492,10 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="335f4c58-19b0-4af9-9a3f-5876d5fdb0a0-com.ndl.framework.workbrench.define.ColumnBean-29">
+                <columnBean uuid="67e22a38-21c0-4507-b3c0-640abaf468fe-ColumnBean-40">
                     <columnName></columnName>
-                    <columnNameNoDash>has_location</columnNameNoDash>
-                    <columnNameCapitalized>Has_location</columnNameCapitalized>
+                    <columnNameNoDash>has_child</columnNameNoDash>
+                    <columnNameCapitalized>Has_child</columnNameCapitalized>
                     <columnType>Integer</columnType>
                     <columnDBType>INTEGER</columnDBType>
                     <columnTypeIOS>NSInteger</columnTypeIOS>
@@ -1653,7 +508,7 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>has_location</columnComment>
+                    <columnComment>has_child</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>
@@ -1663,7 +518,19 @@
                     <fieldType>PRIMARY</fieldType>
                     <length>0</length>
                 </columnBean>
-                <columnBean uuid="f08d5ba9-e762-4b3b-8690-fbed23d3b31a-com.ndl.framework.workbrench.define.ColumnBean-27">
+            </columnBeanList>
+            <transientColumnBeanList/>
+            <hasDateColumn>true</hasDateColumn>
+            <hasBigDecimal>false</hasBigDecimal>
+        </tableBean>
+        <tableBean uuid="c493cf61-67b1-47a7-851d-ea80ca6ae229-TableBean-5">
+            <tableName>district_listCity_listProvinceDataLocationsGetList</tableName>
+            <tableNameNoDash>district_listCity_listProvinceDataLocationsGetList</tableNameNoDash>
+            <tableNameCapitalized>District_listCity_listProvinceDataLocationsGetList</tableNameCapitalized>
+            <parentTableNameNoDash>city_listProvinceDataLocationsGetList</parentTableNameNoDash>
+            <parentTableNameCapitalized>City_listProvinceDataLocationsGetList</parentTableNameCapitalized>
+            <columnBeanList>
+                <columnBean uuid="cba4bcef-8490-4bbc-92a7-45c9a27fe022-ColumnBean-34">
                     <columnName></columnName>
                     <columnNameNoDash>name</columnNameNoDash>
                     <columnNameCapitalized>Name</columnNameCapitalized>
@@ -1679,7 +546,85 @@
                     <referType></referType>
                     <referRieldType>PRIMARY</referRieldType>
                     <referLength>0</referLength>
-                    <columnComment>北京市</columnComment>
+                    <columnComment>怀柔区</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="0e48cbe5-4d54-4990-bb44-dfc4081e57a5-ColumnBean-37">
+                    <columnName></columnName>
+                    <columnNameNoDash>count_item</columnNameNoDash>
+                    <columnNameCapitalized>Count_item</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnDBType>VARCHAR</columnDBType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>2</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="da8ee3dd-b6bd-4723-8584-b67df1fbdee5-ColumnBean-35">
+                    <columnName></columnName>
+                    <columnNameNoDash>id</columnNameNoDash>
+                    <columnNameCapitalized>Id</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnDBType>VARCHAR</columnDBType>
+                    <columnTypeIOS>NSString</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,copy)NSString *</columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%@</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getString</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>110116</columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault></columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </columnBean>
+                <columnBean uuid="2567dc24-04b5-4417-90a7-0999d1c33edc-ColumnBean-36">
+                    <columnName></columnName>
+                    <columnNameNoDash>has_child</columnNameNoDash>
+                    <columnNameCapitalized>Has_child</columnNameCapitalized>
+                    <columnType>Integer</columnType>
+                    <columnDBType>INTEGER</columnDBType>
+                    <columnTypeIOS>NSInteger</columnTypeIOS>
+                    <columnTypePropertyIOS>property(nonatomic,assign)NSInteger </columnTypePropertyIOS>
+                    <columnTypeDescriptionIOS>%d</columnTypeDescriptionIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter>getInt</columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment>has_child</columnComment>
                     <ordinalPosition></ordinalPosition>
                     <isNullable></isNullable>
                     <columnDefault></columnDefault>

@@ -51,9 +51,19 @@ public class ${businessDescripter.className}${androidRestfulSuffix} {
 	<#if '' != methodDescripter.signatureEntirety>
 	${methodDescripter.signatureEntirety}{
 		final String path=url+"${methodDescripter.methodHeaderAnnotation.annoteValue}";
+		<#list methodDescripter.calleeArgumentList as columnDescripter>
+		
+		<#if ('' != columnDescripter.columnType &&'String' == columnDescripter.columnType&&'' != columnDescripter.columnDefault)>
+			${columnDescripter.columnNameNoDash}="${columnDescripter.columnDefault}";
+		 <#elseif ('' != columnDescripter.columnType&&'' != columnDescripter.columnDefault ) >
+			${columnDescripter.columnNameNoDash}=${columnDescripter.columnDefault};
+		 <#else>
+		</#if>
+		</#list>
 		final StringBuffer query=new StringBuffer();
 		query.append("");
 		<#list methodDescripter.calleeArgumentList as columnDescripter>
+		
 		<#if ('' != columnDescripter.columnType &&'String' == columnDescripter.columnType)>
 		if(StringUtils.isNotEmpty(${columnDescripter.columnNameNoDash})){
 			query.append("&");
@@ -75,8 +85,9 @@ public class ${businessDescripter.className}${androidRestfulSuffix} {
 		FutureTask<${methodDescripter.methodReturnAnnotation.annoteValue}> future = new FutureTask<${methodDescripter.methodReturnAnnotation.annoteValue}>(new Callable< ${methodDescripter.methodReturnAnnotation.annoteValue}>() {
 			public ${methodDescripter.methodReturnAnnotation.annoteValue} call() {
 				try{
+					String currentPath=path+query.toString();
 					ResponseEntity<${methodDescripter.methodReturnAnnotation.annoteValue}> response = 
-					restTemplate.getForEntity(path+query.toString(), ${methodDescripter.methodReturnAnnotation.annoteValue}.class);
+					restTemplate.getForEntity(currentPath, ${methodDescripter.methodReturnAnnotation.annoteValue}.class);
 					
 					return response.getBody();
 				}catch(Exception e){

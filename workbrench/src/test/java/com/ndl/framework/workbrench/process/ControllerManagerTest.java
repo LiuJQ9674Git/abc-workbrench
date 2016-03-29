@@ -51,50 +51,57 @@ public class ControllerManagerTest {
 		try {
 			// 基本信息
 			// Controller签名
-			String controllerType = "Guides";
-			String descipter = "/guides.php";
+			String controllerType = "GuidesBean";
+			String descipter = "霞客";
 			//action=getitem&id=:id
-			String controllerUri = "";
+			String controllerUri = "http://www.ieream.com/mapi/1/";
+			///guides.php?action=
+			String methodUri="guides.php?action=getItemById";
 			String controllerMethodSignature = "getItemById";
 			String toServiceMethodSignatureDescripter = "获取霞客信";
 			
-			String toServiceMethodSignature = "queryLoginByUserNameAndPassword";
+			String toServiceMethodSignature = "getItemById";
 			
 			ColumnBean startColumnBean = new ColumnBean();
-			startColumnBean.setColumnNameNoDash("action");
-			startColumnBean.setColumnNameCapitalized("Action");
-			startColumnBean.setColumnType("String");
-			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
-			startColumnBean.setColumnDefault("getitem");
+			startColumnBean.setColumnNameNoDash("id");
+			startColumnBean.setColumnNameCapitalized("Id");
+			startColumnBean.setColumnType("Integer");
+			startColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
+			
 
 			ColumnBean nextColumnBean = new ColumnBean();
 			nextColumnBean.setColumnNameNoDash("id");
 			nextColumnBean.setColumnNameCapitalized("Id");
 			nextColumnBean.setColumnType("Integer");
 			
-			nextColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
+			//nextColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
 
 			startColumnBean.setNextColumnBean(nextColumnBean);
 
 			ControllerManager manager;
 			FieldTypeEnum returnFieldEnum=FieldTypeEnum.ENTITY;
+			ColumnBean returnColumnBeanType=new ColumnBean();
+			returnColumnBeanType.setColumnName("guidesGetItemBean");
+			returnColumnBeanType.setColumnNameCapitalized("GuidesGetItemBean");
+			returnColumnBeanType.setColumnNameNoDash("guidesGetItemBean");
+			returnColumnBeanType.setColumnType("GuidesGetItemBean");
+			returnColumnBeanType.setFieldType(FieldTypeEnum.ENTITY);
 			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum);
-			
-			
-			//manager.set
+					startColumnBean,methodUri,returnFieldEnum,returnColumnBeanType);
+
 			controllerMethodSignature = "getList";
 			toServiceMethodSignature = "getList";
+			methodUri= "guides.php?action=getList";
 			toServiceMethodSignatureDescripter = "获取霞客列表";
-			startColumnBean = new ColumnBean();
-			startColumnBean.setColumnName("p");
-			startColumnBean.setColumnType("Integer");//默认值为1
-			startColumnBean.setColumnDefault("1");
-			startColumnBean.setColumnNameNoDash("p");
-			startColumnBean.setColumnNameCapitalized("p");
-			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			ColumnBean getListColumnBean = new ColumnBean();
+			getListColumnBean.setColumnName("p");
+			getListColumnBean.setColumnType("Integer");//默认值为1
+			getListColumnBean.setColumnDefault("1");
+			getListColumnBean.setColumnNameNoDash("p");
+			getListColumnBean.setColumnNameCapitalized("p");
+			getListColumnBean.setNextFieldRative(FieldRativeEnum.And);
 
 			ColumnBean psizeColumnBean = new ColumnBean();
 			psizeColumnBean.setColumnName("psize");
@@ -104,70 +111,99 @@ public class ControllerManagerTest {
 			psizeColumnBean.setColumnNameCapitalized("Psize");
 			psizeColumnBean.setNextFieldRative(FieldRativeEnum.And);
 			
-			ColumnBean dataTypeColumnBean = new ColumnBean();
-			dataTypeColumnBean.setColumnName("dataType");
-			dataTypeColumnBean.setColumnType("String");
-			dataTypeColumnBean.setColumnNameNoDash("dataType");
-			dataTypeColumnBean.setColumnNameCapitalized("DataType");
-			dataTypeColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			getListColumnBean.setNextColumnBean(psizeColumnBean);
 			
 			
-			ColumnBean dataOrderColumnBean = new ColumnBean();
-			dataOrderColumnBean.setColumnName("dataOrder");
-			dataOrderColumnBean.setColumnType("String");
-			dataOrderColumnBean.setColumnNameNoDash("dataOrder");
-			dataOrderColumnBean.setColumnNameCapitalized("DataOrder");
-			dataOrderColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
+			//data_type String  列表数据类型
+			ColumnBean data_typeColumnBean = new ColumnBean();
+			data_typeColumnBean.setColumnName("data_type");
+			data_typeColumnBean.setColumnType("String");
 			
-			dataTypeColumnBean.setNextColumnBean(dataOrderColumnBean);
-			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
-			startColumnBean.setNextColumnBean(psizeColumnBean);
-
-		
-			returnFieldEnum=FieldTypeEnum.LIST;
+			data_typeColumnBean.setColumnNameNoDash("data_type");
+			data_typeColumnBean.setColumnNameCapitalized("Data_type");
+			data_typeColumnBean.setNextFieldRative(FieldRativeEnum.And); 
+			
+			psizeColumnBean.setNextColumnBean(data_typeColumnBean);
+			
+			//data_order String  列表数据排序方向
+			
+			ColumnBean data_orderColumnBean = new ColumnBean();
+			data_orderColumnBean.setColumnName("data_order");
+			data_orderColumnBean.setColumnType("String");
+			
+			data_orderColumnBean.setColumnNameNoDash("data_order");
+			data_orderColumnBean.setColumnNameCapitalized("Data_order");
+			data_orderColumnBean.setNextFieldRative(FieldRativeEnum.Finished); 
+			
+			//data_orderColumnBean
+			psizeColumnBean.setNextColumnBean(data_orderColumnBean);
+			
+			
+			ColumnBean returnTypeGetList=new ColumnBean();
+			returnTypeGetList.setColumnName("guidesGetRellistBean");
+			returnTypeGetList.setColumnNameCapitalized("GuidesGetRellistBean");
+			returnTypeGetList.setColumnNameNoDash("guidesGetRellistBean");
+			returnTypeGetList.setColumnType("GuidesGetRellistBean");
+			returnTypeGetList.setFieldType(FieldTypeEnum.ENTITY);
+			returnTypeGetList.setColumnType("GuidesGetRellistBean");
+			FieldTypeEnum returnGetListEnum=FieldTypeEnum.ENTITY;
+			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum);
+					getListColumnBean,methodUri,returnGetListEnum,returnTypeGetList);
 			
 			//获取霞客相关列表信息(合伙霞客列表)
 			controllerMethodSignature = "getRelList";
-			//
+			//getrellist两个参数
+			methodUri=  "guides.php?action=getRelList";
 			controllerMethodSignature = "getRelList";
 			toServiceMethodSignature = "getRelList";
 			toServiceMethodSignatureDescripter = "获取霞客相关列表信息(合伙霞客列表)";
-			startColumnBean = new ColumnBean();
-			startColumnBean.setColumnName("uid");
-			startColumnBean.setColumnType("Integer");//默认值为1
-			startColumnBean.setColumnComment("相关的霞客ID");
-			startColumnBean.setColumnDefault("1");
-			startColumnBean.setColumnNameNoDash("uid");
-			startColumnBean.setColumnNameCapitalized("Uid");
-			startColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			ColumnBean getRelListColumnBean = new ColumnBean();
+			getRelListColumnBean.setColumnName("uid");
+			getRelListColumnBean.setColumnType("Integer");//默认值为1
+			getRelListColumnBean.setColumnComment("相关的霞客ID");
+			getRelListColumnBean.setColumnDefault("1");
+			getRelListColumnBean.setColumnNameNoDash("uid");
+			getRelListColumnBean.setColumnNameCapitalized("Uid");
+			getRelListColumnBean.setNextFieldRative(FieldRativeEnum.And);
 
-			psizeColumnBean = new ColumnBean();
-			psizeColumnBean.setColumnName("p");
-			psizeColumnBean.setColumnType("Integer");
-			psizeColumnBean.setColumnDefault("1");
-			psizeColumnBean.setColumnNameNoDash("p");
-			psizeColumnBean.setColumnNameCapitalized("P");
-			psizeColumnBean.setNextFieldRative(FieldRativeEnum.And);
+			ColumnBean getRelListpsizeColumnBean = new ColumnBean();
+			getRelListpsizeColumnBean.setColumnName("p");
+			getRelListpsizeColumnBean.setColumnType("Integer");
+			getRelListpsizeColumnBean.setColumnDefault("1");
+			getRelListpsizeColumnBean.setColumnNameNoDash("p");
+			getRelListpsizeColumnBean.setColumnNameCapitalized("P");
+			getRelListpsizeColumnBean.setNextFieldRative(FieldRativeEnum.And);
 			
-			dataTypeColumnBean = new ColumnBean();
+			getRelListColumnBean.setNextColumnBean(getRelListpsizeColumnBean);
+			
+			ColumnBean dataTypeColumnBean = new ColumnBean();
 			dataTypeColumnBean.setColumnName("psize");
 			dataTypeColumnBean.setColumnType("Integer");
 			dataTypeColumnBean.setColumnDefault("10");
-			dataTypeColumnBean.setColumnNameNoDash("dataType");
-			dataTypeColumnBean.setColumnNameCapitalized("DataType");
+			dataTypeColumnBean.setColumnNameNoDash("psize");
+			dataTypeColumnBean.setColumnNameCapitalized("Psize");
 			dataTypeColumnBean.setNextFieldRative(FieldRativeEnum.Finished);
 			
+			
+
+			getRelListpsizeColumnBean.setNextColumnBean(dataTypeColumnBean);
 		
-			psizeColumnBean.setNextColumnBean(dataTypeColumnBean);
-		
-			startColumnBean.setNextColumnBean(psizeColumnBean);
-			returnFieldEnum=FieldTypeEnum.LIST;
+			//startColumnBean.setNextColumnBean(psizeColumnBean);
+			FieldTypeEnum returnGetRelListFieldEnum=FieldTypeEnum.ENTITY;
+			ColumnBean returnTypeGetRelList=new ColumnBean();
+			returnTypeGetRelList.setColumnName("guidesGetRellistBean");
+			returnTypeGetRelList.setColumnNameCapitalized("GuidesGetRellistBean");
+			returnTypeGetRelList.setColumnNameNoDash("guidesGetRellistBean");
+			returnTypeGetRelList.setColumnType("GuidesGetRellistBean");
+			returnTypeGetRelList.setFieldType(FieldTypeEnum.ENTITY);
+			returnTypeGetRelList.setColumnType("GuidesGetRellistBean");
+			
+			
 			manager = ControllerManager.addControllerMethodGetModelAttribute(controllerType, controllerUri, descipter,
 					controllerMethodSignature, toServiceMethodSignature, toServiceMethodSignatureDescripter,
-					startColumnBean,returnFieldEnum);
+					getRelListColumnBean,methodUri,returnGetRelListFieldEnum,returnTypeGetRelList);
 			
 			assertNotNull(manager);
 			
@@ -175,11 +211,9 @@ public class ControllerManagerTest {
 			manager.generateControllerBeanToXML("ieream");
 			
 			assertNotNull(manager);
-			
-		} catch (Exception e) {
+		}catch(Exception e){
 			e.printStackTrace();
 		}
-
 	}
 	
 	@Test

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FrontPackage uuid="54b5d40d-ed8b-4909-b738-8aa45e999000-FrontPackage-0">
+<FrontPackage uuid="2d7ff641-1930-459e-b056-56325f459471-FrontPackage-0">
     <FrontName>ieream</FrontName>
     <controlleres>
-        <controller uuid="7401a45d-8494-469f-a2e8-ec9d42f59de2-ControllerBean-0">
-            <controllerId>guidesBeanBeanController</controllerId>
-            <uri>guidesBean</uri>
-            <controllerType>GuidesBeanBeanController</controllerType>
-            <controllerDescipter>Controller Type:GuidesBean
- 霞客</controllerDescipter>
+        <controller uuid="bea4f811-a4c9-46ff-b992-7ad5496afb22-ControllerBean-0">
+            <controllerId>locationsGetListBeanBeanController</controllerId>
+            <uri>locationsGetListBean</uri>
+            <controllerType>LocationsGetListBeanBeanController</controllerType>
+            <controllerDescipter>Controller Type:LocationsGetListBean
+ 获 获取位置列表</controllerDescipter>
             <extendedClass>BaseManageController</extendedClass>
             <controllerCategory>POST</controllerCategory>
             <annotationBeanList>
-                <annotation>
-                    <annnoteKey>RequestMapping</annnoteKey>
-                    <annoteValue>http://www.ieream.com/mapi/1/</annoteValue>
-                </annotation>
-                <annotation>
-                    <annnoteKey>RequestMapping</annnoteKey>
-                    <annoteValue>http://www.ieream.com/mapi/1/</annoteValue>
-                </annotation>
                 <annotation>
                     <annnoteKey>RequestMapping</annnoteKey>
                     <annoteValue>http://www.ieream.com/mapi/1/</annoteValue>
@@ -27,19 +19,19 @@
             <instanceAnnotationBeanList>
                 <instanceAnnotationBean>
                     <annnoteKey>Autowired</annnoteKey>
-                    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
-                    <annoteType>GuidesBeanBeanBusinessService</annoteType>
+                    <annoteValue>locationsGetListBeanBeanBusinessService</annoteValue>
+                    <annoteType>LocationsGetListBeanBeanBusinessService</annoteType>
                 </instanceAnnotationBean>
             </instanceAnnotationBeanList>
             <controllerMethodList>
-                <controllerMethod uuid="ba49361b-7cbd-49a6-ba04-c4707ad9a6fc-MethodBean-2">
-                    <signature>getList</signature>
-                    <signatureDescripter>获取霞客列表</signatureDescripter>
-                    <responseType uuid="8666785b-9815-4244-a869-db9e48ce33b7-ColumnBean-11">
+                <controllerMethod uuid="1ade92c2-0fd1-4b5d-99a9-3380382127c1-MethodBean-0">
+                    <signature>getlist</signature>
+                    <signatureDescripter>获 获取位置列表</signatureDescripter>
+                    <responseType uuid="c718a20f-8056-4f6b-85e7-b225728c4973-ColumnBean-7">
                         <columnName></columnName>
                         <columnNameNoDash></columnNameNoDash>
                         <columnNameCapitalized></columnNameCapitalized>
-                        <columnType>GuidesBean</columnType>
+                        <columnType>LocationsGetListBean</columnType>
                         <columnTypeIOS></columnTypeIOS>
                         <columnTypePropertyIOS></columnTypePropertyIOS>
                         <columnTypeJS></columnTypeJS>
@@ -61,13 +53,13 @@
                     </responseType>
                     <catetory>GET</catetory>
                     <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="3a5b7d08-1803-4da1-b319-452bb9c2c60c-MethodCallChainInBodyBean-1">
-                        <fromMethod>ba49361b-7cbd-49a6-ba04-c4707ad9a6fc-MethodBean-2</fromMethod>
-                        <fromResultType uuid="ba9af76c-3c76-472a-b8dc-e3e0d78bf182-ColumnBean-10">
+                    <bodyBean uuid="cb398320-903a-43d7-9629-f28012089d38-MethodCallChainInBodyBean-0">
+                        <fromMethod>1ade92c2-0fd1-4b5d-99a9-3380382127c1-MethodBean-0</fromMethod>
+                        <fromResultType uuid="5d29c88e-c32e-490a-a58d-4579e9d4db5f-ColumnBean-6">
                             <columnName></columnName>
                             <columnNameNoDash></columnNameNoDash>
                             <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
+                            <columnType>LocationsGetListBean</columnType>
                             <columnTypeIOS></columnTypeIOS>
                             <columnTypePropertyIOS></columnTypePropertyIOS>
                             <columnTypeJS></columnTypeJS>
@@ -87,11 +79,11 @@
                             <fieldType>ENTITY</fieldType>
                             <length>0</length>
                         </fromResultType>
-                        <resultColumnBean uuid="6ac47284-e02a-45cf-87f3-65da794a66e8-ColumnBean-9">
-                            <columnName>guidesGetRellistBean</columnName>
-                            <columnNameNoDash>guidesGetRellistBean</columnNameNoDash>
-                            <columnNameCapitalized>GuidesGetRellistBean</columnNameCapitalized>
-                            <columnType>GuidesGetRellistBean</columnType>
+                        <resultColumnBean uuid="eb101992-9b9e-441a-ba81-d4b407cf1144-ColumnBean-5">
+                            <columnName>LocationsGetListBean</columnName>
+                            <columnNameNoDash>locationsGetListBean</columnNameNoDash>
+                            <columnNameCapitalized>LocationsGetListBean</columnNameCapitalized>
+                            <columnType>LocationsGetListBean</columnType>
                             <columnTypeIOS></columnTypeIOS>
                             <columnTypePropertyIOS></columnTypePropertyIOS>
                             <columnTypeJS></columnTypeJS>
@@ -115,34 +107,34 @@
                     </bodyBean>
                     <annotationBean>
                         <annnoteKey>RequestMapping</annnoteKey>
-                        <annoteValue>guides.php?action=getList</annoteValue>
+                        <annoteValue>locations.php?action=getlist</annoteValue>
                     </annotationBean>
-                    <calleeMajorService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                        <serviceId>guidesBeanBeanBusinessService</serviceId>
-                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                        <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
+                    <calleeMajorService uuid="a7f5cb77-8b0f-4329-a9f8-6ecddd77bd08-ServiceBean-0">
+                        <serviceId>locationsGetListBeanBeanBusinessService</serviceId>
+                        <serivceType>LocationsGetListBeanBeanBusinessService</serivceType>
+                        <serviceDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</serviceDescipter>
                         <serviceCategory>BNS</serviceCategory>
                         <annotationBeanList>
                             <annotationBean>
 <annnoteKey>Service</annnoteKey>
-<annoteValue>guidesBeanBeanBusinessService</annoteValue>
+<annoteValue>locationsGetListBeanBeanBusinessService</annoteValue>
                             </annotationBean>
                         </annotationBeanList>
                         <instanceAnnotationBeanList>
                             <instanceAnnotationBean>
 <annnoteKey>Autowired</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
-<annoteType>GuidesBeanBeanAtomService</annoteType>
+<annoteValue>locationsGetListBeanBeanAtomService</annoteValue>
+<annoteType>LocationsGetListBeanBeanAtomService</annoteType>
                             </instanceAnnotationBean>
                         </instanceAnnotationBeanList>
-                        <runningMethod uuid="88b1e450-11c4-4d96-afd3-87fff7997d03-MethodBean-3">
-                            <signature>getList</signature>
-                            <responseType uuid="8666785b-9815-4244-a869-db9e48ce33b7-ColumnBean-11">
+                        <runningMethod uuid="f4852473-643d-4142-9b21-49f473c44de9-MethodBean-1">
+                            <signature>getlist</signature>
+                            <responseType uuid="c718a20f-8056-4f6b-85e7-b225728c4973-ColumnBean-7">
 <columnName></columnName>
 <columnNameNoDash></columnNameNoDash>
 <columnNameCapitalized></columnNameCapitalized>
-<columnType>GuidesBean</columnType>
+<columnType>LocationsGetListBean</columnType>
 <columnTypeIOS></columnTypeIOS>
 <columnTypePropertyIOS></columnTypePropertyIOS>
 <columnTypeJS></columnTypeJS>
@@ -163,15 +155,15 @@
 <length>0</length>
                             </responseType>
                             <catetory>BNS</catetory>
-                            <assign uuid="0e509a50-afde-4588-bd88-92eae371c83f-TableBean-5">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                            <assign uuid="889eabf7-36eb-499d-8271-5092a4aaac4e-TableBean-4">
+<tableNameNoDash>locationsGetListBean</tableNameNoDash>
+<tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
 <columnBeanList/>
 <transientColumnBeanList/>
-<methodArugment uuid="cc27c092-b83b-4d42-9544-78c0d5212c39-ColumnBean-5">
-    <columnName>p</columnName>
+<methodArugment uuid="8c8c8e94-c421-439b-8884-d11814aa24c9-ColumnBean-0">
+    <columnName></columnName>
     <columnNameNoDash>p</columnNameNoDash>
-    <columnNameCapitalized>p</columnNameCapitalized>
+    <columnNameCapitalized>P</columnNameCapitalized>
     <columnType>Integer</columnType>
     <columnTypeIOS></columnTypeIOS>
     <columnTypePropertyIOS></columnTypePropertyIOS>
@@ -185,11 +177,11 @@
     <columnComment></columnComment>
     <ordinalPosition></ordinalPosition>
     <isNullable></isNullable>
-    <columnDefault>1</columnDefault>
+    <columnDefault></columnDefault>
     <isMutable>true</isMutable>
     <nextFieldRative>And</nextFieldRative>
-    <nextColumnBean uuid="fe981eb0-4a19-406f-9d7e-1b3ec43ca938-ColumnBean-6">
-        <columnName>psize</columnName>
+    <nextColumnBean uuid="7d09f4bd-24ce-4563-8a39-3beb6ddf0b5f-ColumnBean-1">
+        <columnName></columnName>
         <columnNameNoDash>psize</columnNameNoDash>
         <columnNameCapitalized>Psize</columnNameCapitalized>
         <columnType>Integer</columnType>
@@ -205,13 +197,13 @@
         <columnComment></columnComment>
         <ordinalPosition></ordinalPosition>
         <isNullable></isNullable>
-        <columnDefault>10</columnDefault>
+        <columnDefault></columnDefault>
         <isMutable>true</isMutable>
         <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="354e0c16-2729-4917-980b-a9507458f593-ColumnBean-8">
-            <columnName>data_order</columnName>
-            <columnNameNoDash>data_order</columnNameNoDash>
-            <columnNameCapitalized>Data_order</columnNameCapitalized>
+        <nextColumnBean uuid="773193b2-4418-412d-a5f0-5374ed0e2ccb-ColumnBean-2">
+            <columnName></columnName>
+            <columnNameNoDash>loc_type</columnNameNoDash>
+            <columnNameCapitalized>Loc_type</columnNameCapitalized>
             <columnType>String</columnType>
             <columnTypeIOS></columnTypeIOS>
             <columnTypePropertyIOS></columnTypePropertyIOS>
@@ -225,9 +217,57 @@
             <columnComment></columnComment>
             <ordinalPosition></ordinalPosition>
             <isNullable></isNullable>
-            <columnDefault></columnDefault>
+            <columnDefault>ream</columnDefault>
             <isMutable>true</isMutable>
-            <nextFieldRative>Finished</nextFieldRative>
+            <nextFieldRative>And</nextFieldRative>
+            <nextColumnBean uuid="6ed172ac-2d2f-4aab-84c5-8108335e3e01-ColumnBean-3">
+                <columnName></columnName>
+                <columnNameNoDash>loc_order</columnNameNoDash>
+                <columnNameCapitalized>loc_order</columnNameCapitalized>
+                <columnType>String</columnType>
+                <columnTypeIOS></columnTypeIOS>
+                <columnTypePropertyIOS></columnTypePropertyIOS>
+                <columnTypeJS></columnTypeJS>
+                <columnTypeRsGetter></columnTypeRsGetter>
+                <referNameNoDash></referNameNoDash>
+                <referNameCapitalized></referNameCapitalized>
+                <referType></referType>
+                <referRieldType>PRIMARY</referRieldType>
+                <referLength>0</referLength>
+                <columnComment></columnComment>
+                <ordinalPosition></ordinalPosition>
+                <isNullable></isNullable>
+                <columnDefault>asc</columnDefault>
+                <isMutable>true</isMutable>
+                <nextFieldRative>And</nextFieldRative>
+                <nextColumnBean uuid="dc92fe1d-7b59-494f-ae43-88bc9a7606d3-ColumnBean-4">
+                    <columnName></columnName>
+                    <columnNameNoDash>data_type</columnNameNoDash>
+                    <columnNameCapitalized>Data_type</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS></columnTypeIOS>
+                    <columnTypePropertyIOS></columnTypePropertyIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment></columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault>exact</columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>Finished</nextFieldRative>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </nextColumnBean>
+                <columnKey>DEFUALT</columnKey>
+                <fieldType>PRIMARY</fieldType>
+                <length>0</length>
+            </nextColumnBean>
             <columnKey>DEFUALT</columnKey>
             <fieldType>PRIMARY</fieldType>
             <length>0</length>
@@ -245,32 +285,32 @@
                             </assign>
                         </runningMethod>
                         <includeServiceList>
-                            <includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-<serviceId>guidesBeanBeanAtomService</serviceId>
-<serivceType>GuidesBeanBeanAtomService</serivceType>
-<serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
+                            <includeService uuid="60857ad2-6eb0-4e15-8b91-52d83324e8a8-ServiceBean-1">
+<serviceId>locationsGetListBeanBeanAtomService</serviceId>
+<serivceType>LocationsGetListBeanBeanAtomService</serivceType>
+<serviceDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</serviceDescipter>
 <serviceCategory>ATM</serviceCategory>
 <annotationBeanList>
     <annotationBean>
-        <annnoteKey>Transactional</annnoteKey>
+        <annnoteKey>Component</annnoteKey>
+        <annoteValue>locationsGetListBeanBeanAtomService</annoteValue>
     </annotationBean>
     <annotationBean>
-        <annnoteKey>Component</annnoteKey>
-        <annoteValue>guidesBeanBeanAtomService</annoteValue>
+        <annnoteKey>Transactional</annnoteKey>
     </annotationBean>
 </annotationBeanList>
 <instanceAnnotationBeanList>
     <instanceAnnotationBean>
         <annnoteKey>Autowired</annnoteKey>
-        <annoteValue>guidesBeanJPABeanDao</annoteValue>
-        <annoteType>GuidesBeanJPABeanDao</annoteType>
+        <annoteValue>locationsGetListBeanJPABeanDao</annoteValue>
+        <annoteType>LocationsGetListBeanJPABeanDao</annoteType>
     </instanceAnnotationBean>
 </instanceAnnotationBeanList>
 <includeBeanList>
-    <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-        <tableNameNoDash>guidesBean</tableNameNoDash>
-        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+    <includeBean uuid="bfed10af-4c93-488d-aa92-b257c11d7cc8-TableBean-2">
+        <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+        <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
         <columnBeanList/>
         <transientColumnBeanList/>
         <hasDateColumn>false</hasDateColumn>
@@ -278,22 +318,22 @@
     </includeBean>
 </includeBeanList>
 <includeDaoList>
-    <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-        <daoId>guidesBeanJPABeanDao</daoId>
-        <daoType>GuidesBeanJPABeanDao</daoType>
-        <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
+    <includeDao uuid="a78ef2d6-4e6b-46c9-b1b9-7c9dabeb334a-DaoBean-0">
+        <daoId>locationsGetListBeanJPABeanDao</daoId>
+        <daoType>LocationsGetListBeanJPABeanDao</daoType>
+        <daoDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</daoDescipter>
         <daoCategory>JPA</daoCategory>
         <annotationBeanList>
             <annotationBean>
                 <annnoteKey>Repository</annnoteKey>
-                <annoteValue>guidesBeanJPABeanDao</annoteValue>
+                <annoteValue>locationsGetListBeanJPABeanDao</annoteValue>
             </annotationBean>
         </annotationBeanList>
         <includeBeanList>
-            <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-                <tableNameNoDash>guidesBean</tableNameNoDash>
-                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+            <includeBean uuid="3df5560f-95df-433b-9f37-5cf14a6fd69e-TableBean-3">
+                <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+                <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
                 <columnBeanList/>
                 <transientColumnBeanList/>
                 <hasDateColumn>false</hasDateColumn>
@@ -305,9 +345,9 @@
                             </includeService>
                         </includeServiceList>
                         <includeBeanList>
-                            <includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                            <includeBean uuid="460c0f59-fa80-43fc-8a4f-47f77b803c32-TableBean-1">
+<tableNameNoDash>locationsGetListBean</tableNameNoDash>
+<tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
 <columnBeanList/>
 <transientColumnBeanList/>
 <hasDateColumn>false</hasDateColumn>
@@ -315,15 +355,15 @@
                             </includeBean>
                         </includeBeanList>
                     </calleeMajorService>
-                    <assign uuid="0e509a50-afde-4588-bd88-92eae371c83f-TableBean-5">
-                        <tableNameNoDash>guidesBean</tableNameNoDash>
-                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                    <assign uuid="889eabf7-36eb-499d-8271-5092a4aaac4e-TableBean-4">
+                        <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+                        <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
                         <columnBeanList/>
                         <transientColumnBeanList/>
-                        <methodArugment uuid="cc27c092-b83b-4d42-9544-78c0d5212c39-ColumnBean-5">
-                            <columnName>p</columnName>
+                        <methodArugment uuid="8c8c8e94-c421-439b-8884-d11814aa24c9-ColumnBean-0">
+                            <columnName></columnName>
                             <columnNameNoDash>p</columnNameNoDash>
-                            <columnNameCapitalized>p</columnNameCapitalized>
+                            <columnNameCapitalized>P</columnNameCapitalized>
                             <columnType>Integer</columnType>
                             <columnTypeIOS></columnTypeIOS>
                             <columnTypePropertyIOS></columnTypePropertyIOS>
@@ -337,11 +377,11 @@
                             <columnComment></columnComment>
                             <ordinalPosition></ordinalPosition>
                             <isNullable></isNullable>
-                            <columnDefault>1</columnDefault>
+                            <columnDefault></columnDefault>
                             <isMutable>true</isMutable>
                             <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="fe981eb0-4a19-406f-9d7e-1b3ec43ca938-ColumnBean-6">
-<columnName>psize</columnName>
+                            <nextColumnBean uuid="7d09f4bd-24ce-4563-8a39-3beb6ddf0b5f-ColumnBean-1">
+<columnName></columnName>
 <columnNameNoDash>psize</columnNameNoDash>
 <columnNameCapitalized>Psize</columnNameCapitalized>
 <columnType>Integer</columnType>
@@ -357,13 +397,13 @@
 <columnComment></columnComment>
 <ordinalPosition></ordinalPosition>
 <isNullable></isNullable>
-<columnDefault>10</columnDefault>
+<columnDefault></columnDefault>
 <isMutable>true</isMutable>
 <nextFieldRative>And</nextFieldRative>
-<nextColumnBean uuid="354e0c16-2729-4917-980b-a9507458f593-ColumnBean-8">
-    <columnName>data_order</columnName>
-    <columnNameNoDash>data_order</columnNameNoDash>
-    <columnNameCapitalized>Data_order</columnNameCapitalized>
+<nextColumnBean uuid="773193b2-4418-412d-a5f0-5374ed0e2ccb-ColumnBean-2">
+    <columnName></columnName>
+    <columnNameNoDash>loc_type</columnNameNoDash>
+    <columnNameCapitalized>Loc_type</columnNameCapitalized>
     <columnType>String</columnType>
     <columnTypeIOS></columnTypeIOS>
     <columnTypePropertyIOS></columnTypePropertyIOS>
@@ -377,9 +417,57 @@
     <columnComment></columnComment>
     <ordinalPosition></ordinalPosition>
     <isNullable></isNullable>
-    <columnDefault></columnDefault>
+    <columnDefault>ream</columnDefault>
     <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
+    <nextFieldRative>And</nextFieldRative>
+    <nextColumnBean uuid="6ed172ac-2d2f-4aab-84c5-8108335e3e01-ColumnBean-3">
+        <columnName></columnName>
+        <columnNameNoDash>loc_order</columnNameNoDash>
+        <columnNameCapitalized>loc_order</columnNameCapitalized>
+        <columnType>String</columnType>
+        <columnTypeIOS></columnTypeIOS>
+        <columnTypePropertyIOS></columnTypePropertyIOS>
+        <columnTypeJS></columnTypeJS>
+        <columnTypeRsGetter></columnTypeRsGetter>
+        <referNameNoDash></referNameNoDash>
+        <referNameCapitalized></referNameCapitalized>
+        <referType></referType>
+        <referRieldType>PRIMARY</referRieldType>
+        <referLength>0</referLength>
+        <columnComment></columnComment>
+        <ordinalPosition></ordinalPosition>
+        <isNullable></isNullable>
+        <columnDefault>asc</columnDefault>
+        <isMutable>true</isMutable>
+        <nextFieldRative>And</nextFieldRative>
+        <nextColumnBean uuid="dc92fe1d-7b59-494f-ae43-88bc9a7606d3-ColumnBean-4">
+            <columnName></columnName>
+            <columnNameNoDash>data_type</columnNameNoDash>
+            <columnNameCapitalized>Data_type</columnNameCapitalized>
+            <columnType>String</columnType>
+            <columnTypeIOS></columnTypeIOS>
+            <columnTypePropertyIOS></columnTypePropertyIOS>
+            <columnTypeJS></columnTypeJS>
+            <columnTypeRsGetter></columnTypeRsGetter>
+            <referNameNoDash></referNameNoDash>
+            <referNameCapitalized></referNameCapitalized>
+            <referType></referType>
+            <referRieldType>PRIMARY</referRieldType>
+            <referLength>0</referLength>
+            <columnComment></columnComment>
+            <ordinalPosition></ordinalPosition>
+            <isNullable></isNullable>
+            <columnDefault>exact</columnDefault>
+            <isMutable>true</isMutable>
+            <nextFieldRative>Finished</nextFieldRative>
+            <columnKey>DEFUALT</columnKey>
+            <fieldType>PRIMARY</fieldType>
+            <length>0</length>
+        </nextColumnBean>
+        <columnKey>DEFUALT</columnKey>
+        <fieldType>PRIMARY</fieldType>
+        <length>0</length>
+    </nextColumnBean>
     <columnKey>DEFUALT</columnKey>
     <fieldType>PRIMARY</fieldType>
     <length>0</length>
@@ -396,32 +484,32 @@
                         <hasBigDecimal>false</hasBigDecimal>
                     </assign>
                     <callBusinessServiceList>
-                        <callBusinessService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                            <serviceId>guidesBeanBeanBusinessService</serviceId>
-                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                            <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
+                        <callBusinessService uuid="a7f5cb77-8b0f-4329-a9f8-6ecddd77bd08-ServiceBean-0">
+                            <serviceId>locationsGetListBeanBeanBusinessService</serviceId>
+                            <serivceType>LocationsGetListBeanBeanBusinessService</serivceType>
+                            <serviceDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</serviceDescipter>
                             <serviceCategory>BNS</serviceCategory>
                             <annotationBeanList>
 <annotationBean>
     <annnoteKey>Service</annnoteKey>
-    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
+    <annoteValue>locationsGetListBeanBeanBusinessService</annoteValue>
 </annotationBean>
                             </annotationBeanList>
                             <instanceAnnotationBeanList>
 <instanceAnnotationBean>
     <annnoteKey>Autowired</annnoteKey>
-    <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    <annoteType>GuidesBeanBeanAtomService</annoteType>
+    <annoteValue>locationsGetListBeanBeanAtomService</annoteValue>
+    <annoteType>LocationsGetListBeanBeanAtomService</annoteType>
 </instanceAnnotationBean>
                             </instanceAnnotationBeanList>
-                            <runningMethod uuid="88b1e450-11c4-4d96-afd3-87fff7997d03-MethodBean-3">
-<signature>getList</signature>
-<responseType uuid="8666785b-9815-4244-a869-db9e48ce33b7-ColumnBean-11">
+                            <runningMethod uuid="f4852473-643d-4142-9b21-49f473c44de9-MethodBean-1">
+<signature>getlist</signature>
+<responseType uuid="c718a20f-8056-4f6b-85e7-b225728c4973-ColumnBean-7">
     <columnName></columnName>
     <columnNameNoDash></columnNameNoDash>
     <columnNameCapitalized></columnNameCapitalized>
-    <columnType>GuidesBean</columnType>
+    <columnType>LocationsGetListBean</columnType>
     <columnTypeIOS></columnTypeIOS>
     <columnTypePropertyIOS></columnTypePropertyIOS>
     <columnTypeJS></columnTypeJS>
@@ -442,318 +530,13 @@
     <length>0</length>
 </responseType>
 <catetory>BNS</catetory>
-<assign uuid="0e509a50-afde-4588-bd88-92eae371c83f-TableBean-5">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+<assign uuid="889eabf7-36eb-499d-8271-5092a4aaac4e-TableBean-4">
+    <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+    <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
     <columnBeanList/>
     <transientColumnBeanList/>
-    <methodArugment uuid="cc27c092-b83b-4d42-9544-78c0d5212c39-ColumnBean-5">
-        <columnName>p</columnName>
-        <columnNameNoDash>p</columnNameNoDash>
-        <columnNameCapitalized>p</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment></columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault>1</columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="fe981eb0-4a19-406f-9d7e-1b3ec43ca938-ColumnBean-6">
-            <columnName>psize</columnName>
-            <columnNameNoDash>psize</columnNameNoDash>
-            <columnNameCapitalized>Psize</columnNameCapitalized>
-            <columnType>Integer</columnType>
-            <columnTypeIOS></columnTypeIOS>
-            <columnTypePropertyIOS></columnTypePropertyIOS>
-            <columnTypeJS></columnTypeJS>
-            <columnTypeRsGetter></columnTypeRsGetter>
-            <referNameNoDash></referNameNoDash>
-            <referNameCapitalized></referNameCapitalized>
-            <referType></referType>
-            <referRieldType>PRIMARY</referRieldType>
-            <referLength>0</referLength>
-            <columnComment></columnComment>
-            <ordinalPosition></ordinalPosition>
-            <isNullable></isNullable>
-            <columnDefault>10</columnDefault>
-            <isMutable>true</isMutable>
-            <nextFieldRative>And</nextFieldRative>
-            <nextColumnBean uuid="354e0c16-2729-4917-980b-a9507458f593-ColumnBean-8">
-                <columnName>data_order</columnName>
-                <columnNameNoDash>data_order</columnNameNoDash>
-                <columnNameCapitalized>Data_order</columnNameCapitalized>
-                <columnType>String</columnType>
-                <columnTypeIOS></columnTypeIOS>
-                <columnTypePropertyIOS></columnTypePropertyIOS>
-                <columnTypeJS></columnTypeJS>
-                <columnTypeRsGetter></columnTypeRsGetter>
-                <referNameNoDash></referNameNoDash>
-                <referNameCapitalized></referNameCapitalized>
-                <referType></referType>
-                <referRieldType>PRIMARY</referRieldType>
-                <referLength>0</referLength>
-                <columnComment></columnComment>
-                <ordinalPosition></ordinalPosition>
-                <isNullable></isNullable>
-                <columnDefault></columnDefault>
-                <isMutable>true</isMutable>
-                <nextFieldRative>Finished</nextFieldRative>
-                <columnKey>DEFUALT</columnKey>
-                <fieldType>PRIMARY</fieldType>
-                <length>0</length>
-            </nextColumnBean>
-            <columnKey>DEFUALT</columnKey>
-            <fieldType>PRIMARY</fieldType>
-            <length>0</length>
-        </nextColumnBean>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </methodArugment>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</assign>
-                            </runningMethod>
-                            <includeServiceList>
-<includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-    <serviceId>guidesBeanBeanAtomService</serviceId>
-    <serivceType>GuidesBeanBeanAtomService</serivceType>
-    <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-    <serviceCategory>ATM</serviceCategory>
-    <annotationBeanList>
-        <annotationBean>
-            <annnoteKey>Transactional</annnoteKey>
-        </annotationBean>
-        <annotationBean>
-            <annnoteKey>Component</annnoteKey>
-            <annoteValue>guidesBeanBeanAtomService</annoteValue>
-        </annotationBean>
-    </annotationBeanList>
-    <instanceAnnotationBeanList>
-        <instanceAnnotationBean>
-            <annnoteKey>Autowired</annnoteKey>
-            <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            <annoteType>GuidesBeanJPABeanDao</annoteType>
-        </instanceAnnotationBean>
-    </instanceAnnotationBeanList>
-    <includeBeanList>
-        <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-            <tableNameNoDash>guidesBean</tableNameNoDash>
-            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-            <columnBeanList/>
-            <transientColumnBeanList/>
-            <hasDateColumn>false</hasDateColumn>
-            <hasBigDecimal>false</hasBigDecimal>
-        </includeBean>
-    </includeBeanList>
-    <includeDaoList>
-        <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-            <daoId>guidesBeanJPABeanDao</daoId>
-            <daoType>GuidesBeanJPABeanDao</daoType>
-            <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-                    <tableNameNoDash>guidesBean</tableNameNoDash>
-                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </includeDao>
-    </includeDaoList>
-</includeService>
-                            </includeServiceList>
-                            <includeBeanList>
-<includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</includeBean>
-                            </includeBeanList>
-                        </callBusinessService>
-                    </callBusinessServiceList>
-                </controllerMethod>
-                <controllerMethod uuid="651f073c-26f1-4c02-93f9-0f43105e2574-MethodBean-4">
-                    <signature>getRelList</signature>
-                    <signatureDescripter>获取霞客相关列表信息(合伙霞客列表)</signatureDescripter>
-                    <responseType uuid="368893e3-127f-494b-9e30-ee0f52c492e5-ColumnBean-17">
-                        <columnName></columnName>
-                        <columnNameNoDash></columnNameNoDash>
-                        <columnNameCapitalized></columnNameCapitalized>
-                        <columnType>GuidesBean</columnType>
-                        <columnTypeIOS></columnTypeIOS>
-                        <columnTypePropertyIOS></columnTypePropertyIOS>
-                        <columnTypeJS></columnTypeJS>
-                        <columnTypeRsGetter></columnTypeRsGetter>
-                        <referNameNoDash></referNameNoDash>
-                        <referNameCapitalized></referNameCapitalized>
-                        <referType></referType>
-                        <referRieldType>PRIMARY</referRieldType>
-                        <referLength>0</referLength>
-                        <columnComment></columnComment>
-                        <ordinalPosition></ordinalPosition>
-                        <isNullable></isNullable>
-                        <columnDefault></columnDefault>
-                        <isMutable>true</isMutable>
-                        <nextFieldRative>Finished</nextFieldRative>
-                        <columnKey>DEFUALT</columnKey>
-                        <fieldType>ENTITY</fieldType>
-                        <length>0</length>
-                    </responseType>
-                    <catetory>GET</catetory>
-                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="2ff13784-93f6-49d2-b8c2-c39a7f4d6d04-MethodCallChainInBodyBean-2">
-                        <fromMethod>651f073c-26f1-4c02-93f9-0f43105e2574-MethodBean-4</fromMethod>
-                        <fromResultType uuid="97a7a82d-3918-4060-8d5e-21f94bea29d0-ColumnBean-16">
-                            <columnName></columnName>
-                            <columnNameNoDash></columnNameNoDash>
-                            <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </fromResultType>
-                        <resultColumnBean uuid="2307b18b-021d-4be7-b4ac-35d16de3aeec-ColumnBean-15">
-                            <columnName>guidesGetRellistBean</columnName>
-                            <columnNameNoDash>guidesGetRellistBean</columnNameNoDash>
-                            <columnNameCapitalized>GuidesGetRellistBean</columnNameCapitalized>
-                            <columnType>GuidesGetRellistBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </resultColumnBean>
-                        <catetory>CALL_OUTER</catetory>
-                    </bodyBean>
-                    <annotationBean>
-                        <annnoteKey>RequestMapping</annnoteKey>
-                        <annoteValue>guides.php?action=getRelList</annoteValue>
-                    </annotationBean>
-                    <calleeMajorService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                        <serviceId>guidesBeanBeanBusinessService</serviceId>
-                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                        <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                        <serviceCategory>BNS</serviceCategory>
-                        <annotationBeanList>
-                            <annotationBean>
-<annnoteKey>Service</annnoteKey>
-<annoteValue>guidesBeanBeanBusinessService</annoteValue>
-                            </annotationBean>
-                        </annotationBeanList>
-                        <instanceAnnotationBeanList>
-                            <instanceAnnotationBean>
-<annnoteKey>Autowired</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
-<annoteType>GuidesBeanBeanAtomService</annoteType>
-                            </instanceAnnotationBean>
-                        </instanceAnnotationBeanList>
-                        <runningMethod uuid="18394b62-a6fc-499b-b17c-3a0369825c82-MethodBean-5">
-                            <signature>getRelList</signature>
-                            <responseType uuid="368893e3-127f-494b-9e30-ee0f52c492e5-ColumnBean-17">
-<columnName></columnName>
-<columnNameNoDash></columnNameNoDash>
-<columnNameCapitalized></columnNameCapitalized>
-<columnType>GuidesBean</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault></columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>ENTITY</fieldType>
-<length>0</length>
-                            </responseType>
-                            <catetory>BNS</catetory>
-                            <assign uuid="13d55284-ef63-4a51-9353-f194725bf538-TableBean-6">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<methodArugment uuid="94cf8ef6-8a47-4345-a4c4-7c5b03b0e50e-ColumnBean-12">
-    <columnName>uid</columnName>
-    <columnNameNoDash>uid</columnNameNoDash>
-    <columnNameCapitalized>Uid</columnNameCapitalized>
-    <columnType>Integer</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment>相关的霞客ID</columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault>1</columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>And</nextFieldRative>
-    <nextColumnBean uuid="3f7c86cf-783c-4656-ba4f-c3b307d89eb0-ColumnBean-13">
-        <columnName>p</columnName>
+    <methodArugment uuid="8c8c8e94-c421-439b-8884-d11814aa24c9-ColumnBean-0">
+        <columnName></columnName>
         <columnNameNoDash>p</columnNameNoDash>
         <columnNameCapitalized>P</columnNameCapitalized>
         <columnType>Integer</columnType>
@@ -769,11 +552,11 @@
         <columnComment></columnComment>
         <ordinalPosition></ordinalPosition>
         <isNullable></isNullable>
-        <columnDefault>1</columnDefault>
+        <columnDefault></columnDefault>
         <isMutable>true</isMutable>
         <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="33cf1765-fea0-4594-8d20-be6b69ea820c-ColumnBean-14">
-            <columnName>psize</columnName>
+        <nextColumnBean uuid="7d09f4bd-24ce-4563-8a39-3beb6ddf0b5f-ColumnBean-1">
+            <columnName></columnName>
             <columnNameNoDash>psize</columnNameNoDash>
             <columnNameCapitalized>Psize</columnNameCapitalized>
             <columnType>Integer</columnType>
@@ -789,273 +572,14 @@
             <columnComment></columnComment>
             <ordinalPosition></ordinalPosition>
             <isNullable></isNullable>
-            <columnDefault>10</columnDefault>
-            <isMutable>true</isMutable>
-            <nextFieldRative>Finished</nextFieldRative>
-            <columnKey>DEFUALT</columnKey>
-            <fieldType>PRIMARY</fieldType>
-            <length>0</length>
-        </nextColumnBean>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </nextColumnBean>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>PRIMARY</fieldType>
-    <length>0</length>
-</methodArugment>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </assign>
-                        </runningMethod>
-                        <includeServiceList>
-                            <includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-<serviceId>guidesBeanBeanAtomService</serviceId>
-<serivceType>GuidesBeanBeanAtomService</serivceType>
-<serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-<serviceCategory>ATM</serviceCategory>
-<annotationBeanList>
-    <annotationBean>
-        <annnoteKey>Transactional</annnoteKey>
-    </annotationBean>
-    <annotationBean>
-        <annnoteKey>Component</annnoteKey>
-        <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    </annotationBean>
-</annotationBeanList>
-<instanceAnnotationBeanList>
-    <instanceAnnotationBean>
-        <annnoteKey>Autowired</annnoteKey>
-        <annoteValue>guidesBeanJPABeanDao</annoteValue>
-        <annoteType>GuidesBeanJPABeanDao</annoteType>
-    </instanceAnnotationBean>
-</instanceAnnotationBeanList>
-<includeBeanList>
-    <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-        <tableNameNoDash>guidesBean</tableNameNoDash>
-        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-        <columnBeanList/>
-        <transientColumnBeanList/>
-        <hasDateColumn>false</hasDateColumn>
-        <hasBigDecimal>false</hasBigDecimal>
-    </includeBean>
-</includeBeanList>
-<includeDaoList>
-    <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-        <daoId>guidesBeanJPABeanDao</daoId>
-        <daoType>GuidesBeanJPABeanDao</daoType>
-        <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-        <daoCategory>JPA</daoCategory>
-        <annotationBeanList>
-            <annotationBean>
-                <annnoteKey>Repository</annnoteKey>
-                <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            </annotationBean>
-        </annotationBeanList>
-        <includeBeanList>
-            <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-                <tableNameNoDash>guidesBean</tableNameNoDash>
-                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                <columnBeanList/>
-                <transientColumnBeanList/>
-                <hasDateColumn>false</hasDateColumn>
-                <hasBigDecimal>false</hasBigDecimal>
-            </includeBean>
-        </includeBeanList>
-    </includeDao>
-</includeDaoList>
-                            </includeService>
-                        </includeServiceList>
-                        <includeBeanList>
-                            <includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </includeBean>
-                        </includeBeanList>
-                    </calleeMajorService>
-                    <assign uuid="13d55284-ef63-4a51-9353-f194725bf538-TableBean-6">
-                        <tableNameNoDash>guidesBean</tableNameNoDash>
-                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                        <columnBeanList/>
-                        <transientColumnBeanList/>
-                        <methodArugment uuid="94cf8ef6-8a47-4345-a4c4-7c5b03b0e50e-ColumnBean-12">
-                            <columnName>uid</columnName>
-                            <columnNameNoDash>uid</columnNameNoDash>
-                            <columnNameCapitalized>Uid</columnNameCapitalized>
-                            <columnType>Integer</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment>相关的霞客ID</columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault>1</columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>And</nextFieldRative>
-                            <nextColumnBean uuid="3f7c86cf-783c-4656-ba4f-c3b307d89eb0-ColumnBean-13">
-<columnName>p</columnName>
-<columnNameNoDash>p</columnNameNoDash>
-<columnNameCapitalized>P</columnNameCapitalized>
-<columnType>Integer</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault>1</columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>And</nextFieldRative>
-<nextColumnBean uuid="33cf1765-fea0-4594-8d20-be6b69ea820c-ColumnBean-14">
-    <columnName>psize</columnName>
-    <columnNameNoDash>psize</columnNameNoDash>
-    <columnNameCapitalized>Psize</columnNameCapitalized>
-    <columnType>Integer</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault>10</columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>PRIMARY</fieldType>
-    <length>0</length>
-</nextColumnBean>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </nextColumnBean>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>PRIMARY</fieldType>
-                            <length>0</length>
-                        </methodArugment>
-                        <hasDateColumn>false</hasDateColumn>
-                        <hasBigDecimal>false</hasBigDecimal>
-                    </assign>
-                    <callBusinessServiceList>
-                        <callBusinessService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                            <serviceId>guidesBeanBeanBusinessService</serviceId>
-                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                            <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                            <serviceCategory>BNS</serviceCategory>
-                            <annotationBeanList>
-<annotationBean>
-    <annnoteKey>Service</annnoteKey>
-    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
-</annotationBean>
-                            </annotationBeanList>
-                            <instanceAnnotationBeanList>
-<instanceAnnotationBean>
-    <annnoteKey>Autowired</annnoteKey>
-    <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    <annoteType>GuidesBeanBeanAtomService</annoteType>
-</instanceAnnotationBean>
-                            </instanceAnnotationBeanList>
-                            <runningMethod uuid="18394b62-a6fc-499b-b17c-3a0369825c82-MethodBean-5">
-<signature>getRelList</signature>
-<responseType uuid="368893e3-127f-494b-9e30-ee0f52c492e5-ColumnBean-17">
-    <columnName></columnName>
-    <columnNameNoDash></columnNameNoDash>
-    <columnNameCapitalized></columnNameCapitalized>
-    <columnType>GuidesBean</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault></columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>ENTITY</fieldType>
-    <length>0</length>
-</responseType>
-<catetory>BNS</catetory>
-<assign uuid="13d55284-ef63-4a51-9353-f194725bf538-TableBean-6">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <methodArugment uuid="94cf8ef6-8a47-4345-a4c4-7c5b03b0e50e-ColumnBean-12">
-        <columnName>uid</columnName>
-        <columnNameNoDash>uid</columnNameNoDash>
-        <columnNameCapitalized>Uid</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment>相关的霞客ID</columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault>1</columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>And</nextFieldRative>
-        <nextColumnBean uuid="3f7c86cf-783c-4656-ba4f-c3b307d89eb0-ColumnBean-13">
-            <columnName>p</columnName>
-            <columnNameNoDash>p</columnNameNoDash>
-            <columnNameCapitalized>P</columnNameCapitalized>
-            <columnType>Integer</columnType>
-            <columnTypeIOS></columnTypeIOS>
-            <columnTypePropertyIOS></columnTypePropertyIOS>
-            <columnTypeJS></columnTypeJS>
-            <columnTypeRsGetter></columnTypeRsGetter>
-            <referNameNoDash></referNameNoDash>
-            <referNameCapitalized></referNameCapitalized>
-            <referType></referType>
-            <referRieldType>PRIMARY</referRieldType>
-            <referLength>0</referLength>
-            <columnComment></columnComment>
-            <ordinalPosition></ordinalPosition>
-            <isNullable></isNullable>
-            <columnDefault>1</columnDefault>
+            <columnDefault></columnDefault>
             <isMutable>true</isMutable>
             <nextFieldRative>And</nextFieldRative>
-            <nextColumnBean uuid="33cf1765-fea0-4594-8d20-be6b69ea820c-ColumnBean-14">
-                <columnName>psize</columnName>
-                <columnNameNoDash>psize</columnNameNoDash>
-                <columnNameCapitalized>Psize</columnNameCapitalized>
-                <columnType>Integer</columnType>
+            <nextColumnBean uuid="773193b2-4418-412d-a5f0-5374ed0e2ccb-ColumnBean-2">
+                <columnName></columnName>
+                <columnNameNoDash>loc_type</columnNameNoDash>
+                <columnNameCapitalized>Loc_type</columnNameCapitalized>
+                <columnType>String</columnType>
                 <columnTypeIOS></columnTypeIOS>
                 <columnTypePropertyIOS></columnTypePropertyIOS>
                 <columnTypeJS></columnTypeJS>
@@ -1068,9 +592,57 @@
                 <columnComment></columnComment>
                 <ordinalPosition></ordinalPosition>
                 <isNullable></isNullable>
-                <columnDefault>10</columnDefault>
+                <columnDefault>ream</columnDefault>
                 <isMutable>true</isMutable>
-                <nextFieldRative>Finished</nextFieldRative>
+                <nextFieldRative>And</nextFieldRative>
+                <nextColumnBean uuid="6ed172ac-2d2f-4aab-84c5-8108335e3e01-ColumnBean-3">
+                    <columnName></columnName>
+                    <columnNameNoDash>loc_order</columnNameNoDash>
+                    <columnNameCapitalized>loc_order</columnNameCapitalized>
+                    <columnType>String</columnType>
+                    <columnTypeIOS></columnTypeIOS>
+                    <columnTypePropertyIOS></columnTypePropertyIOS>
+                    <columnTypeJS></columnTypeJS>
+                    <columnTypeRsGetter></columnTypeRsGetter>
+                    <referNameNoDash></referNameNoDash>
+                    <referNameCapitalized></referNameCapitalized>
+                    <referType></referType>
+                    <referRieldType>PRIMARY</referRieldType>
+                    <referLength>0</referLength>
+                    <columnComment></columnComment>
+                    <ordinalPosition></ordinalPosition>
+                    <isNullable></isNullable>
+                    <columnDefault>asc</columnDefault>
+                    <isMutable>true</isMutable>
+                    <nextFieldRative>And</nextFieldRative>
+                    <nextColumnBean uuid="dc92fe1d-7b59-494f-ae43-88bc9a7606d3-ColumnBean-4">
+                        <columnName></columnName>
+                        <columnNameNoDash>data_type</columnNameNoDash>
+                        <columnNameCapitalized>Data_type</columnNameCapitalized>
+                        <columnType>String</columnType>
+                        <columnTypeIOS></columnTypeIOS>
+                        <columnTypePropertyIOS></columnTypePropertyIOS>
+                        <columnTypeJS></columnTypeJS>
+                        <columnTypeRsGetter></columnTypeRsGetter>
+                        <referNameNoDash></referNameNoDash>
+                        <referNameCapitalized></referNameCapitalized>
+                        <referType></referType>
+                        <referRieldType>PRIMARY</referRieldType>
+                        <referLength>0</referLength>
+                        <columnComment></columnComment>
+                        <ordinalPosition></ordinalPosition>
+                        <isNullable></isNullable>
+                        <columnDefault>exact</columnDefault>
+                        <isMutable>true</isMutable>
+                        <nextFieldRative>Finished</nextFieldRative>
+                        <columnKey>DEFUALT</columnKey>
+                        <fieldType>PRIMARY</fieldType>
+                        <length>0</length>
+                    </nextColumnBean>
+                    <columnKey>DEFUALT</columnKey>
+                    <fieldType>PRIMARY</fieldType>
+                    <length>0</length>
+                </nextColumnBean>
                 <columnKey>DEFUALT</columnKey>
                 <fieldType>PRIMARY</fieldType>
                 <length>0</length>
@@ -1088,32 +660,32 @@
 </assign>
                             </runningMethod>
                             <includeServiceList>
-<includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-    <serviceId>guidesBeanBeanAtomService</serviceId>
-    <serivceType>GuidesBeanBeanAtomService</serivceType>
-    <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
+<includeService uuid="60857ad2-6eb0-4e15-8b91-52d83324e8a8-ServiceBean-1">
+    <serviceId>locationsGetListBeanBeanAtomService</serviceId>
+    <serivceType>LocationsGetListBeanBeanAtomService</serivceType>
+    <serviceDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</serviceDescipter>
     <serviceCategory>ATM</serviceCategory>
     <annotationBeanList>
         <annotationBean>
-            <annnoteKey>Transactional</annnoteKey>
+            <annnoteKey>Component</annnoteKey>
+            <annoteValue>locationsGetListBeanBeanAtomService</annoteValue>
         </annotationBean>
         <annotationBean>
-            <annnoteKey>Component</annnoteKey>
-            <annoteValue>guidesBeanBeanAtomService</annoteValue>
+            <annnoteKey>Transactional</annnoteKey>
         </annotationBean>
     </annotationBeanList>
     <instanceAnnotationBeanList>
         <instanceAnnotationBean>
             <annnoteKey>Autowired</annnoteKey>
-            <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            <annoteType>GuidesBeanJPABeanDao</annoteType>
+            <annoteValue>locationsGetListBeanJPABeanDao</annoteValue>
+            <annoteType>LocationsGetListBeanJPABeanDao</annoteType>
         </instanceAnnotationBean>
     </instanceAnnotationBeanList>
     <includeBeanList>
-        <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-            <tableNameNoDash>guidesBean</tableNameNoDash>
-            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+        <includeBean uuid="bfed10af-4c93-488d-aa92-b257c11d7cc8-TableBean-2">
+            <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+            <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
             <columnBeanList/>
             <transientColumnBeanList/>
             <hasDateColumn>false</hasDateColumn>
@@ -1121,22 +693,22 @@
         </includeBean>
     </includeBeanList>
     <includeDaoList>
-        <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-            <daoId>guidesBeanJPABeanDao</daoId>
-            <daoType>GuidesBeanJPABeanDao</daoType>
-            <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
+        <includeDao uuid="a78ef2d6-4e6b-46c9-b1b9-7c9dabeb334a-DaoBean-0">
+            <daoId>locationsGetListBeanJPABeanDao</daoId>
+            <daoType>LocationsGetListBeanJPABeanDao</daoType>
+            <daoDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</daoDescipter>
             <daoCategory>JPA</daoCategory>
             <annotationBeanList>
                 <annotationBean>
                     <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
+                    <annoteValue>locationsGetListBeanJPABeanDao</annoteValue>
                 </annotationBean>
             </annotationBeanList>
             <includeBeanList>
-                <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-                    <tableNameNoDash>guidesBean</tableNameNoDash>
-                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                <includeBean uuid="3df5560f-95df-433b-9f37-5cf14a6fd69e-TableBean-3">
+                    <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+                    <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
                     <columnBeanList/>
                     <transientColumnBeanList/>
                     <hasDateColumn>false</hasDateColumn>
@@ -1148,501 +720,9 @@
 </includeService>
                             </includeServiceList>
                             <includeBeanList>
-<includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</includeBean>
-                            </includeBeanList>
-                        </callBusinessService>
-                    </callBusinessServiceList>
-                </controllerMethod>
-                <controllerMethod uuid="b26bc6fe-e1cb-488e-89ee-f4bb366575f5-MethodBean-0">
-                    <signature>getItemById</signature>
-                    <signatureDescripter>获取霞客信</signatureDescripter>
-                    <responseType uuid="4ecc51d0-c00b-4611-984b-9616973b1877-ColumnBean-4">
-                        <columnName></columnName>
-                        <columnNameNoDash></columnNameNoDash>
-                        <columnNameCapitalized></columnNameCapitalized>
-                        <columnType>GuidesBean</columnType>
-                        <columnTypeIOS></columnTypeIOS>
-                        <columnTypePropertyIOS></columnTypePropertyIOS>
-                        <columnTypeJS></columnTypeJS>
-                        <columnTypeRsGetter></columnTypeRsGetter>
-                        <referNameNoDash></referNameNoDash>
-                        <referNameCapitalized></referNameCapitalized>
-                        <referType></referType>
-                        <referRieldType>PRIMARY</referRieldType>
-                        <referLength>0</referLength>
-                        <columnComment></columnComment>
-                        <ordinalPosition></ordinalPosition>
-                        <isNullable></isNullable>
-                        <columnDefault></columnDefault>
-                        <isMutable>true</isMutable>
-                        <nextFieldRative>Finished</nextFieldRative>
-                        <columnKey>DEFUALT</columnKey>
-                        <fieldType>ENTITY</fieldType>
-                        <length>0</length>
-                    </responseType>
-                    <catetory>GET</catetory>
-                    <methodRuntimeTypeInBody>CALL_OUTER</methodRuntimeTypeInBody>
-                    <bodyBean uuid="7ead1020-deea-46f7-92f9-c950df6a7fe2-MethodCallChainInBodyBean-0">
-                        <fromMethod>b26bc6fe-e1cb-488e-89ee-f4bb366575f5-MethodBean-0</fromMethod>
-                        <fromResultType uuid="625da4e6-cb37-4c53-9a7a-f7a1bcc5d8cb-ColumnBean-3">
-                            <columnName></columnName>
-                            <columnNameNoDash></columnNameNoDash>
-                            <columnNameCapitalized></columnNameCapitalized>
-                            <columnType>GuidesBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </fromResultType>
-                        <resultColumnBean uuid="f6865201-87ed-42c3-ba13-8d376fda8f14-ColumnBean-2">
-                            <columnName>guidesGetItemBean</columnName>
-                            <columnNameNoDash>guidesGetItemBean</columnNameNoDash>
-                            <columnNameCapitalized>GuidesGetItemBean</columnNameCapitalized>
-                            <columnType>GuidesGetItemBean</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>ENTITY</fieldType>
-                            <length>0</length>
-                        </resultColumnBean>
-                        <catetory>CALL_OUTER</catetory>
-                    </bodyBean>
-                    <annotationBean>
-                        <annnoteKey>RequestMapping</annnoteKey>
-                        <annoteValue>guides.php?action=getItemById</annoteValue>
-                    </annotationBean>
-                    <calleeMajorService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                        <serviceId>guidesBeanBeanBusinessService</serviceId>
-                        <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                        <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                        <serviceCategory>BNS</serviceCategory>
-                        <annotationBeanList>
-                            <annotationBean>
-<annnoteKey>Service</annnoteKey>
-<annoteValue>guidesBeanBeanBusinessService</annoteValue>
-                            </annotationBean>
-                        </annotationBeanList>
-                        <instanceAnnotationBeanList>
-                            <instanceAnnotationBean>
-<annnoteKey>Autowired</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
-<annoteType>GuidesBeanBeanAtomService</annoteType>
-                            </instanceAnnotationBean>
-                        </instanceAnnotationBeanList>
-                        <runningMethod uuid="c3b51223-9b63-4ad2-af8f-5ecfa6947709-MethodBean-1">
-                            <signature>getItemById</signature>
-                            <responseType uuid="4ecc51d0-c00b-4611-984b-9616973b1877-ColumnBean-4">
-<columnName></columnName>
-<columnNameNoDash></columnNameNoDash>
-<columnNameCapitalized></columnNameCapitalized>
-<columnType>GuidesBean</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault></columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>ENTITY</fieldType>
-<length>0</length>
-                            </responseType>
-                            <catetory>BNS</catetory>
-                            <assign uuid="dcc4102b-81a3-4c22-ae7a-7de9f4135af6-TableBean-4">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<methodArugment uuid="5230e2d2-ce1f-49bf-a939-0691e43e5bec-ColumnBean-0">
-    <columnName></columnName>
-    <columnNameNoDash>id</columnNameNoDash>
-    <columnNameCapitalized>Id</columnNameCapitalized>
-    <columnType>Integer</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault></columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <nextColumnBean uuid="8ed389f3-aedd-444b-94c3-87d92513e60c-ColumnBean-1">
-        <columnName></columnName>
-        <columnNameNoDash>id</columnNameNoDash>
-        <columnNameCapitalized>Id</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment></columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault></columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>Finished</nextFieldRative>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </nextColumnBean>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>PRIMARY</fieldType>
-    <length>0</length>
-</methodArugment>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </assign>
-                        </runningMethod>
-                        <includeServiceList>
-                            <includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-<serviceId>guidesBeanBeanAtomService</serviceId>
-<serivceType>GuidesBeanBeanAtomService</serivceType>
-<serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-<serviceCategory>ATM</serviceCategory>
-<annotationBeanList>
-    <annotationBean>
-        <annnoteKey>Transactional</annnoteKey>
-    </annotationBean>
-    <annotationBean>
-        <annnoteKey>Component</annnoteKey>
-        <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    </annotationBean>
-</annotationBeanList>
-<instanceAnnotationBeanList>
-    <instanceAnnotationBean>
-        <annnoteKey>Autowired</annnoteKey>
-        <annoteValue>guidesBeanJPABeanDao</annoteValue>
-        <annoteType>GuidesBeanJPABeanDao</annoteType>
-    </instanceAnnotationBean>
-</instanceAnnotationBeanList>
-<includeBeanList>
-    <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-        <tableNameNoDash>guidesBean</tableNameNoDash>
-        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-        <columnBeanList/>
-        <transientColumnBeanList/>
-        <hasDateColumn>false</hasDateColumn>
-        <hasBigDecimal>false</hasBigDecimal>
-    </includeBean>
-</includeBeanList>
-<includeDaoList>
-    <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-        <daoId>guidesBeanJPABeanDao</daoId>
-        <daoType>GuidesBeanJPABeanDao</daoType>
-        <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-        <daoCategory>JPA</daoCategory>
-        <annotationBeanList>
-            <annotationBean>
-                <annnoteKey>Repository</annnoteKey>
-                <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            </annotationBean>
-        </annotationBeanList>
-        <includeBeanList>
-            <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-                <tableNameNoDash>guidesBean</tableNameNoDash>
-                <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                <columnBeanList/>
-                <transientColumnBeanList/>
-                <hasDateColumn>false</hasDateColumn>
-                <hasBigDecimal>false</hasBigDecimal>
-            </includeBean>
-        </includeBeanList>
-    </includeDao>
-</includeDaoList>
-                            </includeService>
-                        </includeServiceList>
-                        <includeBeanList>
-                            <includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
-<columnBeanList/>
-<transientColumnBeanList/>
-<hasDateColumn>false</hasDateColumn>
-<hasBigDecimal>false</hasBigDecimal>
-                            </includeBean>
-                        </includeBeanList>
-                    </calleeMajorService>
-                    <assign uuid="dcc4102b-81a3-4c22-ae7a-7de9f4135af6-TableBean-4">
-                        <tableNameNoDash>guidesBean</tableNameNoDash>
-                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                        <columnBeanList/>
-                        <transientColumnBeanList/>
-                        <methodArugment uuid="5230e2d2-ce1f-49bf-a939-0691e43e5bec-ColumnBean-0">
-                            <columnName></columnName>
-                            <columnNameNoDash>id</columnNameNoDash>
-                            <columnNameCapitalized>Id</columnNameCapitalized>
-                            <columnType>Integer</columnType>
-                            <columnTypeIOS></columnTypeIOS>
-                            <columnTypePropertyIOS></columnTypePropertyIOS>
-                            <columnTypeJS></columnTypeJS>
-                            <columnTypeRsGetter></columnTypeRsGetter>
-                            <referNameNoDash></referNameNoDash>
-                            <referNameCapitalized></referNameCapitalized>
-                            <referType></referType>
-                            <referRieldType>PRIMARY</referRieldType>
-                            <referLength>0</referLength>
-                            <columnComment></columnComment>
-                            <ordinalPosition></ordinalPosition>
-                            <isNullable></isNullable>
-                            <columnDefault></columnDefault>
-                            <isMutable>true</isMutable>
-                            <nextFieldRative>Finished</nextFieldRative>
-                            <nextColumnBean uuid="8ed389f3-aedd-444b-94c3-87d92513e60c-ColumnBean-1">
-<columnName></columnName>
-<columnNameNoDash>id</columnNameNoDash>
-<columnNameCapitalized>Id</columnNameCapitalized>
-<columnType>Integer</columnType>
-<columnTypeIOS></columnTypeIOS>
-<columnTypePropertyIOS></columnTypePropertyIOS>
-<columnTypeJS></columnTypeJS>
-<columnTypeRsGetter></columnTypeRsGetter>
-<referNameNoDash></referNameNoDash>
-<referNameCapitalized></referNameCapitalized>
-<referType></referType>
-<referRieldType>PRIMARY</referRieldType>
-<referLength>0</referLength>
-<columnComment></columnComment>
-<ordinalPosition></ordinalPosition>
-<isNullable></isNullable>
-<columnDefault></columnDefault>
-<isMutable>true</isMutable>
-<nextFieldRative>Finished</nextFieldRative>
-<columnKey>DEFUALT</columnKey>
-<fieldType>PRIMARY</fieldType>
-<length>0</length>
-                            </nextColumnBean>
-                            <columnKey>DEFUALT</columnKey>
-                            <fieldType>PRIMARY</fieldType>
-                            <length>0</length>
-                        </methodArugment>
-                        <hasDateColumn>false</hasDateColumn>
-                        <hasBigDecimal>false</hasBigDecimal>
-                    </assign>
-                    <callBusinessServiceList>
-                        <callBusinessService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                            <serviceId>guidesBeanBeanBusinessService</serviceId>
-                            <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                            <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-                            <serviceCategory>BNS</serviceCategory>
-                            <annotationBeanList>
-<annotationBean>
-    <annnoteKey>Service</annnoteKey>
-    <annoteValue>guidesBeanBeanBusinessService</annoteValue>
-</annotationBean>
-                            </annotationBeanList>
-                            <instanceAnnotationBeanList>
-<instanceAnnotationBean>
-    <annnoteKey>Autowired</annnoteKey>
-    <annoteValue>guidesBeanBeanAtomService</annoteValue>
-    <annoteType>GuidesBeanBeanAtomService</annoteType>
-</instanceAnnotationBean>
-                            </instanceAnnotationBeanList>
-                            <runningMethod uuid="c3b51223-9b63-4ad2-af8f-5ecfa6947709-MethodBean-1">
-<signature>getItemById</signature>
-<responseType uuid="4ecc51d0-c00b-4611-984b-9616973b1877-ColumnBean-4">
-    <columnName></columnName>
-    <columnNameNoDash></columnNameNoDash>
-    <columnNameCapitalized></columnNameCapitalized>
-    <columnType>GuidesBean</columnType>
-    <columnTypeIOS></columnTypeIOS>
-    <columnTypePropertyIOS></columnTypePropertyIOS>
-    <columnTypeJS></columnTypeJS>
-    <columnTypeRsGetter></columnTypeRsGetter>
-    <referNameNoDash></referNameNoDash>
-    <referNameCapitalized></referNameCapitalized>
-    <referType></referType>
-    <referRieldType>PRIMARY</referRieldType>
-    <referLength>0</referLength>
-    <columnComment></columnComment>
-    <ordinalPosition></ordinalPosition>
-    <isNullable></isNullable>
-    <columnDefault></columnDefault>
-    <isMutable>true</isMutable>
-    <nextFieldRative>Finished</nextFieldRative>
-    <columnKey>DEFUALT</columnKey>
-    <fieldType>ENTITY</fieldType>
-    <length>0</length>
-</responseType>
-<catetory>BNS</catetory>
-<assign uuid="dcc4102b-81a3-4c22-ae7a-7de9f4135af6-TableBean-4">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-    <columnBeanList/>
-    <transientColumnBeanList/>
-    <methodArugment uuid="5230e2d2-ce1f-49bf-a939-0691e43e5bec-ColumnBean-0">
-        <columnName></columnName>
-        <columnNameNoDash>id</columnNameNoDash>
-        <columnNameCapitalized>Id</columnNameCapitalized>
-        <columnType>Integer</columnType>
-        <columnTypeIOS></columnTypeIOS>
-        <columnTypePropertyIOS></columnTypePropertyIOS>
-        <columnTypeJS></columnTypeJS>
-        <columnTypeRsGetter></columnTypeRsGetter>
-        <referNameNoDash></referNameNoDash>
-        <referNameCapitalized></referNameCapitalized>
-        <referType></referType>
-        <referRieldType>PRIMARY</referRieldType>
-        <referLength>0</referLength>
-        <columnComment></columnComment>
-        <ordinalPosition></ordinalPosition>
-        <isNullable></isNullable>
-        <columnDefault></columnDefault>
-        <isMutable>true</isMutable>
-        <nextFieldRative>Finished</nextFieldRative>
-        <nextColumnBean uuid="8ed389f3-aedd-444b-94c3-87d92513e60c-ColumnBean-1">
-            <columnName></columnName>
-            <columnNameNoDash>id</columnNameNoDash>
-            <columnNameCapitalized>Id</columnNameCapitalized>
-            <columnType>Integer</columnType>
-            <columnTypeIOS></columnTypeIOS>
-            <columnTypePropertyIOS></columnTypePropertyIOS>
-            <columnTypeJS></columnTypeJS>
-            <columnTypeRsGetter></columnTypeRsGetter>
-            <referNameNoDash></referNameNoDash>
-            <referNameCapitalized></referNameCapitalized>
-            <referType></referType>
-            <referRieldType>PRIMARY</referRieldType>
-            <referLength>0</referLength>
-            <columnComment></columnComment>
-            <ordinalPosition></ordinalPosition>
-            <isNullable></isNullable>
-            <columnDefault></columnDefault>
-            <isMutable>true</isMutable>
-            <nextFieldRative>Finished</nextFieldRative>
-            <columnKey>DEFUALT</columnKey>
-            <fieldType>PRIMARY</fieldType>
-            <length>0</length>
-        </nextColumnBean>
-        <columnKey>DEFUALT</columnKey>
-        <fieldType>PRIMARY</fieldType>
-        <length>0</length>
-    </methodArugment>
-    <hasDateColumn>false</hasDateColumn>
-    <hasBigDecimal>false</hasBigDecimal>
-</assign>
-                            </runningMethod>
-                            <includeServiceList>
-<includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-    <serviceId>guidesBeanBeanAtomService</serviceId>
-    <serivceType>GuidesBeanBeanAtomService</serivceType>
-    <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
-    <serviceCategory>ATM</serviceCategory>
-    <annotationBeanList>
-        <annotationBean>
-            <annnoteKey>Transactional</annnoteKey>
-        </annotationBean>
-        <annotationBean>
-            <annnoteKey>Component</annnoteKey>
-            <annoteValue>guidesBeanBeanAtomService</annoteValue>
-        </annotationBean>
-    </annotationBeanList>
-    <instanceAnnotationBeanList>
-        <instanceAnnotationBean>
-            <annnoteKey>Autowired</annnoteKey>
-            <annoteValue>guidesBeanJPABeanDao</annoteValue>
-            <annoteType>GuidesBeanJPABeanDao</annoteType>
-        </instanceAnnotationBean>
-    </instanceAnnotationBeanList>
-    <includeBeanList>
-        <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-            <tableNameNoDash>guidesBean</tableNameNoDash>
-            <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-            <columnBeanList/>
-            <transientColumnBeanList/>
-            <hasDateColumn>false</hasDateColumn>
-            <hasBigDecimal>false</hasBigDecimal>
-        </includeBean>
-    </includeBeanList>
-    <includeDaoList>
-        <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-            <daoId>guidesBeanJPABeanDao</daoId>
-            <daoType>GuidesBeanJPABeanDao</daoType>
-            <daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
-            <daoCategory>JPA</daoCategory>
-            <annotationBeanList>
-                <annotationBean>
-                    <annnoteKey>Repository</annnoteKey>
-                    <annoteValue>guidesBeanJPABeanDao</annoteValue>
-                </annotationBean>
-            </annotationBeanList>
-            <includeBeanList>
-                <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-                    <tableNameNoDash>guidesBean</tableNameNoDash>
-                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
-                    <columnBeanList/>
-                    <transientColumnBeanList/>
-                    <hasDateColumn>false</hasDateColumn>
-                    <hasBigDecimal>false</hasBigDecimal>
-                </includeBean>
-            </includeBeanList>
-        </includeDao>
-    </includeDaoList>
-</includeService>
-                            </includeServiceList>
-                            <includeBeanList>
-<includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-    <tableNameNoDash>guidesBean</tableNameNoDash>
-    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+<includeBean uuid="460c0f59-fa80-43fc-8a4f-47f77b803c32-TableBean-1">
+    <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+    <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
     <columnBeanList/>
     <transientColumnBeanList/>
     <hasDateColumn>false</hasDateColumn>
@@ -1653,52 +733,52 @@
                     </callBusinessServiceList>
                 </controllerMethod>
             </controllerMethodList>
-            <includeService uuid="90f0ba47-a2eb-4eb0-bb13-9488c3bc0206-ServiceBean-0">
-                <serviceId>guidesBeanBeanBusinessService</serviceId>
-                <serivceType>GuidesBeanBeanBusinessService</serivceType>
-                <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
+            <includeService uuid="a7f5cb77-8b0f-4329-a9f8-6ecddd77bd08-ServiceBean-0">
+                <serviceId>locationsGetListBeanBeanBusinessService</serviceId>
+                <serivceType>LocationsGetListBeanBeanBusinessService</serivceType>
+                <serviceDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</serviceDescipter>
                 <serviceCategory>BNS</serviceCategory>
                 <annotationBeanList>
                     <annotationBean>
                         <annnoteKey>Service</annnoteKey>
-                        <annoteValue>guidesBeanBeanBusinessService</annoteValue>
+                        <annoteValue>locationsGetListBeanBeanBusinessService</annoteValue>
                     </annotationBean>
                 </annotationBeanList>
                 <instanceAnnotationBeanList>
                     <instanceAnnotationBean>
                         <annnoteKey>Autowired</annnoteKey>
-                        <annoteValue>guidesBeanBeanAtomService</annoteValue>
-                        <annoteType>GuidesBeanBeanAtomService</annoteType>
+                        <annoteValue>locationsGetListBeanBeanAtomService</annoteValue>
+                        <annoteType>LocationsGetListBeanBeanAtomService</annoteType>
                     </instanceAnnotationBean>
                 </instanceAnnotationBeanList>
                 <includeServiceList>
-                    <includeService uuid="f3a273b7-5f2d-4af6-8fe7-fe550ed9bd84-ServiceBean-1">
-                        <serviceId>guidesBeanBeanAtomService</serviceId>
-                        <serivceType>GuidesBeanBeanAtomService</serivceType>
-                        <serviceDescipter>Service Type:GuidesBean
- 霞客</serviceDescipter>
+                    <includeService uuid="60857ad2-6eb0-4e15-8b91-52d83324e8a8-ServiceBean-1">
+                        <serviceId>locationsGetListBeanBeanAtomService</serviceId>
+                        <serivceType>LocationsGetListBeanBeanAtomService</serivceType>
+                        <serviceDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</serviceDescipter>
                         <serviceCategory>ATM</serviceCategory>
                         <annotationBeanList>
                             <annotationBean>
-<annnoteKey>Transactional</annnoteKey>
+<annnoteKey>Component</annnoteKey>
+<annoteValue>locationsGetListBeanBeanAtomService</annoteValue>
                             </annotationBean>
                             <annotationBean>
-<annnoteKey>Component</annnoteKey>
-<annoteValue>guidesBeanBeanAtomService</annoteValue>
+<annnoteKey>Transactional</annnoteKey>
                             </annotationBean>
                         </annotationBeanList>
                         <instanceAnnotationBeanList>
                             <instanceAnnotationBean>
 <annnoteKey>Autowired</annnoteKey>
-<annoteValue>guidesBeanJPABeanDao</annoteValue>
-<annoteType>GuidesBeanJPABeanDao</annoteType>
+<annoteValue>locationsGetListBeanJPABeanDao</annoteValue>
+<annoteType>LocationsGetListBeanJPABeanDao</annoteType>
                             </instanceAnnotationBean>
                         </instanceAnnotationBeanList>
                         <includeBeanList>
-                            <includeBean uuid="5c911d63-7c34-4e15-9ac9-5a21466e77b2-TableBean-2">
-<tableNameNoDash>guidesBean</tableNameNoDash>
-<tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                            <includeBean uuid="bfed10af-4c93-488d-aa92-b257c11d7cc8-TableBean-2">
+<tableNameNoDash>locationsGetListBean</tableNameNoDash>
+<tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
 <columnBeanList/>
 <transientColumnBeanList/>
 <hasDateColumn>false</hasDateColumn>
@@ -1706,22 +786,22 @@
                             </includeBean>
                         </includeBeanList>
                         <includeDaoList>
-                            <includeDao uuid="bacf04fe-5e43-42d2-8be6-025962e68e9f-DaoBean-0">
-<daoId>guidesBeanJPABeanDao</daoId>
-<daoType>GuidesBeanJPABeanDao</daoType>
-<daoDescipter>Service Type:GuidesBean
- 霞客</daoDescipter>
+                            <includeDao uuid="a78ef2d6-4e6b-46c9-b1b9-7c9dabeb334a-DaoBean-0">
+<daoId>locationsGetListBeanJPABeanDao</daoId>
+<daoType>LocationsGetListBeanJPABeanDao</daoType>
+<daoDescipter>Service Type:LocationsGetListBean
+ 获 获取位置列表</daoDescipter>
 <daoCategory>JPA</daoCategory>
 <annotationBeanList>
     <annotationBean>
         <annnoteKey>Repository</annnoteKey>
-        <annoteValue>guidesBeanJPABeanDao</annoteValue>
+        <annoteValue>locationsGetListBeanJPABeanDao</annoteValue>
     </annotationBean>
 </annotationBeanList>
 <includeBeanList>
-    <includeBean uuid="86372b58-ad3e-45a2-8fa5-260f9b7a864a-TableBean-3">
-        <tableNameNoDash>guidesBean</tableNameNoDash>
-        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+    <includeBean uuid="3df5560f-95df-433b-9f37-5cf14a6fd69e-TableBean-3">
+        <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+        <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
         <columnBeanList/>
         <transientColumnBeanList/>
         <hasDateColumn>false</hasDateColumn>
@@ -1733,9 +813,9 @@
                     </includeService>
                 </includeServiceList>
                 <includeBeanList>
-                    <includeBean uuid="9a726ff6-b3e3-4a8d-9668-f61176e88874-TableBean-1">
-                        <tableNameNoDash>guidesBean</tableNameNoDash>
-                        <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                    <includeBean uuid="460c0f59-fa80-43fc-8a4f-47f77b803c32-TableBean-1">
+                        <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+                        <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
                         <columnBeanList/>
                         <transientColumnBeanList/>
                         <hasDateColumn>false</hasDateColumn>
@@ -1744,9 +824,9 @@
                 </includeBeanList>
             </includeService>
             <includeBeanList>
-                <includeBean uuid="07f2d35b-dce0-4682-8743-2142b40fdc38-TableBean-0">
-                    <tableNameNoDash>guidesBean</tableNameNoDash>
-                    <tableNameCapitalized>GuidesBean</tableNameCapitalized>
+                <includeBean uuid="44f8bbce-5ba7-44b3-8c02-25a0dac3d998-TableBean-0">
+                    <tableNameNoDash>locationsGetListBean</tableNameNoDash>
+                    <tableNameCapitalized>LocationsGetListBean</tableNameCapitalized>
                     <columnBeanList/>
                     <transientColumnBeanList/>
                     <hasDateColumn>false</hasDateColumn>
