@@ -1,8 +1,0 @@
-package ${packageBase}.${packageAndroid};
-
-
-public final class BaseAndroidRestfulConfig {
-	static final String moduleServicePath = "http://localhost:8080/${serviceContext}/business/";
-}
-
-

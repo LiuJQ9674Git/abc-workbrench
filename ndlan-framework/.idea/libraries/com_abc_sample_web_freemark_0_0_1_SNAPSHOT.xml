@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.abc.sample.web.freemark-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/com.abc.sample.web.freemark/target/com.abc.sample.web.freemark-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

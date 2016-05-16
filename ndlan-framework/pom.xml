@@ -1769,4 +1769,16 @@
 	</build>
 
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>com.abc.sample.service.amqp</module>
+		<module>com.abc.sample.service.atomikos</module>
+		<module>com.abc.sample.service.batch</module>
+		<module>com.abc.sample.service.bitronix</module>
+		<module>com.abc.sample.service.elasticsearch</module>
+		<module>com.abc.sample.service.integration</module>
+		<module>com.abc.sample.service.mongodb</module>
+		<module>com.abc.sample.service.muiltdatasource</module>
+		<module>com.abc.sample.service.radis</module>
+		<module>com.abc.sample.web.freemark</module>
+	</modules>
 </project>

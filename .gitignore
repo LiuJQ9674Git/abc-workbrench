@@ -28,4 +28,8 @@
    
 # OS generated files #   
 ######################   
-.DS_Store    
+.DS_Store
+
+########path
+/spring4+mybatis3
+/sample    

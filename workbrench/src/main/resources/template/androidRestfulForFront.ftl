@@ -4,7 +4,7 @@ package ${packageBase}.${packageAndroid};
 *${businessDescripter.comment}
 */
 </#if>
-import java.util.List;
+import java.util.List;/Users/liujianqiang/Desktop/ABC-DEV/SpringHelper/workbrench/src/main/resources/template/abcAndroidRestfulConfig.ftl
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

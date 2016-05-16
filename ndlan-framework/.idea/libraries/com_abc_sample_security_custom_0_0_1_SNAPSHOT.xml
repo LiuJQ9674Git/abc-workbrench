@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.abc.sample.security.custom-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/com.abc.sample.security.custom/target/com.abc.sample.security.custom-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
